@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Candidate_Declaration_Text__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;• I warrant that the version of my thesis to be made openly available, as uploaded to the Repository, does not infringe the copyright or license conditions of any person or organisation, and&quot; + BR() +
+&quot;• I certify that the electronic version of my thesis, as uploaded to the Repository, is a direct equivalent of the version of my thesis as approved by the Academic Board, subject to any exclusions made for copyright reasons&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Candidate Declaration</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

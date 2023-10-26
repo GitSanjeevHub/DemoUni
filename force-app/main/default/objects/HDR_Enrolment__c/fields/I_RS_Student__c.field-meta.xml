@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Student__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Student</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>HDR Enrolments (Candidate)</relationshipLabel>
+    <relationshipName>HDR_Enrolments_Candidate</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

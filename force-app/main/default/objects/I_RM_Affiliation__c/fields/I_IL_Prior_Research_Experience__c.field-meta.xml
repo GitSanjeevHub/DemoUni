@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Prior_Research_Experience__c</fullName>
+    <description>Depicts candidate’s prior research experience</description>
+    <externalId>false</externalId>
+    <label>Prior Research Experience</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No experience</fullName>
+                <default>false</default>
+                <label>No experience</label>
+            </value>
+            <value>
+                <fullName>0 - 1 years</fullName>
+                <default>false</default>
+                <label>0 - 1 years</label>
+            </value>
+            <value>
+                <fullName>2 - 5 years</fullName>
+                <default>false</default>
+                <label>2 - 5 years</label>
+            </value>
+            <value>
+                <fullName>Above 5 years</fullName>
+                <default>false</default>
+                <label>Above 5 years</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

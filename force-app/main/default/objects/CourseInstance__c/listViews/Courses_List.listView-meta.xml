@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Courses_List</fullName>
+    <columns>L_AD_CourseParent__c</columns>
+    <columns>L_AD_Course_Parent_Code__c</columns>
+    <columns>L_AD_Course_Parent_Version_Year__c</columns>
+    <columns>L_AD_Course_Parent_Award_Title__c</columns>
+    <columns>L_AD_Study_Level_Code__c</columns>
+    <columns>L_AD_Course_Instance_Code__c</columns>
+    <columns>L_AD_Campus_Name__c</columns>
+    <columns>L_AD_Course_Instance_Status__c</columns>
+    <columns>L_AD_Available_For_Domestic__c</columns>
+    <columns>L_AD_Available_For_Onshore_International__c</columns>
+    <columns>L_AD_Image_Needs_Review__c</columns>
+    <columns>L_AD_Published_on_VTAC__c</columns>
+    <columns>L_AD_Published_on_UAC__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Courses List</label>
+</ListView>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Get the Case record Id for I_ST_Enquiry</description>
+        <name>GetCaseRecordType</name>
+        <label>GetEnquiryRecordType</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <actionName>FlowGetRecordTypeId</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>CasehasContact</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>objectName</name>
+            <value>
+                <stringValue>Case</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordTypeName</name>
+            <value>
+                <stringValue>I_ST_Enquiry</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>EnquiryRecordTypeID</assignToReference>
+            <name>output</name>
+        </outputParameters>
+    </actionCalls>
+    <apiVersion>50.0</apiVersion>
+    <decisions>
+        <name>CasehasContact</name>
+        <label>CasehasServiceAppointment</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Contact_Is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>EnquiryRecordTypeID</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Origin</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Consultation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Status</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Service_Appointment_0</targetReference>
+            </connector>
+            <label>CloseServiceAppointment</label>
+        </rules>
+    </decisions>
+    <description>IST After Case Upsert Copy to run on record update
+Enquirer type
+
+
+{!ContactUpdated}
+
+Score only enquiry with contact
+
+I_ST_Activity_Booking
+
+Ask a Question form
+Residency status change
+
+Apex action -Updatecontact
+Check the value change against Contact
+Consult update V2
+Deleted scoring
+LTU360-825 removed IsContactActive,TimeFrameOutcome,StudyInterestOutcome,CampusInterestOutCome,CareerAreaOutcome,
+StudyLevelOutcome,Enquirer,CourseInterestOutcome,CourseAvailabilityOutcome,CheckContact
+
+Removed the Residency Status, Postcode &amp; Activity booking Latest Case created step. The Flow now just has the Service Appointment Completed Status update when related case is closed.22/04/2022`</description>
+    <interviewLabel>IST After Case Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>IST After Case Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Service_Appointment_0</name>
+        <label>Update Service Appointment</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>I_ST_Case__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Scheduled</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>ServiceAppointment</object>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetCaseRecordType</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>EnquiryRecordTypeID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

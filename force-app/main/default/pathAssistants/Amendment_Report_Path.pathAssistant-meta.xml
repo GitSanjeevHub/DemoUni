@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Amendment_Report__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Amendment Report Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;To view the Amendment Report, click on the ‘attachments’ tab and then click on the link to the report to open it.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;To approve the form, click on the ‘approvals’ tab and then the ‘approve’ button.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;To return the form to draft for further review, click on the ‘approvals’ tab, then the ‘reject’ button’ and include your reasons in the comment. This will trigger an email to the SDGR with your comments asking them to follow up with the candidate and / or supervisors to resolve.&lt;/p&gt;</info>
+        <picklistValueName>Chair BGR approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The form has been completed or cancelled.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Form is sitting with the candidate waiting to be submitted for approval.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Candidates: once you have completed the form – including attaching your amendment report – make sure you click on the ‘submit for approval’ button to send the form on to your supervisor.&lt;/p&gt;</info>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The form has been approved by the supervisor, School Director of Graduate Research and Chair of the Board of Graduate Research and is with the GRS for processing. Once the form has been processed, if all required documentation has been received the GRS will send a link to the candidate to upload the final version of their thesis / examinable works to the Repository.&lt;/p&gt;</info>
+        <picklistValueName>GRS Processing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;To view the Amendment Report, click on the ‘attachments’ tab and then click on the link to the report to open it.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;To approve the form, click on the ‘approvals’ tab and then the ‘approve’ button.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;To send the form back to the candidate to make changes, click on the ‘approvals’ tab, then the ‘reject’ button’ and include your reasons in the comment. &lt;/p&gt;</info>
+        <picklistValueName>SDGR approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;To view the Amendment Report, click on the ‘attachments’ tab and then click on the link to the report to open it.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;To approve the form, click on the ‘approvals’ tab and then the ‘approve’ button.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;To send the form back to the candidate to make changes, click on the ‘approvals’ tab, then the ‘reject’ button’ and include your reasons in the comment. &lt;/p&gt;</info>
+        <picklistValueName>Supervisor approval</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

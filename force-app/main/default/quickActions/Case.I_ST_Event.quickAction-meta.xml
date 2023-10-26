@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>Description</field>
+        <formula>Case.CaseNumber  &amp; &quot; requested by &quot; &amp;  Case.Contact.FirstName  &amp; &quot; &quot; &amp; Case.Contact.LastName &amp; IF(   ISBLANK(Case.I_ST_Expected_Attendance_Numbers__c)  ,&quot;&quot;,&quot; for &quot; &amp; text(Case.I_ST_Expected_Attendance_Numbers__c)  &amp; &quot; people&quot;) &amp; IF(TEXT(Case.I_ST_Preferred_Location__c) &lt;&gt;&apos;La Trobe Campus&apos;,  IF(TEXT(Case.I_ST_Preferred_Location__c) &lt;&gt;&apos;Your School&apos;, &apos; Online&apos;, &apos; at &apos; &amp;  Case.Account.Name ) ,   &quot; at &quot; &amp; TEXT(Case.I_ST_La_Trobe_campus__c) ) &amp;  IF(TEXT(Case.I_ST_Preferred_Location__c) &lt;&gt;&apos;La Trobe Campus&apos;, &apos;&apos;, &apos; (&apos;&amp;TEXT(Case.I_ST_Preferred_Location__c) &amp; &apos;)&apos;)&amp;&apos;.&apos;
+
+&amp;BR()&amp;BR() &amp;  $Setup.URL_Variable__c.I_RS_Internal_Base_URL__c&amp;&apos;/&apos; &amp;Case.Id  &amp;BR()</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>EndDateTime</field>
+        <formula>Case.I_ST_Proposed_End_Date_and_Time__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>IsReminderSet</field>
+        <formula>TRUE</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>StartDateTime</field>
+        <formula>Case.I_ST_Proposed_Start_Date_and_Time__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Subject</field>
+        <formula>TEXT(Case.I_ST_Activity__c) &amp; &quot; at &quot; &amp;  Case.Account.Name</formula>
+    </fieldOverrides>
+    <label>Add Event</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Subject</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Description</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>StartDateTime</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>OwnerId</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Attendees</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>true</emptySpace>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>true</emptySpace>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>EndDateTime</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>WhatId</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <targetObject>Event</targetObject>
+    <targetParentField>What</targetParentField>
+    <type>Create</type>
+</QuickAction>

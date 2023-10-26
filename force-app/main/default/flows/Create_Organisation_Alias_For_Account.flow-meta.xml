@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Get_Record_Type_Name</name>
+        <label>Get Record Type Name</label>
+        <locationX>180</locationX>
+        <locationY>350</locationY>
+        <actionName>FlowGetRecordTypeNameById</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Is_valid_record_type</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>objectName</name>
+            <value>
+                <stringValue>Account</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordTypeId</name>
+            <value>
+                <elementReference>$Record.RecordTypeId</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <name>Is_valid_record_type</name>
+        <label>Is valid record type</label>
+        <locationX>353</locationX>
+        <locationY>356</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_valid_record_type_Yes</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>I_ST_Educational_Institution</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>I_RS_External_Organisation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>I_RS_La_Trobe_Organisation_Unit</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Query_Existing_Organisation_Alias</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check if the Organisation Alias exists with the Account name</description>
+        <name>Organisation_Alias_Exists</name>
+        <label>Organisation Alias Exists</label>
+        <locationX>735</locationX>
+        <locationY>345</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Does_not_exist</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Query_Existing_Organisation_Alias</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_New_Organisation_Alias_For_the_Account</targetReference>
+            </connector>
+            <label>Does not exist</label>
+        </rules>
+    </decisions>
+    <description>This Flow creates the Organisation Alias for all the Accounts (irrespective of record type) when a new Account is created or edited (only if an Organisation Alias for that account name does not exists)</description>
+    <interviewLabel>Create Organisation Alias For Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Organisation Alias For Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Create New Organisation Alias For the Account</description>
+        <name>Create_New_Organisation_Alias_For_the_Account</name>
+        <label>Create New Organisation Alias For the Account</label>
+        <locationX>981</locationX>
+        <locationY>347</locationY>
+        <inputAssignments>
+            <field>I_RS_Organisation_Name_Long__c</field>
+            <value>
+                <elementReference>$Record.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>I_RS_Organisation__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Organisation_Alias__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Query Existing Organisation Alias that match the Organisation name.</description>
+        <name>Query_Existing_Organisation_Alias</name>
+        <label>Query Existing Organisation Alias</label>
+        <locationX>558</locationX>
+        <locationY>351</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Organisation_Alias_Exists</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>I_RS_Organisation_Name_Long__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Name</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Organisation_Alias__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>I_RS_Organisation_Name_Long__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>49</locationX>
+        <locationY>51</locationY>
+        <connector>
+            <targetReference>Get_Record_Type_Name</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

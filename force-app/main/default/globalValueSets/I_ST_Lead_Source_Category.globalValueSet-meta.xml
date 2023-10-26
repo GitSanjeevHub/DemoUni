@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Consultation</fullName>
+        <default>false</default>
+        <label>Consultation</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Event</fullName>
+        <default>false</default>
+        <label>Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Live Chat</fullName>
+        <default>false</default>
+        <label>Live Chat</label>
+    </customValue>
+    <customValue>
+        <fullName>Loaded from list</fullName>
+        <default>false</default>
+        <label>Loaded from list</label>
+    </customValue>
+    <customValue>
+        <fullName>Other system</fullName>
+        <default>false</default>
+        <label>Other system</label>
+    </customValue>
+    <customValue>
+        <fullName>Phone Call</fullName>
+        <default>false</default>
+        <label>Phone Call</label>
+    </customValue>
+    <customValue>
+        <fullName>Physical</fullName>
+        <default>false</default>
+        <label>Physical</label>
+    </customValue>
+    <customValue>
+        <fullName>Schools/account</fullName>
+        <default>false</default>
+        <label>Schools/account</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Media</fullName>
+        <default>false</default>
+        <label>Social Media</label>
+    </customValue>
+    <customValue>
+        <fullName>VTAC preference list</fullName>
+        <default>false</default>
+        <label>VTAC preference list</label>
+    </customValue>
+    <customValue>
+        <fullName>Web Form</fullName>
+        <default>false</default>
+        <label>Web Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </customValue>
+    <customValue>
+        <fullName>Migrated</fullName>
+        <default>false</default>
+        <label>Migrated</label>
+    </customValue>
+    <customValue>
+        <fullName>Subscription Sites</fullName>
+        <default>false</default>
+        <label>Subscription Sites</label>
+    </customValue>
+    <customValue>
+        <fullName>SMS</fullName>
+        <default>false</default>
+        <label>SMS</label>
+    </customValue>
+    <customValue>
+        <fullName>QSES</fullName>
+        <default>false</default>
+        <label>QSES</label>
+    </customValue>
+    <customValue>
+        <fullName>Student Ambassador</fullName>
+        <default>false</default>
+        <label>Student Ambassador</label>
+    </customValue>
+    <description>Created for IST-45</description>
+    <masterLabel>I_ST_Lead_Source_Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

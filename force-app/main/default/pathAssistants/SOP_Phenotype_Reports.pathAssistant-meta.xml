@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Ethics_Request__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>SOP/Phenotype Reports</masterLabel>
+    <pathAssistantSteps>
+        <picklistValueName>Assigned for Review</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_RS_SOP_Phenotype_Report</recordTypeName>
+</PathAssistant>

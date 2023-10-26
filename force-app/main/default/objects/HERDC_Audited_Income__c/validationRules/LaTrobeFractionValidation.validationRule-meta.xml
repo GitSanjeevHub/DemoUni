@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LaTrobeFractionValidation</fullName>
+    <active>true</active>
+    <description>2 decimal places numeric, between 0 and 1; this is to default to 1.</description>
+    <errorConditionFormula>OR(
+
+(I_RS_La_Trobe_Fraction__c  &lt; 0.00),
+(I_RS_La_Trobe_Fraction__c  &gt; 1.00)
+
+)</errorConditionFormula>
+    <errorMessage>La Trobe Fraction values can be between 0.00 - 1.00</errorMessage>
+</ValidationRule>

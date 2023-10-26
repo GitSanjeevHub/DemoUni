@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>lt@uni.com</user>
+        </users>
+    </assignments>
+    <capacity>3</capacity>
+    <enableAutoAccept>false</enableAutoAccept>
+    <enableDecline>false</enableDecline>
+    <enableDeclineReason>false</enableDeclineReason>
+    <enableDisconnectSound>true</enableDisconnectSound>
+    <enableRequestSound>true</enableRequestSound>
+    <label>Chat Capacity 3</label>
+</PresenceUserConfig>

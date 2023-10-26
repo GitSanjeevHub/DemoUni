@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Aspire_Flag__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Depicts if the person is an Aspire contact at a Secondary School.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Point of contact for Aspire program.</inlineHelpText>
+    <label>Aspire Representative</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

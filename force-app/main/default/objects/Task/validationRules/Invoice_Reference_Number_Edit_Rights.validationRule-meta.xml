@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Reference_Number_Edit_Rights</fullName>
+    <active>true</active>
+    <description>Only Finance Team can edit the Invoice Reference Number field</description>
+    <errorConditionFormula>(
+ RecordType.DeveloperName = &apos;I_RS_RES_Finance&apos; 
+   ||
+ RecordType.DeveloperName = &apos;I_RS_RES_RO&apos; 
+   ||
+ RecordType.DeveloperName = &apos;I_RS_RES_RO_Finance&apos; 
+  ||
+ RecordType.DeveloperName = &apos;I_RS_Time_Finance&apos;
+  ||
+RecordType.DeveloperName = &apos;Ethics&apos;
+   )
+   &amp;&amp; 
+$UserRole.DeveloperName &lt;&gt; &apos;Finance&apos; 
+   &amp;&amp; 
+OR(
+     AND(ISNEW(),NOT(ISBLANK(I_RS_Invoice_Reference_Number__c))),
+     ISCHANGED( I_RS_Invoice_Reference_Number__c )
+  )</errorConditionFormula>
+    <errorDisplayField>I_RS_Invoice_Reference_Number__c</errorDisplayField>
+    <errorMessage>Only Finance Team can edit the Invoice Reference Number</errorMessage>
+</ValidationRule>

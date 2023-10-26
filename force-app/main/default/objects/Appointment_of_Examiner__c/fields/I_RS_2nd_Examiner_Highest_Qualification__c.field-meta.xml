@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_2nd_Examiner_Highest_Qualification__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>All examiners must normally hold an equivalent degree, or possess equivalent professional experience, to the degree they are examining and be internationally recognised experts in the research area of the thesis.</inlineHelpText>
+    <label>2nd Examiner Highest Qualification</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Configuration</fullName>
+        <default>false</default>
+        <label>Configuration</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Information</fullName>
+        <default>false</default>
+        <label>Information</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated To Vendor</fullName>
+        <default>false</default>
+        <label>Escalated To Vendor</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Add To Backlog</fullName>
+        <default>false</default>
+        <label>Add To Backlog</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>No Action Required</fullName>
+        <default>false</default>
+        <label>No Action Required</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

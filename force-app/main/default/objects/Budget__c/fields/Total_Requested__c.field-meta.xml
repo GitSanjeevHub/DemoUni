@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Requested__c</fullName>
+    <description>Total requested from LTU and external including both in-kind and cash</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total of LTU and external including both in-kind and cash</inlineHelpText>
+    <label>Project Total</label>
+    <summarizedField>Budget_Line_Item__c.I_RS_Amount__c</summarizedField>
+    <summaryForeignKey>Budget_Line_Item__c.I_RS_Budget__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

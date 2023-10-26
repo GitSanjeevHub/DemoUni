@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Event_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Event Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transferred to La Trobe</fullName>
+                <default>false</default>
+                <label>Transferred to La Trobe</label>
+            </value>
+            <value>
+                <fullName>Transferred from La Trobe</fullName>
+                <default>false</default>
+                <label>Transferred from La Trobe</label>
+            </value>
+            <value>
+                <fullName>Transfer of administering organisation to La Trobe</fullName>
+                <default>false</default>
+                <label>Transfer of administering organisation to La Trobe</label>
+            </value>
+            <value>
+                <fullName>Transfer of administering organisation status from La Trobe</fullName>
+                <default>false</default>
+                <label>Transfer of administering organisation status from La Trobe</label>
+            </value>
+            <value>
+                <fullName>Relinquished</fullName>
+                <default>false</default>
+                <label>Relinquished</label>
+            </value>
+            <value>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+                <label>Terminated</label>
+            </value>
+            <value>
+                <fullName>Other Variation</fullName>
+                <default>false</default>
+                <label>Other Variation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

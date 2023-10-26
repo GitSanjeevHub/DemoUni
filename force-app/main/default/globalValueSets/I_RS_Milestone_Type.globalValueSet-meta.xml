@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Raise invoice</fullName>
+        <default>false</default>
+        <label>Raise invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Deliverable</fullName>
+        <default>false</default>
+        <label>Project Deliverable</label>
+    </customValue>
+    <customValue>
+        <fullName>Progress report</fullName>
+        <default>false</default>
+        <label>Progress report</label>
+    </customValue>
+    <customValue>
+        <fullName>Annual Report</fullName>
+        <default>false</default>
+        <label>Annual Report</label>
+    </customValue>
+    <customValue>
+        <fullName>Final report</fullName>
+        <default>false</default>
+        <label>Final report</label>
+    </customValue>
+    <customValue>
+        <fullName>Monitoring</fullName>
+        <default>false</default>
+        <label>Monitoring</label>
+    </customValue>
+    <customValue>
+        <fullName>Approval Conditions</fullName>
+        <default>false</default>
+        <label>Approval Conditions</label>
+    </customValue>
+    <customValue>
+        <fullName>Training and competencies</fullName>
+        <default>false</default>
+        <label>Training and competencies</label>
+    </customValue>
+    <customValue>
+        <fullName>Deliverable due from a sub-contractor/collaborator</fullName>
+        <default>false</default>
+        <label>Deliverable due from a sub-contractor/collaborator</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment due for a sub-contractor/collaborator</fullName>
+        <default>false</default>
+        <label>Payment due for a sub-contractor/collaborator</label>
+    </customValue>
+    <customValue>
+        <fullName>Ethics approval required</fullName>
+        <default>false</default>
+        <label>Ethics approval required</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial acquittal</fullName>
+        <default>false</default>
+        <label>Financial acquittal</label>
+    </customValue>
+    <customValue>
+        <fullName>Expiry/Renewal Submission</fullName>
+        <default>false</default>
+        <label>Expiry/Renewal Submission</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>WBS Closure</fullName>
+        <default>false</default>
+        <label>WBS Closure</label>
+    </customValue>
+    <customValue>
+        <fullName>Project closure</fullName>
+        <default>false</default>
+        <label>Project closure</label>
+    </customValue>
+    <customValue>
+        <fullName>External audit</fullName>
+        <default>false</default>
+        <label>External audit</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial statement</fullName>
+        <default>false</default>
+        <label>Financial statement</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment due without an invoice</fullName>
+        <default>false</default>
+        <label>Payment due without an invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Task</fullName>
+        <default>false</default>
+        <label>Task</label>
+    </customValue>
+    <customValue>
+        <fullName>HEC Approval Required</fullName>
+        <default>false</default>
+        <label>HEC Approval Required</label>
+    </customValue>
+    <customValue>
+        <fullName>AEC Approval Required</fullName>
+        <default>false</default>
+        <label>AEC Approval Required</label>
+    </customValue>
+    <customValue>
+        <fullName>IBC Approval Required</fullName>
+        <default>false</default>
+        <label>IBC Approval Required</label>
+    </customValue>
+    <customValue>
+        <fullName>External Governance Required</fullName>
+        <default>false</default>
+        <label>External Governance Required</label>
+    </customValue>
+    <customValue>
+        <fullName>Deliverable due from a sub-contractor</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Deliverable due from a sub-contractor</label>
+    </customValue>
+    <customValue>
+        <fullName>To issue an invoice</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>To issue an invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Deliverable for a client/funding body</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Deliverable for a client/funding body</label>
+    </customValue>
+    <customValue>
+        <fullName>Ethics report</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ethics report</label>
+    </customValue>
+    <customValue>
+        <fullName>KPI report</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>KPI report</label>
+    </customValue>
+    <customValue>
+        <fullName>Milestones for all grant types of funding opportunity</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Milestones for all grant types of funding opportunity</label>
+    </customValue>
+    <customValue>
+        <fullName>First draft complete</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>First draft complete</label>
+    </customValue>
+    <customValue>
+        <fullName>Peer Review complete</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Peer Review complete</label>
+    </customValue>
+    <customValue>
+        <fullName>Submit to research office</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Submit to research office</label>
+    </customValue>
+    <customValue>
+        <fullName>Approvals attained</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Approvals attained</label>
+    </customValue>
+    <customValue>
+        <fullName>Submitted to funding body</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Submitted to funding body</label>
+    </customValue>
+    <customValue>
+        <fullName>Certified statement</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Certified statement</label>
+    </customValue>
+    <customValue>
+        <fullName>Deliverable and raise Invoice</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Deliverable and raise Invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Deliverable</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Deliverable</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment due for a sub-contractor</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Payment due for a sub-contractor</label>
+    </customValue>
+    <customValue>
+        <fullName>Ethics approval</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ethics approval</label>
+    </customValue>
+    <masterLabel>Milestone Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

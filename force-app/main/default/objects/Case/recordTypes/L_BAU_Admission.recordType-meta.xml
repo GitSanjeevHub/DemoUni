@@ -1,0 +1,1842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_BAU_Admission</fullName>
+    <active>true</active>
+    <businessProcess>Aspire Year 11 Admission</businessProcess>
+    <compactLayoutAssignment>Aspire_11_Admission</compactLayoutAssignment>
+    <description>Aspire Year 11 Admission</description>
+    <label>SACE Admission</label>
+    <picklistValues>
+        <picklist>I_RS_Related_Area__c</picklist>
+        <values>
+            <fullName>Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Activity_Evaluation__c</picklist>
+        <values>
+            <fullName>High Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium Interest</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Activity_Outcome__c</picklist>
+        <values>
+            <fullName>Attended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Consultation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did Not Attend</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Activity__c</picklist>
+        <values>
+            <fullName>Campus Tour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campus talk and tour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drop In Session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workshop</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Campus_Interest__c</picklist>
+        <values>
+            <fullName>Albury-Wodonga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bendigo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Berwick %28Chisholm Institute%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brunswick %28Bouverie%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bundoora %28La Trobe College%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carlton %28Carlton College Sport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chisholm311 %28Chisholm Institute%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>City Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dandenong %28Chisholm Institute%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distance Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Epping %28Melbourne Polytechnic%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frankston %28Chisholm Institute%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Melbourne %28Bundoora%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mildura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Myrtleford %28Alpine Health%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online %28Didasko%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online %28OUA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shepparton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sydney</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Career_Area__c</picklist>
+        <values>
+            <fullName>Accounting And Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ageing And End Of Life Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural And Environmental Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Allied Health And Rehabilitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Big Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business And Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Career Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creative Arts And English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crime And Justice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dentistry and Oral Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historical And Cultural Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Relations And Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Languages And Linguistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linguistics And TESOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing And Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mathematical And Computer Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media%2C Communication And Journalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical And Psychological Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Molecular And Biological Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursing%2C Midwifery And Paramedicine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor And Environmental Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical And Chemical Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning%2C Environment And Sustainability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Politics%2C Philosophy And Economics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychology%2C counselling and social work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Case_Category__c</picklist>
+        <values>
+            <fullName>Aspire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diploma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Award</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pathways</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Postgraduate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undergraduate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Case_Outcome__c</picklist>
+        <values>
+            <fullName>Advanced Standing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Already Applied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applying With Different LTU Course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assisted With Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assisted With Enrolment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attending Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot Provide Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changed Mind%2C Future Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changed Mind%2C Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Course Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Course availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Course closed for applications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Course not available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Student</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declining Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desired Course Not Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enrolled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enrolled%2FGoing to Another Institution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Reasons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Going To Another University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location of Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs More Flexible Study</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Attending Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Sold On Study Yet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Password reset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Circumstances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefer Not to Say</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provided Course advice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred - Single Unit %2F Cross Inst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to Accomodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to TAFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to UniLearn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to Wiley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove From Mailing List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested Further Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requires No Further Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Similar Course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Still Deciding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Systems%2FProcesses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trf To Ask LT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable To Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsuccessful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting On Outcome Other University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting outcome LTU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will Apply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will Book Consultation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will Enroll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will Submit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will accept offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will attend Open day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will provide documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will sit Casper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will sit English test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawing application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Application System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_College__c</picklist>
+        <values>
+            <fullName>Arts%2C Social Sciences %26 Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DVC Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Science%2C Health %26 Engineering</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Enquirer_Type__c</picklist>
+        <values>
+            <fullName>Accrediting Body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Owner %2F Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Careers advisor %2F Careers counsellor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current student %28LTU%29 - Deferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current student %28other%29 - TAFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current students %28LTU%29 - PG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current students %28LTU%29 - UG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current students %28other uni%29 - PG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current students %28other uni%29 - UG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct applicant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry qualified or experienced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International %28inside Australia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International %28outside Australia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mature age %2821%2B%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Principal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recent school leaver %2818-20%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAFE graduate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teacher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University graduate %28LTU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University graduate %28other uni%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year 11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year 12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year 9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Intended_Audience__c</picklist>
+        <values>
+            <fullName>Graduate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Year 12 %E2%80%93 Mature Age</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parents And School Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year 11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year 12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year 9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Intended_Subject_Area__c</picklist>
+        <values>
+            <fullName>Arts%2C Social Sciences and Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aspire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business and Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education and teaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT and engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law and criminology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pathways</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Science</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_La_Trobe_campus__c</picklist>
+        <values>
+            <fullName>Albury-Wodonga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bendigo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Berwick %28Chisholm Institute%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brunswick %28Bouverie%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bundoora %28La Trobe College%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carlton %28Carlton College Sport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chisholm311 %28Chisholm Institute%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>City Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dandenong %28Chisholm Institute%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distance Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Epping %28Melbourne Polytechnic%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frankston %28Chisholm Institute%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Melbourne %28Bundoora%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mildura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Myrtleford %28Alpine Health%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online %28Didasko%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online %28OUA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shepparton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sydney</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Nurture__c</picklist>
+        <values>
+            <fullName>Booked one 1%3A1 Consultation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes %E2%80%93 Call after Easter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes %E2%80%93 Call in October</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Other_University__c</picklist>
+        <values>
+            <fullName>ACU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curtin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deakin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federation Uni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Melbourne University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swinburne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vic Uni</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Outbound_Attempt__c</picklist>
+        <values>
+            <fullName>1st Attempt Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2nd Attempt Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Attempt Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response To Text</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response to Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responded To Text</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responded to Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returned Call</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Outbound_Campaign__c</picklist>
+        <values>
+            <fullName>AWOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumni Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conditional Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents Req</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Flag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Follow up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid Year Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer to Enrol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to another Course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem 1 Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplementary Offers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAFE Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UG Consult Follow Ups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsubmitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VTAC Offer to Accept</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Outbound_Status__c</picklist>
+        <values>
+            <fullName>Answered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Data - International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Data - No Contact Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Data - Wrong Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Called Back After Voicemail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unanswered - No Voicemail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unanswered - Voicemail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Preferred_Location__c</picklist>
+        <values>
+            <fullName>La Trobe Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Your School</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Reasons_For_Outcome__c</picklist>
+        <values>
+            <fullName>Course Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enrolled%2FGoing to Another Institution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Reasons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interested in another La Trobe course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location of Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Circumstances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefer Not to Say</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Similar Course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Systems%2FProcesses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on other preferences</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Residency_Citizenship_Status__c</picklist>
+        <values>
+            <fullName>Australian Citizen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Student Or Temporary Entry Visa Holder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Zealand Citizen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overseas Student Residing Overseas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Resident Of Australia</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Study_Interest__c</picklist>
+        <values>
+            <fullName>Any</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts%2C Social Sciences and Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business and Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education and teaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT and engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law and criminology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Science</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Study_Level__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Postgraduate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undergraduate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Sub_Status__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting School Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting School form and Year 11 results</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Year 11 results</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docs Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Victorian School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received Aspire Year 11 docs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received Community form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review and Submit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsuccessful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Victorian School</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Teaching_Period__c</picklist>
+        <values>
+            <fullName>Online Period 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Period 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Period 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Period 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Period 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Period 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Summer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Winter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_ST_Timeframe_To_Study__c</picklist>
+        <values>
+            <fullName>1-2 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1-3 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2-3 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2B years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3-6 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6-12 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_BAU_Course_Preference_1_Outcome__c</picklist>
+        <values>
+            <fullName>No Value</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer pathway course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer selected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_BAU_VTAC_NON_VTAC__c</picklist>
+        <values>
+            <fullName>NON-VTAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VTAC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Aspire form</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evolve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offline Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Studio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walk In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PotentialLiability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>GC1020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC1040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC1060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5060</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Add To Backlog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated To Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Action Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SLAViolation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Career Advice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Career Outcome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Of Preference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Course Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Course Content</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Student</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entry Requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fee-HELP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HECS-Help</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pathways</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Generated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

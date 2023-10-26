@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Service_Territory_IsGeneric__c</fullName>
+    <externalId>false</externalId>
+    <formula>ServiceTerritory.I_ST_Is_Generic__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Service Territory IsGeneric</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

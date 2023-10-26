@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Confidential__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if this opportunity is confidential to the researcher who identified it (and their managers etc.).</description>
+    <externalId>false</externalId>
+    <label>Confidential</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

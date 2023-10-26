@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WBS_has_LCI</fullName>
+    <active>true</active>
+    <description>Validation to ensure WBS has LCI</description>
+    <errorConditionFormula>NOT(ISPICKVAL( I_RS_WBS_Status__c , &apos;Draft&apos;)) &amp;&amp; ISBLANK( I_RS_Lead_Chief_Investigator__c )</errorConditionFormula>
+    <errorMessage>Please ensure the WBS has Lead Chief Investigator</errorMessage>
+</ValidationRule>

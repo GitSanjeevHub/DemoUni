@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Hide_Appr_Comments_for_Researchers__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>In the &apos;Approval: Show Comments&apos; flow, hide the UI for this particular object. This is currently used on Appointment of Examiners on the researcher portal.</description>
+    <externalId>false</externalId>
+    <label>Hide Approval Comments for Researchers</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

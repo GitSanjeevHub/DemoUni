@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Activity_Booking_Compact</fullName>
+    <fields>I_ST_Activity__c</fields>
+    <fields>Status</fields>
+    <fields>I_ST_Preferred_Location__c</fields>
+    <fields>I_ST_La_Trobe_campus__c</fields>
+    <label>Activity Booking Compact</label>
+</CompactLayout>

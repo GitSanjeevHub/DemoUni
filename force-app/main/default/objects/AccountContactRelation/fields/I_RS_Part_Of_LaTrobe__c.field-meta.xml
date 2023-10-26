@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Part_Of_LaTrobe__c</fullName>
+    <externalId>false</externalId>
+    <formula>Account.I_RS_Part_of_La_Trobe__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Part Of LaTrobe</label>
+    <type>Checkbox</type>
+</CustomField>

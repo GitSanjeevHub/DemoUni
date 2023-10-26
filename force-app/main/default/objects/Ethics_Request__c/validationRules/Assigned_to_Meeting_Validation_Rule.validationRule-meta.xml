@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_to_Meeting_Validation_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(I_RS_Status__c) = &quot;Assigned for Review&quot; &amp;&amp;
+ISBLANK(I_RS_Meeting_Date__c) &amp;&amp; 
+RecordType.DeveloperName &lt;&gt; &quot;Research_Governance_Authorisation&quot;</errorConditionFormula>
+    <errorDisplayField>I_RS_Meeting_Date__c</errorDisplayField>
+    <errorMessage>Please select a meeting date.</errorMessage>
+</ValidationRule>

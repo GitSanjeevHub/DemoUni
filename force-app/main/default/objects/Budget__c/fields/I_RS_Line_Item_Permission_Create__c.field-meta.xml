@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Line_Item_Permission_Create__c</fullName>
+    <description>Whether creating Line Items for the Budget is allowed</description>
+    <externalId>false</externalId>
+    <formula>/*Currently the same as delete, so we can just piggy-back that*/
+
+I_RS_Line_Item_Permission_Delete__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Line Item Permission - Create</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

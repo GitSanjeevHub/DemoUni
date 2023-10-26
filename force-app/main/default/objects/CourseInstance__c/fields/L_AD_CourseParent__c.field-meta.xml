@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_AD_CourseParent__c</fullName>
+    <externalId>false</externalId>
+    <label>Course Parent ID</label>
+    <referenceTo>CourseParent__c</referenceTo>
+    <relationshipLabel>Course Instance</relationshipLabel>
+    <relationshipName>Course_Instance</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Deletion_Blocker_Error_Message__c</fullName>
+    <description>The specific error message to appear if a deletion fails</description>
+    <externalId>false</externalId>
+    <label>Deletion Blocker Error Message</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

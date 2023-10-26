@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_2nd_Examiner_Other_Requirements__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to capture any additional examination requirements e.g. for some joint degrees</inlineHelpText>
+    <label>2nd report received other requirements</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

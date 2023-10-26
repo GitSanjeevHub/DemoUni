@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>10%25</fullName>
+        <default>false</default>
+        <label>10%25</label>
+    </customValue>
+    <customValue>
+        <fullName>12%2E5%25</fullName>
+        <default>false</default>
+        <label>12%2E5%25</label>
+    </customValue>
+    <customValue>
+        <fullName>15%25</fullName>
+        <default>false</default>
+        <label>15%25</label>
+    </customValue>
+    <customValue>
+        <fullName>Sliding Scale from 10 - 12%2E5%25 %28based on targets%29</fullName>
+        <default>false</default>
+        <label>Sliding Scale from 10 - 12%2E5%25 %28based on targets%29</label>
+    </customValue>
+    <customValue>
+        <fullName>Sliding Scale from 10 - 15%25 %28based on targets%29</fullName>
+        <default>false</default>
+        <label>Sliding Scale from 10 - 15%25 %28based on targets%29</label>
+    </customValue>
+    <customValue>
+        <fullName>Sliding Scale from 12%2E5 - 15%25 %28based on targets%29</fullName>
+        <default>false</default>
+        <label>Sliding Scale from 12%2E5 - 15%25 %28based on targets%29</label>
+    </customValue>
+    <customValue>
+        <fullName>Various rates</fullName>
+        <default>false</default>
+        <label>Various rates</label>
+    </customValue>
+    <masterLabel>L_PR_Comission_Rates</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

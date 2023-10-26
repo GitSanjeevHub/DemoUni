@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Approval_Flag__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>this is an internal field (not to be visible for user) used to restrict user to manually sett status to &quot;Approvals&quot;</description>
+    <externalId>false</externalId>
+    <label>Approval Flag</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

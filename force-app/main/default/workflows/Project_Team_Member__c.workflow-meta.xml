@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>EMAIL_Alert_Notify_PTM_on_Addition_to_Project_Proposal</fullName>
+        <description>EMAIL Alert Notify PTM on Addition to Project Proposal</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Team_Member_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/PTM_Email_Notification</template>
+    </alerts>
+    <rules>
+        <fullName>Notify PTM researcher on Addition</fullName>
+        <actions>
+            <name>EMAIL_Alert_Notify_PTM_on_Addition_to_Project_Proposal</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Project_Team_Member__c.I_RS_Team_Member_User__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Project_Team_Member__c.I_RS_Role__c</field>
+            <operation>notEqual</operation>
+            <value>External Researcher,Partner Researcher,Approver,Research Centre Member</value>
+        </criteriaItems>
+        <description>This work flow will trigger email alert to notify researcher when they are added as a team member to a project proposal</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

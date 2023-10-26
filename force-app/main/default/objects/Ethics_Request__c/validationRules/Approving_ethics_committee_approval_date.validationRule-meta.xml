@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approving_ethics_committee_approval_date</fullName>
+    <active>true</active>
+    <description>Approving ethics committee approval date must be before the current date</description>
+    <errorConditionFormula>NOT(ISBLANK(I_RS_Approving_Ethics_Committee_Approval__c)) &amp;&amp;
+I_RS_Approving_Ethics_Committee_Approval__c &gt; TODAY()</errorConditionFormula>
+    <errorDisplayField>I_RS_Approving_Ethics_Committee_Approval__c</errorDisplayField>
+    <errorMessage>Date must be before or equal to the current date.</errorMessage>
+</ValidationRule>

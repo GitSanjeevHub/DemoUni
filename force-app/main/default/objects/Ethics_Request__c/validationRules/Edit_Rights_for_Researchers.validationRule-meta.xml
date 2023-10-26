@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Rights_for_Researchers</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+    ($User.I_RS_Is_Researcher_User__c = &apos;1&apos;),
+
+    OR(
+
+        AND(
+            ISCHANGED(I_RS_Status__c),
+            NOT(
+                AND(
+                    (TEXT(PRIORVALUE(I_RS_Status__c)) = &apos;Draft&apos;),
+                    (TEXT(I_RS_Status__c) = &apos;Review by Research Office&apos;)
+                )
+            )
+        ),
+
+        AND(
+            (RecordType.DeveloperName = &apos;Animal_Ethics_Application&apos;),
+            NOT(ISCHANGED(I_RS_Status__c)),
+            (TEXT(I_RS_Status__c) != &apos;Draft&apos;),
+            OR(
+                ISCHANGED(I_RS_Ethics_Application_Title__c),
+                ISCHANGED(I_RS_AEC_Ethics_Application_Type__c),
+                ISCHANGED(I_RS_Species__c),
+                ISCHANGED(Name)
+            )
+        ),
+
+        AND(
+            (RecordType.DeveloperName = &apos;Human_Ethics_Application&apos;),
+            NOT(ISCHANGED(I_RS_Status__c)),
+            (TEXT(I_RS_Status__c) != &apos;Draft&apos;),
+            OR(
+                ISCHANGED(I_RS_Ethics_Review_Committee__c),
+                ISCHANGED(I_RS_Ethics_Application_Title__c),
+                ISCHANGED(Name)
+            )
+        ),
+
+        AND(
+            (RecordType.DeveloperName = &apos;Research_Governance_Authorisation&apos;),
+            NOT(ISCHANGED(I_RS_Status__c)),
+            (TEXT(I_RS_Status__c) != &apos;Draft&apos;),
+            OR(
+                ISCHANGED(I_RS_Ethics_Application_Title__c),
+                ISCHANGED(I_RS_Approving_Organisation__c),
+                ISCHANGED(I_RS_Site_where_Research_is_Conducted__c),
+                ISCHANGED(I_RS_Ethics_Application_Approval_Date__c),
+                ISCHANGED(I_RS_Ethics_Application_Expiry_Date__c),
+                ISCHANGED(Name)
+            )
+        ),
+
+        AND(
+            (RecordType.DeveloperName = &apos;Biosafety_Ethics_Application&apos;),
+            NOT(ISCHANGED(I_RS_Status__c)),
+            (TEXT(I_RS_Status__c) != &apos;Draft&apos;),
+            OR(
+                ISCHANGED(I_RS_Ethics_Application_Title__c),
+                ISCHANGED(I_RS_Ethics_Review_Committee__c),
+                ISCHANGED(I_RS_IBC_Application_Type__c),
+                ISCHANGED(I_RS_IBC_Application_Clearance_Level__c),
+                ISCHANGED(Name)
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Please contact Research Office if this record needs to be changed</errorMessage>
+</ValidationRule>

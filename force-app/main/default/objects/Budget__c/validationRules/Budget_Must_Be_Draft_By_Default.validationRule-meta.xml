@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Must_Be_Draft_By_Default</fullName>
+    <active>true</active>
+    <description>When inserting a Budget, the status must be Draft. Only in updates can it be anything else.</description>
+    <errorConditionFormula>ISNEW() &amp;&amp; TEXT(I_RS_Status__c) != &quot;Draft&quot;</errorConditionFormula>
+    <errorDisplayField>I_RS_Status__c</errorDisplayField>
+    <errorMessage>A new Budget must start with a Status of &apos;Draft&apos;.</errorMessage>
+</ValidationRule>

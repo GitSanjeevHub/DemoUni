@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Opportunities_with_no_Proposals</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Proposal_to_be_Submitted_By__c</columns>
+    <columns>I_RS_Organisation_Name__c</columns>
+    <columns>I_RS_Research_Office_Contact__c</columns>
+    <columns>I_RS_Submission_Date__c</columns>
+    <columns>I_RS_Research_Office_Due_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Research_Opportunity__c.I_RS_Funding_Opportunity</value>
+    </filters>
+    <filters>
+        <field>I_RS_Type_of_Opportunity__c</field>
+        <operation>equals</operation>
+        <value>Request for Proposal,Tender,Request for quote,Expression of interest</value>
+    </filters>
+    <filters>
+        <field>I_RS_Number_of_Project_Proposals__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Contract Opportunities with no Proposals</label>
+</ListView>

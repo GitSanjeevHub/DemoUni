@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Project_Proposal__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Consulting Project - Non Research</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;The Research Office is finalising contracts and organising signatures.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Establish Contracts</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Researcher has confirmed completion of the project by actioning the Close Project Milestone as completed and the Research Office Contact co-ordinates the closure of the project including the closure of the WBS.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Project Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Project is in progress.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tip: Use the Chatter function to ask your Research Office Contact questions, share information and discuss project management with the team. Researchers can also allocate Tasks to Team Members. By clicking on the &amp;quot;More&amp;quot; tab on the &amp;quot;Home&amp;quot; page in the Researcher Portal Researchers can access links to many Research Systems including My Grants and Tick@Lab.&lt;/p&gt;</info>
+        <picklistValueName>Project Open</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;The Research Office sets up finalised project information including relevant invoicing and reporting milestones. Once completed, the request of the creation of a WBS will be actioned by the Research Office, if relevant. When the WBS is created Researchers will receive an email notification. Researchers will also be notified of upcoming milestones including calendar entries, emails and milestones and tasks in the Researcher Portal. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Setup</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>L_BAU_Consulting_Project_Non_Research</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_3rd_Examiner_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>3rd report received outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pass with no amendments</fullName>
+                <default>false</default>
+                <label>Pass with no amendments</label>
+            </value>
+            <value>
+                <fullName>Pass with minor amendments</fullName>
+                <default>false</default>
+                <label>Pass with minor amendments</label>
+            </value>
+            <value>
+                <fullName>Pass with major amendments</fullName>
+                <default>false</default>
+                <label>Pass with major amendments</label>
+            </value>
+            <value>
+                <fullName>Deferral – no alternate recommended</fullName>
+                <default>false</default>
+                <label>Deferral – no alternate recommended</label>
+            </value>
+            <value>
+                <fullName>Deferral – masters standard</fullName>
+                <default>false</default>
+                <label>Deferral – masters standard</label>
+            </value>
+            <value>
+                <fullName>Pass after re-examination</fullName>
+                <default>false</default>
+                <label>Pass after re-examination</label>
+            </value>
+            <value>
+                <fullName>Do not award doctorate - masters standard</fullName>
+                <default>false</default>
+                <label>Do not award doctorate - masters standard</label>
+            </value>
+            <value>
+                <fullName>Do not award the degree (fail)</fullName>
+                <default>false</default>
+                <label>Do not award the degree (fail)</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

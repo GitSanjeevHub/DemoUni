@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overriding_Start_Date_Cannot_Be_Removed</fullName>
+    <active>true</active>
+    <description>If Overriding Start Date is present, it cannot be deleted.</description>
+    <errorConditionFormula>AND(
+     NOT(ISCHANGED(L_AD_Intake_Period__c)),
+     ISCHANGED(L_AD_Overriding_Start_Date__c),
+     NOT(ISBLANK(PRIORVALUE(L_AD_Overriding_Start_Date__c)))
+    )</errorConditionFormula>
+    <errorDisplayField>L_AD_Overriding_Start_Date__c</errorDisplayField>
+    <errorMessage>Overriding Start Date cannot be edited once populated..</errorMessage>
+</ValidationRule>

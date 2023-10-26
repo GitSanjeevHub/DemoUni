@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>PRIME Researcher Portal</container>
+    <containerType>Network</containerType>
+    <label>Committee Member Navigation</label>
+    <navigationMenuItem>
+        <label>Funding Opportunities</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Recently Viewed</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>Research_Opportunity__c</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Search All Opportunities</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/search-research-opportunities</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Opportunities Recommended to Me</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/opportunities-recommended-to-me</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Saved Search Results</label>
+                <position>3</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/my-relevant-opportunities</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Project Proposals</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>+ New Project Proposal</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>New_Project_Proposal</target>
+                <type>GlobalAction</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Project Proposals</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>Project_Proposal__c</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Project and Agreements</label>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>+ Agreement or Variation Request</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>New_Contract_or_Variation_Request</target>
+                <type>GlobalAction</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Active Projects</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/funded-projects</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <defaultListViewId>All_Contracts</defaultListViewId>
+                <label>Agreements</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>Contract__c</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Financials (My Grants)</label>
+                <position>3</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>https://app.powerbi.com/groups/me/apps/76dd7a63-1adb-421c-8a2c-000e9e1b971b/?chromeless=1</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Tasks</label>
+        <position>4</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/my-tasks</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>My La Trobe Affiliations</label>
+        <position>5</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/add-research-institute</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Ethics Applications</label>
+        <position>6</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>+ New Animal Ethics Application</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>New_Animal_Ethics_Request</target>
+                <type>GlobalAction</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>+ New Human Ethics Application</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>New_Human_Ethics_Request</target>
+                <type>GlobalAction</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>+ New IBC Application</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>New_IBC_Ethics_Request</target>
+                <type>GlobalAction</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>+ New Externally Approved Application</label>
+                <position>3</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>New_Research_Governance_Ethics_Request</target>
+                <type>GlobalAction</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <defaultListViewId>All_Ethics_Requests</defaultListViewId>
+                <label>All Ethics Applications</label>
+                <position>4</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>Ethics_Request__c</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <defaultListViewId>All_Meeting_Dates</defaultListViewId>
+                <label>Meeting Dates</label>
+                <position>5</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>Meeting_Date__c</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Power BI Reports</label>
+        <position>7</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Funding Pipeline</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/funding-pipeline</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Milestones</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/milestones-report</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Project List</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/project-list</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Ethics Report</label>
+                <position>3</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/ethics-report</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>External Links</label>
+        <position>8</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Financials (My Grants)</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>https://app.powerbi.com/groups/me/apps/76dd7a63-1adb-421c-8a2c-000e9e1b971b/?chromeless=1</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Tick@Lab</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>https://latrobe.a-tune.com/tickatlab/</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Ask Finance</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>https://latrobe.service-now.com/fin?id=sc_home</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>My Publications</label>
+                <position>3</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>https://mypublications.latrobe.edu.au/login.html?returnurl=default.html</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Research Professional</label>
+                <position>4</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>https://www.researchprofessional.com/0/rr/home</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>MyHR</label>
+                <position>5</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>http://www.latrobe.edu.au/myhr</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Research Scholarships</label>
+                <position>6</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>https://intranet.latrobe.edu.au/colleges-and-divisions/grs/research-scholarships</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Research Infrastructure</label>
+                <position>7</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>https://intranet.latrobe.edu.au/research/research-infrastructure-equipment-and-platforms</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>FigShare</label>
+                <position>8</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>https://latrobe.figshare.com</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <defaultListViewId>AllReports</defaultListViewId>
+        <label>Reports</label>
+        <position>9</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Report</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <defaultListViewId>AllOpportunities</defaultListViewId>
+        <label>Industry Engagement Opportunities</label>
+        <position>10</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Opportunity</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Cases</label>
+        <position>11</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Raise a Case</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>NewCase</target>
+                <type>GlobalAction</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <defaultListViewId>MyCases</defaultListViewId>
+                <label>My Cases</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>Case</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+</NavigationMenu>

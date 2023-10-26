@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmployeeUserSettings xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <emailEncoding>UTF-8</emailEncoding>
+    <profile>MarketingProfile</profile>
+    <usernameSuffix>.prime</usernameSuffix>
+</EmployeeUserSettings>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_PublicationsLink__c</fullName>
+    <description>Publications Link</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK($Setup.Symplectic_Url__c.Symplectic_Url_Front__c &amp;Name &amp;$Setup.Symplectic_Url__c.Symplectic_URL_Back__c ,&quot;Publications Link&quot;, &quot;_self&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Publications Link</inlineHelpText>
+    <label>PublicationsLink</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

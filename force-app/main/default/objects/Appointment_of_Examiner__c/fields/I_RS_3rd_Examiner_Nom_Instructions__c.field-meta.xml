@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_3rd_Examiner_Nom_Instructions__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;While we ask you to list which examiner you would prefer to be the reserve, you should not communicate who you are nominating as the reserve to any of the nominees. The final decision on examiner order rests with the PVC and the GRS will inform the reserve examiner accordingly.&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>3rd Examiner Nomination Instructions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

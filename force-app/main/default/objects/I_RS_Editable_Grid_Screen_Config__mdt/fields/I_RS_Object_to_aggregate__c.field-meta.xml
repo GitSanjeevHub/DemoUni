@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Object_to_aggregate__c</fullName>
+    <description>The specific Code object being aggregated</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>The specific Code object being aggregated</inlineHelpText>
+    <label>Object to aggregate</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Classification_Code__c</fullName>
+                <default>true</default>
+                <label>Classification_Code__c</label>
+            </value>
+            <value>
+                <fullName>Research_Output_Classification_Code__c</fullName>
+                <default>false</default>
+                <label>Research_Output_Classification_Code__c</label>
+            </value>
+            <value>
+                <fullName>ERA_Classification_Code__c</fullName>
+                <default>false</default>
+                <label>ERA_Classification_Code__c</label>
+            </value>
+            <value>
+                <fullName>Researcher_Classification_Code__c</fullName>
+                <default>false</default>
+                <label>Researcher_Classification_Code__c</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

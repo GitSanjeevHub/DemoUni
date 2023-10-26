@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <description>Set Status from &apos;Draft&apos; to &apos;Approved&apos;</description>
+    <interviewLabel>Approve Course Instance Child Records with Status Draft {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Approve Course Instance Child Records with Status Draft</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordUpdates>
+        <description>Update Availabilities with Status Draft to Approved</description>
+        <name>Update_Availabilities_with_Status_Draft</name>
+        <label>Update Availabilities with Status Draft</label>
+        <locationX>186</locationX>
+        <locationY>597</locationY>
+        <connector>
+            <targetReference>Final_Message</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Message</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>L_AD_Course_Availability_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Draft</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>L_AD_CourseInstance__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>L_AD_Course_Availability_Status__c</field>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </inputAssignments>
+        <object>CourseAvailability__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update VTAC Records with Status=&apos;Draft&apos; to &apos;Approved&apos;</description>
+        <name>Update_VTAC_Records_with_Status_Draft</name>
+        <label>Update VTAC Records with Status=&apos;Draft&apos;</label>
+        <locationX>186</locationX>
+        <locationY>363</locationY>
+        <connector>
+            <targetReference>Update_Availabilities_with_Status_Draft</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Message</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>L_AD_VTAC_Code_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Draft</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>L_AD_CourseInstance__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>L_AD_VTAC_Code_Status__c</field>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </inputAssignments>
+        <object>VTACCourseCode__c</object>
+    </recordUpdates>
+    <runInMode>DefaultMode</runInMode>
+    <screens>
+        <description>Error Message</description>
+        <name>Error_Message</name>
+        <label>Error Message</label>
+        <locationX>417</locationX>
+        <locationY>436</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Disp_Error_1</name>
+            <fieldText>&lt;p&gt;There has been an error. Please contact your system administrator.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!$Flow.CurrentRecord}&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!$Flow.CurrentDateTime}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;{!$Flow.FaultMessage} &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Final_Message</name>
+        <label>Final Message</label>
+        <locationX>419</locationX>
+        <locationY>605</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>DISP_TXT2</name>
+            <fieldText>&lt;p&gt;Records with Status = &apos;Draft&apos; has been updated. Click Finish to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>60</locationX>
+        <locationY>186</locationY>
+        <connector>
+            <targetReference>Update_VTAC_Records_with_Status_Draft</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

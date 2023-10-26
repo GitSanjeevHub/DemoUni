@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Preferred_Channel_of_Communication__c</fullName>
+    <description>Depicts preferred Channel of Communication</description>
+    <externalId>false</externalId>
+    <label>Preferred Channel of Communication</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>I_ST_Preferred_Channel_Communication</valueSetName>
+    </valueSet>
+</CustomField>

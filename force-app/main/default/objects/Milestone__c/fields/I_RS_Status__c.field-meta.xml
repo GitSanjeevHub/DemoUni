@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Planned</fullName>
+                <default>true</default>
+                <label>Planned</label>
+            </value>
+            <value>
+                <fullName>On Target</fullName>
+                <default>false</default>
+                <label>On Target</label>
+            </value>
+            <value>
+                <fullName>Completed / Agreed by Researcher</fullName>
+                <default>false</default>
+                <label>Completed / Agreed by Researcher</label>
+            </value>
+            <value>
+                <fullName>Missed</fullName>
+                <default>false</default>
+                <label>Missed</label>
+            </value>
+            <value>
+                <fullName>Possibly Won’t Meet the Milestone</fullName>
+                <default>false</default>
+                <label>Possibly Won’t Meet the Milestone</label>
+            </value>
+            <value>
+                <fullName>Removed</fullName>
+                <default>false</default>
+                <label>Removed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

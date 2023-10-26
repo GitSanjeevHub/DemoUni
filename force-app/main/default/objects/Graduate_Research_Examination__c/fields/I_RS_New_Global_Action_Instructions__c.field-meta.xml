@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_New_Global_Action_Instructions__c</fullName>
+    <defaultValue>&quot;This will create a new Graduate Research Examination record in your name. From this record, you can:&quot;+BR()+BR()+
+
+&quot;- Track the progress of your examination&quot; +BR()+
+&quot;- Submit your examination forms, such as your Notice of Intention to Submit form&quot; +BR()+BR()+
+
+&quot;Supervisors cannot create a Graduate Research Examination record on behalf of their candidate. If your candidate cannot create the record themselves, please contact exams.grs@latrobe.edu.au.&quot; +BR()+BR()</defaultValue>
+    <externalId>false</externalId>
+    <label>New Graduate Research Examination</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_AD_Intake_Period_End_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>L_AD_Intake_Period__r.L_AD_End_Date__c</formula>
+    <label>Intake Period End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Review_Date__c</fullName>
+    <description>refer for IST-100</description>
+    <externalId>false</externalId>
+    <formula>(LastPublishedDate +  I_ST_Review_After_days__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Review Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

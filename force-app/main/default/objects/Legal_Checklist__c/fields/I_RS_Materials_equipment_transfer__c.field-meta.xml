@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Materials_equipment_transfer__c</fullName>
+    <externalId>false</externalId>
+    <label>Materials/Equipment Transfer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transferring from LTU</fullName>
+                <default>false</default>
+                <label>Transferring from LTU</label>
+            </value>
+            <value>
+                <fullName>Transferring to LTU only</fullName>
+                <default>false</default>
+                <label>Transferring to LTU only</label>
+            </value>
+            <value>
+                <fullName>None to be transferred</fullName>
+                <default>false</default>
+                <label>None to be transferred</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

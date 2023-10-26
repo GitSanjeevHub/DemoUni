@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duplicate_Principal_Investigator</fullName>
+    <active>true</active>
+    <errorConditionFormula>/*New open PI Personnel*/
+AND(
+   ISNEW(),
+
+   /*Is an open PI*/
+   TEXT(I_RS_Role__c) = &apos;Principal Investigator&apos; &amp;&amp; ISBLANK(I_RS_End_Date__c),
+
+   /*Pre-existing open PIs*/
+   I_RS_Ethics_Request__r.I_RS_Principal_Investigator_Count__c  &gt;= 1
+)
+
+||
+
+/*Updated to subsequently be an open PI Personnel*/
+AND(
+    NOT(ISNEW()),
+
+    /*Key fields have changed*/
+    ISCHANGED(I_RS_Role__c) || ISCHANGED(I_RS_End_Date__c),
+ 
+    /*Is an open PI*/
+    TEXT(I_RS_Role__c) = &apos;Principal Investigator&apos; &amp;&amp; ISBLANK(I_RS_End_Date__c),
+
+    /*Pre-existing open PIs*/
+    I_RS_Ethics_Request__r.I_RS_Principal_Investigator_Count__c  &gt;= 1
+)</errorConditionFormula>
+    <errorMessage>There can only be one (1) active Principal Investigator in an Ethics Request. Please update the record to be able to proceed.</errorMessage>
+</ValidationRule>

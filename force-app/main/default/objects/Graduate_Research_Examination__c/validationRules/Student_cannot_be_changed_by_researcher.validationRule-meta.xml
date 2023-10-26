@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_cannot_be_changed_by_researcher</fullName>
+    <active>true</active>
+    <description>Only back-office or admins can edit the Student field. We are using a validation rule because the field is Master/Detail, so cannot be made read-only on the layout level like the other Contact lookups are.</description>
+    <errorConditionFormula>$User.I_RS_Is_Researcher_User__c = &quot;1&quot; &amp;&amp;
+
+ISCHANGED(I_RS_Student__c)</errorConditionFormula>
+    <errorDisplayField>I_RS_Student__c</errorDisplayField>
+    <errorMessage>This field is read-only and cannot be changed</errorMessage>
+</ValidationRule>

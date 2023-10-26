@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_High_School_Student</fullName>
+    <columns>NAME</columns>
+    <columns>I_ST_Contact__c</columns>
+    <columns>I_ST_Enquirer_Type__c</columns>
+    <columns>I_ST_Expected_Year_Of_Completion__c</columns>
+    <columns>I_ST_Account__c</columns>
+    <columns>I_ST_VTAC_Application_Category__c</columns>
+    <columns>I_ST_VTAC_Applicant_Category_Description__c</columns>
+    <columns>I_ST_VTAC_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>I_ST_Account__c</field>
+        <operation>equals</operation>
+        <value>ALBERT PARK COllege</value>
+    </filters>
+    <label>Current High School Student</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Media_Marketing</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Membership_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Membership Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>I_RS_Ethics_Review_Committee__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Category A (Veterinarian)</fullName>
+                <default>false</default>
+                <label>Category A (Veterinarian)</label>
+            </value>
+            <value>
+                <fullName>Category B (Current Research Experience)</fullName>
+                <default>false</default>
+                <label>Category B (Current Research Experience)</label>
+            </value>
+            <value>
+                <fullName>Category C (Animal Welfare)</fullName>
+                <default>false</default>
+                <label>Category C (Animal Welfare)</label>
+            </value>
+            <value>
+                <fullName>Category D (Lay person)</fullName>
+                <default>false</default>
+                <label>Category D (Lay person)</label>
+            </value>
+            <value>
+                <fullName>Chair</fullName>
+                <default>false</default>
+                <label>Chair</label>
+            </value>
+            <value>
+                <fullName>Current Research Experience</fullName>
+                <default>false</default>
+                <label>Current Research Experience</label>
+            </value>
+            <value>
+                <fullName>Deputy Chair</fullName>
+                <default>false</default>
+                <label>Deputy Chair</label>
+            </value>
+            <value>
+                <fullName>Ex-officio</fullName>
+                <default>false</default>
+                <label>Ex-officio</label>
+            </value>
+            <value>
+                <fullName>Independent</fullName>
+                <default>false</default>
+                <label>Independent</label>
+            </value>
+            <value>
+                <fullName>Lawyer</fullName>
+                <default>false</default>
+                <label>Lawyer</label>
+            </value>
+            <value>
+                <fullName>Lay person</fullName>
+                <default>false</default>
+                <label>Lay person</label>
+            </value>
+            <value>
+                <fullName>Pastoral Care</fullName>
+                <default>false</default>
+                <label>Pastoral Care</label>
+            </value>
+            <value>
+                <fullName>Professional Care</fullName>
+                <default>false</default>
+                <label>Professional Care</label>
+            </value>
+            <value>
+                <fullName>Subject Matter Expert</fullName>
+                <default>false</default>
+                <label>Subject Matter Expert</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>AEC</controllingFieldValue>
+            <valueName>Category A (Veterinarian)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AEC</controllingFieldValue>
+            <valueName>Category B (Current Research Experience)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AEC</controllingFieldValue>
+            <valueName>Category C (Animal Welfare)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AEC</controllingFieldValue>
+            <valueName>Category D (Lay person)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AEC</controllingFieldValue>
+            <controllingFieldValue>HREC A</controllingFieldValue>
+            <controllingFieldValue>HREC B</controllingFieldValue>
+            <controllingFieldValue>IBC</controllingFieldValue>
+            <controllingFieldValue>Low Risk</controllingFieldValue>
+            <valueName>Chair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AEC</controllingFieldValue>
+            <controllingFieldValue>HREC A</controllingFieldValue>
+            <controllingFieldValue>HREC B</controllingFieldValue>
+            <controllingFieldValue>IBC</controllingFieldValue>
+            <controllingFieldValue>Low Risk</controllingFieldValue>
+            <valueName>Deputy Chair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AEC</controllingFieldValue>
+            <controllingFieldValue>IBC</controllingFieldValue>
+            <valueName>Ex-officio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HREC A</controllingFieldValue>
+            <controllingFieldValue>HREC B</controllingFieldValue>
+            <controllingFieldValue>Low Risk</controllingFieldValue>
+            <valueName>Current Research Experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HREC A</controllingFieldValue>
+            <controllingFieldValue>HREC B</controllingFieldValue>
+            <controllingFieldValue>Low Risk</controllingFieldValue>
+            <valueName>Lawyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HREC A</controllingFieldValue>
+            <controllingFieldValue>HREC B</controllingFieldValue>
+            <controllingFieldValue>Low Risk</controllingFieldValue>
+            <valueName>Lay person</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HREC A</controllingFieldValue>
+            <controllingFieldValue>HREC B</controllingFieldValue>
+            <controllingFieldValue>Low Risk</controllingFieldValue>
+            <valueName>Pastoral Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HREC A</controllingFieldValue>
+            <controllingFieldValue>HREC B</controllingFieldValue>
+            <controllingFieldValue>Low Risk</controllingFieldValue>
+            <valueName>Professional Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IBC</controllingFieldValue>
+            <valueName>Independent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IBC</controllingFieldValue>
+            <valueName>Subject Matter Expert</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

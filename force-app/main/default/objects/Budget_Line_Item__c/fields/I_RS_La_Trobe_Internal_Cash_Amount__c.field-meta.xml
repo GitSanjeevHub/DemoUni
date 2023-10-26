@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_La_Trobe_Internal_Cash_Amount__c</fullName>
+    <description>Drives the &apos;La Trobe Internal Cash Contribution&apos; summary field on Budget. If LTU Funder and In-Cash, is Total Cost. If non-LTU Funder and In-Cash, is Shortfall. If In-Kind, is zero.</description>
+    <externalId>false</externalId>
+    <formula>/*Entry criteria is In-Cash Salary*/
+IF (!I_RS_In_Kind__c &amp;&amp; RecordType.DeveloperName = &apos;I_RS_Salary&apos;,
+
+/*If In-Cash, get either Salary (LTU Funder) or Shortfall (Non-LTU Funder)*/
+
+IF(I_RS_Part_of_La_Trobe__c,
+I_RS_Amount__c,
+I_RS_Short_Fall__c)
+
+/*If not In-Cash Salary, leave as 0*/
+,
+0
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Drives the &apos;La Trobe Internal Cash Contribution&apos; summary field on Budget. If LTU Funder and In-Cash, is Total Cost. If non-LTU Funder and In-Cash, is Shortfall. If In-Kind, is zero.</inlineHelpText>
+    <label>La Trobe Internal Cash Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>I_RS_Note__c</field>
+        <formula>&quot;You are about to dismiss this notification, once a notification is dismissed it will no longer be accessible. Please click on &apos;Save&apos; if you want to proceed, else hit &apos;Cancel&apos;.&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>I_RS_Status__c</field>
+        <literalValue>Dismissed</literalValue>
+    </fieldOverrides>
+    <label>Dismiss</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Note__c</field>
+                <uiBehavior>Readonly</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <type>Update</type>
+</QuickAction>

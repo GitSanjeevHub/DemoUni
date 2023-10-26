@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_for_New_Contract_Variation</fullName>
+    <active>true</active>
+    <description>Researchers can edit the &apos;New Contract or Variation&apos; records that they own(have created) till they Submit it to the Research office</description>
+    <errorConditionFormula>$User.I_RS_Is_Researcher_User__c = &apos;1&apos; 
+&amp;&amp;
+OwnerId != $User.Id
+&amp;&amp;
+I_RS_First_Approver__c != $User.Id &amp;&amp; ISCHANGED( Toggle__c )</errorConditionFormula>
+    <errorMessage>You can&apos;t edit a record if you didn&apos;t create it or if it has been submitted to the Research Office.</errorMessage>
+</ValidationRule>

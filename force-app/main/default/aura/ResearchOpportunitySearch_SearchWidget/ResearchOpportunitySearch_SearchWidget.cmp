@@ -1,0 +1,132 @@
+<!--
+ - Created by burnside on 2019-05-15.
+ -->
+
+<aura:component
+        controller="ResearchOpportunitySearchController2"
+        description="Funding Opportunity Search Widget"
+        implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes">
+
+    <aura:attribute name="keywordsToSearch" type="String" />
+    <aura:attribute name="keywordsToExclude" type="String" />
+    <aura:attribute name="filters" type="List" default="[]"/>
+
+    <aura:attribute name="useFilterLogic" type="boolean" default="false"/>
+    <aura:attribute name="filterLogic" type="String" default=""/>
+    <aura:attribute name="filterLogicHelpText" type="String"/>
+
+    <aura:attribute name="label_cardTitle" type="string" default="Refine Search"/>
+    <aura:attribute name="label_baselineFilterCopy" type="string" default="Opportunities whose Submission Date has not elapsed will be displayed."/>
+    <aura:attribute name="label_action_addSearchFilter" type="string" default="Add Search Filter"/>
+    <aura:attribute name="label_action_useFilterLogic" type="string" default="Use Advanced Filter Logic"/>
+    <aura:attribute name="label_action_loadSavedSearch" type="string" default="Load My Saved Search"/>
+    <aura:attribute name="label_action_search" type="string" default="Search"/>
+    <aura:attribute name="label_action_saveSearch" type="string" default="Save Search"/>
+    <aura:attribute name="label_action_deleteSearch" type="string" default="Remove All Filters"/>
+
+    <aura:attribute name="showSearchButton" type="boolean" default="true"/>
+    <aura:attribute name="showLoadSearchButton" type="boolean" default="true"/>
+
+    <aura:attribute name="buttonVariant_saveSearch" type="string" default=""/>
+
+    <aura:registerEvent name="ResearchOpportunitySearch_SearchRequest" type="c:ResearchOpportunitySearch_SearchRequest"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="filterDelete" event="c:ResearchOpportunityList_FilterDelete" action="{!c.handleFilterDelete}"/>
+
+    <lightning:card title="{!v.label_cardTitle}">
+
+        <!--<aura:set attribute="actions">
+            <aura:if isTrue="{!v.showLoadSearchButton}">
+                <lightning:button label="{!v.label_action_loadSavedSearch}" variant="base" onclick="{!c.loadSavedSearchButtonClicked}"/>
+            </aura:if>
+        </aura:set>-->
+
+        <div class="slds-p-around--medium">
+            
+            {!v.label_baselineFilterCopy}
+            <br/>
+            
+            <span onkeypress="{!c.handleKeyDown}" class="slds-size--11-of-12">
+                <lightning:input 
+                    placeholder="Search by keywords - use double-quotes for exact phrase" 
+                    value="{!v.keywordsToSearch}"
+                    />
+
+                <lightning:input 
+                    placeholder="Exclude keywords (optional)" 
+                    value="{!v.keywordsToExclude}"
+                    />
+                <br/><br/>
+            </span>
+
+            <aura:if isTrue="{!v.filters.length}">
+
+                AND<br/><br/>
+
+                <div class="slds-grid slds-wrap">
+
+                    <aura:iteration items="{!v.filters}" var="filter">
+
+                        <c:ResearchOpportunitySearch_LogicCondition filter="{!filter}"/>
+                        <br/><br/>
+
+                    </aura:iteration>
+
+                </div>
+
+               <!-- <aura:set attribute="else">
+                    No search filters specified. All Available Opportunities will be displayed.
+                    <br/>
+                </aura:set>
+            -->
+            </aura:if>
+            <br/>
+
+            <lightning:button label="{!v.label_action_addSearchFilter}" onclick="{!c.addFilterButtonClicked}"/>
+            
+
+            <br/>
+            <br/>
+
+            <aura:if isTrue="{!v.filters.length}">
+
+                <lightning:input
+                    aura:id="filterLogicInput"
+                    label="{!v.label_action_useFilterLogic}"
+                    type="checkbox"
+                    checked="{!v.useFilterLogic}"
+                />
+
+
+            </aura:if>
+
+            <aura:if isTrue="{!and(v.useFilterLogic,v.filters.length)}">
+
+                <lightning:helptext content="{!v.filterLogicHelpText}" class="customIcon"/>
+                <lightning:input label="" value="{!v.filterLogic}" variant="label-hidden"/>
+
+            </aura:if>
+            <br/>
+
+            <div class="slds-clearfix">
+
+                <div class="slds-float_right">
+                    <lightning:button aura:id="saveSearchButton" label="{!v.label_action_saveSearch}" onclick="{!c.saveSearchButtonClicked}"/>
+
+                    <aura:if isTrue="{!v.showSearchButton}">
+                        <lightning:button label="{!v.label_action_search}" variant="brand" onclick="{!c.searchButtonClicked}"/>
+                    </aura:if>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </lightning:card>
+
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+
+</aura:component>

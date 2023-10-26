@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>LABS_SF_AddQuestion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Question</shortDescription>
+        <value>Add Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Anonymous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Anonymous</shortDescription>
+        <value>Anonymous</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Answer_as</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Answer as</shortDescription>
+        <value>Answer as</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Chatter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chatter</shortDescription>
+        <value>Chatter</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Chatter_Link</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chatter Link</shortDescription>
+        <value>Chatter Link</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Community</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Community</shortDescription>
+        <value>Community</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_ContactWithCase</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact with Case</shortDescription>
+        <value>Contact with Case:</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_CurrentSurveys</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Current Surveys</shortDescription>
+        <value>Current Surveys</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Delete_Confirm</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Are you sure you want to delete this survey?</shortDescription>
+        <value>Are you sure you want to delete this survey?</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_Anonymous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link, Anonymous</shortDescription>
+        <value>Email Link, Anonymous</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_w_Contact_Case_Merge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link w/ Contact &amp; Case Merge</shortDescription>
+        <value>Email Link w/ Contact &amp; Case Merge</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_w_Contact_Merge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link w/ Contact Merge</shortDescription>
+        <value>Email Link w/ Contact Merge</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_EnterSurveyName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enter Survey Name</shortDescription>
+        <value>Enter Survey Name</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_External_Please_Create_Site</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For external facing surveys, please create a site first.  You may still create i</shortDescription>
+        <value>For external facing surveys, please create a site first.  You may still create internal surveys without creating a site.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_For_community_assistance_with_Survey_Force</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For community assistance with Survey Force</shortDescription>
+        <value>For community assistance with Survey Force</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Getting_Help</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Help</shortDescription>
+        <value>Getting Help</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_HeaderAndThankYou</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Header and Thank You</shortDescription>
+        <value>Header, Thank You &amp; CSS</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Installation_Guide</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Installation Guide</shortDescription>
+        <value>Installation Guide</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Internal</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Internal</shortDescription>
+        <value>Internal</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_JustContact</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Just Contact</shortDescription>
+        <value>Just Contact</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Learn_More</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Learn More</shortDescription>
+        <value>Learn More</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_MakeANewSurvey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Make A New Survey</shortDescription>
+        <value>Make A New Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_MakeNewSurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Make New Survey</shortDescription>
+        <value>Make New Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Make_a_Sample_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Make a Sample Survey</shortDescription>
+        <value>Make a Sample Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Next_Steps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next Steps</shortDescription>
+        <value>Next Steps</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_PleaseEnterTheList</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please enter the list</shortDescription>
+        <value>Please enter the list of answers/responses in the field below. Each value should be separated by a new line.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Question</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Question</shortDescription>
+        <value>Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required</shortDescription>
+        <value>required</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_RequiredQuestion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required Question</shortDescription>
+        <value>Required Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Resources</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Resources</shortDescription>
+        <value>Resources</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Results</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Results</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SELECTSITE</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SELECT SITE</shortDescription>
+        <value>--SELECT SITE--</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SELECTTYPE</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>--SELECT--</shortDescription>
+        <value>--SELECT--</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Salesforce_Answers</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Salesforce Answers</shortDescription>
+        <value>Salesforce Answers</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SaveOrder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save Order</shortDescription>
+        <value>Save Order</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SelectQuestionType</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Question Type</shortDescription>
+        <value>Select Question Type</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SelectSitetodisplaySurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Site to display Survey</shortDescription>
+        <value>Select Site to display Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Share</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Share</shortDescription>
+        <value>Share</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Share_My_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Share My Survey</shortDescription>
+        <value>Share My Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Sharing_Options</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sharing Options</shortDescription>
+        <value>Sharing Options</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SubmitSurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submit Survey</shortDescription>
+        <value>Submit Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SurveyForceIsOpenSource</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SurveyForceIsOpenSource</shortDescription>
+        <value>Survey Force is Open Source software.  We welcome your issue reports, ideas, documentation, code tweaks and all other participation.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SurveyURLLink</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey URL Link</shortDescription>
+        <value>Survey URL Link</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Force_is_unsupported</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Force is unsupported</shortDescription>
+        <value>Survey Force is unsupported.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Force_on_Github</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Force on Github</shortDescription>
+        <value>Survey Force on Github</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Name_Is_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Name Is Required</shortDescription>
+        <value>Survey Name is Required</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Site_Is_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Site Is Required</shortDescription>
+        <value>Survey Site Is Required</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Submitted_Thank_you</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your survey has been submitted. Thank you for taking our survey.</shortDescription>
+        <value>Your survey has been submitted. Thank you for taking our survey.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_To_submit_ideas_or_issues</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To submit ideas or issues</shortDescription>
+        <value>To submit ideas or issues</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_User_Guide</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>User Guide</shortDescription>
+        <value>User Guide</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_View_Results_In_New_Window</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Results In New Window</shortDescription>
+        <value>View Results In New Window</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_View_Sample_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Sample Survey</shortDescription>
+        <value>View Sample Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Welcome_to_Survey_Force</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Welcome to Survey Force</shortDescription>
+        <value>Welcome to Survey Force</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X1_Create_a_sample_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>1. Create a sample survey by clicking the button below.</shortDescription>
+        <value>1. Create a sample survey by clicking the button below.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X2_External_Setup_Site</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>2. Set up a site if you would like to have external-facing surveys.</shortDescription>
+        <value>2. Set up a site if you would like to have external-facing surveys.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X3_Start_creating_your_first_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>3. Start creating your first survey.</shortDescription>
+        <value>3. Start creating your first survey.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_You_have_already_taken_this_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>You have already taken this survey!</shortDescription>
+        <value>You have already taken this survey!</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Your_next_few_steps_are_easy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your next few steps are easy.</shortDescription>
+        <value>Your next few steps are easy.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_please_visit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>please visit</shortDescription>
+        <value>please visit</value>
+    </labels>
+    <labels>
+        <fullName>Partner_Community_Profile_Label</fullName>
+        <categories>Profile Names</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All researcher profiles</shortDescription>
+        <value>LTU Partner Community User,LTU Partner Community Login User</value>
+    </labels>
+    <labels>
+        <fullName>Project_Proposal_Locked_Statuses</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Proposal Locked Statuses</shortDescription>
+        <value>review contract,approvals,formalise contract,draft contract,review by research office,submission to funding body,submitted,successful,unsuccessful,rejoinders,review by research office,submission to client,negotiating</value>
+    </labels>
+    <labels>
+        <fullName>Project_Team_Member_Unique_Roles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Team Member Unique Roles</shortDescription>
+        <value>Lead Chief Investigator,Overall Lead Chief Investigator</value>
+    </labels>
+    <labels>
+        <fullName>Project_Team_Member_roles_to_skip_overlap_check</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Team Member roles to skip overlap check</shortDescription>
+        <value>Approver,Research Centre Member</value>
+    </labels>
+    <labels>
+        <fullName>RP_Eligibility_Separator</fullName>
+        <categories>research Professional</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RP_Eligibility_Separator</shortDescription>
+        <value>|</value>
+    </labels>
+    <labels>
+        <fullName>RP_PageSize</fullName>
+        <categories>ResearchProfessionalService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RP_PageSize</shortDescription>
+        <value>25</value>
+    </labels>
+    <labels>
+        <fullName>Research_Office_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Research Office Label</shortDescription>
+        <value>By submitting this Training and Assessment Plan, I, the Principal Investigator, declare that
+ - due care has been taken to ensure that the information I have provided is true and correct, and
+ - the information contained in this plan is given on the basis that it remains confidential in accordance with relevant University and statutory requirements.</value>
+    </labels>
+    <labels>
+        <fullName>Task_Deletion_Blocker_Blocked_Profiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task Deletion Blocker - Blocked Profiles</shortDescription>
+        <value>LTU PRIME,LTU Ethics,LTU Industry Engagement,LTU Integration,LTU Partner Community User,LTU Partner Community Login User</value>
+    </labels>
+    <labels>
+        <fullName>Task_Deletion_Blocker_Blocked_Record_Types</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task Deletion Blocker - Blocked Record Types</shortDescription>
+        <value>Ethics,I_RS_RES_Finance,I_RS_RES_RO,I_RS_RES_RO_Finance,I_RS_Time_Finance</value>
+    </labels>
+    <labels>
+        <fullName>Team_Member_Role_for_Email_When_Project_Successful</fullName>
+        <categories>Email recipients for project proposal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Team Member Role for Email When Project Successful</shortDescription>
+        <value>Chief Investigator,Partner Researcher,Student or Graduate Researcher Supervisor</value>
+    </labels>
+    <labels>
+        <fullName>Tech_Backlog_Completed_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tech Backlog Completed Status</shortDescription>
+        <value>Ready to Showcase</value>
+    </labels>
+    <labels>
+        <fullName>Tech_Backlog_Dev_Completed_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tech Backlog Dev Completed Status</shortDescription>
+        <value>Ready for LTU Testing</value>
+    </labels>
+    <labels>
+        <fullName>Top_Org_Name_LaTrobe</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Top Org Name LaTrobe</shortDescription>
+        <value>La Trobe University</value>
+    </labels>
+    <labels>
+        <fullName>Tst_Business_Story_RecType_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tst Business Story RecType Name</shortDescription>
+        <value>Story</value>
+    </labels>
+    <labels>
+        <fullName>Tst_Tech_Story_RecType_Names</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tst Tech Story RecType Names</shortDescription>
+        <value>Technical User Story,Additional technical story</value>
+    </labels>
+    <labels>
+        <fullName>Tst_Tech_Story_Status_Complete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tst Tech Story Status Complete</shortDescription>
+        <value>Ready to Showcase</value>
+    </labels>
+    <labels>
+        <fullName>Tst_Tech_Story_Status_Not_Complete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tst Tech Story Status Not Complete</shortDescription>
+        <value>Ready for LTU Testing</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_FooterEmail</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Footer Email label displayed on Publication Email sent to the sender</shortDescription>
+        <value>undergrad@latrobe.edu.au</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_OrderConfirmation</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Confirmation  label displayed on Publication Email sent to the sender</shortDescription>
+        <value>Your order is confirmed with La Trobe University</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_Order_Details</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order details label displayed on Publication Email sent to the sender</shortDescription>
+        <value>Order Details</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_Order_Received</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Received  label displayed on Publication Email sent to the sender</shortDescription>
+        <value>Order Received</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_Post_Code</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Post Code  label displayed on Publication Email sent to the sender</shortDescription>
+        <value>Post Code</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_Postal_Address</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Postal Address  label displayed on Publication Email sent to the sender</shortDescription>
+        <value>Postal Address</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_Product</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product  label displayed on Publication Email sent to the sender</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_Publication_Order</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Publication Order  label displayed on Publication Email sent to the sender</shortDescription>
+        <value>Please see details of your publication order below:</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_Quantity</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quantity  label displayed on Publication Email sent to the sender</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_Shipping_Information</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Shipping Information  label displayed on Publication Email sent to the sender</shortDescription>
+        <value>Shipping Information</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_Suburb</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Suburb  label displayed on Publication Email sent to the sender</shortDescription>
+        <value>Suburb</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_footerMessage</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>footer Message label displayed on Publication Email sent to the sen</shortDescription>
+        <value>If you have any questions or need to change the details of your request, please contact</value>
+    </labels>
+    <labels>
+        <fullName>I_RM_Profile_To_Exclude</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Profile To Exclude</shortDescription>
+        <value>LTU Integration</value>
+    </labels>
+    <labels>
+        <fullName>I_ST_State</fullName>
+        <categories>I_ST_Guide_Order</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>State label displayed on Publication Email sent to the sender</shortDescription>
+        <value>State</value>
+    </labels>
+    <labels>
+        <fullName>L_PR_AlertMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>L_PR_AlertMessage</shortDescription>
+        <value>Please refer to Alert Reason below before contacting this Organisation</value>
+    </labels>
+    <labels>
+        <fullName>La_Trobe_Account</fullName>
+        <categories>Salesforce Record IDs</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>La Trobe Account</shortDescription>
+        <value>0015h0000164cmJAAQ</value>
+    </labels>
+</CustomLabels>

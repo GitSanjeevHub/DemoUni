@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Pipeline_Researcher_Status_Chan</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+ISCHANGED(RecordTypeId),
+RecordType.DeveloperName = &quot;I_RS_Internal_Pipeline&quot;,
+ISPICKVAL(PRIORVALUE(I_RS_Status__c),&quot;Recommended&quot;),
+ISCHANGED(I_RS_Status__c),
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Drafting NOI&quot;
+),
+
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+RecordType.DeveloperName = &quot;I_RS_Internal_Pipeline&quot;,
+ISPICKVAL(PRIORVALUE(I_RS_Status__c),&quot;Drafting NOI&quot;),
+ISCHANGED(I_RS_Status__c),
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Review by Research Office&quot;
+),
+
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+RecordType.DeveloperName = &quot;I_RS_Internal_Pipeline&quot;,
+ISPICKVAL(PRIORVALUE(I_RS_Status__c),&quot;Peer review draft&quot;),
+ISCHANGED(I_RS_Status__c),
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Peer review draft complete&quot;
+),
+
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+NOT(ISCHANGED(RecordTypeId)),
+RecordType.DeveloperName = &quot;I_RS_Internal_Pipeline&quot;,
+ISCHANGED(I_RS_Status__c),
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Review by Research Office&quot;,
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Peer review draft complete&quot;
+),
+
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+RecordType.DeveloperName = &quot;I_RS_Internal_Pipeline&quot;,
+ISCHANGED(I_RS_Status__c),
+NOT(ISPICKVAL(PRIORVALUE(I_RS_Status__c),&quot;Drafting NOI&quot;)),
+TEXT(I_RS_Status__c) = &quot;Review by Research Office&quot;
+),
+
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+RecordType.DeveloperName = &quot;I_RS_Internal_Pipeline&quot;,
+ISCHANGED(I_RS_Status__c),
+NOT(ISPICKVAL(PRIORVALUE(I_RS_Status__c),&quot;Peer review draft&quot;)),
+TEXT(I_RS_Status__c) = &quot;Peer review draft complete&quot;
+),
+
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+ISCHANGED(RecordTypeId),
+RecordType.DeveloperName = &quot;I_RS_Grant_with_limited_applications&quot;,
+ISPICKVAL(PRIORVALUE(I_RS_Status__c),&quot;Recommended&quot;),
+ISCHANGED(I_RS_Status__c),
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Create EOI&quot;
+),
+
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+RecordType.DeveloperName = &quot;I_RS_Grant_with_limited_applications&quot;,
+ISCHANGED(I_RS_Status__c),
+ISPICKVAL(PRIORVALUE(I_RS_Status__c),&quot;Create EOI&quot;),
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Review by Research Office&quot;
+),
+
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+NOT(ISCHANGED(RecordTypeId)),
+RecordType.DeveloperName = &quot;I_RS_Grant_with_limited_applications&quot;,
+ISCHANGED(I_RS_Status__c),
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Review by Research Office&quot;
+),
+
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+RecordType.DeveloperName = &quot;I_RS_Grant_with_limited_applications&quot;,
+ISCHANGED(I_RS_Status__c),
+NOT(ISPICKVAL(PRIORVALUE(I_RS_Status__c),&quot;Create EOI&quot;)),
+TEXT(I_RS_Status__c) = &quot;Review by Research Office&quot;
+)
+
+)</errorConditionFormula>
+    <errorMessage>You are not allowed to make this change. Please contact your PRIME System Administrator for more details.</errorMessage>
+</ValidationRule>

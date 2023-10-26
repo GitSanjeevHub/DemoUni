@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Update_Transition_Not_Allowed</fullName>
+    <active>true</active>
+    <description>Added for IST  459</description>
+    <errorConditionFormula>AND($Profile.Name =&apos;SACE User&apos;,OR(RecordType.DeveloperName = &apos;I_ST_Enquiry&apos;,RecordType.DeveloperName = &apos;I_ST_Outbound&apos;), OR(ISCHANGED(Status), ISNEW()), ISPICKVAL(Status , &apos;Updated&apos;) )</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Transition to Updated status is not allowed</errorMessage>
+</ValidationRule>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Head_Of_School__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*Unit level*/
+IF(
+Account.Parent.Parent.Parent.Parent.Name = &quot;La Trobe University&quot;,
+Account.Parent.Parent.I_RS_Organisation_Head__c,
+
+
+/*Dept level */
+IF(
+Account.Parent.Parent.Parent.Name = &quot;La Trobe University&quot;,
+Account.Parent.I_RS_Organisation_Head__c,
+
+
+/*School level */
+IF(
+Account.Parent.Parent.Name = &quot;La Trobe University&quot;,
+Account.I_RS_Organisation_Head__c,
+
+
+&quot;&quot;
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Head of School</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

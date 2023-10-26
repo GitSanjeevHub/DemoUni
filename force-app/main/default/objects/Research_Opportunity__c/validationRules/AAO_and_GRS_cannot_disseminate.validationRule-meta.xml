@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AAO_and_GRS_cannot_disseminate</fullName>
+    <active>true</active>
+    <description>Users of the LTU AAO and GRS Profiles can only mark a Funding Opportunity&apos;s Status as Initial or Drafted</description>
+    <errorConditionFormula>($UserRole.DeveloperName = &apos;AAO&apos; 
+|| $UserRole.DeveloperName = &apos;GRS&apos;)
+
+&amp;&amp; 
+
+(ISNEW() || ISCHANGED(I_RS_Status__c)) &amp;&amp; 
+
+TEXT(I_RS_Status__c) != &apos;Initial&apos; &amp;&amp; 
+TEXT(I_RS_Status__c) != &apos;Drafted&apos; 
+
+&amp;&amp; 
+
+RecordType.DeveloperName = &apos;I_RS_Funding_Opportunity&apos;</errorConditionFormula>
+    <errorDisplayField>I_RS_Status__c</errorDisplayField>
+    <errorMessage>AAO and GRS users can only mark a Funding Opportunity Status as &apos;Initial&apos; or &apos;Drafted&apos;. Please contact the Research Office for more details</errorMessage>
+</ValidationRule>

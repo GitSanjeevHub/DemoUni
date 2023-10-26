@@ -1,0 +1,3 @@
+<aura:documentation>
+    <aura:description>Creates a pre-formatted table using slds classes that can then be populated with <code>c:TableColumn</code> components</aura:description>
+</aura:documentation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Researcher_has_PRIME_login</fullName>
+    <active>true</active>
+    <description>Ensures that for certain Roles, the Contact/Researcher has an actual PRIME login</description>
+    <errorConditionFormula>/*Do not apply to pre-existing records unless there has been a change*/
+(
+ISNEW() ||
+ISCHANGED(I_RS_Role__c) || ISCHANGED(I_RS_Contact_Researcher__c) || ISCHANGED(I_RS_End_Date__c)
+)
+
+&amp;&amp;
+
+/*Conditions where having a login is necessary*/
+(TEXT(I_RS_Role__c) = &apos;Principal Investigator&apos; &amp;&amp; ISBLANK(I_RS_End_Date__c))
+
+&amp;&amp;
+
+/*The actual check for login*/
+(ISBLANK(I_RS_Contact_Researcher__r.I_RS_Related_User__c) || 
+!I_RS_Contact_Researcher__r.I_RS_Related_User__r.IsActive)</errorConditionFormula>
+    <errorDisplayField>I_RS_Contact_Researcher__c</errorDisplayField>
+    <errorMessage>Principal Investigator must have a PRIME user account</errorMessage>
+</ValidationRule>

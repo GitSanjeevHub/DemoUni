@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Access_to_Thesis_Consent__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Access to Thesis Consent Form Status</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The request for thesis embargo has gone to the Chair of the Board of Graduate Research for review and approval.&lt;/p&gt;</info>
+        <picklistValueName>Chair BGR Approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Usually means the ATC has been completed and the link provided to the candidate to upload the final version of their thesis to University’s Institutional Repository. Also used where a form is cancelled or closed off without being finalised.&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Form is sitting with the candidate waiting to be submitted to the GRS.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;Candidates: before completing this form please read the instructions below. Once you have completed the form, click on the ‘Submit to GRS’ button at the top right of the screen.&lt;/p&gt;</info>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The embargo request has been reviewed by the supervisor and Chair of the Board of Graduate Research. The GRS is reviewing the form and will notify the candidate of the outcome and send them a link to upload of the final version of the thesis. &lt;/p&gt;</info>
+        <picklistValueName>GRS Embargo Processing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The GRS reviews the form and determines the next stage required. If no embargo has been requested, the GRS will send a link to the candidate to upload the final version of their thesis to the University’s Institutional Repository. If an embargo has been requested, the form will be sent on for approval by the supervisor and Chair of the Board of Graduate Research.&lt;/p&gt;</info>
+        <picklistValueName>GRS Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The request for thesis embargo has gone to the supervisor for review and approval.&lt;/p&gt;</info>
+        <picklistValueName>Supervisor Approval</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

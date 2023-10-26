@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Ethics_Request_Type__c</fullName>
+    <description>Stores the Record Type Name of the associated Ethics Request. This is used to filter Meeting Dates</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A reminder of the type of  ethics request. Populated by the Research Office.</inlineHelpText>
+    <label>Ethics Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Animal Ethics Application</fullName>
+                <default>false</default>
+                <label>Animal Ethics Application</label>
+            </value>
+            <value>
+                <fullName>Human Ethics Application</fullName>
+                <default>false</default>
+                <label>Human Ethics Application</label>
+            </value>
+            <value>
+                <fullName>Research Governance Authorisation</fullName>
+                <default>false</default>
+                <label>Externally Approved Application</label>
+            </value>
+            <value>
+                <fullName>SOP/Phenotype Report</fullName>
+                <default>false</default>
+                <label>SOP/Phenotype Report</label>
+            </value>
+            <value>
+                <fullName>Institutional Biosafety Committee</fullName>
+                <default>false</default>
+                <label>Institutional Biosafety Committee</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

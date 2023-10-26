@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Case_Activity_Outcome_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+    $Profile.Name =&apos;SACE User&apos;,
+     OR(
+	ISCHANGED(Status), 
+	ISNEW()
+     ),
+     ISBLANK( TEXT(I_ST_Activity_Outcome__c)),
+     ISPICKVAL(Status, &apos;Closed&apos;),
+     RecordType.DeveloperName = &apos;I_ST_Enquiry&apos;,
+     ISPICKVAL(Origin, &apos;Consultation&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>I_ST_Activity_Outcome__c</errorDisplayField>
+    <errorMessage>Please update Activity Outcome field before closing the case.</errorMessage>
+</ValidationRule>

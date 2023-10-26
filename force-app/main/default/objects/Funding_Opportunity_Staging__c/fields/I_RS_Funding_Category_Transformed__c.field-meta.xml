@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Funding_Category_Transformed__c</fullName>
+    <description>Apply data transformations to RP Funding Category data</description>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE(I_RS_Funding_Category__c , &quot;Category&quot;, &quot;Cat&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Data transformations applied to Funding Category data</inlineHelpText>
+    <label>Funding Category - Transformed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

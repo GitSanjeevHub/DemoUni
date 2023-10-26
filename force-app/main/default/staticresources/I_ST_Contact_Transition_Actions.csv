@@ -1,0 +1,59 @@
+I_ST_Contact_Transition_Rule__c,Name,I_ST_Action_Object__c,I_ST_Action_Field__c,I_ST_Action_Value__c
+1,1,Contact,I_ST_Contact_Stage__c,Inactive
+1,2,Contact,I_ST_Contact_Status__c,
+1,3,Contact,HasOptedOutOfEmail,TRUE
+1,4,Contact,DoNotCall,TRUE
+2,1,Contact,I_ST_Contact_Stage__c,Student
+2,2,Contact,I_ST_Contact_Status__c,Admitted And Enrolled
+3,1,Contact,I_ST_Contact_Stage__c,Student
+3,2,Contact,I_ST_Contact_Status__c,Nearing Completion
+4,1,Contact,I_ST_Contact_Stage__c,Student
+4,2,Contact,I_ST_Contact_Status__c,Admitted And LOA
+5,1,Contact,I_ST_Contact_Stage__c,Applicant
+5,2,Contact,I_ST_Contact_Status__c,Admitted And Not Enrolled
+6,1,Contact,I_ST_Contact_Stage__c,Applicant
+6,2,Contact,I_ST_Contact_Status__c,Offer Accepted
+7,1,Contact,I_ST_Contact_Stage__c,Applicant
+7,2,Contact,I_ST_Contact_Status__c,Offer
+8,1,Contact,I_ST_Contact_Stage__c,Applicant
+8,2,Contact,I_ST_Contact_Status__c,Offer Deferred
+9,1,Contact,I_ST_Contact_Stage__c,Applicant
+9,2,Contact,I_ST_Contact_Status__c,Offer Lapsed
+10,1,Contact,I_ST_Contact_Stage__c,Lead
+10,2,Contact,I_ST_Contact_Status__c,Qualified
+11,1,Contact,I_ST_Contact_Stage__c,Alumni
+11,2,Contact,I_ST_Contact_Status__c,Completed
+12,1,Contact,I_ST_Contact_Stage__c,Applicant
+12,2,Contact,I_ST_Contact_Status__c,Offer
+13,1,Contact,I_ST_Contact_Stage__c,Applicant
+13,2,Contact,I_ST_Contact_Status__c,Conditional Offer
+14,1,Contact,I_ST_Contact_Stage__c,Applicant
+14,2,Contact,I_ST_Contact_Status__c,Alternate Offer Made
+15,1,Contact,I_ST_Contact_Stage__c,Applicant
+15,2,Contact,I_ST_Contact_Status__c,Other Preference Offered
+16,1,Contact,I_ST_Contact_Stage__c,Applicant
+16,2,Contact,I_ST_Contact_Status__c,Await Academic Advice
+17,1,Contact,I_ST_Contact_Stage__c,Applicant
+17,2,Contact,I_ST_Contact_Status__c,Awaiting Interview
+18,1,Contact,I_ST_Contact_Stage__c,Applicant
+18,2,Contact,I_ST_Contact_Status__c,Await Further Doco
+19,1,Contact,I_ST_Contact_Stage__c,Applicant
+19,2,Contact,I_ST_Contact_Status__c,Await Required Doco
+20,1,Contact,I_ST_Contact_Stage__c,Applicant
+20,2,Contact,I_ST_Contact_Status__c,Pending Results
+21,1,Contact,I_ST_Contact_Stage__c,Applicant
+21,2,Contact,I_ST_Contact_Status__c,Escalated
+22,1,Contact,I_ST_Contact_Stage__c,Applicant
+22,2,Contact,I_ST_Contact_Status__c,Await Applicant Comms
+23,1,Contact,I_ST_Contact_Stage__c,Applicant
+23,2,Contact,I_ST_Contact_Status__c,Make An Offer
+24,1,Contact,I_ST_Contact_Stage__c,Applicant
+24,2,Contact,I_ST_Contact_Status__c,Make A Conditional Offer
+25,1,Contact,I_ST_Contact_Stage__c,Applicant
+25,2,Contact,I_ST_Contact_Status__c,Alternate Offer Considered
+26,1,Contact,I_ST_Contact_Stage__c,Applicant
+26,2,Contact,I_ST_Contact_Status__c,Make Alternate Offer
+27,1,Contact,I_ST_Contact_Stage__c,Applicant
+27,2,Contact,I_ST_Contact_Status__c,Not Processed
+28,1,Contact,I_ST_Contact_Stage__c,Lead
+28,2,Contact,I_ST_Contact_Status__c,Qualified

@@ -1,0 +1,108 @@
+<!--
+ - Created by burnside on 2019-05-15.
+ -->
+
+<aura:component
+        controller="ResearchOpportunitySearchController2"
+        description="Funding Opportunity Search Result Table"
+        implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes">
+
+    <aura:attribute name="configName" type="string" default="Funding_Opportunity_Researchers" 
+                    description="The config bundle to draw from when rendering this table"/>
+    
+    <aura:attribute name="isLoading" type="boolean" default="false"/>
+
+    <aura:attribute name="data" type="List" />
+    <aura:attribute name="columns" type="List"/>
+
+    <aura:attribute name="keywordsToSearch" type="String" />
+    <aura:attribute name="keywordsToExclude" type="String" />
+    <aura:attribute name="filters" type="List"/>
+    <aura:attribute name="filterLogic" type="string"/>
+    <aura:attribute name="recommendedOnly" type="boolean"/>
+    <aura:attribute name="orderBy" type="string"/>
+    <aura:attribute name="orderDirection" type="string" default="desc" />
+
+    <aura:attribute name="hasMatchScoreColumn" type="Boolean" default="false"/>
+
+    <aura:attribute name="currentPageIndex" type="integer" default="0"/>
+    <aura:attribute name="offset" type="integer" default="0"/>
+    <aura:attribute name="rowsPerPage" type="integer" default="10" required="true"/>
+    <aura:attribute name="endOfList" type="Boolean"/>
+    <aura:attribute name="totalRowCount" type="Boolean" />
+
+    <aura:attribute name="showPagination" type="boolean" default="true"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:handler event="c:ResearchOpportunitySearch_SearchRequest" action="{!c.handleSearchRequestFromEvent}"/>
+
+    <aura:method name="search" action="{!c.handleSearchRequestFromParent}"/>
+
+
+    <article class="slds-card">
+
+        <aura:if isTrue="{!(!v.isLoading)}">
+
+            <aura:if isTrue="{!v.columns}">
+
+                    <lightning:datatable
+                        aura:id="datatable"
+                        data="{!v.data}"
+                        columns="{!v.columns}"
+                        keyField="Id"
+                        hideCheckboxColumn="true"
+                        sortedBy="{!v.orderBy}"
+                        sortedDirection="{!v.orderDirection}"
+                        defaultSortDirection="{!v.orderDirection}"
+                        onsort="{!c.handleSortChange}"
+                        onrowaction="{!c.handleRowAction}"
+    
+                    />
+
+            </aura:if>
+
+
+                <div class="slds-p-around--x-small">
+
+                    <aura:if isTrue="{!v.showPagination}">
+                        <aura:if isTrue="{!v.currentPageIndex > 0}">
+                            <lightning:button label="Prev" onclick="{!c.prevPage}"/>
+                        </aura:if>
+
+                        <aura:if isTrue="{!(!v.endOfList)}">
+                            <lightning:button label="Next" onclick="{!c.nextPage}"/>
+                        </aura:if>
+                    </aura:if>
+
+                    <br/>
+                    <aura:if isTrue="{!(v.totalRowCount)}">
+                        Showing records {!v.offset + 1} - 
+                            {!(v.offset + v.data.length)}
+                        ... 
+                    </aura:if>
+                    {!v.totalRowCount} matching records found in total.
+                    
+                </div>
+
+
+
+
+            <aura:set attribute="else">
+
+                <br/><br/><br/><br/><br/><br/><br/>
+
+                <lightning:spinner variant="brand"/>
+
+                <br/><br/><br/><br/><br/><br/><br/>
+
+            </aura:set>
+
+        </aura:if>
+
+    </article>
+
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+
+</aura:component>

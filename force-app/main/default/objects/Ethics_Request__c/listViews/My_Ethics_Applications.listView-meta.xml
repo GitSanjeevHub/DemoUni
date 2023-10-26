@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Ethics_Applications</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Ethics_Application_Title__c</columns>
+    <columns>I_RS_Ethics_Review_Committee__c</columns>
+    <columns>I_RS_Ethics_Application_Review_Outcome__c</columns>
+    <columns>I_RS_Principal_Investigator__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>I_RS_Status__c</columns>
+    <columns>I_RS_Meeting_Date__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>I_RS_Ethics_Application_Review_Outcome__c</field>
+        <operation>equals</operation>
+        <value>Not Applicable,Outcome Pending,Subject to,Deferred,Withdrawn,Rejected,Not Ready for Committee Review</value>
+    </filters>
+    <label>My Ethics Applications</label>
+</ListView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Academic</fullName>
+        <default>false</default>
+        <label>Academic</label>
+    </customValue>
+    <customValue>
+        <fullName>Admissions</fullName>
+        <default>false</default>
+        <label>Admissions</label>
+    </customValue>
+    <customValue>
+        <fullName>Ask La Trobe</fullName>
+        <default>false</default>
+        <label>Ask La Trobe</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancelled Consultation</fullName>
+        <default>false</default>
+        <label>Cancelled Consultation</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+    </customValue>
+    <customValue>
+        <fullName>College</fullName>
+        <default>false</default>
+        <label>College</label>
+    </customValue>
+    <customValue>
+        <fullName>International Recruitment</fullName>
+        <default>false</default>
+        <label>International Recruitment</label>
+    </customValue>
+    <customValue>
+        <fullName>International Operations and Compliance</fullName>
+        <default>false</default>
+        <label>International Operations and Compliance</label>
+    </customValue>
+    <customValue>
+        <fullName>Educational Partnership</fullName>
+        <default>false</default>
+        <label>Educational Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>La Trobe College Australia (Navitas)</fullName>
+        <default>false</default>
+        <label>La Trobe College Australia (Navitas)</label>
+    </customValue>
+    <customValue>
+        <fullName>La Trobe Sydney Campus (Navitas)</fullName>
+        <default>false</default>
+        <label>La Trobe Sydney Campus (Navitas)</label>
+    </customValue>
+    <customValue>
+        <fullName>Scholarships</fullName>
+        <default>false</default>
+        <label>Scholarships</label>
+    </customValue>
+    <customValue>
+        <fullName>Domestic student enquiry</fullName>
+        <default>false</default>
+        <label>Domestic student enquiry</label>
+    </customValue>
+    <customValue>
+        <fullName>Current student enquiry</fullName>
+        <default>false</default>
+        <label>Current student enquiry</label>
+    </customValue>
+    <customValue>
+        <fullName>Personal Details</fullName>
+        <default>false</default>
+        <label>Personal Details</label>
+    </customValue>
+    <customValue>
+        <fullName>Community Statement</fullName>
+        <default>false</default>
+        <label>Community Statement</label>
+    </customValue>
+    <customValue>
+        <fullName>Reference</fullName>
+        <default>false</default>
+        <label>Reference</label>
+    </customValue>
+    <customValue>
+        <fullName>Review and Submit</fullName>
+        <default>false</default>
+        <label>Review and Submit</label>
+    </customValue>
+    <customValue>
+        <fullName>Awaiting School form and Year 11 results</fullName>
+        <default>false</default>
+        <label>Awaiting School form and Year 11 results</label>
+    </customValue>
+    <customValue>
+        <fullName>Awaiting Year 11 results</fullName>
+        <default>false</default>
+        <label>Awaiting Year 11 results</label>
+    </customValue>
+    <customValue>
+        <fullName>Awaiting School Form</fullName>
+        <default>false</default>
+        <label>Awaiting School Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Received Community form</fullName>
+        <default>false</default>
+        <label>Received Community form</label>
+    </customValue>
+    <customValue>
+        <fullName>Victorian School</fullName>
+        <default>false</default>
+        <label>Victorian School</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Victorian School</fullName>
+        <default>false</default>
+        <label>Non-Victorian School</label>
+    </customValue>
+    <customValue>
+        <fullName>Accepted</fullName>
+        <default>false</default>
+        <label>Accepted</label>
+    </customValue>
+    <customValue>
+        <fullName>Declined</fullName>
+        <default>false</default>
+        <label>Declined</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsuccessful</fullName>
+        <default>false</default>
+        <label>Unsuccessful</label>
+    </customValue>
+    <customValue>
+        <fullName>Docs Not Received</fullName>
+        <default>false</default>
+        <label>Docs Not Received</label>
+    </customValue>
+    <customValue>
+        <fullName>Duplicate Application</fullName>
+        <default>false</default>
+        <label>Duplicate Application</label>
+    </customValue>
+    <customValue>
+        <fullName>Received Aspire Year 11 docs</fullName>
+        <default>false</default>
+        <label>Received Aspire Year 11 docs</label>
+    </customValue>
+    <customValue>
+        <fullName>Consultation Cancelled</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Consultation Cancelled</label>
+    </customValue>
+    <description>created for IST 188</description>
+    <masterLabel>I_ST_CaseSub_Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

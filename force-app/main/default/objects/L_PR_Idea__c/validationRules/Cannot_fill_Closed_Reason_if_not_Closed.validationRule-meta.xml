@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_fill_Closed_Reason_if_not_Closed</fullName>
+    <active>true</active>
+    <description>Closed Reason should only be filled when Status is selected as Closed</description>
+    <errorConditionFormula>NOT( ISBLANK( L_PR_Closed_Reason__c ) ) &amp;&amp;  NOT(ISPICKVAL( L_PR_Lead_Status__c , &apos;Closed&apos;)) &amp;&amp; (ISCHANGED(L_PR_Closed_Reason__c) || ISNEW())</errorConditionFormula>
+    <errorDisplayField>L_PR_Closed_Reason__c</errorDisplayField>
+    <errorMessage>Closed Reason should only be filled when Status is selected as &apos;Closed&apos;</errorMessage>
+</ValidationRule>

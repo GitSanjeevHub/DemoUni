@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>40.0</apiVersion>
+    <description>An example of using the TableColumn component with sortable and unsortable fields</description>
+</AuraDefinitionBundle>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Applied_Measures_Compact_Layout</fullName>
+    <fields>I_RS_Title_Short__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>I_RS_Year_Created__c</fields>
+    <fields>I_RS_ERA_Eligible__c</fields>
+    <fields>I_RS_Locked_And_Verified__c</fields>
+    <label>Applied Measures Compact Layout</label>
+</CompactLayout>

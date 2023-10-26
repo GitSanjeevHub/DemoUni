@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Student__c</columns>
+    <columns>I_RS_Status__c</columns>
+    <columns>I_RS_Degree__c</columns>
+    <columns>I_RS_Expected_Work_Submission_Date__c</columns>
+    <columns>I_RS_Maximum_Completion_Date__c</columns>
+    <columns>I_RS_Principal_Supervisor__c</columns>
+    <columns>I_RS_School__c</columns>
+    <columns>I_RS_Supervisor_Approver__c</columns>
+    <columns>I_RS_SDGR_Approver__c</columns>
+    <columns>I_RS_BGR_Approver__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

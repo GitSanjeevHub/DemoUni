@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Research_Output__c</fullName>
+    <description>This will be for the master-detail relationship</description>
+    <externalId>false</externalId>
+    <label>Research Output</label>
+    <referenceTo>Research_Output__c</referenceTo>
+    <relationshipLabel>Metrics</relationshipLabel>
+    <relationshipName>Metrics</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

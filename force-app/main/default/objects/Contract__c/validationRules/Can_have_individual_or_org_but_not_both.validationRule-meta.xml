@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_have_individual_or_org_but_not_both</fullName>
+    <active>true</active>
+    <description>A user may provide an Individual (Contact) or Primary Organisation, but not both</description>
+    <errorConditionFormula>!ISBLANK(I_RS_Individual__c) &amp;&amp; 
+!ISBLANK(I_RS_Organisation__c)</errorConditionFormula>
+    <errorMessage>You may provide an Individual or Primary Organisation but not both</errorMessage>
+</ValidationRule>

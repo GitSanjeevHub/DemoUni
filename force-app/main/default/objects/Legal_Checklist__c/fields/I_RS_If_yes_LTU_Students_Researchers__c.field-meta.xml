@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_If_yes_LTU_Students_Researchers__c</fullName>
+    <externalId>false</externalId>
+    <label>If Yes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_LTU_student_researchers__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Student Researcher Deed signed</fullName>
+                <default>false</default>
+                <label>Student Researcher Deed signed</label>
+            </value>
+            <value>
+                <fullName>Student Researcher Deed pending</fullName>
+                <default>false</default>
+                <label>Student Researcher Deed pending</label>
+            </value>
+            <value>
+                <fullName>Student is party to this contract</fullName>
+                <default>false</default>
+                <label>Student is party to this contract</label>
+            </value>
+            <value>
+                <fullName>Advice required (give details)</fullName>
+                <default>false</default>
+                <label>Advice required (give details)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes-As part of course/PhD</controllingFieldValue>
+            <controllingFieldValue>Yes-As employee AND part course/PhD</controllingFieldValue>
+            <valueName>Student Researcher Deed signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes-As part of course/PhD</controllingFieldValue>
+            <controllingFieldValue>Yes-As employee AND part course/PhD</controllingFieldValue>
+            <valueName>Student Researcher Deed pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes-As part of course/PhD</controllingFieldValue>
+            <controllingFieldValue>Yes-As employee AND part course/PhD</controllingFieldValue>
+            <valueName>Student is party to this contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes-As part of course/PhD</controllingFieldValue>
+            <controllingFieldValue>Yes-As employee AND part course/PhD</controllingFieldValue>
+            <valueName>Advice required (give details)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

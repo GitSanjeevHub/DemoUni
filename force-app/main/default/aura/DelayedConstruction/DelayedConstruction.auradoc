@@ -1,0 +1,29 @@
+<aura:documentation>
+    <aura:description>
+        <p><strong>Warning</strong>: Due to a bug with lightning locker, all <code>aura:attribute</code>'s referenced in the body of the Delayed Construction must be public.</p>
+        <p>Delays the construction of all child components until the <code>buildWhen</code> condition evaluates to true. Once constructed, the components will not be destroyed by the <code>DelayedConstruction</code>.</p>
+        <p>Using this component will allow you to use one way bindings on data that is not present when the component is initially loaded.</p>
+        <pre>
+&lt;c:DelayedConstruction buildWhen="{!not(empty(v.accounts))}"&gt;
+    &lt;p&gt;There are {#v.accounts.length} accounts.&lt;/p&gt;
+    &lt;aura:iteration items="{#v.accounts}" var="account"&gt;
+        &lt;c:showAccount account="{#account}" /&gt;
+    &lt;/aura:iteration&gt;
+&lt;/c:DelayedConstruction&gt;</pre>
+        <p>Components which need to have their entire body delayed may extend <code>DelayedConstruction</code> instead of wrapping their entire body in a tag. Using this method, you can still control the placeholder by placing an <code>aura:set</code> tag. Construction can be controlled by either using <code>aura:set</code> similarly to how a standalone usage of <code>DelayedConstruction</code> would use it, or by calling <code>component.build</code> in the controller or helper for your component.</p>
+        <pre>
+&lt;aura:component extends="c:DelayedConstruction"&gt;
+    &lt;aura:attribute name="accounts" type="List" access="public" /&gt;
+
+    &lt;aura:handler name="init" value="{!this}" action="{!c.loadAccounts}" /&gt;
+
+    &lt;aura:set attribute="buildWhen" value="{!not(empty((v.accounts))}" /&gt;
+    &lt;aura:set attribute="placeholder"&gt;
+        &lt;p&gt;Loading Accounts...&lt;/p&gt;
+    &lt;/aura:set&gt;
+
+    &lt;p&gt;There are {#v.accounts.length} accounts.&lt;/p&gt;
+&lt;/aura:component&gt;</pre>
+        <p>Keep in mind that while extending DelayedConstruction, all handlers defined on this component will still be set up and listening.</p>
+    </aura:description>
+</aura:documentation>

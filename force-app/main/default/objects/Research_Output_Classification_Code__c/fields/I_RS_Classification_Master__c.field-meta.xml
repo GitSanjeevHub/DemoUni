@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Classification_Master__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Classification Master</label>
+    <referenceTo>Classification_Master__c</referenceTo>
+    <relationshipLabel>Research Output Classification Codes</relationshipLabel>
+    <relationshipName>Research_Output_Classification_Codes</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

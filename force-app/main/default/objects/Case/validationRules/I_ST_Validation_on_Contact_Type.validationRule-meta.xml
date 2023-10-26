@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Validation_on_Contact_Type</fullName>
+    <active>true</active>
+    <description>check contact type is set automatically or manually for IST-254</description>
+    <errorConditionFormula>AND ( $Profile.Name =&apos;SACE User&apos;,OR(
+AND(OR(ISCHANGED(Origin), ISNEW()),
+RecordType.DeveloperName = &apos;I_ST_Enquiry&apos;,
+OR(
+ISPICKVAL( Origin , &apos;Web&apos;),
+ISPICKVAL( Origin , &apos;Email&apos;),
+ISPICKVAL( Origin , &apos;Chat&apos;),ISPICKVAL( Origin , &apos;Offline Chat&apos;))
+),
+AND(ISCHANGED(Origin),
+RecordType.DeveloperName = &apos;I_ST_Enquiry&apos;,
+OR(
+ISPICKVAL(PRIORVALUE( Origin ), &apos;Web&apos;),
+ISPICKVAL(PRIORVALUE( Origin ), &apos;Email&apos;),
+ISPICKVAL(PRIORVALUE( Origin ), &apos;Consultation&apos;),ISPICKVAL(PRIORVALUE( Origin ), &apos;Offline Chat&apos;),
+ISPICKVAL(PRIORVALUE( Origin) , &apos;Chat&apos;)))))</errorConditionFormula>
+    <errorDisplayField>Origin</errorDisplayField>
+    <errorMessage>Web, Email and Chat cannot be created manually, please select an appropriate Contact Type. Consultation cannot be overwritten.</errorMessage>
+</ValidationRule>

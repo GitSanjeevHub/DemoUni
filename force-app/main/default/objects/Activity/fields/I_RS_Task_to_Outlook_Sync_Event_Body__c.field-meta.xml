@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Task_to_Outlook_Sync_Event_Body__c</fullName>
+    <description>When syncing Milestone Tasks to Outlook this is what appears in the event invitation text body.</description>
+    <externalId>false</externalId>
+    <formula>&apos;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&apos;
++
+&apos;Dear &apos; + Owner:User.FirstName +&apos;,&lt;br/&gt;&lt;br/&gt;&apos; +
+
+&apos;The Milestone &quot;&apos;+ TEXT(I_RS_Milestone_Type__c) +&apos;&quot; for &apos; + I_RS_Parent_Record_Name__c + &apos; is due on &apos;+
+
+TEXT(DAY(ActivityDate))+&quot;/&quot;+TEXT(MONTH(ActivityDate))+&quot;/&quot; +TEXT(YEAR(ActivityDate)) +&apos;. When the milestone is complete its status needs to be updated.&lt;br/&gt;&lt;br/&gt;&apos;+
+
+&apos;Please view the milestone in PRIME for further details, the latest status and any updates.&apos;+
+
+&apos;When it has been completed or if you are unable to meet this milestone, please immediately update the status in prime. If there are any other concerns, please contact the Research Office for your project through PRIME.&lt;br/&gt;&lt;br/&gt;&apos;+
+ 
+&apos;&lt;a href=&quot;&apos;+I_RS_Record_URL__c+&apos;&quot;&gt;View record in PRIME&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&apos; +
+
+&apos;This is a system-generated email, please do not reply.&apos;+
+
+&apos;&lt;/body&gt;&lt;/html&gt;&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Task to Outlook Sync Event Body</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

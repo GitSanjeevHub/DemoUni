@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ACU</fullName>
+        <default>false</default>
+        <label>ACU</label>
+    </customValue>
+    <customValue>
+        <fullName>Curtin</fullName>
+        <default>false</default>
+        <label>Curtin</label>
+    </customValue>
+    <customValue>
+        <fullName>Deakin</fullName>
+        <default>false</default>
+        <label>Deakin</label>
+    </customValue>
+    <customValue>
+        <fullName>Federation Uni</fullName>
+        <default>false</default>
+        <label>Federation Uni</label>
+    </customValue>
+    <customValue>
+        <fullName>Melbourne University</fullName>
+        <default>false</default>
+        <label>Melbourne University</label>
+    </customValue>
+    <customValue>
+        <fullName>Monash</fullName>
+        <default>false</default>
+        <label>Monash</label>
+    </customValue>
+    <customValue>
+        <fullName>RMIT</fullName>
+        <default>false</default>
+        <label>RMIT</label>
+    </customValue>
+    <customValue>
+        <fullName>Swinburne</fullName>
+        <default>false</default>
+        <label>Swinburne</label>
+    </customValue>
+    <customValue>
+        <fullName>Vic Uni</fullName>
+        <default>false</default>
+        <label>Vic Uni</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Added for IST-327 for Other University on case field</description>
+    <masterLabel>I_ST_Other_University</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

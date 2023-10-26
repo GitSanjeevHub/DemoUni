@@ -1,0 +1,147 @@
+<!--LB - controller refers to the linked Apex class. In Aura, only one is allowed. In LWC, >1 is alloweed-->
+<!--LB - lightning:availableForFlowScreens exposes component in Flow Builder-->
+<aura:component controller="SISLiveLookupController" 
+                implements="force:lightningQuickAction,force:hasRecordId,lightning:availableForFlowScreens" >
+  	<aura:attribute name="data" type="List" />
+  	<aura:attribute name="columns" type="List" />
+
+    <aura:attribute name="calloutState" type="string" />
+    
+    <!--The variables that we will want to copy back out to the surrounding Flow, or pass to an Apex controller-->
+    <!--The 'DESIGN' section of the bundle (on the right of the screen) specifies which variables that the Flow builder 
+	 could pass into/back out of this component-->
+    <aura:attribute name="selected_StudentID" type="string" />
+    <aura:attribute name="selected_Salutation" type="string"  />
+    <aura:attribute name="selected_FirstName" type="string"  />
+    <aura:attribute name="selected_LastName" type="string"  />
+    <aura:attribute name="selected_PreferredGivenName" type="string"  />
+    <aura:attribute name="selected_FormalName" type="string"  />
+    <aura:attribute name="selected_Gender" type="string"  />
+    <aura:attribute name="selected_CountryOfBirth" type="string" />
+    <aura:attribute name="selected_UserName" type="string" />
+    <aura:attribute name="selected_ATSI" type="boolean" />
+    <aura:attribute name="selected_CourseStatus" type="string" />
+    <aura:attribute name="selected_CitizenshipStatus" type="string" />
+    <aura:attribute name="selected_CountryOfCitizenship" type="string" />
+    <aura:attribute name="selected_CountryOfResidence" type="string" />
+    <aura:attribute name="selected_email" type="string" />
+    <aura:attribute name="selected_ActiveStudent" type="boolean" />
+    <aura:attribute name="selected_FieldOfEducation" type="string" />
+    <aura:attribute name="selected_OtherGivenNames" type="string" />
+    <aura:attribute name="selected_OrgUnitCode" type="string" />
+    <aura:attribute name="selected_OrgUnitDesc" type="string" />
+    <aura:attribute name="selected_Deceased" type="boolean" />
+    <aura:attribute name="selected_CourseCode" type="string" />
+    <aura:attribute name="selected_CourseDesc" type="string" />
+    <aura:attribute name="selected_CreatedTimestamp" type="string" />
+    <aura:attribute name="selected_ModifiedTimestamp" type="string" />
+
+
+    <aura:attribute name="varLastName" type="string" default="" />
+    <aura:attribute name="varStudentID" type="string" default=""/>
+    
+  	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <!--Injecting a snippet of CSS to widen the popup dialog, if there is one. Otherwise, the window is too narrow-->
+    <aura:html tag="style">
+        .slds-modal__container{
+        max-width: 95rem !important;
+        width:95% !important;
+        }
+    </aura:html>
+    
+    
+  	<div class="slds-border_bottom">
+      
+        <lightning:card title="Enter Search Terms">
+            
+            <!--LB - Use slds-p divs when you need to add some padding 
+				(https://www.lightningdesignsystem.com/utilities/padding/) -->
+            <div class="slds-p-left_medium slds-p-right_medium">
+                <!--Visible Contact Search Fields-->            
+                <div class="slds-grid slds-wrap" > <!--style="width:800px"-->
+                    
+                    <!-- Use the size_ divs to determine level of horizontal space used -->
+                    <div class="slds-col slds-size_3-of-12">  
+                        <lightning:input aura:id="FirstName"  name="FirstName"  label="First Name:" class="slds-m-right_small" disabled="true"/>
+                    </div>
+                    
+                    <div class="slds-col slds-size_3-of-12">
+                        <lightning:input aura:id="LastName"  name="LastName"  label="Last Name:" class="slds-p-right_small" onchange="{!c.handleSearchInputOverride}"/>
+                    </div>                   
+                    
+                    <div class="slds-col slds-size_3-of-12">
+                        <lightning:input aura:id="email"  name="email"  label="Email:" type="email" class="slds-p-right_small"  disabled="true"/>
+                    </div>
+                    
+                    <div class="slds-col slds-size_3-of-12">
+                        <lightning:input aura:id="StudentId"  name="StudentId"  label="Student Id:" class="slds-p-right_small" onchange="{!c.handleSearchInputOverride}"/>
+                    </div>
+                    
+                    <!--Search Button. 'variant' lets you choose out one out of several colour schemes-->  
+                    <div class="slds-m-top_medium">
+                        <lightning:button aura:id="searchButton" label="Search Student in SIS" variant="brand" onclick="{!c.handleSearchClick}" disabled="true"/>
+                    </div>
+                  
+                </div>
+            
+            </div>
+            
+        </lightning:card>
+        
+	<!--<div class="slds-p-top_large">-->
+        <lightning:card>
+            
+            <aura:set attribute="title">
+                Students in SIS
+            </aura:set>
+            
+			<div class="slds-p-around_medium">
+        
+                <aura:if isTrue="{!v.calloutState == 'IN_PROGRESS'}">
+                    <lightning:spinner variant="brand" size="large"/>
+                </aura:if>
+                
+                
+                <aura:if isTrue="{!v.calloutState == 'SUCCESS'}">
+
+                    <div class="slds-scrollable" style="height:50vh;width:100%">
+                        <lightning:datatable
+                                             aura:id="dataTable"
+                                             keyField="name"
+                                             data="{! v.data }"
+                                             columns="{! v.columns }"
+                                             hideCheckboxColumn="true"
+                                             onrowaction="{! c.handleRowAction }"
+                                             />
+                    </div>
+                </aura:if>
+                    
+                
+                <aura:if isTrue="{!v.calloutState == 'NO_RESULTS'}">
+                    No results found.
+                </aura:if>
+                
+                
+                <aura:if isTrue="{!v.calloutState == 'CALLOUT_ERROR'}">
+                    
+                    <lightning:icon variant="error" iconName="utility:warning"/>
+                    An error has occurred while attempting to access our Student Information System. Please notify
+                    your admin.
+                    
+                </aura:if>
+                
+            </div>
+                
+        </lightning:card>
+        
+	</div>
+      
+  	<!--</div>-->
+
+    
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    
+    
+    
+</aura:component>

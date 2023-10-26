@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_AD_Count_Approved_Course_Availability__c</fullName>
+    <description>Number of &apos;Approved&apos; Course Availability</description>
+    <externalId>false</externalId>
+    <label># Approved Course Availability</label>
+    <summaryFilterItems>
+        <field>CourseAvailability__c.L_AD_Course_Availability_Status__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </summaryFilterItems>
+    <summaryForeignKey>CourseAvailability__c.L_AD_CourseInstance__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

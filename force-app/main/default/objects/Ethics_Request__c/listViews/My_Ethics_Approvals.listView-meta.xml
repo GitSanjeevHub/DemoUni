@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Ethics_Approvals</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Ethics_Application_Title__c</columns>
+    <columns>I_RS_Ethics_Application_Review_Outcome__c</columns>
+    <columns>I_RS_Ethics_Application_Approval_Date__c</columns>
+    <columns>I_RS_Ethics_Application_Expiry_Date__c</columns>
+    <columns>I_RS_Principal_Investigator__c</columns>
+    <columns>I_RS_Status__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>I_RS_Ethics_Application_Review_Outcome__c</field>
+        <operation>equals</operation>
+        <value>Approved,Closed-off,Expired,Suspended,Terminated</value>
+    </filters>
+    <label>My Ethics Approvals</label>
+</ListView>

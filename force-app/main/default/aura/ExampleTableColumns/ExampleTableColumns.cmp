@@ -1,0 +1,41 @@
+<aura:component >
+    <aura:attribute name="listOfAccounts"
+        type="Account[]"
+        access="private"
+        description="A list of accounts for the example table to use"
+        default="[{Name: 'A account', description: 'Wallyworld\'s favorite moose'}, {Name: 'Z account', description: 'Harvey Dent'}, {Name: 'D account', description: 'Sam Jackson'}]" />
+
+    <c:Table items="[3, 5, 8, 2, 4, 1]" var="num">
+        <c:TableColumn label="Sample header">
+            This text will be the body of the column
+        </c:TableColumn>
+
+        <c:TableColumn label="Sample sortable header" sortable="true">
+            {!num} This column uses sortable expressions.
+        </c:TableColumn>
+    </c:Table>
+
+    <c:Table items="{#v.listOfAccounts}" var="account">
+        <c:TableColumn label="Sortable by field (name in this case)" sortable="true" sortField="Name">
+            {#account.Name}
+        </c:TableColumn>
+
+        <c:TableColumn label="Account owners">
+            {#account.description}
+        </c:TableColumn>
+    </c:Table>
+
+    <c:Table items="{#v.listOfAccounts}" var="account">
+        <c:TableColumn label="Sortable by name field with default DESC order" sortable="true" sortField="Name" sortOrder="DESC">
+            {#account.Name}
+        </c:TableColumn>
+    </c:Table>
+
+    <c:Table items="{#v.listOfAccounts}" var="account">
+        <aura:iteration items="['Name', 'description']" var="field">
+            <c:TableColumn label="{#field}" sortable="true">
+                Iteration on {#field}
+            </c:TableColumn>
+        </aura:iteration>
+    </c:Table>
+</aura:component>

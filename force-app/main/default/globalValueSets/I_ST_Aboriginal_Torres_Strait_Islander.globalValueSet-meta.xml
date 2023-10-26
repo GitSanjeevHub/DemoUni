@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Not Aboriginal or Torres Strait Islander</fullName>
+        <default>false</default>
+        <label>Not Aboriginal or Torres Strait Islander</label>
+    </customValue>
+    <customValue>
+        <fullName>Aboriginal</fullName>
+        <default>false</default>
+        <label>Aboriginal</label>
+    </customValue>
+    <customValue>
+        <fullName>Torres Strait Islander</fullName>
+        <default>false</default>
+        <label>Torres Strait Islander</label>
+    </customValue>
+    <customValue>
+        <fullName>Aboriginal and Torres Strait Islander</fullName>
+        <default>false</default>
+        <label>Aboriginal and Torres Strait Islander</label>
+    </customValue>
+    <customValue>
+        <fullName>No information</fullName>
+        <default>false</default>
+        <label>No information</label>
+    </customValue>
+    <description>List of all Aboriginal, Torres Strait Islander</description>
+    <masterLabel>I_ST_Aboriginal_Torres_Strait_Islander</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

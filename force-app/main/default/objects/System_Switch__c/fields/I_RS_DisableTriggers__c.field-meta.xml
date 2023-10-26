@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_DisableTriggers__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox controls all the triggers enable/disable criteria. If checked, all the triggers for the object available will be disabled</description>
+    <externalId>false</externalId>
+    <label>Disable Triggers</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

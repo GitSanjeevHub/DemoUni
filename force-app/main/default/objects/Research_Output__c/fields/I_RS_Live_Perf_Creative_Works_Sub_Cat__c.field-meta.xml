@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Live_Perf_Creative_Works_Sub_Cat__c</fullName>
+    <externalId>false</externalId>
+    <label>Live Performance - Creative Work Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Music (live performance)</fullName>
+                <default>false</default>
+                <label>1. Music</label>
+            </value>
+            <value>
+                <fullName>Play (live performance)</fullName>
+                <default>false</default>
+                <label>2. Play</label>
+            </value>
+            <value>
+                <fullName>Dance (live performance)</fullName>
+                <default>false</default>
+                <label>3. Dance</label>
+            </value>
+            <value>
+                <fullName>Other live performance of creative work</fullName>
+                <default>false</default>
+                <label>4. Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

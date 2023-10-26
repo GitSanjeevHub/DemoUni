@@ -1,0 +1,79 @@
+<template>
+
+    <template if:true={isStandardInputField}>
+
+        <lightning-input 
+
+            type={type}
+            value={valueTracked}
+            onchange={handleChange}
+            variant="label-hidden"
+            required={required}
+            disabled={editDisabled}
+            
+
+            min={min}
+            max={max}
+            step={step}
+            ></lightning-input>
+    </template>
+
+    <template if:true={isTextAreaField}>
+
+        <div>
+            <textarea
+                class="slds-textarea"
+                style="height:35px"
+                disabled={editDisabled}
+                oninput={autoSizeTextArea}
+                onblur={handleChange}>
+                {valueTracked}
+            </textarea>
+            
+        </div>
+    </template>
+
+    <template if:true={isCheckboxField}>
+        <div class="slds-align_absolute-center">
+            <lightning-input
+                type="checkbox"
+                disabled={editDisabled}
+                checked={valueTracked}
+                onclick={handleChange}>
+            </lightning-input>
+        </div>
+    </template>
+
+    <template if:true={isLookupField}>
+
+        <c-lookup 
+            tabindex="0"
+            disabled={editDisabled}
+            object-name={lookupObjectName}
+            selection={lookupSelection}
+            onsearch={handleSearch}
+            onselectionchange={handleChange}
+            edit-disabled={editDisabled}
+            ></c-lookup>
+    </template>
+
+    <template if:true={isPicklistField}>
+        
+        <select 
+            data-id="select"
+            disabled={editDisabled}
+            onchange={handleChange}>
+
+            <template if:true={picklistValues.length}>
+                <option></option>
+            </template>
+
+            <template for:each={picklistValues} for:item="picklistValue">
+                <option key={picklistValue.value} value={picklistValue.value}>{picklistValue.label}</option>
+            </template>
+
+        </select>
+    </template>
+
+
+</template>

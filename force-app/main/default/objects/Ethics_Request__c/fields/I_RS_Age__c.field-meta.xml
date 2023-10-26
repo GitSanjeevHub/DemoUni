@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Age__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(
+
+IF(
+AND(
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Workflow Complete&quot;, 
+TEXT(I_RS_Status__c) &lt;&gt; &quot;With Customer&quot;,
+ISBLANK(I_RS_Closed_Date__c), 
+ISBLANK(I_RS_With_Researcher_Date__c )
+), 
+TODAY() - DATEVALUE(CreatedDate),
+
+IF(
+TEXT(I_RS_Status__c) = &quot;With Customer&quot;,
+ I_RS_With_Researcher_Date__c - DATEVALUE(CreatedDate),
+
+IF( 
+TEXT(I_RS_Status__c) = &quot;Closed&quot;, 
+I_RS_Closed_Date__c - DATEVALUE(CreatedDate) - (I_RS_With_Ethics_Team_Date__c - I_RS_With_Researcher_Date__c),
+
+TODAY() - DATEVALUE(CreatedDate) - (I_RS_With_Ethics_Team_Date__c - I_RS_With_Researcher_Date__c))))
+)
+
+&amp;&quot; &quot;&amp;&quot;days&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Age</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

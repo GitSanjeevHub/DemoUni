@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Assign_fields</name>
+        <label>Assign fields</label>
+        <locationX>250</locationX>
+        <locationY>328</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.IsExternallyVisible</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Automated field-pre population on EmailMessage object (standard logger for outbound emails)</description>
+    <interviewLabel>EmailMessage field prepopulation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EmailMessage field prepopulation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Assign_fields</targetReference>
+        </connector>
+        <object>EmailMessage</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

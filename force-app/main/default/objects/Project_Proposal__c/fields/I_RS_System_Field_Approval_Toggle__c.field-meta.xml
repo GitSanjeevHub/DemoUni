@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_System_Field_Approval_Toggle__c</fullName>
+    <description>This is a system(Code related) field to be used in approval process to execute trigger and there by handle lock unlock</description>
+    <externalId>false</externalId>
+    <label>System Field Approval Toggle</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>One</fullName>
+                <default>false</default>
+                <label>One</label>
+            </value>
+            <value>
+                <fullName>Two</fullName>
+                <default>false</default>
+                <label>Two</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

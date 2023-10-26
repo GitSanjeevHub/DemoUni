@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Days_Until_Activity_Date__c</fullName>
+    <description>e.g. 7 days means when the Activity is created, the Activity Date will be 7 days from today</description>
+    <externalId>false</externalId>
+    <inlineHelpText>e.g. 7 days means when the Activity is created, the Activity Date will be 7 days from today</inlineHelpText>
+    <label>Days Until Activity Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cash_External_Cannot_Be_In_Kind</fullName>
+    <active>true</active>
+    <description>Budget Line Items with Category &apos;Cash External&apos; can only be In-Cash, not In-Kind</description>
+    <errorConditionFormula>TEXT(I_RS_Category__c) = &apos;Cash External&apos; &amp;&amp;
+I_RS_In_Kind__c</errorConditionFormula>
+    <errorMessage>&apos;Cash External&apos; can only be In-Cash, not In-Kind</errorMessage>
+</ValidationRule>

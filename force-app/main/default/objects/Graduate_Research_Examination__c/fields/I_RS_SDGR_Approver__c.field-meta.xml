@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_SDGR_Approver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Normally the Director of Graduate Research for the candidate’s school, unless they have a conflict, in which case will usually be the Head of School</inlineHelpText>
+    <label>SDGR Approver</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Contact.I_RS_Related_User__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Graduate Research Examinations (SDGR Approver)</relationshipLabel>
+    <relationshipName>SDGR_Approver_Thesis</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

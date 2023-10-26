@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Research_Opportunity__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Funding Opportunity</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;table class=&quot;ql-table-blob&quot; id=&quot;ibm_docs_ss_1585114881003&quot; style=&quot;font-size: 12pt; color: rgb(34, 34, 34); font-style: normal; font-weight: 400; text-align: right; background-color: transparent; font-family: Calibri;&quot;&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 372px;&quot;&gt;&lt;/col&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr style=&quot;height: 21px;&quot;&gt;&lt;td colspan=&quot;1&quot; rowspan=&quot;1&quot; style=&quot;&quot;&gt;The funding opportunity is open.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Available</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;table class=&quot;ql-table-blob&quot; id=&quot;ibm_docs_ss_1585114908212&quot; style=&quot;font-size: 12pt; color: rgb(34, 34, 34); font-style: normal; font-weight: 400; text-align: right; background-color: transparent; font-family: Calibri;&quot;&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 372px;&quot;&gt;&lt;/col&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr style=&quot;height: 21px;&quot;&gt;&lt;td colspan=&quot;1&quot; rowspan=&quot;1&quot; style=&quot;&quot;&gt;The funding opportunity is no longer available.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;table class=&quot;ql-table-blob&quot; id=&quot;ibm_docs_ss_1585114810275&quot; style=&quot;font-size: 12pt; color: rgb(34, 34, 34); font-style: normal; font-weight: 400; text-align: right; background-color: transparent; font-family: Calibri;&quot;&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 372px;&quot;&gt;&lt;/col&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr style=&quot;height: 21px;&quot;&gt;&lt;td colspan=&quot;1&quot; rowspan=&quot;1&quot; style=&quot;&quot;&gt;Complete the full details of the funding opportunity.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Drafted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;table class=&quot;ql-table-blob&quot; id=&quot;ibm_docs_ss_1585114890494&quot; style=&quot;font-size: 12pt; color: rgb(34, 34, 34); font-style: normal; font-weight: 400; text-align: right; background-color: transparent; font-family: Calibri;&quot;&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 372px;&quot;&gt;&lt;/col&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr style=&quot;height: 21px;&quot;&gt;&lt;td colspan=&quot;1&quot; rowspan=&quot;1&quot; style=&quot;&quot;&gt;The internal closing date for submission is past.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Internal Applications Closed</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_RS_Funding_Opportunity</recordTypeName>
+</PathAssistant>

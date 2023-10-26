@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_to_Candidate_when_AR_approved_by_Chair_BGR</fullName>
+        <ccEmails>exams.GRS@latrobe.edu.au</ccEmails>
+        <description>Email to Candidate when AR approved by Chair BGR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Student_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/Email_to_Candidate_when_AR_approved_by_Chair_BGR</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_SDGR_when_AR_form_rejected_by_Chair_BGR</fullName>
+        <ccEmails>exams.grs@latrobe.edu.au</ccEmails>
+        <description>Email to SDGR when AR form rejected by Chair BGR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_DGR_Approver_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/Email_to_SDGR_when_AR_form_rejected_by_Chair_BGR</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_candidate_when_AR_form_rejected_by_Chair_BGR</fullName>
+        <description>Email to candidate when AR form rejected by Chair BGR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Student_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/Email_to_candidate_when_AR_form_rejected_by_Chair_BGR</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_candidate_when_AR_form_rejected_by_SDGR</fullName>
+        <ccEmails>exams.grs@latrobe.edu.au</ccEmails>
+        <description>Email to candidate when AR form rejected by SDGR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Student_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/Email_to_candidate_when_AR_form_rejected_by_SDGR</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_candidate_when_AR_form_rejected_by_supervisor</fullName>
+        <ccEmails>exams.grs@latrobe.edu.au</ccEmails>
+        <description>Email to candidate when AR form rejected by supervisor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Student_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/Email_to_candidate_when_AR_form_rejected_by_supervisor</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_supervisor_when_AR_approved</fullName>
+        <description>Email to supervisor when AR approved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Supervisor_Approver_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/Email_to_supervisor_when_AR_approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_supervisor_when_AR_form_rejected_by_Chair_BGR</fullName>
+        <description>Email to supervisor when AR form rejected by Chair BGR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Supervisor_Approver_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/Email_to_supervisor_when_AR_form_rejected_by_Chair_BGR</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_supervisor_when_AR_form_rejected_by_SDGR</fullName>
+        <description>Email to supervisor when AR form rejected by SDGR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Supervisor_Approver_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/Email_to_supervisor_when_AR_form_rejected_by_SDGR</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>AR_Change_Status_to_DGR_Approval</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>SDGR approval</literalValue>
+        <name>AR-Change Status to DGR Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AR_Change_Status_to_Supervisor_Approval</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>Supervisor approval</literalValue>
+        <name>AR-Change Status to Supervisor Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AR_Change_status_to_BGR_approva</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>Chair BGR approval</literalValue>
+        <name>AR- Change status to BGR approva</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AR_Change_status_to_GRS_Processing</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>GRS Processing</literalValue>
+        <name>AR-Change status to GRS Processing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AR_Set_Status_to_Draft</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>AR-Set Status to Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

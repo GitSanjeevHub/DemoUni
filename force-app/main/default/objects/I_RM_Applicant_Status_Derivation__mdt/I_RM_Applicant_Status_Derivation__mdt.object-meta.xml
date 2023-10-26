@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used for deriving active Applicant statuses based on Application status of related Applications as per LTU360-1327</description>
+    <label>Applicant Status Derivation</label>
+    <pluralLabel>Applicant Status Derivations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

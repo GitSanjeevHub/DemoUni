@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Research_Output_Target__c</fullName>
+    <description>Career Success target for the benchmarking unit, academic level and research allocation, adjusted by FTE</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Career Success target for the benchmarking unit, academic level and research allocation, adjusted by FTE</inlineHelpText>
+    <label>Research Target</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

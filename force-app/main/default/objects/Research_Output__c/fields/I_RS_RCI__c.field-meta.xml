@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_RCI__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(I_RS_Number_of_Citations__c &gt; 0 &amp;&amp;  RecordType.DeveloperName = &apos;I_RS_Journal_Article_5&apos; &amp;&amp; I_RS_FOR_Code_World_Benchmark__c &gt; 0,
+
+I_RS_Number_of_Citations__c / I_RS_FOR_Code_World_Benchmark__c,
+ 
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>RCI</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>9</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

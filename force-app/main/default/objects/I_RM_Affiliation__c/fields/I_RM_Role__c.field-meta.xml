@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Role__c</fullName>
+    <description>This represents the role of the affiliation</description>
+    <externalId>false</externalId>
+    <label>Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Student</fullName>
+                <default>false</default>
+                <label>Student</label>
+            </value>
+            <value>
+                <fullName>Domestic Lead</fullName>
+                <default>false</default>
+                <label>Student Lead (Dom)</label>
+            </value>
+            <value>
+                <fullName>Applicant</fullName>
+                <default>false</default>
+                <label>Student Applicant (Dom)</label>
+            </value>
+            <value>
+                <fullName>La Trobe Staff</fullName>
+                <default>false</default>
+                <label>La Trobe Staff</label>
+            </value>
+            <value>
+                <fullName>School Representative</fullName>
+                <default>false</default>
+                <label>Secondary School Representative</label>
+            </value>
+            <value>
+                <fullName>Alumni</fullName>
+                <default>false</default>
+                <label>Alumni</label>
+            </value>
+            <value>
+                <fullName>External Contact</fullName>
+                <default>false</default>
+                <label>External Contact</label>
+            </value>
+            <value>
+                <fullName>HDR Student</fullName>
+                <default>false</default>
+                <label>Graduate Researcher</label>
+            </value>
+            <value>
+                <fullName>Student Lead (Int)</fullName>
+                <default>false</default>
+                <label>Student Lead (Int)</label>
+            </value>
+            <value>
+                <fullName>Nominated Affiliation</fullName>
+                <default>false</default>
+                <label>Nominated Affiliation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

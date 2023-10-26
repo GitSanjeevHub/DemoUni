@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Make_a_Chatter_Post__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is referenced by an approval process. If this checkbox is true, a process builder will be triggered to create a Chatter post that mention&apos;s the Research Office Contact person</description>
+    <externalId>false</externalId>
+    <label>Make a Chatter Post</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

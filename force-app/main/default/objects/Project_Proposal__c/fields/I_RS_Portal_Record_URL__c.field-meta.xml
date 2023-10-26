@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Portal_Record_URL__c</fullName>
+    <description>URL for record in researcher portal. Used in email templates sent to researchers, and in any places where the correct URL is not based on the logged in user.</description>
+    <externalId>false</externalId>
+    <formula>/*Base URL*/
+$Setup.URL_Variable__c.I_RS_Researcher_Portal_Base_URL__c + &apos;/detail/&apos;
++
+/*Record Id*/
+Id</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Portal Record URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

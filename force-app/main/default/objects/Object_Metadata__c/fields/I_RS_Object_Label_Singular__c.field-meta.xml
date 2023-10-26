@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Object_Label_Singular__c</fullName>
+    <description>Object label. Use for UI display.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Object label. Use for UI display. e.g. Project Proposal</inlineHelpText>
+    <label>Object Label - Singular</label>
+    <length>60</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

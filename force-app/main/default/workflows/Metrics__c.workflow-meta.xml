@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Field_Update_Metric_Value</fullName>
+        <field>I_RS_Value_Numeric__c</field>
+        <formula>IF(ISNUMBER(I_RS_Value__c) = TRUE, Value(I_RS_Value__c), 0)</formula>
+        <name>Field Update: Metric Value</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Metrics Value is not NULL</fullName>
+        <actions>
+            <name>Field_Update_Metric_Value</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR( AND( ISNEW(), NOT(ISBLANK(I_RS_Value__c)), TEXT(I_RS_Type__c) = &apos;Citation Count&apos; ),  AND( NOT(ISNEW()), ISCHANGED(I_RS_Value__c), TEXT(I_RS_Type__c) = &apos;Citation Count&apos; ),  AND( NOT(ISNEW()), ISCHANGED(I_RS_Type__c), TEXT(I_RS_Type__c) = &apos;Citation Count&apos; ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

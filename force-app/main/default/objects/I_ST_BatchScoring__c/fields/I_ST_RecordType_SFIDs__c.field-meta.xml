@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_RecordType_SFIDs__c</fullName>
+    <description>Provide comma separated RecordTypeIds of Case object which is to be considered for Activity Scoring. To get the record type Ids =&gt; Navigate to Setup -&gt; Object Manager -&gt; Case -&gt; RecordTypes -&gt; Select the record type -&gt; copy the 18 digit Id from the URL</description>
+    <externalId>false</externalId>
+    <label>I_ST_RecordType_SFIDs</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

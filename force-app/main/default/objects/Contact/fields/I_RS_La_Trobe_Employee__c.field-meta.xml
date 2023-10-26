@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_La_Trobe_Employee__c</fullName>
+    <description>Is true if primary Organisation has &#39;Part of La Trobe&#39; as true</description>
+    <externalId>false</externalId>
+    <formula>Account.I_RS_Part_of_La_Trobe__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>La Trobe Employee</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

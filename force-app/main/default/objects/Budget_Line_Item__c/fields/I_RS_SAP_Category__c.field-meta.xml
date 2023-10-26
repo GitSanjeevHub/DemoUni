@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_SAP_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>SAP Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Salary Costs</fullName>
+                <default>false</default>
+                <label>Salary Costs</label>
+            </value>
+            <value>
+                <fullName>Repairs/Maintenance</fullName>
+                <default>false</default>
+                <label>Repairs/Maintenance</label>
+            </value>
+            <value>
+                <fullName>Computer equipment</fullName>
+                <default>false</default>
+                <label>Computer equipment</label>
+            </value>
+            <value>
+                <fullName>Plant &amp; Equipment</fullName>
+                <default>false</default>
+                <label>Plants &amp; Equipment</label>
+            </value>
+            <value>
+                <fullName>Advertising/ Promotional Activities</fullName>
+                <default>false</default>
+                <label>Advertising/ Promotional Activities</label>
+            </value>
+            <value>
+                <fullName>Professional/Consulting/Contractual Fees</fullName>
+                <default>false</default>
+                <label>Professional/Consulting/Contractual Fees</label>
+            </value>
+            <value>
+                <fullName>Books &amp; Publications</fullName>
+                <default>false</default>
+                <label>Books &amp; Publications</label>
+            </value>
+            <value>
+                <fullName>Stationery &amp; Office Supplies</fullName>
+                <default>false</default>
+                <label>Stationery &amp; Office Supplies</label>
+            </value>
+            <value>
+                <fullName>Scholarships</fullName>
+                <default>false</default>
+                <label>Scholarships</label>
+            </value>
+            <value>
+                <fullName>Travel</fullName>
+                <default>false</default>
+                <label>Travel</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Materials / Consumables / Sundry expenses</fullName>
+                <default>false</default>
+                <label>Materials / Consumables / Sundry expenses</label>
+            </value>
+            <value>
+                <fullName>Transfer to Other Universities</fullName>
+                <default>false</default>
+                <label>Transfer to Other Universities</label>
+            </value>
+            <value>
+                <fullName>Licenses/ Registration/ Subscriptions</fullName>
+                <default>false</default>
+                <label>Licenses/ Registration/ Subscriptions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

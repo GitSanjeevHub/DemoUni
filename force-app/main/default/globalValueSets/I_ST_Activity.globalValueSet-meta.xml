@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Campus Tour</fullName>
+        <default>false</default>
+        <label>Campus Tour</label>
+    </customValue>
+    <customValue>
+        <fullName>Campus talk and tour</fullName>
+        <default>false</default>
+        <label>Campus talk and tour</label>
+    </customValue>
+    <customValue>
+        <fullName>Expo</fullName>
+        <default>false</default>
+        <label>Expo</label>
+    </customValue>
+    <customValue>
+        <fullName>Drop In Session</fullName>
+        <default>false</default>
+        <label>Drop In Session</label>
+    </customValue>
+    <customValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </customValue>
+    <customValue>
+        <fullName>Presentation</fullName>
+        <default>false</default>
+        <label>Presentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Workshop</fullName>
+        <default>false</default>
+        <label>Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual Event</fullName>
+        <default>false</default>
+        <label>Virtual Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Webinars</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Webinars</label>
+    </customValue>
+    <customValue>
+        <fullName>Thought Leadership</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Thought Leadership</label>
+    </customValue>
+    <customValue>
+        <fullName>Talk And Tour</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Talk And Tour</label>
+    </customValue>
+    <customValue>
+        <fullName>TAFE Presentation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TAFE Presentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Short Course</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Short Course</label>
+    </customValue>
+    <customValue>
+        <fullName>School Meeting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School Meeting</label>
+    </customValue>
+    <customValue>
+        <fullName>School Presentation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School Presentation</label>
+    </customValue>
+    <customValue>
+        <fullName>School Account Management</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>School Account Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Return To Study Presentation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Return To Study Presentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Open Day</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Open Day</label>
+    </customValue>
+    <customValue>
+        <fullName>Conversations</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Conversations</label>
+    </customValue>
+    <customValue>
+        <fullName>Career Expo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Career Expo</label>
+    </customValue>
+    <customValue>
+        <fullName>Futures Day</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Futures Day</label>
+    </customValue>
+    <customValue>
+        <fullName>Health Forum</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Health Forum</label>
+    </customValue>
+    <customValue>
+        <fullName>Industry Exhibition</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industry Exhibition</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest Area</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Interest Area</label>
+    </customValue>
+    <customValue>
+        <fullName>Industry Visit</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industry Visit</label>
+    </customValue>
+    <masterLabel>I_ST_Activity</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

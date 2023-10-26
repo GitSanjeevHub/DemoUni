@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_VariationOther_Mandatory</fullName>
+    <active>true</active>
+    <description>Variation Other is mandatory if Variation Type is selected as &apos;Other (Please Specify)&apos;.</description>
+    <errorConditionFormula>ISPICKVAL(L_PR_Variation_type__c, &apos;Other (Please Specify)&apos;)
+&amp;&amp; ISBLANK( L_PR_Variation_Other__c)
+&amp;&amp; RecordType.DeveloperName =&apos;L_PR_Agent_Variation_Agreement&apos;</errorConditionFormula>
+    <errorDisplayField>L_PR_Variation_Other__c</errorDisplayField>
+    <errorMessage>Variation Other is mandatory if Variation Type is selected as &apos;Other (Please Specify)&apos;.</errorMessage>
+</ValidationRule>

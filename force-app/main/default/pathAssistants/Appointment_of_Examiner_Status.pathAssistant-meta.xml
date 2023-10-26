@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Appointment_of_Examiner__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Appointment of Examiner Status</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The form has been completed or cancelled. &lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The form has been sent to the Chair of the Board of Graduate Research or delegate for approval of the examiners. &lt;/p&gt;&lt;p&gt;To approve or reject the form, click on ‘Approvals’ below and follow the instructions. When you click on ‘approve’ you have the option to add a comment, which you can use to note which examiners to invite, or any other special instructions such as if you are approving some but not all of the examiners. Comments in the approval box are only visible to GRS staff. If you reject the form it will be sent back to the supervisor to re-submit, and they will see your rejection comments in the notification email. &lt;/p&gt;</info>
+        <picklistValueName>Dean approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The form is with the School Director of Graduate Research for approval.&lt;/p&gt;&lt;p&gt;SDGRs: please review the examiner details provided by the supervisor, and if you endorse the nominations click on ‘Approvals’ below and follow the instructions to approve the record. If you don’t endorse all the nominated examiners, or would like further information from the supervisor, click on ‘reject’ and include your reasons in the comment.&lt;/p&gt;</info>
+        <picklistValueName>Director GR Approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Form is sitting with the supervisor waiting to be submitted for approval.&lt;/p&gt;&lt;p&gt;Supervisors: before completing this form please read the instructions below and the &lt;a href=&quot;https://policies.latrobe.edu.au/document/view.php?id=120%22%20\t%20%22_blank&quot; target=&quot;_blank&quot;&gt;Graduate Research Examination Procedure - Appointment of Examiners&lt;/a&gt;. Once you have completed the examiner details and the supervisor declaration, click on the &amp;#39;Submit for Approval&amp;#39; button at the top right of the screen to send the form to the School Director of Graduate Research.&lt;/p&gt;</info>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The examiners have been fully or partially approved by the Chair of the Board of Graduate Research (or delegate) and the GRS will contact the proposed examiners to invite them to examine the thesis. If not all the examiners were approved, the GRS will get in touch with the principal supervisor with further details of what is required. &lt;/p&gt;</info>
+        <picklistValueName>GRS Processing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The examiners have been endorsed by the SDGR and the form is being reviewed by the GRS. &lt;/p&gt;</info>
+        <picklistValueName>GRS Review</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Valid_First_Name_Mobile_OR_Email</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT (CONTAINS( $Label.I_RM_Profile_To_Exclude , $Profile.Name)),
+OR (
+AND(
+ISPICKVAL(I_RM_Role__c,&quot;Domestic Lead&quot;),
+ISBLANK(I_RM_Mobile_Phone__c),
+ISBLANK(I_RM_Email__c),
+ISBLANK( I_RM_Work_Email__c )
+),
+AND(
+ISPICKVAL(I_RM_Role__c, &apos;Nominated Affiliation&apos;),
+ISBLANK( I_RM_Email__c ),
+ISBLANK(I_RM_Work_Email__c),
+ISBLANK(I_RM_Mobile_Phone__c)
+),
+AND(
+ISPICKVAL(I_RM_Role__c, &apos;Student Lead (Int)&apos;),
+ISBLANK( I_RM_Email__c ),
+ISBLANK(I_RM_Work_Email__c),
+ISBLANK(I_RM_Mobile_Phone__c),
+I_IL_Nominee_Flag__c = FALSE
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Mobile Number OR Email is required to create a Student Lead</errorMessage>
+</ValidationRule>

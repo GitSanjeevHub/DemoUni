@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>WBS_Active_LCI</fullName>
+        <description>WBS Active - LCI</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Lead_Chief_Investigator__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>ltuist@outlook.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/WBS_Active_Researcher</template>
+    </alerts>
+    <alerts>
+        <fullName>WBS_Error_Finance_Admin_Team</fullName>
+        <description>WBS Error - Finance Admin Team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Finance_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>ltuist@outlook.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/WBS_Error_Finance_Admin_Team</template>
+    </alerts>
+    <alerts>
+        <fullName>WBS_Error_RO</fullName>
+        <description>WBS Error - RO</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Research_Office_Contact__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>ltuist@outlook.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/WBS_Error_Research_Office</template>
+    </alerts>
+    <alerts>
+        <fullName>WBS_Inctive_LCI</fullName>
+        <description>WBS Inctive - LCI</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Lead_Chief_Investigator__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>ltuist@outlook.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/WBS_Inctive_Researcher</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_WBS_referenceID_with_SalesforceID</fullName>
+        <description>Updates WBS ReferenceID field with SalesforceID</description>
+        <field>I_RS_Reference_Id__c</field>
+        <formula>Id</formula>
+        <name>Update WBS referenceID with SalesforceID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_WBS_status_Error</fullName>
+        <description>Updates WBS Status to &quot;Not Synced with Finance&quot;</description>
+        <field>I_RS_WBS_Status__c</field>
+        <literalValue>Not Synced with Finance</literalValue>
+        <name>Update WBS status Error</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>WBS onCreate updated ReferenceID</fullName>
+        <actions>
+            <name>Update_WBS_referenceID_with_SalesforceID</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>WBS__c.I_RS_Reference_Id__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>On Create of WBS record if the Reference ID is blank update the reference ID field with Salesforce ID</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

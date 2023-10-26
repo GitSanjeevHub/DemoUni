@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Journal</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Journal_Compact_Layout</compactLayoutAssignment>
+    <label>Journal</label>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MyPub Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIS Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Open_Access__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Peer_Review__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

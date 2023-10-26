@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Contract_Send_Email_to_Research_Office_Contact</fullName>
+        <description>Contract:Send Email to Research Office Contact</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Research_Office_Contact__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Contract_Research_Office_Assignment</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ContractUpdate_Approval_Comments_to_TRUE</fullName>
+        <field>I_RS_Update_Approval_Comments__c</field>
+        <literalValue>1</literalValue>
+        <name>ContractUpdate Approval Comments to TRUE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contract_Make_a_Chatter_Post</fullName>
+        <field>I_RS_Make_a_Chatter_Post__c</field>
+        <literalValue>1</literalValue>
+        <name>Contract: Make a Chatter Post</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_Approved</fullName>
+        <field>I_RS_Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Approval Status to Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_Open_for_Appro</fullName>
+        <field>I_RS_Approval_Status__c</field>
+        <literalValue>Open for Approval</literalValue>
+        <name>Update Approval Status to Open for Appro</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_Rejected</fullName>
+        <field>I_RS_Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Update Approval Status to Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_Submitted</fullName>
+        <field>I_RS_Approval_Status__c</field>
+        <literalValue>Submitted for Approval</literalValue>
+        <name>Update Approval Status to Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Locked_status_to_False</fullName>
+        <field>I_RS_Locked__c</field>
+        <literalValue>0</literalValue>
+        <name>Update Locked status to False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Locked_status_to_True</fullName>
+        <field>I_RS_Locked__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Locked status to True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Contract%3AResearch Office Assignment</fullName>
+        <actions>
+            <name>Contract_Send_Email_to_Research_Office_Contact</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED(I_RS_Research_Office_Contact__c)  &amp;&amp;  NOT ( ISNULL ( I_RS_Research_Office_Contact__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract%3AStatus is Initial</fullName>
+        <actions>
+            <name>Update_Locked_status_to_False</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contract__c.I_RS_Status__c</field>
+            <operation>equals</operation>
+            <value>Draft</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contract__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New Agreement Or Variation Request</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract%3AStatus is Submit to Research Office</fullName>
+        <actions>
+            <name>Update_Locked_status_to_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contract__c.I_RS_Status__c</field>
+            <operation>equals</operation>
+            <value>Submit to Research Office</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contract__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New Agreement Or Variation Request</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

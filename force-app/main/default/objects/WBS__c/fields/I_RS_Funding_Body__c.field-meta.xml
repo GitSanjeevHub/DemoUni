@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Funding_Body__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Reference of Funding body in PRIME for the WBS</description>
+    <externalId>false</externalId>
+    <label>Funding Body</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>WBS</relationshipLabel>
+    <relationshipName>WBS_s</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

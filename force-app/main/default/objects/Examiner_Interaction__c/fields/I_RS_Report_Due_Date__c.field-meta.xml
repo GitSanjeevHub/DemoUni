@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Report_Due_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Date the examiner is due to send back their completed report by. Usually 6 weeks from despatch date but may be adjusted if they ask for more time</inlineHelpText>
+    <label>Date Report Due</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

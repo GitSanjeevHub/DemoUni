@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Outbound_Attempt__c</fullName>
+    <description>Added for IST-327</description>
+    <externalId>false</externalId>
+    <label>Outbound Attempt</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1st Attempt Failed</fullName>
+                <default>false</default>
+                <label>1st Attempt Failed</label>
+            </value>
+            <value>
+                <fullName>2nd Attempt Failed</fullName>
+                <default>false</default>
+                <label>2nd Attempt Failed</label>
+            </value>
+            <value>
+                <fullName>3rd Attempt Failed</fullName>
+                <default>false</default>
+                <label>3rd Attempt Failed</label>
+            </value>
+            <value>
+                <fullName>Call Not Required</fullName>
+                <default>false</default>
+                <label>Call Not Required</label>
+            </value>
+            <value>
+                <fullName>Cannot Contact</fullName>
+                <default>false</default>
+                <label>Cannot Contact</label>
+            </value>
+            <value>
+                <fullName>Returned Call</fullName>
+                <default>false</default>
+                <label>Returned Call</label>
+            </value>
+            <value>
+                <fullName>Responded To Text</fullName>
+                <default>false</default>
+                <label>Responded To Text</label>
+            </value>
+            <value>
+                <fullName>No Response To Text</fullName>
+                <default>false</default>
+                <label>No Response To Text</label>
+            </value>
+            <value>
+                <fullName>Responded to Email</fullName>
+                <default>false</default>
+                <label>Responded to Email</label>
+            </value>
+            <value>
+                <fullName>No Response to Email</fullName>
+                <default>false</default>
+                <label>No Response to Email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

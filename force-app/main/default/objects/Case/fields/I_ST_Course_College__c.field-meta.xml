@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Course_College__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( I_ST_Course_Availability__c ), &apos;N/A&apos;, I_ST_Course_Availability__r.L_AD_CourseInstance__r.L_AD_College_Name__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Shows the College for the Course Availability</inlineHelpText>
+    <label>College</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

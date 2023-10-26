@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_1st_Examiner_Organisation_Name__c</fullName>
+    <description>https://eawebdev.atlassian.net/browse/T2-987</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If you can’t find an existing contact record for the examiner, please enter the organisation they are associated to.</inlineHelpText>
+    <label>1st Examiner Organisation Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Graduate_Research_Examination__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Graduate Research Examination</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;One week prior to submission of the thesis / examinable works, the candidate must seek their principal supervisor and School Director of Graduate Research’s (SDGR’s) endorsement by submitting the Authority to Submit (ATS) form. By endorsing the form, the supervisor is agreeing that they have reviewed a final copy of the thesis and that, in their opinion, the thesis is ready for examination and complies with the provisions of the &lt;a href=&quot;http://grs.latrobe.edu.au/policy&quot; target=&quot;_blank&quot;&gt;Graduate Research Examinations - Schedule B - Presentation of Theses for Graduate Research Degrees&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Guidance on the thesis submission process and requirements is available on the &lt;a href=&quot;http://grs.latrobe.edu.au/submission&quot; target=&quot;_blank&quot;&gt;GRS website&lt;/a&gt;.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Guidance for candidates&lt;/b&gt;&lt;/p&gt;&lt;p&gt;You can initiate the form by clicking the ‘New ATS Form’ button on the top right of the screen.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;</info>
+        <picklistValueName>Authority to Submit</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The candidate has completed any amendments required and has submitted their Access to Thesis Consent (ATC) form and uploaded the final version of their thesis to the Repository. The recommendation by the Board of Graduate Research to award the degree is awaiting approval by Academic Board.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;Guidance on the examination process is available on the &lt;a href=&quot;https://www.latrobe.edu.au/researchers/grs/hdr/thesis-submission/after-exams-graduation&quot; target=&quot;_blank&quot;&gt;GRS website&lt;/a&gt;.&lt;/p&gt;</info>
+        <picklistValueName>Awaiting Academic Board Approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The examination process has concluded.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The candidate has received a recommended outcome of pass (with or without amendments) and is undertaking the final steps required before the Board of Graduate Research can recommend to Academic Board that the degree be awarded.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;This includes completing any amendments to the satisfaction of the principal supervisor and School Director of Graduate Research or Head of School, submitting the Access to Thesis Consent (ATC) form and uploading the final version of their thesis to the Repository.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;Guidance on the examination process is available on the &lt;a href=&quot;https://www.latrobe.edu.au/researchers/grs/hdr/thesis-submission/after-exams-graduation&quot; target=&quot;_blank&quot;&gt;GRS website&lt;/a&gt;.&lt;/p&gt;</info>
+        <picklistValueName>Completion Requirements</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Notice of Intention (NOI) to Submit is the first stage of the examination process and is completed one month before the planned submission date. The NOI form is initiated by the candidate and then approved by the principal supervisor before being actioned by the Graduate Research School.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Guidance for candidates&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Discuss your intention to submit your thesis with your supervisor and complete the Notice of Intention to Submit (NOI) form one month prior to your planned submission date. You can initiate the form by clicking on the ‘New NOI Form’ button on the top right of the screen.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;You can find more information on the examination process on the &lt;a href=&quot;http://grs.latrobe.edu.au/submission&quot; target=&quot;_blank&quot;&gt;GRS Website&lt;/a&gt;.&lt;/p&gt;</info>
+        <picklistValueName>NOI to Submit</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The GRS has advised the candidate and supervisors of the outcome recommended by the Chair of the Board of Graduate Research.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;Guidance on the examination process is available on the &lt;a href=&quot;https://www.latrobe.edu.au/researchers/grs/hdr/thesis-submission/examination&quot; target=&quot;_blank&quot;&gt;GRS website&lt;/a&gt;.&lt;/p&gt;</info>
+        <picklistValueName>Outcome Communicated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The thesis / exegesis has been submitted and is under examination. The examination process takes approximately four to six months, but can sometimes take longer, particularly if the examination is occurring during a holiday period. The GRS regularly reviews the status of every examination and maintains regular contact with appointed examiners throughout the process. The process is confidential and we can only provide general information on the status of the examination to candidates and supervisors.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;Guidance on the examination process is available on the &lt;a href=&quot;https://www.latrobe.edu.au/researchers/grs/hdr/thesis-submission/examination&quot; target=&quot;_blank&quot;&gt;GRS website&lt;/a&gt;.&lt;/p&gt;</info>
+        <picklistValueName>Under Examination</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The ATS has been approved and the GRS has sent a link to the candidate to upload their thesis / examinable works to the Repository. Once the candidate has uploaded their thesis / examinable works, the GRS will update the status to &amp;#39;Under Examination&amp;#39;.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;Guidance on the thesis submission process and requirements is available on the &lt;a href=&quot;https://www.latrobe.edu.au/researchers/grs/hdr/thesis-submission/submission&quot; target=&quot;_blank&quot;&gt;GRS website&lt;/a&gt;.&lt;/p&gt;</info>
+        <picklistValueName>Upload Thesis</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

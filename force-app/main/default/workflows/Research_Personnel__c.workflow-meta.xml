@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Duplicate_Flag_to_Counter</fullName>
+        <field>I_RS_Duplicate_Flag__c</field>
+        <formula>I_RS_Research_Personnel_Counter__c</formula>
+        <name>Update Duplicate Flag to Counter</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>End Date is NOT Null</fullName>
+        <actions>
+            <name>Update_Duplicate_Flag_to_Counter</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updates the Duplicate Flag in Research Personnel. Duplicate flag is referenced in Duplicate and Matching Rules</description>
+        <formula>AND( NOT(ISBLANK(I_RS_End_Date__c)), NOT(ISBLANK(I_RS_Research_Personnel_Counter__c)) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_share_with_guest__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Share this account to the guest user, for consultation scheduling</description>
+    <externalId>false</externalId>
+    <label>Share with Guest</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_RES_RO</fullName>
+    <active>true</active>
+    <description>Corresponds to the &apos;RES-RO&apos; record type on Milestone Tasks (Activities)</description>
+    <label>RES-RO</label>
+    <picklistValues>
+        <picklist>I_RS_Assignee__c</picklist>
+        <values>
+            <fullName>Research Office Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Researcher</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Milestone_Type__c</picklist>
+        <values>
+            <fullName>Deliverable due from a sub-contractor%2Fcollaborator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethics approval required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Progress report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Deliverable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Priority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Status__c</picklist>
+        <values>
+            <fullName>Completed %2F Agreed by Researcher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Target</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Possibly Won%E2%80%99t Meet the Milestone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

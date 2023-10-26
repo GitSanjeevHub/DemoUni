@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Res_cannot_edit_other_res_codes</fullName>
+    <active>true</active>
+    <description>Researchers cannot add or edit codes on other researchers</description>
+    <errorConditionFormula>!ISBLANK(I_RS_Researcher__c) &amp;&amp;
+$User.I_RS_Is_Researcher_User__c = &quot;1&quot; &amp;&amp;
+I_RS_Researcher__c &lt;&gt; $User.ContactId</errorConditionFormula>
+    <errorMessage>You do not have permission to edit other researchers codes</errorMessage>
+</ValidationRule>

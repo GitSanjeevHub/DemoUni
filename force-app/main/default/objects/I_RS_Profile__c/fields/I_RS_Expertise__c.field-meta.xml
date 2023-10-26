@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Expertise__c</fullName>
+    <description>Labels on their person from the “Expertise” labels scheme - in a single field</description>
+    <externalId>false</externalId>
+    <label>Expertise</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>8</visibleLines>
+</CustomField>

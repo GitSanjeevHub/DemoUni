@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Enable_Deletion_Blocker__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If checked, invalid deletions will be prevented. Validity is provided through specified formula field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If checked, invalid deletions will be prevented. Validity is provided through specified formula field</inlineHelpText>
+    <label>Enable Deletion-Blocker</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

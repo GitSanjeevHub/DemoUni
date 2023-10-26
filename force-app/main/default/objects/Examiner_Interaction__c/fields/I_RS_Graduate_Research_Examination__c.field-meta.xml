@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Graduate_Research_Examination__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Link to the candidate’s examination record</inlineHelpText>
+    <label>Graduate Research Examination ID</label>
+    <referenceTo>Graduate_Research_Examination__c</referenceTo>
+    <relationshipLabel>Examiner Interactions</relationshipLabel>
+    <relationshipName>Examiner_Interactions_del</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

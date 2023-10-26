@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_reason_mandatory_when_Opportunity</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(StageName, &apos;Closed Lost&apos;) &amp;&amp; ISBLANK( L_PR_Closed_Reason__c) &amp;&amp; (ISCHANGED(StageName) || ISNEW()) &amp;&amp;  RecordType.Name = &apos;PRM Opportunity&apos;</errorConditionFormula>
+    <errorDisplayField>L_PR_Closed_Reason__c</errorDisplayField>
+    <errorMessage>Please fill Closed Reason while setting the Opportunity status as Closed Lost.</errorMessage>
+</ValidationRule>

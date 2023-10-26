@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Sync_Funding_Details</name>
+        <label>Sync Funding Details</label>
+        <locationX>695</locationX>
+        <locationY>164</locationY>
+        <actionName>BudgetToFundingDetailSync</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_Lightning_Page_Tab_Config</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>budgetIds</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <description>Check if there are any existing Budget Line Items</description>
+        <name>Any_Existing_Budget_Line_Items</name>
+        <label>Any Existing Budget Line Items</label>
+        <locationX>195</locationX>
+        <locationY>332</locationY>
+        <defaultConnector>
+            <targetReference>No_Budget_Line_Items_Found</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Any_Existing_Budget_Line_Items_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Existing_Budget_Line_Items</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Budget_Details</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Code-based replacement to original flow. Aggregates Budget Line Item data into Funding Detail records under the Budgets Project Proposal .</description>
+    <formulas>
+        <name>Project_Proposal_Funding_Details_Tab_URL</name>
+        <dataType>String</dataType>
+        <expression>&quot;/&quot; &amp; {!Budget.I_RS_Project_Proposal__c}&amp;&quot;?&quot;&amp;{!Project_Proposal_Funding_Details_Tab_Config.Community_Page_Tab_URL_Reference__c} &amp;&quot;=&quot;&amp;{!Project_Proposal_Funding_Details_Tab_Config.I_RS_Community_Page_Default_Tab_Code__c}</expression>
+    </formulas>
+    <interviewLabel>Budget to Funding Details Sync - Code {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Budget to Funding Details Sync - Code</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get additional Budget Details.</description>
+        <name>Get_Budget_Details</name>
+        <label>Get Budget Details</label>
+        <locationX>347</locationX>
+        <locationY>165</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Project_Proposal</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Budget__c</object>
+        <outputReference>Budget</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>I_RS_Project_Proposal__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Check for existing Budget Line Items. If there are some, continue on. If there are none, then there is no need to continue the flow.</description>
+        <name>Get_Existing_Budget_Line_Items</name>
+        <label>Get Existing Budget Line Items</label>
+        <locationX>204</locationX>
+        <locationY>159</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Any_Existing_Budget_Line_Items</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>I_RS_Budget__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Budget_Line_Item__c</object>
+        <outputReference>Existing_Budget_Line_Items</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Lightning_Page_Tab_Config</name>
+        <label>Get Lightning Page Tab Config</label>
+        <locationX>850</locationX>
+        <locationY>165</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Finished</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Project Proposal Funding Details</stringValue>
+            </value>
+        </filters>
+        <object>Lighting_Page_Tabs_Component_Config__c</object>
+        <outputReference>Project_Proposal_Funding_Details_Tab_Config</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Community_Page_Tab_URL_Reference__c</queriedFields>
+        <queriedFields>I_RS_Community_Page_Default_Tab_Code__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Project_Proposal</name>
+        <label>Get Project Proposal</label>
+        <locationX>354</locationX>
+        <locationY>49</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Confirm_Sync_Screen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Budget.I_RS_Project_Proposal__c</elementReference>
+            </value>
+        </filters>
+        <object>Project_Proposal__c</object>
+        <outputReference>Project_Proposal</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>I_RS_Lead_Chief_Investigator_Name__c</queriedFields>
+        <queriedFields>I_RS_Lead_Chief_Investigator__c</queriedFields>
+        <queriedFields>I_RS_LeadChiefInvestigator__c</queriedFields>
+    </recordLookups>
+    <screens>
+        <name>Confirm_Sync_Screen</name>
+        <label>Confirm Sync Screen</label>
+        <locationX>541</locationX>
+        <locationY>161</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Sync_Funding_Details</targetReference>
+        </connector>
+        <fields>
+            <name>Warning_Message</name>
+            <extensionName>c:scriptDisplayFSC</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>callscript</name>
+                <value>
+                    <stringValue>Note: This process will copy Budget Line Items to linked Project Proposal as Funding Details records. Any existing Funding Detail records will be replaced once the process is successful.</stringValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Project_Proposal_field_display_name</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11px; color: rgb(62, 62, 60);&quot;&gt;Project/Project Proposal Title&lt;/span&gt;&lt;/p&gt;&lt;p&gt;{!Project_Proposal.Name}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Lead Chief Investigator&lt;/span&gt;&lt;/p&gt;&lt;p&gt;{!Project_Proposal.I_RS_Lead_Chief_Investigator_Name__c}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Project_Proposal_field_display_lci</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>I_would_like_to_proceed</name>
+            <dataType>Boolean</dataType>
+            <fieldText>I would like to proceed</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>&lt;p&gt;Tick this box to proceed.&lt;/p&gt;</errorMessage>
+                <formulaExpression>{!I_would_like_to_proceed} = True</formulaExpression>
+            </validationRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Finished</name>
+        <label>Finished</label>
+        <locationX>995</locationX>
+        <locationY>165</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>End</name>
+            <extensionName>c:scriptDisplayFSC</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>callscript</name>
+                <value>
+                    <stringValue>Sync successful!</stringValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>No_Budget_Line_Items_Found</name>
+        <label>No Budget Line Items Found</label>
+        <locationX>490</locationX>
+        <locationY>581</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Nothing_to_sync</name>
+            <extensionName>c:scriptDisplayFSC</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>callscript</name>
+                <value>
+                    <stringValue>Oops...please add Budget Line Items to your Budget before performing this step.</stringValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <startElementReference>Get_Existing_Budget_Line_Items</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Current Budget record</description>
+        <name>Budget</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Budget__c</objectType>
+    </variables>
+    <variables>
+        <description>Budget Line Items that already exist for the given Budget</description>
+        <name>Existing_Budget_Line_Items</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Budget_Line_Item__c</objectType>
+    </variables>
+    <variables>
+        <description>Project Proposal record for given Budget</description>
+        <name>Project_Proposal</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Project_Proposal__c</objectType>
+    </variables>
+    <variables>
+        <name>Project_Proposal_Funding_Details_Tab_Config</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Lighting_Page_Tabs_Component_Config__c</objectType>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Percentage_Must_Be_Greater_Than_Zero</fullName>
+    <active>true</active>
+    <description>Minimum percentage amount (at time of writing, we are only covering FoR codes) is 20</description>
+    <errorConditionFormula>!I_RS_Disable_Grid_Validation__c &amp;&amp;
+I_RS_Percentage__c &lt; 0.2</errorConditionFormula>
+    <errorDisplayField>I_RS_Percentage__c</errorDisplayField>
+    <errorMessage>Minimum allowed Percentage is 20%</errorMessage>
+</ValidationRule>

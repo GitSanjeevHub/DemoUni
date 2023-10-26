@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>I_RS_Contract_La_Trobe_template</label>
+    <protected>false</protected>
+    <values>
+        <field>PP_Denied_Status__c</field>
+        <value xsi:type="xsd:string">||Draft contract||Approvals||Formalise Contract||</value>
+    </values>
+</CustomMetadata>

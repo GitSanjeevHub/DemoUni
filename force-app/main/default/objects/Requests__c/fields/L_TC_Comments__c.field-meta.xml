@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_TC_Comments__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate your preferences like :
+Preferred campus 
+Department (if requested for a training) 
+Time frame in which training is needed
+Others</inlineHelpText>
+    <label>Comments</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

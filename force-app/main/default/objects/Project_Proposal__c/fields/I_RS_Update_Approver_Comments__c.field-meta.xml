@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Update_Approver_Comments__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is being updated by an approval process. If this field is set to TRUE, a process builder will be triggered that will then call a flow that updates the Approval Comments field</description>
+    <externalId>false</externalId>
+    <label>Update Approver Comments</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

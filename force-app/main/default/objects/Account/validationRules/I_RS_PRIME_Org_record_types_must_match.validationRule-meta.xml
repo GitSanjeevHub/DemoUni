@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_PRIME_Org_record_types_must_match</fullName>
+    <active>true</active>
+    <description>For PRIME record types, they must be consistent with each other, i.e. an LTU Org Unit cannot belong to an External Organisation, nor vice-versa</description>
+    <errorConditionFormula>(RecordType.DeveloperName = &apos;I_RS_External_Organisation&apos; &amp;&amp;
+Parent.RecordType.DeveloperName = &apos;I_RS_La_Trobe_Organisation_Unit&apos;)
+
+||
+
+(RecordType.DeveloperName = &apos;I_RS_La_Trobe_Organisation_Unit&apos; &amp;&amp;
+Parent.RecordType.DeveloperName = &apos;I_RS_External_Organisation&apos;)</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>An External Organisation cannot belong to an La Trobe Organisation Unit , or vice-versa</errorMessage>
+</ValidationRule>

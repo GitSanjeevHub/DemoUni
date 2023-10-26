@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Course_Preference_Int__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>LTU360-2193: This is the first course preference of a Candidate</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the first course preference of an international Lead</inlineHelpText>
+    <label>Course Preference (Int)</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>CourseParent__c.I_IL_Int_Onshore_Course_Flag__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>CourseParent__c.L_AD_Published_On_Find_A_Course__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>CourseParent__c</referenceTo>
+    <relationshipLabel>Affiliations (Course Preference (Int))</relationshipLabel>
+    <relationshipName>PreferredAffiliations</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,37 @@
+<aura:component implements="flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes,force:hasRecordId">
+
+    <aura:attribute name="headerTitle" type="String" required="true" default=""/>
+    <aura:attribute name="iconName" type="String" required="true" default=""/>
+    
+    <aura:attribute name="buttonTitle" type="String" required="true" default=""/>
+    <aura:attribute name="flowName" type="String" required="true" default=""/>
+
+    <lightning:overlayLibrary aura:id="overlayLib"/>  
+    
+    <!--<div class="slds-border_left slds-border_right slds-border_top slds-border_bottom">
+    
+        <div class="slds-p-left_medium slds-p-right_medium slds-p-top_medium">-->
+        
+            <lightning:card title="{!v.headerTitle}" iconName="{!v.iconName}">
+                
+                <!--<aura:set attribute="title">
+                    
+                    <div class="slds-media__body">
+                        <h2 class="slds-card__header-title">
+                            {!v.headerTitle}
+                        </h2>
+                    </div>
+                    
+                </aura:set>-->
+            
+                <aura:set attribute="actions">
+                    <lightning:button label="{!v.buttonTitle}" onclick="{!c.openFlowInModal}"/>        
+                </aura:set>
+                
+            </lightning:card>
+            
+        <!--</div>
+        
+    </div>-->
+    
+</aura:component>

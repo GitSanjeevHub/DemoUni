@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Director_of_Graduate_Research__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Director of Graduate Research for the candidate&apos;s school, unless they have a conflict, in which case will be an alternative, usually the Head of School</inlineHelpText>
+    <label>Director of Graduate Research</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Graduate Research Examinations (Director of Graduate Research)</relationshipLabel>
+    <relationshipName>Director_of_Graduate_Research_Thesis</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

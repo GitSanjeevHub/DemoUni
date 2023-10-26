@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Allied Heath, Human Services &amp; Sport</fullName>
+        <default>false</default>
+        <label>Allied Heath, Human Services &amp; Sport</label>
+    </customValue>
+    <customValue>
+        <fullName>College PVC (ASSC) Office</fullName>
+        <default>false</default>
+        <label>College PVC (ASSC) Office</label>
+    </customValue>
+    <customValue>
+        <fullName>College PVC (SHE) Office</fullName>
+        <default>false</default>
+        <label>College PVC (SHE) Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+        <label>Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering and Mathematical Sciences</fullName>
+        <default>false</default>
+        <label>Engineering and Mathematical Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Graduate Research School</fullName>
+        <default>false</default>
+        <label>Graduate Research School</label>
+    </customValue>
+    <customValue>
+        <fullName>Humanities and Social Sciences</fullName>
+        <default>false</default>
+        <label>Humanities and Social Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>La Trobe Business School</fullName>
+        <default>false</default>
+        <label>La Trobe Business School</label>
+    </customValue>
+    <customValue>
+        <fullName>La Trobe Law School</fullName>
+        <default>false</default>
+        <label>La Trobe Law School</label>
+    </customValue>
+    <customValue>
+        <fullName>La Trobe Rural Health School</fullName>
+        <default>false</default>
+        <label>La Trobe Rural Health School</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Sciences</fullName>
+        <default>false</default>
+        <label>Life Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Molecular Sciences</fullName>
+        <default>false</default>
+        <label>Molecular Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Nursing and Midwifery</fullName>
+        <default>false</default>
+        <label>Nursing and Midwifery</label>
+    </customValue>
+    <customValue>
+        <fullName>Psychology and Public Health</fullName>
+        <default>false</default>
+        <label>Psychology and Public Health</label>
+    </customValue>
+    <description>Created for IST 188</description>
+    <masterLabel>I_ST_School</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Affiliation__c</fullName>
+    <externalId>false</externalId>
+    <label>Affiliation</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <errorMessage>You can only select La Trobe Staff or External Contact Affiliation</errorMessage>
+        <filterItems>
+            <field>I_RM_Affiliation__c.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>External Contact</value>
+        </filterItems>
+        <filterItems>
+            <field>I_RM_Affiliation__c.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>La Trobe Staff</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>I_RM_Affiliation__c</referenceTo>
+    <relationshipLabel>Agreement Affiliation Relations</relationshipLabel>
+    <relationshipName>Agreement_Affiliation_Relations</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

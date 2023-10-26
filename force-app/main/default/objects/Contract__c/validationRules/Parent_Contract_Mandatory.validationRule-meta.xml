@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Contract_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(I_RS_Contract__c)
+          &amp;&amp;
+(RecordType.DeveloperName = &apos;I_RS_Contract_Variation_Request&apos; 
+          ||
+RecordType.DeveloperName = &apos;I_RS_Variation_from_Client_Template_Legal_Review&apos;
+          ||
+RecordType.DeveloperName = &apos;I_RS_Variation_from_Client_Template_No_Legal_Review&apos;
+          ||
+RecordType.DeveloperName = &apos;I_RS_Variation_Using_a_Letter&apos;
+          ||
+RecordType.DeveloperName = &apos;I_RS_Variation_Using_a_New_Contract&apos;
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Contract__c</errorDisplayField>
+    <errorMessage>Please specify the Agreement you are varying</errorMessage>
+</ValidationRule>

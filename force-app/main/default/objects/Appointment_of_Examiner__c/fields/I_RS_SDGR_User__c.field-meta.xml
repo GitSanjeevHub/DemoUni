@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_SDGR_User__c</fullName>
+    <description>Refers to GRE&apos;s SDGR Contact&apos;s Related User Id</description>
+    <externalId>false</externalId>
+    <formula>I_RS_Graduate_Research_Examination__r.I_RS_Substitute_DirectorGraduateResearch__r.I_RS_Related_User__c</formula>
+    <label>SDGR User</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

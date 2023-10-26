@@ -1,0 +1,27 @@
+<template>
+    
+    <article class={sldsBackgroundClass}>
+
+        <div class={sldsPaddingClass}>
+
+            <template if:true={showIcon}>
+
+                <lightning-icon 
+                    icon-name={iconName}
+                    variant={iconVariant}
+                    size={iconSize}
+                ></lightning-icon>
+
+                &nbsp;&nbsp;&nbsp;
+
+            </template>
+
+            <span class={sldsTextClass}>
+                {text}
+            </span>
+
+        </div>
+
+    </article>
+
+</template>

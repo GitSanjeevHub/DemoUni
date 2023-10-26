@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_LTU_INT_Enquiries_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>LTU INT Enquiries</label>
+    <queue>I_IL_LTU_INT_Enquiries</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

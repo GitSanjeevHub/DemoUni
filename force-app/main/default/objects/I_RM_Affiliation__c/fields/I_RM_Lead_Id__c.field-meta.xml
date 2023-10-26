@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Lead_Id__c</fullName>
+    <description>Depicts Lead&apos;s ID Auto number field.Displayed only on Student Lead (Dom)</description>
+    <displayFormat>{YYYY}-{0000}</displayFormat>
+    <externalId>false</externalId>
+    <label>Lead Id</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_Owner_can_Edit_Contact</fullName>
+    <active>true</active>
+    <errorConditionFormula>CONTAINS($Profile.Name, &quot;Partner Community&quot;)
+&amp;&amp;
+OwnerId != $User.Id</errorConditionFormula>
+    <errorMessage>You can only edit Contacts created by you.</errorMessage>
+</ValidationRule>

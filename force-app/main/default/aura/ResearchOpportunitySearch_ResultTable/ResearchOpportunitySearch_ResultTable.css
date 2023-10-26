@@ -1,0 +1,9 @@
+/**
+ * Created by burnside on 2019-05-17.
+ */
+.THIS .slds-truncate {
+    text-overflow: inherit;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

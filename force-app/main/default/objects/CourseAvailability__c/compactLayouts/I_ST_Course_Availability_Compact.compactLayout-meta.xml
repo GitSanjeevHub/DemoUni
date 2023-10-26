@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Course_Availability_Compact</fullName>
+    <fields>I_ST_Course_Award__c</fields>
+    <fields>I_ST_Campus__c</fields>
+    <fields>I_ST_SISOne_Academic_Year__c</fields>
+    <fields>L_AD_Intake_Period_Name__c</fields>
+    <fields>L_AD_Intake_Period_Start_Date__c</fields>
+    <fields>L_AD_Domestic_Study_Modes_Full_Time__c</fields>
+    <fields>L_AD_Domestic_Study_Modes_Part_Time__c</fields>
+    <label>Course Availability Compact</label>
+</CompactLayout>

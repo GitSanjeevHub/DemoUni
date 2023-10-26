@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ERA</fullName>
+                <default>false</default>
+                <label>ERA</label>
+            </value>
+            <value>
+                <fullName>AWP</fullName>
+                <default>false</default>
+                <label>AWP</label>
+            </value>
+            <value>
+                <fullName>Annual Collection</fullName>
+                <default>false</default>
+                <label>Annual Collection</label>
+            </value>
+            <value>
+                <fullName>Curated Public Exhibition/Event – (J5)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Curated Public Exhibition/Event – (J5)</label>
+            </value>
+            <value>
+                <fullName>Live Performance of a Creative Work – (J3)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Live Performance of a Creative Work – (J3)</label>
+            </value>
+            <value>
+                <fullName>Recorded/Rendered Creative Work – (J4)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Recorded/Rendered Creative Work – (J4)</label>
+            </value>
+            <value>
+                <fullName>Research Report – (J6)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Research Report – (J6)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

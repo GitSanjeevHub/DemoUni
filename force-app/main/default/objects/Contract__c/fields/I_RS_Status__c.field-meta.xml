@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>“Executed” is when the Agreement/Variation has been signed and is active.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>false</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Initial</fullName>
+                <default>false</default>
+                <label>Initial</label>
+            </value>
+            <value>
+                <fullName>Preparing Instructions</fullName>
+                <default>false</default>
+                <label>Preparing Instructions</label>
+            </value>
+            <value>
+                <fullName>Instructions</fullName>
+                <default>false</default>
+                <label>Instructions</label>
+            </value>
+            <value>
+                <fullName>Engage Legal to Draft Variation</fullName>
+                <default>false</default>
+                <label>Engage Legal to Draft Variation</label>
+            </value>
+            <value>
+                <fullName>Update Variation</fullName>
+                <default>false</default>
+                <label>Update Variation</label>
+            </value>
+            <value>
+                <fullName>Notify Appropriate Stakeholders</fullName>
+                <default>false</default>
+                <label>Notify Appropriate Stakeholders</label>
+            </value>
+            <value>
+                <fullName>Create Letter</fullName>
+                <default>false</default>
+                <label>Create Variation</label>
+            </value>
+            <value>
+                <fullName>Completing Template</fullName>
+                <default>false</default>
+                <label>Completing Template</label>
+            </value>
+            <value>
+                <fullName>Engage Legal to Draft Contract</fullName>
+                <default>false</default>
+                <label>Engage Legal to Draft Contract</label>
+            </value>
+            <value>
+                <fullName>Reviewing Draft</fullName>
+                <default>false</default>
+                <label>Reviewing Draft</label>
+            </value>
+            <value>
+                <fullName>Client Review</fullName>
+                <default>false</default>
+                <label>Other Party Review</label>
+            </value>
+            <value>
+                <fullName>Legal Review</fullName>
+                <default>false</default>
+                <label>Legal Review</label>
+            </value>
+            <value>
+                <fullName>Update Contract</fullName>
+                <default>false</default>
+                <label>Update Contract</label>
+            </value>
+            <value>
+                <fullName>Researcher Review</fullName>
+                <default>false</default>
+                <label>Researcher Review</label>
+            </value>
+            <value>
+                <fullName>With Other Party</fullName>
+                <default>false</default>
+                <label>With Other Party</label>
+            </value>
+            <value>
+                <fullName>La Trobe Signature</fullName>
+                <default>false</default>
+                <label>La Trobe Signature</label>
+            </value>
+            <value>
+                <fullName>Send to Client</fullName>
+                <default>false</default>
+                <label>Send to Other Party</label>
+            </value>
+            <value>
+                <fullName>Client Countersign</fullName>
+                <default>false</default>
+                <label>Other Party Countersign</label>
+            </value>
+            <value>
+                <fullName>Receive Client Signed Copy</fullName>
+                <default>false</default>
+                <label>Receive Other Party Signed Copy</label>
+            </value>
+            <value>
+                <fullName>Receive Executed Copy</fullName>
+                <default>false</default>
+                <label>Receive Executed Copy</label>
+            </value>
+            <value>
+                <fullName>Notify of Variation Outcome</fullName>
+                <default>false</default>
+                <label>Notify of Variation Outcome</label>
+            </value>
+            <value>
+                <fullName>La Trobe Countersign</fullName>
+                <default>false</default>
+                <label>La Trobe Countersign</label>
+            </value>
+            <value>
+                <fullName>La Trobe University Signature</fullName>
+                <default>false</default>
+                <label>La Trobe University Signature</label>
+            </value>
+            <value>
+                <fullName>Send Signed Copy Back</fullName>
+                <default>false</default>
+                <label>Send Signed Copy Back</label>
+            </value>
+            <value>
+                <fullName>Submit to Research Office</fullName>
+                <default>false</default>
+                <label>Submit to Research Office</label>
+            </value>
+            <value>
+                <fullName>Return Signed Copy to Client</fullName>
+                <default>false</default>
+                <label>Return Signed Copy to Other Party</label>
+            </value>
+            <value>
+                <fullName>Executed</fullName>
+                <default>false</default>
+                <label>Executed</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Examiner_Interaction_GRS</fullName>
+    <fields>Name</fields>
+    <fields>I_RS_Candidate_Full_Name__c</fields>
+    <fields>I_RS_Examiner__c</fields>
+    <fields>I_RS_Principal_Supervisor__c</fields>
+    <fields>I_RS_Degree__c</fields>
+    <fields>I_RS_School__c</fields>
+    <label>Examiner Interaction GRS</label>
+</CompactLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Time_To_Approval__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Number of calendar days since the meeting closing date</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Cumulative total of all days the ethics request was ‘assigned for review’ (ethics review outcome field). This field is automatically calculated when the status changes.</inlineHelpText>
+    <label>Time To Decision</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

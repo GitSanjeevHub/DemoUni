@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_If_yes_a_potentially__c</fullName>
+    <externalId>false</externalId>
+    <label>If Yes: (a)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_Potentially_valuable_IP__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commercialisation Office recommendation-add details</fullName>
+                <default>false</default>
+                <label>Commercialisation Office recommendation-add details</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes-another party to this contract will own-LTU will have no interest and this is acceptable</controllingFieldValue>
+            <controllingFieldValue>Yes-LTU existing IP to be used-addressed in the contract</controllingFieldValue>
+            <controllingFieldValue>Yes-LTU existing IP to be used-seeking advice or amendments</controllingFieldValue>
+            <controllingFieldValue>Yes-potential new valuable IP with LTU interest-addressed in contract and this is acceptable</controllingFieldValue>
+            <valueName>Commercialisation Office recommendation-add details</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

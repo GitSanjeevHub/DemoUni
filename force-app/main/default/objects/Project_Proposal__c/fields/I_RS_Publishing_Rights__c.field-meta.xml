@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Publishing_Rights__c</fullName>
+    <description>If removing dependency on IP Position, please verify this field is still visible in the &apos;Create Budget&apos; flow</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Nominate your preferred position for publishing project results. This may or may not involve approval from the other party.  This may be updated once the Agreement has been finalised.</inlineHelpText>
+    <label>Publishing Rights for Budgeting Purposes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_IP_Position__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Without Approval</fullName>
+                <default>false</default>
+                <label>Publish Without Approval</label>
+            </value>
+            <value>
+                <fullName>With Approval</fullName>
+                <default>false</default>
+                <label>Publish With Approval</label>
+            </value>
+            <value>
+                <fullName>No Rights</fullName>
+                <default>false</default>
+                <label>No Rights To Publish</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Owned by La Trobe</controllingFieldValue>
+            <controllingFieldValue>Jointly owned</controllingFieldValue>
+            <controllingFieldValue>Owned by other organisation with rights for La Trobe to use for research and teaching</controllingFieldValue>
+            <controllingFieldValue>Owned by other organisation – no rights to La Trobe to use</controllingFieldValue>
+            <valueName>Without Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Owned by La Trobe</controllingFieldValue>
+            <controllingFieldValue>Jointly owned</controllingFieldValue>
+            <controllingFieldValue>Owned by other organisation with rights for La Trobe to use for research and teaching</controllingFieldValue>
+            <controllingFieldValue>Owned by other organisation – no rights to La Trobe to use</controllingFieldValue>
+            <valueName>With Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Owned by La Trobe</controllingFieldValue>
+            <controllingFieldValue>Jointly owned</controllingFieldValue>
+            <controllingFieldValue>Owned by other organisation with rights for La Trobe to use for research and teaching</controllingFieldValue>
+            <controllingFieldValue>Owned by other organisation – no rights to La Trobe to use</controllingFieldValue>
+            <valueName>No Rights</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

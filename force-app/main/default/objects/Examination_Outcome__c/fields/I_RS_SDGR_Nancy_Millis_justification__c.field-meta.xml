@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_SDGR_Nancy_Millis_justification__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If you are nominating the candidate for the Nancy Millis Medal, please provide reasons based on the examiner comments and the Nancy Millis Medal criteria</inlineHelpText>
+    <label>SDGR Nancy Millis justification</label>
+    <length>3000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

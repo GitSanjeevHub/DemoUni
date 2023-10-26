@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_opportunity_required</fullName>
+    <active>true</active>
+    <description>Make the Type of Opportunity mandatory before making it &apos;Available&apos;</description>
+    <errorConditionFormula>AND( 
+TEXT(I_RS_Source__c) &lt;&gt; &quot;Research Professional&quot;, 
+TEXT(I_RS_Status__c) = &quot;Available&quot;, 
+ISBLANK(TEXT(I_RS_Type_of_Opportunity__c))
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Type_of_Opportunity__c</errorDisplayField>
+    <errorMessage>Please provide a value</errorMessage>
+</ValidationRule>

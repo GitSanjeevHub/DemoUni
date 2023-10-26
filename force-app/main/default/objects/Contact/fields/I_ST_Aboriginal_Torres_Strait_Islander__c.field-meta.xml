@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Aboriginal_Torres_Strait_Islander__c</fullName>
+    <description>A person of Aboriginal or Torres Strait Islander descent who identifies as an Aboriginal or Torres Strait Islander and is accepted by the community in which person lives.</description>
+    <externalId>false</externalId>
+    <label>Aboriginal and Torres Strait Islander</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>I_ST_Aboriginal_Torres_Strait_Islander</valueSetName>
+    </valueSet>
+</CustomField>

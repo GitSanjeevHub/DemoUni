@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Validate_Nominee_Fields</fullName>
+    <active>true</active>
+    <description>LTU360-2509: This rule makes the Nominee field mandatory if the Nominee Flag or Nominee Type fields have a value</description>
+    <errorConditionFormula>AND
+(
+ISBLANK(I_IL_Nominee__c),
+OR
+ (
+  NOT( ISPICKVAL( I_IL_Nominee_Type__c, &quot;&quot; ) ),
+  I_IL_Nominee_Flag__c = TRUE
+ ),
+NOT( CONTAINS( $Label.I_RM_Profile_To_Exclude , $Profile.Name ))
+)</errorConditionFormula>
+    <errorDisplayField>I_IL_Nominee__c</errorDisplayField>
+    <errorMessage>Please select a Nominee</errorMessage>
+</ValidationRule>

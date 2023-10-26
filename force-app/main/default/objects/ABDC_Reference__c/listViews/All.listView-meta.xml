@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Current__c</columns>
+    <columns>I_RS_Metric_Date__c</columns>
+    <columns>I_RS_ISSN__c</columns>
+    <columns>I_RS_Journal_Name__c</columns>
+    <columns>I_RS_Start_Year__c</columns>
+    <columns>I_RS_Website__c</columns>
+    <columns>I_RS_X4_digit_FoR__c</columns>
+    <columns>I_RS_X6_digit_FoR__c</columns>
+    <columns>I_RS_ABDC_Ranking__c</columns>
+    <columns>I_RS_ISSN_Space__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

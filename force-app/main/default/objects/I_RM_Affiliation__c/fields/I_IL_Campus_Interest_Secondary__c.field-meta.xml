@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Campus_Interest_Secondary__c</fullName>
+    <description>Candidate’s second campus interest</description>
+    <externalId>false</externalId>
+    <label>Campus Interest - Secondary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>I_ST_Campus</valueSetName>
+    </valueSet>
+</CustomField>

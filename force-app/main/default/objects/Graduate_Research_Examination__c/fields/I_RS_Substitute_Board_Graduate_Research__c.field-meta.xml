@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Substitute_Board_Graduate_Research__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Deputy Chair or other member of the Board of Graduate Research with delegated responsibility for approvals on behalf of the BGR</inlineHelpText>
+    <label>Alternate Board of Graduate Research</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Graduate Research Examinations (Substitute Board of Graduate Research)</relationshipLabel>
+    <relationshipName>Substitute_Board_Thesis</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

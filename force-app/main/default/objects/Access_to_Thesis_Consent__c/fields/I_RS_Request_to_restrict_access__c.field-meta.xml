@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Request_to_restrict_access__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;In certain circumstances you or your supervisor may request that public access to your thesis be restricted for a defined time period. This restriction, known as an embargo, is normally only for a designated period, usually 12 months or two years.&quot; + BR() + BR() +
+
+&quot;If your embargo request is approved by the Chair of the Board of Graduate Research, your thesis will be held in a secure, inaccessible area of the Repository. At the conclusion of the approved embargo period, the thesis will revert to the open access repository unless a new application to extend the period of restricted access has been approved by the Chair, BGR.&quot; + BR() + BR() +
+
+&quot;Reason/s for the embargo (Select all that apply)&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Request to restrict access if applicable</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

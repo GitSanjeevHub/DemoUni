@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>PRIME Researcher Portal</container>
+    <containerType>Network</containerType>
+    <label>TileMenu</label>
+    <navigationMenuItem>
+        <defaultListViewId>My_Active_Proposals</defaultListViewId>
+        <label>My Active Proposals</label>
+        <menuItemBranding>
+            <tileImage>adolfofelix546626unsplash</tileImage>
+        </menuItemBranding>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Project_Team_Member__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <defaultListViewId>My_Active_Projects</defaultListViewId>
+        <label>My Active Projects</label>
+        <menuItemBranding>
+            <tileImage>austindistel1538966unsplash</tileImage>
+        </menuItemBranding>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Project_Team_Member__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <defaultListViewId>My_Ethics_IBC_Projects</defaultListViewId>
+        <label>My Ethics &amp; IBC Projects</label>
+        <menuItemBranding>
+            <tileImage>Ethics</tileImage>
+        </menuItemBranding>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Research_Personnel__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <defaultListViewId>SOPs_Phenotype_Reports</defaultListViewId>
+        <label>SOP/Phenotype Reports</label>
+        <menuItemBranding>
+            <tileImage>EthicsApprovals</tileImage>
+        </menuItemBranding>
+        <position>4</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Ethics_Request__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <defaultListViewId>All</defaultListViewId>
+        <label>Research Output</label>
+        <menuItemBranding>
+            <tileImage>Brainy</tileImage>
+        </menuItemBranding>
+        <position>5</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Research_Output__c</target>
+        <type>SalesforceObject</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Milestones and Tasks</label>
+        <menuItemBranding>
+            <tileImage>stil564521unsplash</tileImage>
+        </menuItemBranding>
+        <position>6</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/my-tasks</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Help</label>
+        <menuItemBranding>
+            <tileImage>helpnew</tileImage>
+        </menuItemBranding>
+        <position>7</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/help</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>TRACR</label>
+        <position>8</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>https://prime.latrobe.edu.au</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

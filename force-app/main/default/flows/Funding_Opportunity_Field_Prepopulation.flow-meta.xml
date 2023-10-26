@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Basic_RP_Opportunity_field_assignment</name>
+        <label>Basic RP Opportunity field assignment</label>
+        <locationX>380</locationX>
+        <locationY>280</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Competitive__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Is_Research_Professional_Opportunity</name>
+        <label>Is Research Professional Opportunity</label>
+        <locationX>199</locationX>
+        <locationY>281</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Research_Professional_Opportunity_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Source__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Research Professional</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Basic_RP_Opportunity_field_assignment</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>When a Funding Opportunity is created, perform some simple field assignments</description>
+    <interviewLabel>Funding Opportunity: Field Prepopulation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Funding Opportunity: Field Prepopulation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Is_Research_Professional_Opportunity</targetReference>
+        </connector>
+        <object>Research_Opportunity__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

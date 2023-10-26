@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Contract__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>New La trobe contract</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Agreement is closed as it did not proceed to execution due to cancellation or withdrawal.&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office refers the request to draft an Agreement to Legal Services. Legal Services drafts the Agreement and provides advice to the Research Office Contact and Researcher. The Research Office upload Legal Services advice and draft Agreement to the Researcher Portal (Related tab under Files tab).&lt;/p&gt;</info>
+        <picklistValueName>Engage Legal to Draft Contract</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Agreement has been signed by both parties.&lt;/p&gt;</info>
+        <picklistValueName>Executed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office organises signing of the Agreement by an authorised signatory, once all parties have agreed and returns the signed Agreement to the client or other party. The Research Office notifies the Researcher via Chatter and uploads a fully executed Agreement to the Researcher Portal.  If the fully executed Agreement is returned by the Researcher to the client or other party, as agreed with the Research Office Contact, the Researcher uploads the email and a copy of the fully executed Agreement to the Researcher Portal (Related Tab under Files tab) and notifies the Research Office contact via Chatter.&lt;/p&gt;</info>
+        <picklistValueName>La Trobe Countersign</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office prepares instructions including Agreement timelines, milestones, project budget, intellectual property position, publication requirements and deliverables/outputs. The Research Office completes the Legal Checklist. The Research Office will contact the Researcher to provide further details.&lt;/p&gt;</info>
+        <picklistValueName>Preparing Instructions</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Researcher reviewing draft contract.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Researcher Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office sends the Agreement to the client or other party with a copy to the Researcher. The Researcher may send the Agreement to the client or other party, if agreed with the Research Office Contact. If the Agreement is sent by the Researcher to the client or other party, as agreed with the Research Office Contact, the Researcher uploads the email and a copy of the Agreement to the Researcher Portal (Related Tab under Files tab) and notifies the Research Office Contact via chatter. The client or other party may decide to sign the Agreement at this stage, if acceptable. &lt;/p&gt;</info>
+        <picklistValueName>Send to Client</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Research Office updating contract.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Update Contract</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_RS_New_La_Trobe_contract</recordTypeName>
+</PathAssistant>

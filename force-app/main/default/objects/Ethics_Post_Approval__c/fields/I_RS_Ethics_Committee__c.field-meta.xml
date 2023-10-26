@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Ethics_Committee__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(I_RS_Assigned_Meeting_Date__r.I_RS_Committee__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>A reminder of the type of  ethics request. Populated by the Research Office.</inlineHelpText>
+    <label>Ethics Committee</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

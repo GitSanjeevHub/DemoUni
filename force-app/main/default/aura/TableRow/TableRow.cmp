@@ -1,0 +1,23 @@
+<aura:component >
+    <aura:attribute name="item" type="List" access="public" description="A 1 element array containing the item to display" />
+    <aura:attribute name="var" type="String" access="public" description="The var name for this item" />
+    <aura:attribute name="cells" type="List" access="public" description="A list of column wrappers" />
+    <aura:attribute name="cellClass" type="String" access="public" description="The class for cells on this row" />
+    <aura:attribute name="initialVisibility" type="Boolean" access="public" description="Whether or not this row is visible on load" />
+    <aura:attribute name="rowTemplate" type="Aura.ComponentDefRef[]" access="public" description="An override to the standard row component" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+
+    <tr class="{#v.initialVisibility ? null : 'hiddenRow'}">
+        <aura:if isTrue="{#empty(v.rowTemplate)}">
+            <aura:iteration aura:id="columnIteration" items="[]" var="_col">
+                <td class="{!v.cellClass + ' ' +  _col.class}" role="gridcell">
+                    <aura:iteration items="{!v.item}" var="{#v.var}" body="{!_col.body}" />
+                </td>
+            </aura:iteration>
+        <aura:set attribute="else">
+            <aura:iteration items="{!v.item}" var="{#v.var}" body="{!v.rowTemplate}" />
+        </aura:set>
+        </aura:if>
+    </tr>
+</aura:component>

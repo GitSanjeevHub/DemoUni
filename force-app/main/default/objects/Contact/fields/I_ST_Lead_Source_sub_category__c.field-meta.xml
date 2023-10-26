@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Lead_Source_sub_category__c</fullName>
+    <description>Created the lead source sub category which is dependent field of Lead source category - IST-45</description>
+    <externalId>false</externalId>
+    <label>Source Sub Category</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_ST_Lead_Source_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>I_ST_Lead_Source_sub_category</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Activity Booking form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Ask a Question form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Aspire Keep in touch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Keep in touch form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Other form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>School Publication Order Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Stay Connected Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Migrated</controllingFieldValue>
+            <valueName>Migrated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <valueName>Postgraduate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <valueName>Undergraduate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <controllingFieldValue>Loaded from list</controllingFieldValue>
+            <controllingFieldValue>Physical</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>In Person</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>NGV Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Open Day</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Public Lecture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Virtual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loaded from list</controllingFieldValue>
+            <valueName>Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loaded from list</controllingFieldValue>
+            <valueName>Event Registration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loaded from list</controllingFieldValue>
+            <valueName>Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>Campaign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>FlexiDirect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>SISOne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical</controllingFieldValue>
+            <valueName>Contact Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical</controllingFieldValue>
+            <valueName>Other Marketing Activation</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

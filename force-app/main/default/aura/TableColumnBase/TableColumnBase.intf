@@ -1,0 +1,11 @@
+<aura:interface description="Interface template">
+    <aura:attribute name="body" type="Aura.ComponentDefRef[]" required="true" description="The components used to render each cell in this column." />
+    <aura:attribute name="footer" type="Aura.Component[]" description="The footer of this column." />
+    <aura:attribute name="cellClass" type="String" description="A style to apply to each cell in this column." />
+
+    <aura:attribute name="sortable" type="Boolean" access="public" default="false" description="Whether or not this column can be sorted." />
+    <aura:attribute name="sortOrder" type="String" access="public" description="Whether this column is sorted ASC, DESC, or not at all." />
+    <aura:attribute name="compareFunction" type="Object" access="public" description="A javascript function which compares two items in the table." />
+
+    <aura:registerEvent name="sortChanged" type="c:TableSort" />
+</aura:interface>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Confidentiality__c</fullName>
+    <externalId>false</externalId>
+    <label>Confidentiality</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LTU info to be disclosed-protections acceptable</fullName>
+                <default>false</default>
+                <label>LTU info to be disclosed-protections acceptable</label>
+            </value>
+            <value>
+                <fullName>LTU receiving info-clauses acceptable</fullName>
+                <default>false</default>
+                <label>LTU receiving info-clauses acceptable</label>
+            </value>
+            <value>
+                <fullName>Mutual disclosure/obligations-clauses acceptable</fullName>
+                <default>false</default>
+                <label>Mutual disclosure/obligations-clauses acceptable</label>
+            </value>
+            <value>
+                <fullName>Advice or amendments required</fullName>
+                <default>false</default>
+                <label>Advice or amendments required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

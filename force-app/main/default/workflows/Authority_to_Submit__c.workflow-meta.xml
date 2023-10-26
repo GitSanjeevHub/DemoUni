@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>ATS_Email_to_supervisor_approver</fullName>
+        <description>ATS-Email to supervisor approver</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Supervisor_Approver_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/ATS_Email_to_supervisor_approver</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_SDGR_approver_when_ATS_submitted_for_their_approval</fullName>
+        <description>Email to SDGR approver when ATS submitted for their approval</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_SDGR_Approver_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/ATS_Email_to_SDGRapprover</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_candidate_when_ATS_form_rejected_by_SDGR</fullName>
+        <ccEmails>exams.grs@latrobe.edu.au</ccEmails>
+        <description>Email to candidate when ATS form rejected by SDGR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Student_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/ATS_Reject_Email_to_Candidate_by_SDGR_approver</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_candidate_when_ATS_form_rejected_by_supervisor</fullName>
+        <ccEmails>exams.grs@latrobe.edu.au</ccEmails>
+        <description>Email to candidate when ATS form rejected by supervisor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Student_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/ATS_Reject_Email_to_Candidate_by_supervisor_approver</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_supervisor_when_ATS_form_rejected_by_SDGR</fullName>
+        <description>Email to supervisor when ATS form rejected by SDGR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Supervisor_Approver_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/ATS_Reject_Email_to_Supervisor_by_SDGR_approver</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Set_ATS_Status_back_to_Draft</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>Set ATS Status back to Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_ATS_status_to_GRS_Processing</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>GRS processing</literalValue>
+        <name>Set ATS status to GRS Processing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateATS_Status_to_Supervisor_Approval</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>Supervisor Approval</literalValue>
+        <name>UpdateATS Status to Supervisor Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_ATS_Status_to_SDGR_Approval</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>SDGR Approval</literalValue>
+        <name>Update ATS Status to SDGR Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

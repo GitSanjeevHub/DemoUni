@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <name>Create_Mapping_Of_Affiliation_Object</name>
+        <label>Create Mapping Of Affiliation Object</label>
+        <locationX>721</locationX>
+        <locationY>560</locationY>
+        <assignmentItems>
+            <assignToReference>affiliationObj.I_RM_Contact__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>affiliationObj.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_External_Contact_recordTypeID.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>affiliationObj.I_RM_Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>affiliationObj.I_RM_Role__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>External Contact</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>affiliationObj.I_RM_StartDate__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>affiliationObj.I_RM_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>affiliationObj.I_RM_Work_Email__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Affiliation_record</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Contact_is_Partner_user</name>
+        <label>Check Contact is Partner user</label>
+        <locationX>448</locationX>
+        <locationY>393</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>contact_is_created_by_Partner_Community_or_PRIME_back_office</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CreatedBy.Profile.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Partner Community</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CreatedBy.Profile.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>PRIME</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CreatedBy.Profile.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Ethics</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CreatedBy.Profile.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Industry Engagement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_External_Contact_recordTypeID</targetReference>
+            </connector>
+            <label>contact is created by Partner Community or PRIME back office</label>
+        </rules>
+    </decisions>
+    <description>23rd Feb - Adding the logic to copy over the Email to Affiliation
+8th March - Updating the logic to copy over the Email from Contact to the Work Email on Affiliation
+13th April - Adding the logic to create the affiliation if PRIME back office creates a Contact</description>
+    <interviewLabel>External Contact Affiliation V1 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>External Contact Affiliation V1</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Affiliation_record</name>
+        <label>Create Affiliation record</label>
+        <locationX>855</locationX>
+        <locationY>560</locationY>
+        <inputReference>affiliationObj</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_External_Contact_recordTypeID</name>
+        <label>Get External Contact recordTypeID</label>
+        <locationX>720</locationX>
+        <locationY>391</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Mapping_Of_Affiliation_Object</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>I_RM_External_Contact</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>330</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Check_Contact_is_Partner_user</targetReference>
+        </connector>
+        <object>Contact</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>affiliationObj</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>I_RM_Affiliation__c</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,12 @@
+<aura:component>
+    
+    <aura:attribute name="flowName" type="String" required="true"></aura:attribute>
+	<aura:attribute name="flowParams" type="List" required="true"></aura:attribute>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+    
+    <div class="slds-is-relative">
+	    <lightning:flow aura:id="flow"></lightning:flow>
+    </div>
+    
+</aura:component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Intended_Sponsor__c</fullName>
+    <description>Depicts a candidate’s intended sponsor for education</description>
+    <externalId>false</externalId>
+    <inlineHelpText>e.g. Ministry of Higher Education Saudi Arabia, Australia Awards, etc.</inlineHelpText>
+    <label>Intended Sponsor</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

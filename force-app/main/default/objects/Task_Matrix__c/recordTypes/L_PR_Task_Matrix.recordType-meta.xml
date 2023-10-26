@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Task_Matrix</fullName>
+    <active>true</active>
+    <label>PRM-Task Matrix</label>
+    <picklistValues>
+        <picklist>I_RS_Activity_Type__c</picklist>
+        <values>
+            <fullName>Task</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Asignee__c</picklist>
+        <values>
+            <fullName>Research Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Researcher</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MyPub Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC009</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIS Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Object_Name__c</picklist>
+        <values>
+            <fullName>Opportunity</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Project_Proposal_Status__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approvals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drafting NOI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Establish Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formalise Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HoS NOI Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panel Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peer review draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peer review draft complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pitch Session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PlaceHolder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provide Project Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejoinders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review by Research Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submission to Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submission to Funding Body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submit to Research Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Successful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsuccessful</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Record_Type__c</picklist>
+        <values>
+            <fullName>PRM Opportunity</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_PR_Agreement_Stage__c</picklist>
+        <values>
+            <fullName>Executed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_PR_Agreement_Type__c</picklist>
+        <values>
+            <fullName>Articulation Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinical Education Agreements %28health%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinical Trial Site Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercialisation Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercialisation Licence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confidentiality agreements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting Services Agreement %28Non-Research%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractors Agreement %28services to LTU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courseware Licensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Transfer Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grant Funding Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Honorary%2FAdjunct%2FVisitors Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital%2FHealth Services Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Student Agreement - Placements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry PhD Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intellectual Property Assignment Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Agent Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licence to Occupy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Transfer Agreement %28receiving%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Transfer Agreement %28supplying%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memorandum of Understanding %28MOU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility %E2%80%93 Overseas Short Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility %E2%80%93 Semester Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility %E2%80%93 Study Abroad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility %E2%80%93 Study Abroad and Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility %E2%80%93 Third Party Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NDA %28non-disclosure%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overarching Agreement - Placements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Collaboration Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Consulting Services Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Consulting Subcontract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Services Master Service Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarship Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shareholders Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start-up %2F Spin-out Related Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Relationship and Services Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Mobility Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Placement Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Researcher Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subscription Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Teaching Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteer Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WBL Agreement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_PR_Opportunity_Stage__c</picklist>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finalisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_PR_Opportunity_Sub_Type__c</picklist>
+        <values>
+            <fullName>Access to equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advocacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Articulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bio Innovation Labs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinical Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collaboration%2C Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Course Development%3A Industry led%2Finput Co-creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courseware Licensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Innovation Hub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I%26E Programs%3A Mentoring%2C Workshops%2C Accelerator %26 Incubator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovation Partnership%3A Innovation funds%2C Co-creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensing%2C spin outs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memorandum of Understanding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility %E2%80%93 Overseas Short Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility %E2%80%93 Semester Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility %E2%80%93 Study Abroad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility %E2%80%93 Study Abroad and Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility %E2%80%93 Third Party Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PhD%2C Industry PhD%2C APR interns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philanthropy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procurement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof Practice%2C Chair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student%3A Problem validation%2C Solution development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Talent Development%3A Micro credentials%2C Short course%2C Custom Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Talent Pipeline%3A Employment program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Teaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Based Learning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Integrated Learning Projects</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Electronic_version_type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Pick ‘ redacted electronic version’ if you don’t have permission to include copyright-protected material in your published thesis / examinable works, otherwise choose ‘full electronic version’</inlineHelpText>
+    <label>Which version will be published?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full</fullName>
+                <default>false</default>
+                <label>Full Electronic Version</label>
+            </value>
+            <value>
+                <fullName>Redacted Electronic Version</fullName>
+                <default>false</default>
+                <label>Redacted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

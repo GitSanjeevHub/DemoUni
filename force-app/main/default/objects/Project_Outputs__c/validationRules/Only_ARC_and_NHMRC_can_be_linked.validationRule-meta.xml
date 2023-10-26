@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_ARC_and_NHMRC_can_be_linked</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.Name = &apos;Australian Research Council&apos; 
+      ||
+I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.Name = &apos;ARC&apos;
+      ||
+I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.Name = &apos;National Health and Medical Research Council&apos; 
+      ||
+I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.Name = &apos;NHMRC&apos; )</errorConditionFormula>
+    <errorDisplayField>I_RS_Project_Proposal__c</errorDisplayField>
+    <errorMessage>Only projects where the main funding body is ARC or NHMRC can be linked to Research Outputs.</errorMessage>
+</ValidationRule>

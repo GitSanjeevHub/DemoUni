@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Traditional_Outputs_By_Outlet_Frequency__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field Name can&apos;t have I_RS prefix as it is too long</description>
+    <externalId>false</externalId>
+    <label>Traditional Outputs By Outlet Frequency</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

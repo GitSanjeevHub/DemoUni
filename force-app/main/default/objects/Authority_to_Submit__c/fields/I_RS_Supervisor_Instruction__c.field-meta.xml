@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Supervisor_Instruction__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;By approving this form, you are certifying that:  &quot; &amp; br() &amp;
+
+&quot;	•the thesis/exegesis complies with the provisions in Graduate Research Examinations Schedule B-Presentation of Theses for Graduate Research Degrees &quot; &amp; br() &amp; 
+
+&quot;	•for practice-based degrees that the artefact(s) comply with the Guidelines for examinable components of practice-based degrees by research &quot; &amp; br() &amp;
+
+&quot;	•in your opinion the examinable works are worthy of a candidate for the degree &quot; &amp; br() &amp;
+
+&quot;	•the candidate’s declaration of authorship is correct and complies with the verbatim requirement of Schedule B (Appendix 1, Statement of authorship) &quot; &amp; br() &amp;
+
+&quot;	•where there are co-authors outside the supervisory team, you have sighted the written confirmation from the co-author or coordinating author verifying the candidate’s contribution to the work. &quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Supervisor Instruction</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

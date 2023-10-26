@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_PRIME_Researcher_Page_Name__c</fullName>
+    <description>The Lightning Community page used by PRIME researchers</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>The Lightning Community page used by PRIME researchers</inlineHelpText>
+    <label>PRIME Researcher Portal Page Name</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

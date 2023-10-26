@@ -1,0 +1,261 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	
+    <aura:attribute name="data" type="Object[]" />
+    
+    <aura:attribute name="categoryOptions" type="List" default="[
+        'Salary'
+        ]"
+    />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!--<b>TOTAL COSTS</b><br/>-->
+    
+    <div class="slds-grid slds-wrap">
+        <div class="slds-size_3-of-12">
+        	<b>Travel:</b> $8,064.00<br/>
+        </div>
+        
+        <div class="slds-size_3-of-12">
+        	<b>Equipment:</b> $5,000.00<br/>
+        </div>
+        
+        <div class="slds-size_3-of-12">
+        	<b>Other:</b> $3,600.00<br/>
+        </div>
+        
+        <div class="slds-size_3-of-12">
+        	<b>Maintenance:</b> $0.00<br/>
+        </div>
+        
+        <!--<div class="slds-size_3-of-12">
+        	<b>TOTAL:</b> $14664<br/>
+        </div>-->
+        
+    </div>
+       
+    <br/> 
+    
+
+	<div class="slds-scrollable_x">
+        
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <th class="" scope="col" style="min-width: 150px; width:150px">
+                	<div>Category</div>
+                </th>
+                
+                <th class="" scope="col" style="min-width: 150px; width:150px">
+                	<div>Contact</div>
+                </th>
+                
+                <th class="" scope="col" style="min-width: 200px; width:200px">
+                	<div class="slds-truncate">Description</div>
+                </th>
+                
+                <th class="" scope="col" style="min-width: 20px; width:20px">
+                	<div class="slds-truncate">In Kind</div>
+                </th>
+                
+                <th class="" scope="col" style="min-width: 150px; width:150px">
+                	<div class="slds-truncate">Organisation</div>
+                </th>
+                
+                <th class="" scope="col" style="min-width: 100px; width:100px">
+                	<div class="slds-truncate">Units</div>
+                </th>
+                    
+                <th class="" scope="col" style="min-width: 20px; width:20px">
+                    <div class="slds-truncate">Yr 1 Qty</div>
+                </th>
+                <th class="" scope="col" style="min-width: 100px; width:100px">
+                    <div class="slds-truncate">Yr 1 Cost</div>
+                </th>
+                
+                <th class="" scope="col" style="min-width: 20px; width:20px">
+                    <div class="slds-truncate">Yr 2 Qty</div>
+                </th>
+                <th class="" scope="col" style="min-width: 100px; width:100px">
+                    <div class="slds-truncate">Yr 2 Cost</div>
+                </th>
+                    
+                <th class="" scope="col" style="min-width: 20px; width:20px">
+                    <div class="slds-truncate">Yr 3 Qty</div>
+                </th>
+                <th class="" scope="col" style="min-width: 100px; width:100px">
+                    <div class="slds-truncate">Yr 3 Cost</div>
+                </th>
+                    
+                <th class="" scope="col" style="min-width: 20px; width:20px">
+                    <div class="slds-truncate">Yr 4 Qty</div>
+                </th>
+                <th class="" scope="col" style="min-width: 100px; width:100px">
+                    <div class="slds-truncate">Yr 4 Cost</div>
+                </th>
+                    
+                <th class="" scope="col" style="min-width: 20px; width:20px">
+                    <div class="slds-truncate">Yr 5 Qty</div>
+                </th>
+                <th class="" scope="col" style="min-width: 100px; width:100px">
+                    <div class="slds-truncate">Yr 5 Cost</div>
+                </th>
+                
+                <!--<th class="" scope="col" style="min-width: 20px; width:20px">
+                    <div class="slds-truncate">Yr 6 Qty</div>
+                </th>
+                <th class="" scope="col" style="min-width: 100px; width:100px">
+                    <div class="slds-truncate">Yr 6 Cost</div>
+                </th>
+                
+                <th class="" scope="col" style="min-width: 20px; width:20px">
+                    <div class="slds-truncate">Yr 7 Qty</div>
+                </th>
+                <th class="" scope="col" style="min-width: 100px; width:100px">
+                    <div class="slds-truncate">Yr 7 Cost</div>
+                </th>-->
+                
+                <th class="" scope="col">
+                    <div class="slds-truncate">SAP Category</div>
+                </th>
+                <th class="" scope="col" style="min-width: 160px; width:160px">
+                    <div class="slds-truncate">Justification</div>
+                </th>
+                <th class="" scope="col">
+                    <!--action buttons-->
+                </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+            <aura:iteration items="{!v.data}" var="item">
+            
+                <tr class="slds-hint-parent">
+
+                    <td>
+                        
+                        <lightning:select value="{!item.category}" class="label-hidden">
+                            <option value=""></option>
+                            <aura:iteration items="{!v.categoryOptions}" var="option">
+                            	<option value="{!option}">{!option}</option>
+                            </aura:iteration>
+                            
+                        </lightning:select> 
+                    </td>
+                    
+                    <td>
+                        <c:strike_lookup object="Contact" value="{!item.contactId}" searchField="Name" />
+                    </td>
+                    
+                    <td>
+                        <lightning:textArea value="{!item.description}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input type="checkbox" checked="{!item.inKind}"/>
+                    </td>
+                    
+                    <td>
+                        <c:strike_lookup object="Account" value="{!item.org}" searchField="Name" />
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.fte}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year1Qty}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year1Cost}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year2Qty}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year2Cost}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year3Qty}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year3Cost}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year4Qty}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year4Cost}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year5Qty}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year5Cost}" variant="label-hidden"/>
+                    </td>
+                    <!--
+                    <td>
+                        <lightning:input value="{!item.year6Qty}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year6Cost}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year7Qty}" variant="label-hidden"/>
+                    </td>
+                    
+                    <td>
+                        <lightning:input value="{!item.year7Cost}" variant="label-hidden"/>
+                    </td>-->
+                    <td>
+                        <lightning:input value="{!item.sapNumber}" variant="label-hidden"/>
+                    </td>
+                    <td>
+                        <lightning:textArea value="{!item.justification}" variant="label-hidden"/>
+                    </td>
+                    <td>   
+                        <lightning:icon iconName="utility:copy" size="x-small" title="Clone" variant="success"/>&nbsp;
+                        <lightning:icon iconName="utility:delete" size="x-small" title="Delete record"/>
+                    </td>
+                    
+                </tr>
+                
+            </aura:iteration>    
+                
+            
+        </tbody>
+    </table>
+
+    <!--<br/><br/><br/><br/><br/><br/>-->
+        
+    </div>
+    <br/><br/>
+
+        
+        
+    
+	<div class="slds-clearfix">
+		<div class="slds-float_left">
+			<lightning:button label="Add Row" variant="brand" onclick="{!c.addRow}"/>
+		</div>
+		<div class="slds-float_right">
+        	<lightning:button label="Discard Changes"/>            
+        	<lightning:button label="Save Changes" variant="brand"/>
+		</div>
+    </div>
+    
+    
+    
+</aura:component>

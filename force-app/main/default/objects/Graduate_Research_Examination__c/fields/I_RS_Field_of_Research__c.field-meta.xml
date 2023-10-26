@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Field_of_Research__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Government classification code describing the candidate&apos;s research field. Recorded in SIS and will appear on the transcript.</inlineHelpText>
+    <label>Field of Research</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <filterItems>
+            <field>Classification_Master__c.I_RS_Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>Classification_Master__c.I_RS_Type__c</field>
+            <operation>equals</operation>
+            <value>Fields of Research (FOR)</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Classification_Master__c</referenceTo>
+    <relationshipLabel>Graduate Research Examinations</relationshipLabel>
+    <relationshipName>Graduate_Research_Examinations</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

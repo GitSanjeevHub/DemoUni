@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_First_3_Characters_on_Record_Ids__c</columns>
+    <columns>I_RS_Object_Label_Plural__c</columns>
+    <columns>I_RS_Object_Label_Singular__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

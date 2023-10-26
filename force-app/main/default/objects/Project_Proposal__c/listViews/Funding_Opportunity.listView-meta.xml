@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Opportunity</fullName>
+    <columns>NAME</columns>
+    <columns>Project_Number__c</columns>
+    <columns>I_RS_Lead_Chief_Investigator__c</columns>
+    <columns>I_RS_Status__c</columns>
+    <columns>I_RS_Research_Office_Contact__c</columns>
+    <columns>I_RS_Account_Organisation__c</columns>
+    <columns>I_RS_School__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>I_RS_Proposal_Submission_Date__c</columns>
+    <columns>I_RS_Administring_Organisation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Project_Proposal__c.I_RS_Project,Project_Proposal__c.I_RS_Proposal</value>
+    </filters>
+    <label>Funding Opportunity</label>
+    <sharedTo>
+        <allPartnerUsers></allPartnerUsers>
+    </sharedTo>
+</ListView>

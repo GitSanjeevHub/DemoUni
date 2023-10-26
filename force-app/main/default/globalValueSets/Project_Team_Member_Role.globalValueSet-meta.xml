@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Lead Chief Investigator</fullName>
+        <default>false</default>
+        <label>La Trobe Lead Chief Investigator</label>
+    </customValue>
+    <customValue>
+        <fullName>Chief Investigator</fullName>
+        <default>false</default>
+        <label>La Trobe Chief Investigator</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner Researcher</fullName>
+        <default>false</default>
+        <label>Other La Trobe Investigator</label>
+    </customValue>
+    <customValue>
+        <fullName>Overall Lead Chief Investigator</fullName>
+        <default>false</default>
+        <label>Overall Lead Chief Investigator</label>
+    </customValue>
+    <customValue>
+        <fullName>External Researcher</fullName>
+        <default>false</default>
+        <label>External Researcher</label>
+    </customValue>
+    <customValue>
+        <fullName>Research Assistant</fullName>
+        <default>false</default>
+        <label>Research Assistant</label>
+    </customValue>
+    <customValue>
+        <fullName>Graduate Researcher</fullName>
+        <default>false</default>
+        <label>Graduate Researcher</label>
+    </customValue>
+    <customValue>
+        <fullName>Student</fullName>
+        <default>false</default>
+        <label>Undergraduate Student</label>
+    </customValue>
+    <customValue>
+        <fullName>Administrator</fullName>
+        <default>false</default>
+        <label>Administrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Student or Graduate Researcher Supervisor</fullName>
+        <default>false</default>
+        <label>Supervisor of Student/Graduate Researcher</label>
+    </customValue>
+    <customValue>
+        <fullName>Approver</fullName>
+        <default>false</default>
+        <label>Approver</label>
+    </customValue>
+    <customValue>
+        <fullName>Research Centre Member</fullName>
+        <default>false</default>
+        <label>Research Centre Member</label>
+    </customValue>
+    <customValue>
+        <fullName>Primary Chief investigator</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Primary Chief investigator</label>
+    </customValue>
+    <customValue>
+        <fullName>Assigned</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Assigned</label>
+    </customValue>
+    <customValue>
+        <fullName>Honorary Researcher</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Honorary Researcher</label>
+    </customValue>
+    <customValue>
+        <fullName>Adjunct Researcher</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Adjunct Researcher</label>
+    </customValue>
+    <customValue>
+        <fullName>Postgraduate student</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Postgraduate student</label>
+    </customValue>
+    <customValue>
+        <fullName>Student supervisor</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Student supervisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner Investigator</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Partner Investigator</label>
+    </customValue>
+    <customValue>
+        <fullName>External Investigator</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>External Investigator</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Manager</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Project Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Pitch panel member</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Pitch panel member</label>
+    </customValue>
+    <customValue>
+        <fullName>Primary contact</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Primary contact</label>
+    </customValue>
+    <customValue>
+        <fullName>Peer reviewer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Peer reviewer</label>
+    </customValue>
+    <masterLabel>Project Team Member Role</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

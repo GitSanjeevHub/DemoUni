@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Title_of_Classification_Master</fullName>
+        <field>Name</field>
+        <formula>I_RS_Classification_Master_Name_and_Code__c</formula>
+        <name>Update Title of Classification Master</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Title on Creation%2FEdit</fullName>
+        <actions>
+            <name>Update_Title_of_Classification_Master</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This rule update the classification Masters Title (standard Salesforce name) to something like “FOR: 30204 – Main Group Metal Chemistry” i;e, Type Abbreviation: Code : Rest chars from the Classification Master Name</description>
+        <formula>OR( ISNEW(),      AND( NOT(ISNEW()),      OR (ISCHANGED(I_RS_Classification_Code__c),          ISCHANGED(I_RS_Full_Classification_Name__c),          ISCHANGED(I_RS_Type__c)))     )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

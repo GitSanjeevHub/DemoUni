@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Top_Level_Category__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Top Level Category</label>
+    <referenceTo>HERDC_Category__c</referenceTo>
+    <relationshipLabel>HERDC Categories (Top Level Category)</relationshipLabel>
+    <relationshipName>HERDC_Categories_Top_Level</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

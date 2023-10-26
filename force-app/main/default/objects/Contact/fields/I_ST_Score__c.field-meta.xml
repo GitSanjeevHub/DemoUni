@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Score__c</fullName>
+    <description>Fields shows the score of contact based on its attributes.</description>
+    <externalId>false</externalId>
+    <label>Contact Score</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

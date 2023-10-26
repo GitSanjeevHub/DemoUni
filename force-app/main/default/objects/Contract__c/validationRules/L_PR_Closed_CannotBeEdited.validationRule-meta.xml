@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Closed_CannotBeEdited</fullName>
+    <active>true</active>
+    <description>Validation rule to prevent the user to update the agreement record if the status is closed.</description>
+    <errorConditionFormula>AND (
+ISPICKVAL(PRIORVALUE(I_RS_Status__c), &quot;Closed&quot;),
+NOT (ISNEW()),
+NOT( ISCHANGED(I_RS_Number_of_Related_Parties__c) ),
+(RecordType.DeveloperName = &quot;L_PR_Agreement&quot; || RecordType.DeveloperName = &quot;L_PR_Agent_Agreement&quot;)
+)</errorConditionFormula>
+    <errorMessage>Closed agreement cannot be edited.</errorMessage>
+</ValidationRule>

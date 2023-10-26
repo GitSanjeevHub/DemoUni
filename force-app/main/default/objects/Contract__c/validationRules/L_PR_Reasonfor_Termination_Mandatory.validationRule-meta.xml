@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Reasonfor_Termination_Mandatory</fullName>
+    <active>true</active>
+    <description>If Closed reason =&apos;Terminated&apos; then Reason for termination field is mandatory</description>
+    <errorConditionFormula>ISPICKVAL(I_RS_Closure_Reason__c, &apos;Terminated&apos;) 
+&amp;&amp; ISBLANK( L_PR_Reason_for_termination__c) 
+&amp;&amp; (RecordType.DeveloperName =&apos;L_PR_Agreement&apos; || RecordType.DeveloperName = &apos;L_PR_Agent_Agreement&apos;)</errorConditionFormula>
+    <errorDisplayField>L_PR_Reason_for_termination__c</errorDisplayField>
+    <errorMessage>Please fill Reason for Termination while setting the Closed Reason as ‘Terminated’</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Closed_Reason_Mandatory</fullName>
+    <active>true</active>
+    <description>Closed Reason is mandatory when Status is changed to Closed.</description>
+    <errorConditionFormula>ISPICKVAL(I_RS_Status__c, &apos;Closed&apos;) 
+&amp;&amp; ISPICKVAL(I_RS_Closure_Reason__c, &apos;&apos;) 
+&amp;&amp; (RecordType.DeveloperName =&apos;L_PR_Agreement&apos; || RecordType.DeveloperName = &apos;L_PR_Agent_Agreement&apos;)</errorConditionFormula>
+    <errorDisplayField>I_RS_Closure_Reason__c</errorDisplayField>
+    <errorMessage>Please fill Closed Reason while setting the Agreement status as Closed.</errorMessage>
+</ValidationRule>

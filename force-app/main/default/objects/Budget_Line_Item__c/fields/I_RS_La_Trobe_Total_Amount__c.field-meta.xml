@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_La_Trobe_Total_Amount__c</fullName>
+    <description>Used in &apos;La Trobe Total&apos; rollup summary on Budget. If Funder is LTU, use Total Cost. Otherwise, just use Shortfall</description>
+    <externalId>false</externalId>
+    <formula>IF(
+I_RS_Part_of_La_Trobe__c,
+I_RS_Amount__c,
+I_RS_Short_Fall__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>La Trobe Total Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

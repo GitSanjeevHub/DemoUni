@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Revision_Due_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the date the SOP/Phenotype report is to be reviewed by to make sure the content is still current. The Research Office will populate this field.</inlineHelpText>
+    <label>Revision Due Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

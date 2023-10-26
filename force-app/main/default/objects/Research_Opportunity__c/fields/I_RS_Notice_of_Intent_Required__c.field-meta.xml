@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Notice_of_Intent_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Whether it is expected that project proposals for this funding opportunity will be subjected to the NOI process.</description>
+    <externalId>false</externalId>
+    <label>Notice of Intent Required</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

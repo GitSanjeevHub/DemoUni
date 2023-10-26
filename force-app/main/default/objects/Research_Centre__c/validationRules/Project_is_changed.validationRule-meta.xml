@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_is_changed</fullName>
+    <active>true</active>
+    <description>Validation rule to stop user from changing Project Proposal</description>
+    <errorConditionFormula>AND(
+NOT( ISNEW() ),
+ISCHANGED( I_RS_Project_Proposal__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Project_Proposal__c</errorDisplayField>
+    <errorMessage>Cannot Change Project Proposal</errorMessage>
+</ValidationRule>

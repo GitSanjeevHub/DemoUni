@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_INTERNATIONAL_LEAD_COMPACT</fullName>
+    <fields>I_RM_Role__c</fields>
+    <fields>I_RM_StartDate__c</fields>
+    <fields>I_RM_Status__c</fields>
+    <fields>I_IL_Heat_Status__c</fields>
+    <fields>I_RM_Total_Score__c</fields>
+    <fields>I_IL_Sponsored__c</fields>
+    <fields>I_IL_Under_18_Flag__c</fields>
+    <label>I_IL_INTERNATIONAL_LEAD_COMPACT</label>
+</CompactLayout>

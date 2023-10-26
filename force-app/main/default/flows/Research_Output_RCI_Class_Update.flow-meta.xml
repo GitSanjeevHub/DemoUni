@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>ActionCallType</name>
+            <value>
+                <stringValue>flow</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>flowSelection</name>
+            <value>
+                <stringValue>RCI Class Flow</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Call Flow</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>RCI_Class_Flow</actionName>
+        <actionType>flow</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>ProcessType</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>ProcessType</name>
+            <value>
+                <stringValue>Publication_Year</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>recordId</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>recordId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Publication is changed</label>
+        </rules>
+    </decisions>
+    <description>- Updates the RCI Class field on Research Output object - Mass updates the FOR Code World Benchmark field on Research Output Classification Code object associated in a Research Output when Publication Date is changed</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+AND(
+ISNEW(),
+[Research_Output__c].RecordType.DeveloperName = &apos;I_RS_Journal_Article_C1&apos;,
+NOT(ISBLANK([Research_Output__c].I_RS_Publication_date__c))
+),
+
+AND(
+NOT(ISNEW()),
+[Research_Output__c].RecordType.DeveloperName = &apos;I_RS_Journal_Article_C1&apos;,
+ISCHANGED([Research_Output__c].I_RS_Publication_date__c),
+NOT(ISBLANK([Research_Output__c].I_RS_Publication_date__c))
+),
+
+AND(
+NOT(ISNEW()),
+ISCHANGED([Research_Output__c].RecordType.DeveloperName),
+[Research_Output__c].RecordType.DeveloperName = &apos;I_RS_Journal_Article_C1&apos;,
+NOT(ISBLANK([Research_Output__c].I_RS_Publication_date__c))
+)
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+AND(
+ISNEW(),
+{!myVariable_current.RecordType.DeveloperName} = &apos;I_RS_Journal_Article_C1&apos;,
+NOT(ISBLANK({!myVariable_current.I_RS_Publication_date__c}))
+),
+
+AND(
+NOT(ISNEW()),
+{!myVariable_current.RecordType.DeveloperName} = &apos;I_RS_Journal_Article_C1&apos;,
+ISCHANGED({!myVariable_current.I_RS_Publication_date__c}),
+NOT(ISBLANK({!myVariable_current.I_RS_Publication_date__c}))
+),
+
+AND(
+NOT(ISNEW()),
+ISCHANGED({!myVariable_current.RecordType.DeveloperName}),
+{!myVariable_current.RecordType.DeveloperName} = &apos;I_RS_Journal_Article_C1&apos;,
+NOT(ISBLANK({!myVariable_current.I_RS_Publication_date__c}))
+)
+)</expression>
+    </formulas>
+    <interviewLabel>Research_Output_RCI_Class_Update-10_InterviewLabel</interviewLabel>
+    <label>Research Output: RCI Class Update</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Research_Output__c</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <startElementReference>myDecision</startElementReference>
+    <status>Draft</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Research_Output__c</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Research_Output__c</objectType>
+    </variables>
+</Flow>

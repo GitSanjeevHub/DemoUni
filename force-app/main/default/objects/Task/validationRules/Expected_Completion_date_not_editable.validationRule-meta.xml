@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expected_Completion_date_not_editable</fullName>
+    <active>true</active>
+    <description>‘expected completion date’ is not entered unless the status is ‘unable to meet deadline’.</description>
+    <errorConditionFormula>NOT ( ISPICKVAL (Status, &apos;Unable to meet deadline&apos;)) 
+&amp;&amp;  
+NOT
+(ISBLANK(I_RS_Expected_Completion_Date__c))</errorConditionFormula>
+    <errorDisplayField>I_RS_Expected_Completion_Date__c</errorDisplayField>
+    <errorMessage>This field can only have a value when the Status is &apos;Unable to meet deadline&apos;</errorMessage>
+</ValidationRule>

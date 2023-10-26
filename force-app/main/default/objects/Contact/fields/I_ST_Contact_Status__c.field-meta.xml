@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Contact_Status__c</fullName>
+    <description>Dependent Picklist of controlling field Stage- IST 51</description>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_ST_Contact_Stage__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>I_ST_Contact_Status</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Lead</controllingFieldValue>
+            <valueName>Not Qualified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead</controllingFieldValue>
+            <valueName>Qualified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Admitted And Not Enrolled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Alternate Offer Considered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Alternate Offer Made</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Await Academic Advice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Await Applicant Comms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Await Further Doco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Awaiting Interview</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Await Required Doco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Conditional Offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Escalated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Make A Conditional Offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Make Alternate Offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Make An Offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Not Processed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Offer Accepted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Offer Deferred</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Offer Lapsed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Other Preference Offered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Applicant</controllingFieldValue>
+            <valueName>Pending Results</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Student</controllingFieldValue>
+            <valueName>Admitted And Enrolled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Student</controllingFieldValue>
+            <valueName>Admitted And LOA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Student</controllingFieldValue>
+            <valueName>Nearing Completion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alumni</controllingFieldValue>
+            <valueName>Completed</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

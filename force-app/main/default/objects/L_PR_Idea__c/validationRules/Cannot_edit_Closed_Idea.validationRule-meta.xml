@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_edit_Closed_Idea</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(((ISPICKVAL(PRIORVALUE( L_PR_Lead_Status__c ),&apos;Closed&apos;) || ISPICKVAL(PRIORVALUE( L_PR_Lead_Status__c ),&apos;Closed – Converted&apos;)) &amp;&amp; ISCHANGED(L_PR_Lead_Status__c)),
+	((ISPICKVAL(L_PR_Lead_Status__c ,&apos;Closed&apos;)|| ISPICKVAL(L_PR_Lead_Status__c ,&apos;Closed – Converted&apos;)) &amp;&amp; NOT(ISCHANGED(L_PR_Lead_Status__c)))) &amp;&amp; NOT(ISNEW() )</errorConditionFormula>
+    <errorMessage>Closed or Converted leads cannot be edited.</errorMessage>
+</ValidationRule>

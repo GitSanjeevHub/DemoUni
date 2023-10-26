@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deafult</fullName>
+    <active>true</active>
+    <label>Default</label>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Integration_Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Source__c</picklist>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_WBS_Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request To Finance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

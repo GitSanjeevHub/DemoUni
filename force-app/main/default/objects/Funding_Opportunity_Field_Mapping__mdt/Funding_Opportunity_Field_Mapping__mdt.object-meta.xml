@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This stores the field mapping from Funding Opportunity Staging object to Funding Opportunity object.</description>
+    <label>Funding Opportunity Field Mapping</label>
+    <pluralLabel>Funding Opportunity Field Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

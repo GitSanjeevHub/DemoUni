@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Project_Proposal__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Other grants</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office seeks approval for the Proposal, including the budget from authorised approvers. They inform the Researcher once approval is received.&lt;/p&gt;</info>
+        <picklistValueName>Approvals</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The proposal is in draft.&lt;/p&gt;&lt;p&gt;The researcher completes team member section and adds all CVs (click on member Title and upload CV under Related tab).&lt;/p&gt;&lt;p&gt;The researcher enters Project Details, Budget, Documents and Agreements and Codes&lt;/p&gt;&lt;p&gt;Tip: Use the Chatter tab to make notes, ask questions or share updates.&lt;/p&gt;&lt;p&gt;When the draft is complete, click Submit to the Research Office (top-right of screen).&lt;/p&gt;</info>
+        <picklistValueName>Create Proposal</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The researcher revises the draft and Submits to the Research Office and submits the final draft for a formal review. Click Submit to Research Office (top-right of screen).&lt;/p&gt;</info>
+        <picklistValueName>Final draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office reviews the completed draft and provides feedback to the researcher.&lt;/p&gt;</info>
+        <picklistValueName>Proposal Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office completes a compliance check before submitting the proposal for approval. If additional information is required, the Research Office will contact the researcher.&lt;/p&gt;</info>
+        <picklistValueName>Review by Research Office</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office performs a final review of the Proposal and submits it to the Funding Body.&lt;/p&gt;</info>
+        <picklistValueName>Submission to Funding Body</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office uploads the final documents to TRIM and adds a link to in PRIME (under Project Proposals). &lt;/p&gt;</info>
+        <picklistValueName>Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The proposal is successful and is now a funded project. The Research Office records the awarded amount in PRIME and arranges a kick-off meeting with the researcher.&lt;/p&gt;</info>
+        <picklistValueName>Successful</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_RS_Other_grants</recordTypeName>
+</PathAssistant>

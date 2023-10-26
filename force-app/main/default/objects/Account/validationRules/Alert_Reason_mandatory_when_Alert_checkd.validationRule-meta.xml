@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_Reason_mandatory_when_Alert_checkd</fullName>
+    <active>true</active>
+    <description>Alert Reason is mandatory when alert is checked</description>
+    <errorConditionFormula>ISBLANK(L_PR_Alert_Reason__c)  &amp;&amp;  L_PR_Alert__c == TRUE</errorConditionFormula>
+    <errorDisplayField>L_PR_Alert_Reason__c</errorDisplayField>
+    <errorMessage>Alert Reason is mandatory when Alert is checked</errorMessage>
+</ValidationRule>

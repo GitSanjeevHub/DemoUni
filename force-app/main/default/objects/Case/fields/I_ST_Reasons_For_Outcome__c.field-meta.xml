@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Reasons_For_Outcome__c</fullName>
+    <description>I_ST_Reasons_For_Outcome</description>
+    <externalId>false</externalId>
+    <label>Reason for outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Course Related</fullName>
+                <default>false</default>
+                <label>Course Related</label>
+            </value>
+            <value>
+                <fullName>Enrolled/Going to Another Institution</fullName>
+                <default>false</default>
+                <label>Enrolled/Going to Another Institution</label>
+            </value>
+            <value>
+                <fullName>Fees</fullName>
+                <default>false</default>
+                <label>Fees</label>
+            </value>
+            <value>
+                <fullName>Financial Reasons</fullName>
+                <default>false</default>
+                <label>Financial Reasons</label>
+            </value>
+            <value>
+                <fullName>Interested in another La Trobe course</fullName>
+                <default>false</default>
+                <label>Interested in another La Trobe course</label>
+            </value>
+            <value>
+                <fullName>Location of Campus</fullName>
+                <default>false</default>
+                <label>Location of Campus</label>
+            </value>
+            <value>
+                <fullName>Personal Circumstances</fullName>
+                <default>false</default>
+                <label>Personal Circumstances</label>
+            </value>
+            <value>
+                <fullName>Prefer Not to Say</fullName>
+                <default>false</default>
+                <label>Prefer Not to Say</label>
+            </value>
+            <value>
+                <fullName>Similar Course</fullName>
+                <default>false</default>
+                <label>Similar Course</label>
+            </value>
+            <value>
+                <fullName>Systems/Processes</fullName>
+                <default>false</default>
+                <label>Systems/Processes</label>
+            </value>
+            <value>
+                <fullName>Waiting on other preferences</fullName>
+                <default>false</default>
+                <label>Waiting on other preferences</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

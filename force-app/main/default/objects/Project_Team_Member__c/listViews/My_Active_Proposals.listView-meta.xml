@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Active_Proposals</fullName>
+    <columns>I_RS_Project_Proposal__c</columns>
+    <columns>I_RS_Funding_Opportunity__c</columns>
+    <columns>I_RS_Lead_Chief_Investigator_Name__c</columns>
+    <columns>I_RS_Funder_Name__c</columns>
+    <columns>I_RS_Project_Type__c</columns>
+    <columns>I_RS_PP_Status__c</columns>
+    <columns>I_RS_Role__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>I_RS_Current_User__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>I_RS_Role__c</field>
+        <operation>notEqual</operation>
+        <value>Approver,Research Centre Member</value>
+    </filters>
+    <filters>
+        <field>I_RS_Reason_For_Not_Progressing__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>I_RS_Is_Proposal__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Active Proposals</label>
+</ListView>

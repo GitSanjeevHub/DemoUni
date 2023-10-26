@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Alumni Leads</fullName>
+        <default>false</default>
+        <label>Alumni Leads</label>
+    </customValue>
+    <customValue>
+        <fullName>AWOL</fullName>
+        <default>false</default>
+        <label>AWOL</label>
+    </customValue>
+    <customValue>
+        <fullName>Conditional Offer</fullName>
+        <default>false</default>
+        <label>Conditional Offer</label>
+    </customValue>
+    <customValue>
+        <fullName>Deferred</fullName>
+        <default>false</default>
+        <label>Deferred</label>
+    </customValue>
+    <customValue>
+        <fullName>Documents Req</fullName>
+        <default>false</default>
+        <label>Documents Req</label>
+    </customValue>
+    <customValue>
+        <fullName>EDM</fullName>
+        <default>false</default>
+        <label>EDM</label>
+    </customValue>
+    <customValue>
+        <fullName>Events</fullName>
+        <default>false</default>
+        <label>Events</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Flag</fullName>
+        <default>false</default>
+        <label>Green Flag</label>
+    </customValue>
+    <customValue>
+        <fullName>Lead Follow up</fullName>
+        <default>false</default>
+        <label>Lead Follow up</label>
+    </customValue>
+    <customValue>
+        <fullName>LOA</fullName>
+        <default>false</default>
+        <label>LOA</label>
+    </customValue>
+    <customValue>
+        <fullName>Mid Year Leads</fullName>
+        <default>false</default>
+        <label>Mid Year Leads</label>
+    </customValue>
+    <customValue>
+        <fullName>Offer to Enrol</fullName>
+        <default>false</default>
+        <label>Offer to Enrol</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred to another Course</fullName>
+        <default>false</default>
+        <label>Referred to another Course</label>
+    </customValue>
+    <customValue>
+        <fullName>Regional Leads</fullName>
+        <default>false</default>
+        <label>Regional Leads</label>
+    </customValue>
+    <customValue>
+        <fullName>Scholarships</fullName>
+        <default>false</default>
+        <label>Scholarships</label>
+    </customValue>
+    <customValue>
+        <fullName>Sem 1 Leads</fullName>
+        <default>false</default>
+        <label>Sem 1 Leads</label>
+    </customValue>
+    <customValue>
+        <fullName>SMS</fullName>
+        <default>false</default>
+        <label>SMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Supplementary Offers</fullName>
+        <default>false</default>
+        <label>Supplementary Offers</label>
+    </customValue>
+    <customValue>
+        <fullName>TAFE Leads</fullName>
+        <default>false</default>
+        <label>TAFE Leads</label>
+    </customValue>
+    <customValue>
+        <fullName>UG Consult Follow Ups</fullName>
+        <default>false</default>
+        <label>UG Consult Follow Ups</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsubmitted</fullName>
+        <default>false</default>
+        <label>Unsubmitted</label>
+    </customValue>
+    <customValue>
+        <fullName>VTAC Offer to Accept</fullName>
+        <default>false</default>
+        <label>VTAC Offer to Accept</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Created for IST -188 for case</description>
+    <masterLabel>I_ST_Outbound_Campaign</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

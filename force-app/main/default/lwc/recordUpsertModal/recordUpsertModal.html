@@ -1,0 +1,37 @@
+<template>
+
+    <!--The modal component - onclose handles our custom 'close' event-->
+    <c-lwc-modal onclose={modalHasClosed}>
+        
+        <!--Modal Header-->
+        <span slot="modalHeader">
+            New Org
+        </span>
+
+        <!--Modal Content-->
+        <span slot="modalBody">
+
+            <!--lightning-record-form:
+                data-id - Use like aura:id
+                onsuccess - Close modal when successful
+            -->
+            <lightning-record-form 
+                data-id="recordEdit"
+                object-api-name={objectName}  
+                mode="edit"
+                layout-type="Full"
+                columns={columns}
+                onsuccess={requestModalClose}
+                oncancel={requestModalClose}>
+            </lightning-record-form>
+
+        </span>
+
+        <!--Modal Footer-->
+        <span slot="modalFooter">
+        </span>
+                
+    </c-lwc-modal>
+    <!--End of modal component-->
+
+</template>

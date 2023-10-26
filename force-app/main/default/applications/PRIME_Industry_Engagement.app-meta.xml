@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Updated_Case_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#E32119</headerColor>
+        <logo>download</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>PRIME Industry Engagement</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>PRIME Industry Engagement</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Updated_Case_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.PRIME</recordType>
+        <type>Flexipage</type>
+        <profile>LTU Ethics</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Updated_Case_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.PRIME</recordType>
+        <type>Flexipage</type>
+        <profile>LTU Industry Engagement</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Updated_Case_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.PRIME</recordType>
+        <type>Flexipage</type>
+        <profile>LTU Integration</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Updated_Case_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.PRIME</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Updated_Case_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.PRIME</recordType>
+        <type>Flexipage</type>
+        <profile>LTU Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Updated_Case_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.PRIME</recordType>
+        <type>Flexipage</type>
+        <profile>LTU Partner Community Login User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>PlaceHolder_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project_Proposal__c</pageOrSobjectType>
+        <recordType>Project_Proposal__c.Placeholder</recordType>
+        <type>Flexipage</type>
+        <profile>LTU Ethics</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>PlaceHolder_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project_Proposal__c</pageOrSobjectType>
+        <recordType>Project_Proposal__c.Placeholder</recordType>
+        <type>Flexipage</type>
+        <profile>LTU Industry Engagement</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>PlaceHolder_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project_Proposal__c</pageOrSobjectType>
+        <recordType>Project_Proposal__c.Placeholder</recordType>
+        <type>Flexipage</type>
+        <profile>LTU Integration</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>PlaceHolder_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project_Proposal__c</pageOrSobjectType>
+        <recordType>Project_Proposal__c.Placeholder</recordType>
+        <type>Flexipage</type>
+        <profile>LTU Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Recommendation_Lightning_Page_Layout_2</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project_Proposal__c</pageOrSobjectType>
+        <recordType>Project_Proposal__c.I_RS_Recommendation</recordType>
+        <type>Flexipage</type>
+        <profile>LTU PRIME</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>PlaceHolder_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project_Proposal__c</pageOrSobjectType>
+        <recordType>Project_Proposal__c.Placeholder</recordType>
+        <type>Flexipage</type>
+        <profile>LTU PRIME</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>PlaceHolder_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project_Proposal__c</pageOrSobjectType>
+        <recordType>Project_Proposal__c.Placeholder</recordType>
+        <type>Flexipage</type>
+        <profile>LTU Partner Community Login User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>PlaceHolder_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project_Proposal__c</pageOrSobjectType>
+        <recordType>Project_Proposal__c.Placeholder</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>Research_Opportunity__c</tabs>
+    <tabs>Project_Proposal__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>Research_Output__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>PRIME_Industry_Engagement_UtilityBar</utilityBar>
+</CustomApplication>

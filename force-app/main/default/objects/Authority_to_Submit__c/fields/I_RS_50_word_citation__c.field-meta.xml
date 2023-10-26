@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_50_word_citation__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>After consultation with your supervisors, please provide a 50-word plain language (lay terms) abstract to be included in the graduation booklet. A guide to writing citations can be downloaded using the adjacent link.</inlineHelpText>
+    <label>50-word citation</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

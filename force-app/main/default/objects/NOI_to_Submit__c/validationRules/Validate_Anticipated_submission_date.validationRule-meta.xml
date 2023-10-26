@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Anticipated_submission_date</fullName>
+    <active>true</active>
+    <description>When Student Changes the status from Draft to GRS Processing, Anticipated submission date should be filled</description>
+    <errorConditionFormula>AND(
+($User.I_RS_Is_Researcher_User__c = &apos;1&apos;),
+($User.Id = I_RS_Student_User__c ),
+( ISCHANGED(I_RS_Status__c) ),
+(TEXT(I_RS_Status__c) &lt;&gt; &apos;Draft&apos;),
+( ISBLANK(I_RS_Anticipated_submission_date__c))
+)</errorConditionFormula>
+    <errorMessage>Before you can submit to GRS, please fill in the Anticipated submission date.</errorMessage>
+</ValidationRule>

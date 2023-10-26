@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>NOI_Approved_DGR</fullName>
+        <description>NOI Approved - DGR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_DGR_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/NOI_Approved_DGR</template>
+    </alerts>
+    <alerts>
+        <fullName>NOI_Approved_Supervisor</fullName>
+        <ccEmails>exams.grs@latrobe.edu.au</ccEmails>
+        <description>NOI Approved -Supervisor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Supervisor_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/NOI_Approved_Supervisor</template>
+    </alerts>
+    <alerts>
+        <fullName>NOI_Approved_candidate</fullName>
+        <description>NOI Approved - candidate</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Student_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/NOI_Approved_candidate</template>
+    </alerts>
+    <alerts>
+        <fullName>NOI_Rejection</fullName>
+        <description>NOI Rejection</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Student_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/NOI_Rejection</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Set_NOI_Status_To_Draft</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>Set NOI Status To Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NOI_Submit_Status_To_Approvals</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>Approvals</literalValue>
+        <name>Update NOI Submit Status To Approvals</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NOI_Submit_Status_To_GRS_Processi</fullName>
+        <description>Sets Status of Notice of Intention Submit to &quot;GRS Processing&quot;</description>
+        <field>I_RS_Status__c</field>
+        <literalValue>GRS Processing</literalValue>
+        <name>Update NOI Submit Status To GRS Processi</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NOI_Submit_Status_To_Initiate</fullName>
+        <description>Updates Notice Of Intention Submit&apos;s Status to Initiate to Appointment of Examiners</description>
+        <field>I_RS_Status__c</field>
+        <literalValue>GRS review</literalValue>
+        <name>Update NOI Submit Status To Initiate AOE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_Cannot_be_Principle_Investigator</fullName>
+    <active>true</active>
+    <description>A student cannot be a Principle Investigator</description>
+    <errorConditionFormula>AND(
+
+ ($Profile.Name  &lt;&gt; &quot;System Administrator&quot;),
+
+OR(
+ISNEW(),
+
+ ISCHANGED( I_RS_Role__c ),
+ ISCHANGED(  I_RS_Contact_Researcher__c  ),
+ AND(
+   ISCHANGED(   I_RS_End_Date__c ),
+   ISNULL(  I_RS_End_Date__c )
+ )
+
+),
+
+(TEXT(I_RS_Role__c ) = &quot;Principal Investigator&quot;),
+OR(
+( I_RS_Contact_Researcher__r.I_RM_Graduate_Researcher_DLRS__c &gt;= 1),I_RS_Contact_Researcher__r.I_RM_Student__c &gt;= 1)
+
+)</errorConditionFormula>
+    <errorMessage>You cannot submit because you have listed a student as the Principal Investigator (PI). This means you will need to change the PI under the ‘Ethics Research Personnel’ tab. To make this change, please select ‘cancel’.</errorMessage>
+</ValidationRule>

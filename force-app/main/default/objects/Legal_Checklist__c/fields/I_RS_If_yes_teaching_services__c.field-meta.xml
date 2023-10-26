@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_If_yes_teaching_services__c</fullName>
+    <externalId>false</externalId>
+    <label>If Yes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_Teaching_services__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes-Educational Parternships &amp; Quality notified</fullName>
+                <default>false</default>
+                <label>Yes-Educational Parternships &amp; Quality notified</label>
+            </value>
+            <value>
+                <fullName>Yes-Not applicable (explain)</fullName>
+                <default>false</default>
+                <label>Yes-Not applicable (explain)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes-LTU teaching</controllingFieldValue>
+            <controllingFieldValue>Yes-other party</controllingFieldValue>
+            <valueName>Yes-Educational Parternships &amp; Quality notified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes-LTU teaching</controllingFieldValue>
+            <controllingFieldValue>Yes-other party</controllingFieldValue>
+            <valueName>Yes-Not applicable (explain)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

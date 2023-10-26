@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Project_Proposal__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Grant with limited applications</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Please upload an EOI form to the Proposal record under the Documents and Agreements tab (Documents and Agreements tab. Add Files. Upload Files). A copy of the EOI form can be found under the related tab in the Funding Opportunity.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please add the research team to the Team Members tab. For external researchers only, to upload a CV file click on the link under the heading &amp;quot;Title&amp;quot; then click on the Related tab and upload the CV. To return to the Project Proposal, click onto the Details tab, then click on the Project Proposal link under the heading &amp;quot;Project Proposal&amp;quot;. Please mark the Milestone as complete when this is done.&lt;/p&gt;</info>
+        <picklistValueName>Create EOI</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A panel reviews the proposal. The Research Office records the recommendations in PRIME and notifies the researcher of proposal feedback.&lt;/p&gt;</info>
+        <picklistValueName>Panel Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office reviews the eligibility of the project team to apply for this funding opportunity based on the scheme-specific criterion before the proposal is submitted for Head of School validation. If additional information is required at this stage, the Research Office Contact listed on the record will contact the Lead Chief Investigator listed on the project.&lt;/p&gt;</info>
+        <picklistValueName>Review by Research Office</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_RS_Grant_with_limited_applications</recordTypeName>
+</PathAssistant>

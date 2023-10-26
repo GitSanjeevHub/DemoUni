@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_IBC_Application_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please choose the highest level of containment required for this research project. If left blank the Research Office will populate this field.</inlineHelpText>
+    <label>IBC Application Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PC1</fullName>
+                <default>false</default>
+                <label>PC1</label>
+            </value>
+            <value>
+                <fullName>PC2</fullName>
+                <default>false</default>
+                <label>PC2</label>
+            </value>
+            <value>
+                <fullName>PC3</fullName>
+                <default>false</default>
+                <label>PC3</label>
+            </value>
+            <value>
+                <fullName>DNIR Licence Number</fullName>
+                <default>false</default>
+                <label>DNIR Licence Number</label>
+            </value>
+            <value>
+                <fullName>DIR Licence Number</fullName>
+                <default>false</default>
+                <label>DIR Licence Number</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Record_for_Researchers</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.I_RS_Is_Researcher_User__c = &quot;1&quot; &amp;&amp;
+TEXT(PRIORVALUE(I_RS_Status__c)) &lt;&gt; &quot;SDGR Determination&quot;</errorConditionFormula>
+    <errorMessage>The record is not editable at this stage.</errorMessage>
+</ValidationRule>

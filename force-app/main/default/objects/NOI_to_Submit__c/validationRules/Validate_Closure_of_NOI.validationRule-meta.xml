@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Closure_of_NOI</fullName>
+    <active>true</active>
+    <description>Only GRS users can close the NOI</description>
+    <errorConditionFormula>AND(
+
+(NOT($UserRole.DeveloperName = &apos;GRS&apos;)),
+($Profile.Name &lt;&gt; &apos;System Administrator&apos;),
+
+
+(TEXT( I_RS_Status__c ) = &apos;Complete&apos;)
+)</errorConditionFormula>
+    <errorMessage>You do not have permission to change the status to &apos;Complete&apos;</errorMessage>
+</ValidationRule>

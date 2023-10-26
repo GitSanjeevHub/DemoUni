@@ -1,0 +1,86 @@
+<!--
+ - Created by burnside on 2019-05-29.
+ -->
+
+<aura:component controller="ResearchOpportunitySearchController2"
+                description="Funding Opportunity Saved Search Results"
+                implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes">
+
+    <aura:attribute name="doneLoading" type="boolean" default="false"/>
+    <aura:attribute name="errorAlreadyOccurred" type="boolean" default="false"/>
+    <aura:attribute name="showTable" type="boolean"/>
+    <aura:attribute name="showGoToFullSearchPageButton" type="boolean" default="true"/>
+    <aura:attribute name="showPagination" type="boolean" default="false"/>
+
+    <aura:attribute name="keywordsToSearch" type="string" default=""/>
+    <aura:attribute name="keywordsToExclude" type="string" default=""/>
+    <aura:attribute name="filters" type="List" default="[]"/>
+    <aura:attribute name="useFilterLogic" type="boolean" default="false"/>
+    <aura:attribute name="filterLogic" type="string" default=""/>
+
+    <aura:attribute name="rowsPerPage" type="integer" default="10" required="true"/>
+
+    <aura:attribute name="label_cardTitle" type="string" default="My Saved Search"/>
+    <aura:attribute name="label_baselineFilterCopy" type="string"/>
+    <aura:attribute name="label_buttonSetSavedSearch" type="String" default="Set My Saved Search"/>
+    <aura:attribute name="label_buttonExpandSavedSearch" type="String" default="Open in Full Page"/>
+    <aura:attribute name="label_setupPrompt" type="string" default="You have not yet setup your default search."/>
+
+    <aura:attribute name="url" type="String"/>
+    <aura:attribute name="pageReference" type="Object"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+
+    <aura:if isTrue="{!v.doneLoading}">
+
+        <lightning:card title="{!v.label_cardTitle}">
+
+            <div class="slds-p-around--medium">
+
+                <aura:if isTrue="{!v.showTable}">
+
+                    {!v.label_baselineFilterCopy}<br/>
+                    <br/>
+                    
+                    <lightning:button label="{!v.label_buttonSetSavedSearch}" variant="base" onclick="{!c.setupDefaultSearchClicked}"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <aura:if isTrue="{!v.showGoToFullSearchPageButton}">
+                        <lightning:button label="{!v.label_buttonExpandSavedSearch}" variant="base" onclick="{!c.goToSearchPageButtonClicked}"/>
+                        <br/><br/>
+                    </aura:if>
+
+                    <c:ResearchOpportunitySearch_ResultTable
+                        aura:id="dataTable"
+                        rowsPerPage="{!v.rowsPerPage}"
+                        keywordsToSearch="{!v.keywordsToSearch}"
+                        keywordsToExclude="{!v.keywordsToExclude}"
+                        filters="{!v.filters}"
+                        filterLogic="{!v.filterLogic}"
+                        showPagination="{!v.showPagination}"
+                    />
+
+                    <aura:set attribute="else">
+                        {!v.label_setupPrompt}
+                        <br/>
+                        <br/>
+                        <lightning:button label="{!v.label_buttonSetSavedSearch}" variant="base" onclick="{!c.setupDefaultSearchClicked}"/>
+
+                    </aura:set>
+
+                </aura:if>
+
+            </div>
+
+        </lightning:card>
+
+        <aura:set attribute="else">
+            <lightning:spinner />
+        </aura:set>
+
+    </aura:if>
+
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <lightning:navigation aura:id="navService"/>
+
+</aura:component>

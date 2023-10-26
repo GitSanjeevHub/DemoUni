@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Position_Classification__c</fullName>
+    <description>Created for account Management</description>
+    <externalId>false</externalId>
+    <label>Position Classification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CEO</fullName>
+                <default>false</default>
+                <label>CEO</label>
+            </value>
+            <value>
+                <fullName>Mid-Management</fullName>
+                <default>false</default>
+                <label>Mid-Management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

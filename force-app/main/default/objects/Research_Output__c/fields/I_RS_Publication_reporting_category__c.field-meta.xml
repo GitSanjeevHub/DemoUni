@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Publication_reporting_category__c</fullName>
+    <externalId>false</externalId>
+    <label>Publication reporting category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A1 - Books - Authored research</fullName>
+                <default>false</default>
+                <label>A1 - Books - Authored research</label>
+            </value>
+            <value>
+                <fullName>A2 - Books - Authored other</fullName>
+                <default>false</default>
+                <label>A2 - Books - Authored other</label>
+            </value>
+            <value>
+                <fullName>A3 - Books - Edited</fullName>
+                <default>false</default>
+                <label>A3 - Books - Edited</label>
+            </value>
+            <value>
+                <fullName>A4 - Books - Revision/New Edition</fullName>
+                <default>false</default>
+                <label>A4 - Books - Revision/New Edition</label>
+            </value>
+            <value>
+                <fullName>B - Book Chapter</fullName>
+                <default>false</default>
+                <label>B - Book Chapter</label>
+            </value>
+            <value>
+                <fullName>BB - Non-DEST book chapter</fullName>
+                <default>false</default>
+                <label>BB - Non-DEST book chapter</label>
+            </value>
+            <value>
+                <fullName>C1 - Journal Articles</fullName>
+                <default>false</default>
+                <label>C1 - Journal Articles</label>
+            </value>
+            <value>
+                <fullName>C2 - Journal Articles - Other refereed contribution to a Scholarly Journal</fullName>
+                <default>false</default>
+                <label>C2 - Journal Articles - Other refereed contribution to a Scholarly Journal</label>
+            </value>
+            <value>
+                <fullName>C3 - Journal Articles - Non Refereed Article</fullName>
+                <default>false</default>
+                <label>C3 - Journal Articles - Non Refereed Article</label>
+            </value>
+            <value>
+                <fullName>C4 - Journal Articles - Letter or Note</fullName>
+                <default>false</default>
+                <label>C4 - Journal Articles - Letter or Note</label>
+            </value>
+            <value>
+                <fullName>E1 - Conference Publication</fullName>
+                <default>false</default>
+                <label>E1 - Conference Publication</label>
+            </value>
+            <value>
+                <fullName>E2 - Conference - Full paper, non refereed</fullName>
+                <default>false</default>
+                <label>E2 - Conference - Full paper, non refereed</label>
+            </value>
+            <value>
+                <fullName>E3 - Conference Publication - Extract of Paper</fullName>
+                <default>false</default>
+                <label>E3 - Conference Publication - Extract of Paper</label>
+            </value>
+            <value>
+                <fullName>E4 - Edited volume of conference proceedings</fullName>
+                <default>false</default>
+                <label>E4 - Edited volume of conference proceedings</label>
+            </value>
+            <value>
+                <fullName>I - Patent</fullName>
+                <default>false</default>
+                <label>I - Patent</label>
+            </value>
+            <value>
+                <fullName>J1 - Original Creative Work</fullName>
+                <default>false</default>
+                <label>J1 - Original Creative Work</label>
+            </value>
+            <value>
+                <fullName>J3 - Live Performance</fullName>
+                <default>false</default>
+                <label>J3 - Live Performance</label>
+            </value>
+            <value>
+                <fullName>J4 - Recorded or Rendered Creative Work</fullName>
+                <default>false</default>
+                <label>J4 - Recorded or Rendered Creative Work</label>
+            </value>
+            <value>
+                <fullName>J5 - Curated Exhibition or Event</fullName>
+                <default>false</default>
+                <label>J5 - Curated Exhibition or Event</label>
+            </value>
+            <value>
+                <fullName>J6- Research Report for an External Body</fullName>
+                <default>false</default>
+                <label>J6- Research Report for an External Body</label>
+            </value>
+            <value>
+                <fullName>M - Research Report or Pamphlet</fullName>
+                <default>false</default>
+                <label>M - Research Report or Pamphlet</label>
+            </value>
+            <value>
+                <fullName>Commercialisation Income</fullName>
+                <default>false</default>
+                <label>Commercialisation Income</label>
+            </value>
+            <value>
+                <fullName>Portfolio</fullName>
+                <default>false</default>
+                <label>Portfolio</label>
+            </value>
+            <value>
+                <fullName>Portfolio - J1 -Original Creative Work</fullName>
+                <default>false</default>
+                <label>Portfolio - J1 -Original Creative Work</label>
+            </value>
+            <value>
+                <fullName>Portfolio - J3 -Live Performance</fullName>
+                <default>false</default>
+                <label>Portfolio - J3 -Live Performance</label>
+            </value>
+            <value>
+                <fullName>Portfolio - J4 - Recorded or Rendered Creative Work</fullName>
+                <default>false</default>
+                <label>Portfolio - J4 - Recorded or Rendered Creative Work</label>
+            </value>
+            <value>
+                <fullName>Portfolio - J5 - Curated Exhibition or Event</fullName>
+                <default>false</default>
+                <label>Portfolio - J5 - Curated Exhibition or Event</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

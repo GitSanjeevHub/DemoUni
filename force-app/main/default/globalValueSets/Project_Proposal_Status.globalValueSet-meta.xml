@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PlaceHolder</fullName>
+        <default>false</default>
+        <label>PlaceHolder</label>
+    </customValue>
+    <customValue>
+        <fullName>Create Proposal</fullName>
+        <default>false</default>
+        <label>Create Proposal</label>
+    </customValue>
+    <customValue>
+        <fullName>Recommended</fullName>
+        <default>false</default>
+        <label>Recommended</label>
+    </customValue>
+    <customValue>
+        <fullName>Dismissed</fullName>
+        <default>false</default>
+        <label>Dismissed</label>
+    </customValue>
+    <customValue>
+        <fullName>Accepted</fullName>
+        <default>false</default>
+        <label>Accepted</label>
+    </customValue>
+    <customValue>
+        <fullName>Drafting NOI</fullName>
+        <default>false</default>
+        <label>Drafting NOI</label>
+    </customValue>
+    <customValue>
+        <fullName>HoS NOI Validation</fullName>
+        <default>false</default>
+        <label>HoS NOI Validation</label>
+    </customValue>
+    <customValue>
+        <fullName>Pitch Session</fullName>
+        <default>false</default>
+        <label>Pitch Session</label>
+    </customValue>
+    <customValue>
+        <fullName>Peer review draft</fullName>
+        <default>false</default>
+        <label>Peer review draft</label>
+    </customValue>
+    <customValue>
+        <fullName>Peer review draft complete</fullName>
+        <default>false</default>
+        <label>Peer review draft complete</label>
+    </customValue>
+    <customValue>
+        <fullName>Panel Review</fullName>
+        <default>false</default>
+        <label>Panel Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Proposal Review</fullName>
+        <default>false</default>
+        <label>Proposal Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Final draft</fullName>
+        <default>false</default>
+        <label>Final draft</label>
+    </customValue>
+    <customValue>
+        <fullName>Draft Proposal</fullName>
+        <default>false</default>
+        <label>Draft Proposal</label>
+    </customValue>
+    <customValue>
+        <fullName>Review by Research Office</fullName>
+        <default>false</default>
+        <label>Review by Research Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Provide Project Details</fullName>
+        <default>false</default>
+        <label>Provide Project Details</label>
+    </customValue>
+    <customValue>
+        <fullName>Review Contract</fullName>
+        <default>false</default>
+        <label>Review Contract</label>
+    </customValue>
+    <customValue>
+        <fullName>Contract Instructions</fullName>
+        <default>false</default>
+        <label>Contract Instructions</label>
+    </customValue>
+    <customValue>
+        <fullName>Draft contract</fullName>
+        <default>false</default>
+        <label>Draft contract</label>
+    </customValue>
+    <customValue>
+        <fullName>Approvals</fullName>
+        <default>false</default>
+        <label>Approvals</label>
+    </customValue>
+    <customValue>
+        <fullName>Formalise Contract</fullName>
+        <default>false</default>
+        <label>Formalise Contract</label>
+    </customValue>
+    <customValue>
+        <fullName>Submission to Client</fullName>
+        <default>false</default>
+        <label>Submission to Client</label>
+    </customValue>
+    <customValue>
+        <fullName>Negotiating</fullName>
+        <default>false</default>
+        <label>Negotiating</label>
+    </customValue>
+    <customValue>
+        <fullName>Submission to Funding Body</fullName>
+        <default>false</default>
+        <label>Submission to Funding Body</label>
+    </customValue>
+    <customValue>
+        <fullName>Submitted</fullName>
+        <default>false</default>
+        <label>Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>Rejoinders</fullName>
+        <default>false</default>
+        <label>Rejoinders</label>
+    </customValue>
+    <customValue>
+        <fullName>Successful</fullName>
+        <default>false</default>
+        <label>Successful</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsuccessful</fullName>
+        <default>false</default>
+        <label>Unsuccessful</label>
+    </customValue>
+    <customValue>
+        <fullName>Establish Contracts</fullName>
+        <default>false</default>
+        <label>Establish Contracts</label>
+    </customValue>
+    <customValue>
+        <fullName>Setup</fullName>
+        <default>false</default>
+        <label>Setup</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Open</fullName>
+        <default>false</default>
+        <label>Project Open</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Closed</fullName>
+        <default>false</default>
+        <label>Project Closed</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial</fullName>
+        <default>false</default>
+        <label>Initial</label>
+    </customValue>
+    <customValue>
+        <fullName>Submit to Research Office</fullName>
+        <default>false</default>
+        <label>Submit to Research Office</label>
+    </customValue>
+    <masterLabel>Project Proposal Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

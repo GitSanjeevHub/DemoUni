@@ -1,0 +1,13 @@
+<!--
+ - Created by burnside on 2019-05-20.
+ -->
+
+<aura:event type="APPLICATION" description="ResearchOpportunitySearch_SearchRequest">
+
+    <aura:attribute name="keywordsToSearch" type="String" />
+    <aura:attribute name="keywordsToExclude" type="String" />
+
+    <aura:attribute name="filters" type="List"/>
+    <aura:attribute name="filterLogic" type="string"/>
+
+</aura:event>

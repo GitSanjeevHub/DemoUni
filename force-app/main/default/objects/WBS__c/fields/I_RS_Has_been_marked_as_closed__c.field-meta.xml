@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Has_been_marked_as_closed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If true, this WBS has being marked as closed in Finance at some point in history</description>
+    <externalId>false</externalId>
+    <label>Has been marked as Closed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Manager_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Contact who is manager of this person. Is based from Manager Staff Id field. May or may not have a user attached.</description>
+    <externalId>false</externalId>
+    <label>Manager</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Subordinates</relationshipLabel>
+    <relationshipName>Subordinate_Contacts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

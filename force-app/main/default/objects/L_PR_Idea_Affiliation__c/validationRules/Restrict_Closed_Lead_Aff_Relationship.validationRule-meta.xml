@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Closed_Lead_Aff_Relationship</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(L_PR_Idea__r.L_PR_Lead_Status__c , &apos;Closed&apos;) || ISPICKVAL(L_PR_Idea__r.L_PR_Lead_Status__c , &apos;Closed – Converted&apos;)</errorConditionFormula>
+    <errorMessage>Cannot link Affiliation to Closed Lead</errorMessage>
+</ValidationRule>

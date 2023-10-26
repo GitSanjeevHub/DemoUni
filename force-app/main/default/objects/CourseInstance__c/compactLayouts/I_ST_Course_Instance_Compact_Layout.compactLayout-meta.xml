@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Course_Instance_Compact_Layout</fullName>
+    <fields>L_AD_Campus_Name__c</fields>
+    <fields>L_AD_Course_Instance_Version_Year__c</fields>
+    <fields>L_AD_Course_Instance_Status__c</fields>
+    <fields>L_AD_Course_Instance_Version_Number__c</fields>
+    <fields>L_AD_College_Name__c</fields>
+    <fields>I_ST_School_Name__c</fields>
+    <label>Course Instance Compact Layout</label>
+</CompactLayout>

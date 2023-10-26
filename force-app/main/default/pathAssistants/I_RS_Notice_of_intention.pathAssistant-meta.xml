@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Project_Proposal__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Notice of intention</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office seeks approval from authorised approvers for the final Proposal.&lt;/p&gt;</info>
+        <picklistValueName>Approvals</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Please upload a 500 word proposal summary to the Proposal record on the Documents and Agreements tab (Documents and Agreements tab. Add Files. Upload Files). A template for the summary can be found under the Milestones and Tasks tab.&lt;/p&gt;&lt;p&gt;Please add the research team to the Team Members tab. For external researchers only, to upload a CV file click on the link under the heading &amp;quot;Title&amp;quot; then click on the Related tab and upload the CV. To return to the Project Proposal, click onto the Details tab, then click on the Project Proposal link Under the heading &amp;quot;Project Proposal&amp;quot;. Please mark the Milestone as complete when this is done.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Drafting NOI</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The researcher uploads a final proposal (Documents and Agreements tab. Add Files. Upload Files) and completes the budget section. The researcher Submits the final Proposal to the Research Office (top right of screen).&lt;/p&gt;</info>
+        <picklistValueName>Final draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office confirms the eligibility of all team members and coordinates approval by the relevant Head of School.&lt;/p&gt;</info>
+        <picklistValueName>HoS NOI Validation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office confirms, via the Researcher Portal, a review meeting with the researcher to discuss pitch session feedback and any suggested Project or Team changes.&lt;/p&gt;</info>
+        <picklistValueName>Peer review draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Researcher completes the information in the Details tab, creates a Budget, uploads an updated draft grant proposal to the proposal record (Documents and Agreements tab. Add Files. Upload Files), completes the FOR, SEO and TOA Codes and Research Centre details. The researcher Submits the Proposal record to the Research Office (top right of screen). The Research Office sends the draft for peer review and confirms, via the Researcher Portal.&lt;/p&gt;</info>
+        <picklistValueName>Peer review draft complete</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office confirms a pitching session date via the Researcher Portal. Researcher uploads presentation for their pitching session to the Proposal record (Documents and Agreements tab. Add Files. Upload Files). Please mark the Milestone for this task as complete when this is done.&lt;/p&gt;</info>
+        <picklistValueName>Pitch Session</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office uploads assessors reports under Documents and Agreements tab. The researcher uploads a response to assessors reports (Documents and Agreements tab. Add Files. Upload Files). The Research Office provides feedback on the the researcher&amp;#39;s responses. The Research Office will upload a Final Rejoinder (Documents and Agreements tab). The Research Office submits the Rejoinder to the Funder.&lt;/p&gt;</info>
+        <picklistValueName>Rejoinders</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office facilitates peer review and completes compliance checks before the proposal is submitted for approval. If additional information is required at this stage, the Research Office contact listed on the record will contact the researcher. At this stage the record is locked for the Researcher for Research Office review.&lt;/p&gt;</info>
+        <picklistValueName>Review by Research Office</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The proposal is reviewed and submitted to the Funding Body by the Research Office.&lt;/p&gt;</info>
+        <picklistValueName>Submission to Funding Body</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The proposal has been submitted to the Funder.&lt;/p&gt;</info>
+        <picklistValueName>Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The proposal is successful and is now a funded project. &lt;/p&gt;</info>
+        <picklistValueName>Successful</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_RS_Notice_of_intention</recordTypeName>
+</PathAssistant>

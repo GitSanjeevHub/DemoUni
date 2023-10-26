@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Examiner_Preferred_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>I_RS_Examiner__r.I_RS_Preferred_Full_Name__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Enter the examiner preferred name when different to their name in the examiner field.</inlineHelpText>
+    <label>Examiner Preferred Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

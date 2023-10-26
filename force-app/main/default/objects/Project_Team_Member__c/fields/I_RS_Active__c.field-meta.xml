@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Active__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Those who are active will have Apex sharing for all Project Proposal and related records</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When ticked the individual named on this record can view this project and related items if they are a PRIME user.</inlineHelpText>
+    <label>Visibility of Project</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

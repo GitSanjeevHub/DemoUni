@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Ethics_Request__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Ethics Request: Research Governance</masterLabel>
+    <recordTypeName>Research_Governance_Authorisation</recordTypeName>
+</PathAssistant>

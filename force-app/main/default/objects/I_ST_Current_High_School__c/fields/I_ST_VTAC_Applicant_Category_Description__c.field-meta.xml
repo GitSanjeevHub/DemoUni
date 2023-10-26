@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_VTAC_Applicant_Category_Description__c</fullName>
+    <description>VTAC Application Category Description as per IST-302</description>
+    <externalId>false</externalId>
+    <label>VTAC Application Category Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_ST_VTAC_Application_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>I_ST_VTAC_Category_Description</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>E52</controllingFieldValue>
+            <valueName>Higher category cannot be assigned based on educational claims</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UB</controllingFieldValue>
+            <valueName>Uni Bridges Pathway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V14</controllingFieldValue>
+            <valueName>Currently studying International Baccalaureate (IB)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V16</controllingFieldValue>
+            <valueName>Currently studying the VCE (includes students from most recent northern hemisphere)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V17</controllingFieldValue>
+            <valueName>Currently studying a non-standard or accredited Australian Year 12 course</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V22</controllingFieldValue>
+            <valueName>Currently studying standard interstate year 12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V23</controllingFieldValue>
+            <valueName>Currently studying overseas year 12 (domestic applicant)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V24</controllingFieldValue>
+            <valueName>Currently studying GCE Advanced Level (incl Northern hemisphere June graduates)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V29</controllingFieldValue>
+            <valueName>Studying the NZ Nat Cert of Edu Achiev (NCEA) level 3 exam in the current year</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V30</controllingFieldValue>
+            <valueName>Currently studying standard Australian year 12 has incomplete higher ed award</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E14</controllingFieldValue>
+            <valueName>Previously studied the International Baccalaureate (IB)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V33</controllingFieldValue>
+            <valueName>Currently studying standard Aust yr 12 has incomplete TAFE Cert IV award</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E16</controllingFieldValue>
+            <valueName>Previously studied VCE since 1992 (excluding most recent northern hemisphere)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V41</controllingFieldValue>
+            <valueName>Currently studying a standard Aust yr12 has a complete higher ed award</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E17</controllingFieldValue>
+            <valueName>Previously studied a non-standard or accredited Australian year 12 course</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V43</controllingFieldValue>
+            <valueName>Currently studying stand Aust yr 12 has complete TAFE award Cert IV lvl or above</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E22</controllingFieldValue>
+            <valueName>Previously studied standard interstate year 12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VP</controllingFieldValue>
+            <valueName>VCE Plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E23</controllingFieldValue>
+            <valueName>Previously studied overseas year 12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E24</controllingFieldValue>
+            <valueName>Previously studied GCE Advanced Level</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E27</controllingFieldValue>
+            <valueName>No secondary claim but has TAFE claim(s) below a Certificate IV level</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E29</controllingFieldValue>
+            <valueName>Previously studied the New Zealand NCEA level 3 or Bursary examination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E30</controllingFieldValue>
+            <valueName>Incomplete higher education award, e.g. degree</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E33</controllingFieldValue>
+            <valueName>Incomplete TAFE award at certificate IV level or above</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>31</controllingFieldValue>
+            <valueName>Higher Education course</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>32</controllingFieldValue>
+            <valueName>Enabling bridging course</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>34</controllingFieldValue>
+            <valueName>TAFE Award course</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40</controllingFieldValue>
+            <valueName>Work and life experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>41</controllingFieldValue>
+            <valueName>Recent secondary (ATAR only)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>42</controllingFieldValue>
+            <valueName>Recent secondary (ATAR plus other)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>43</controllingFieldValue>
+            <valueName>Recent secondary (Other criteria only)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AS</controllingFieldValue>
+            <valueName>Aspire Program</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E11</controllingFieldValue>
+            <valueName>Previously studied Victorian year 12 (VCE or its predecessor) prior to 1992.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E41</controllingFieldValue>
+            <valueName>Complete higher education award, e.g. degree</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E43</controllingFieldValue>
+            <valueName>Complete TAFE award at certificate IV level or above</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

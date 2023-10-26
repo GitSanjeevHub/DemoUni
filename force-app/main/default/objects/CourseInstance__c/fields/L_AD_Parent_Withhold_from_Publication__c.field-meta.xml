@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_AD_Parent_Withhold_from_Publication__c</fullName>
+    <externalId>false</externalId>
+    <formula>L_AD_CourseParent__r.L_AD_Withhold_From_Publication__c</formula>
+    <label>Withhold from Publication</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

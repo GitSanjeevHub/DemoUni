@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Approver_Team_Member_Field</fullName>
+    <active>true</active>
+    <description>If Role is / is being changed from Approver, then you cannot change certain fields</description>
+    <errorConditionFormula>(
+TEXT(I_RS_Role__c) = &apos;Approver&apos; ||
+ISPICKVAL(PRIORVALUE(I_RS_Role__c), &apos;Approver&apos;)
+) 
+&amp;&amp;
+(
+ISCHANGED(I_RS_Role__c) ||
+ISCHANGED(I_RS_Invitation_Status__c) ||
+ISCHANGED(I_RS_Active__c)
+)</errorConditionFormula>
+    <errorMessage>You are attempting to set/update an Approver. Please do so via the &apos;First Approver&apos; and &apos;Second Approver&apos; fields on the Project / Project Proposal.</errorMessage>
+</ValidationRule>

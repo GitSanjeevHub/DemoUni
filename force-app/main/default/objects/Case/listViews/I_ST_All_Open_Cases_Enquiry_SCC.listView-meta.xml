@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_All_Open_Cases_Enquiry_SCC</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>NAME</columns>
+    <columns>I_ST_Enquirer_Type__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Case_Age__c</columns>
+    <columns>OWNER_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.I_ST_Enquiry</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Open,In Progress,Updated</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE_DATE_ONLY</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>SACE Sales</value>
+    </filters>
+    <filters>
+        <field>CASES.ORIGIN</field>
+        <operation>notEqual</operation>
+        <value>Consultation</value>
+    </filters>
+    <label>All Non Referred Cases -Enquiry (SACE)</label>
+</ListView>

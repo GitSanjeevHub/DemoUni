@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_External_Contact_DLRS__c</fullName>
+    <description>Created for use in Criteria Based Sharing
+Value generated via DLRS counting the number of External Contact Affiliations
+Refer LTU360-853, LTU360-850, LTU360-847, LTU360-838</description>
+    <externalId>false</externalId>
+    <label>External Contact</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

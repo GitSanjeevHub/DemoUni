@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_New_Examiner_Interaction__c</fullName>
+    <defaultValue>&quot;A new Examiner Interaction record will be created. You will be able to find it under the &apos;Examiner Interactions&apos; section. Click Save to confirm.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>New Examiner Interaction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

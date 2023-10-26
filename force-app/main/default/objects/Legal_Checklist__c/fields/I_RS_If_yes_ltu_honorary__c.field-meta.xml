@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_If_yes_ltu_honorary__c</fullName>
+    <externalId>false</externalId>
+    <label>If Yes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_LTU_honorary_visiting_researchers__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Honorary Researcher Deed signed</fullName>
+                <default>false</default>
+                <label>Honorary Researcher Deed signed</label>
+            </value>
+            <value>
+                <fullName>Honorary Researcher Deed pending</fullName>
+                <default>false</default>
+                <label>Honorary Researcher Deed pending</label>
+            </value>
+            <value>
+                <fullName>Honorary is ONJCRI staff</fullName>
+                <default>false</default>
+                <label>Honorary is ONJCRI staff</label>
+            </value>
+            <value>
+                <fullName>Advice required (give details)</fullName>
+                <default>false</default>
+                <label>Advice required (give details)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Honorary Researcher Deed signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Honorary Researcher Deed pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Honorary is ONJCRI staff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Advice required (give details)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Charge_Out_Rate_Comment__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+TEXT(Default_Rate_Type__c) &lt;&gt; TEXT(I_RS_Actual_Rate_Type__c),
+&quot;• The Salary Rate types are not the same&quot; &amp; BR(), &quot;&quot;)+
+
+IF(
+I_RS_Profit__c &gt; I_RS_Actual_Profit__c,
+&quot;• The Actual Profit is less than the Default Profit&quot; &amp; BR(),&quot;&quot;) +
+
+IF(
+I_RS_Overhead__c &gt; I_RS_Actual_Overhead__c,
+
+&quot;• The Actual Overhead is less than the Default Overhead&quot; &amp; BR(),&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Provide reasons why default charge out rates have been adjusted</inlineHelpText>
+    <label>Charge Out Rate Comment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

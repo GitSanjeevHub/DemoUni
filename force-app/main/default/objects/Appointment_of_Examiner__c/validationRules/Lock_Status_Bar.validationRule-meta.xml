@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Status_Bar</fullName>
+    <active>true</active>
+    <description>Prevent invalid changes of Status bar by non-researchers. Approval Process steps ignore validation rules and so this rule only fires when using standard edit, not following the approval process.</description>
+    <errorConditionFormula>$User.I_RS_Is_Researcher_User__c = &quot;1&quot; &amp;&amp;
+
+ISCHANGED(I_RS_Status__c)</errorConditionFormula>
+    <errorMessage>You do not have permission to change to this status. Please contact GRS.</errorMessage>
+</ValidationRule>

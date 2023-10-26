@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_1st_Examiner_Contact_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>If the proposed examiner already has a contact record in PRIME, you can select their name here.</inlineHelpText>
+    <label>1st Examiner Contact Record</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Appointment of Examiners</relationshipLabel>
+    <relationshipName>Appointment_of_Examiners_1st</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>I_RS_Date_Added__c</field>
+        <formula>TODAY()</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>I_RS_Ethics_Request__c</field>
+        <formula>Ethics_Request__c.Id</formula>
+    </fieldOverrides>
+    <label>Link Rooms</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Facility__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Ethics_Request__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Date_Added__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_End_Date__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Room successfully linked.</successMessage>
+    <targetObject>Related_Facility__c</targetObject>
+    <targetParentField>I_RS_Ethics_Request__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

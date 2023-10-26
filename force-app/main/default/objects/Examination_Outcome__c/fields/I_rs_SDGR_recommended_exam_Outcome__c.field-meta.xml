@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_rs_SDGR_recommended_exam_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Refer to Graduate Research Examinations Policy.</inlineHelpText>
+    <label>SDGR recommended exam outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pass with no amendments</fullName>
+                <default>false</default>
+                <label>Pass with no amendments</label>
+            </value>
+            <value>
+                <fullName>Pass with minor amendments</fullName>
+                <default>false</default>
+                <label>Pass with minor amendments</label>
+            </value>
+            <value>
+                <fullName>Pass with major amendments</fullName>
+                <default>false</default>
+                <label>Pass with major amendments</label>
+            </value>
+            <value>
+                <fullName>Advisory panel</fullName>
+                <default>false</default>
+                <label>Advisory panel</label>
+            </value>
+            <value>
+                <fullName>Pass after re-examination</fullName>
+                <default>false</default>
+                <label>Pass after re-examination</label>
+            </value>
+            <value>
+                <fullName>Do not award the degree (fail) after re-examination</fullName>
+                <default>false</default>
+                <label>Do not award the degree (fail) after re-examination</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

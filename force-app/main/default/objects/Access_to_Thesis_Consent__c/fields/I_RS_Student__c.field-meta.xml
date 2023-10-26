@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Student__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used for email alerts that fire off this object</description>
+    <externalId>false</externalId>
+    <label>Student</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Access to Thesis Consent Forms (Student)</relationshipLabel>
+    <relationshipName>Access_to_Thesis_Consent_Forms_Student</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

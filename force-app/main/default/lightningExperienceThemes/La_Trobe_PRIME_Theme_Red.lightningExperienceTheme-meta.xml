@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningExperienceTheme xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultBrandingSet>LEXTHEMINGLa_Trobe_PRIME_Theme_Dark_Background</defaultBrandingSet>
+    <description>Another theme showcasing La Trobe Red</description>
+    <masterLabel>La Trobe PRIME Theme: Red</masterLabel>
+    <shouldOverrideLoadingImage>false</shouldOverrideLoadingImage>
+</LightningExperienceTheme>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Meeting_Date__c</fullName>
+    <description>The &apos;Meeting Date&apos; on the Meeting Date record on the related Ethics Request or Ethics Post Approval record</description>
+    <externalId>false</externalId>
+    <label>Meeting Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

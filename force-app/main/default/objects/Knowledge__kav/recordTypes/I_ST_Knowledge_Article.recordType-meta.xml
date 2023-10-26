@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Knowledge_Article</fullName>
+    <active>true</active>
+    <description>This can be used for Knowledge articles</description>
+    <label>Knowledge Article</label>
+</RecordType>

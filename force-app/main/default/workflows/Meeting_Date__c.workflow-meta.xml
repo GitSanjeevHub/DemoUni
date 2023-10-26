@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Meeting_Date_Update_Name</fullName>
+        <field>Name</field>
+        <formula>IF(
+LEN(TEXT(I_RS_Committee__c) &amp; &quot; &quot; &amp;
+
+I_RS_Day__c &amp; &quot;,&quot; &amp; &quot; &quot; &amp;  TEXT(DAY(I_RS_Meeting_Date__c)) &amp; &quot; &quot; &amp; 
+
+CASE(MONTH(I_RS_Meeting_Date__c),
+1, &quot;January&quot;,
+2, &quot;February&quot;,
+3, &quot;March&quot;,
+4, &quot;April&quot;,
+5, &quot;May&quot;,
+6, &quot;June&quot;,
+7, &quot;July&quot;,
+8, &quot;August&quot;,
+9, &quot;September&quot;,
+10, &quot;October&quot;,
+11, &quot;November&quot;,
+12, &quot;December&quot;,
+&quot;&quot;) &amp;
+
+&quot; &quot; &amp; 
+
+TEXT(YEAR(I_RS_Meeting_Date__c))) &lt;= 80,
+
+TEXT(I_RS_Committee__c) &amp; &quot; &quot; &amp;
+
+I_RS_Day__c &amp; &quot;,&quot; &amp; &quot; &quot; &amp;  TEXT(DAY(I_RS_Meeting_Date__c)) &amp; &quot; &quot; &amp; 
+
+CASE(MONTH(I_RS_Meeting_Date__c),
+1, &quot;January&quot;,
+2, &quot;February&quot;,
+3, &quot;March&quot;,
+4, &quot;April&quot;,
+5, &quot;May&quot;,
+6, &quot;June&quot;,
+7, &quot;July&quot;,
+8, &quot;August&quot;,
+9, &quot;September&quot;,
+10, &quot;October&quot;,
+11, &quot;November&quot;,
+12, &quot;December&quot;,
+&quot;&quot;) &amp;
+
+&quot; &quot; &amp; 
+
+TEXT(YEAR(I_RS_Meeting_Date__c)),
+
+
+LEFT(
+TEXT(I_RS_Committee__c) &amp; &quot; &quot; &amp;
+
+I_RS_Day__c &amp; &quot;,&quot; &amp; &quot; &quot; &amp;  TEXT(DAY(I_RS_Meeting_Date__c)) &amp; &quot; &quot; &amp; 
+
+CASE(MONTH(I_RS_Meeting_Date__c),
+1, &quot;January&quot;,
+2, &quot;February&quot;,
+3, &quot;March&quot;,
+4, &quot;April&quot;,
+5, &quot;May&quot;,
+6, &quot;June&quot;,
+7, &quot;July&quot;,
+8, &quot;August&quot;,
+9, &quot;September&quot;,
+10, &quot;October&quot;,
+11, &quot;November&quot;,
+11, &quot;December&quot;,
+&quot;&quot;) &amp;
+
+&quot; &quot; &amp; 
+
+TEXT(YEAR(I_RS_Meeting_Date__c))
+,80)
+)</formula>
+        <name>Meeting Date: Update Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Meeting Date Name</fullName>
+        <actions>
+            <name>Meeting_Date_Update_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(  ISNEW(),    AND( OR(   ISCHANGED(I_RS_Meeting_Date__c),   ISCHANGED(I_RS_Committee__c)   ), NOT(ISBLANK(I_RS_Meeting_Date__c))  )   )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

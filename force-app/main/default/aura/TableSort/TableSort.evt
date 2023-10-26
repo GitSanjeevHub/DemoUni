@@ -1,0 +1,5 @@
+<aura:event type="COMPONENT" description="Event template">
+    <aura:attribute name="column" type="Aura.Component" required="false" description="The column which fired this event." />
+    <aura:attribute name="compareFunction" type="Object" required="true" description="A Javascript function which compares two items in the table." />
+    <aura:attribute name="sortOrder" type="String" required="true" description="Whether or not the column is sorted ASC or DESC." />
+</aura:event>

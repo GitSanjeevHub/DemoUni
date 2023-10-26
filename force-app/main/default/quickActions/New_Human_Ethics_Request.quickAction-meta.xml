@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a new Human Ethics Request, will be used in Researcher Portal</description>
+    <fieldOverrides>
+        <field>I_RS_Status__c</field>
+        <literalValue>Draft</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>TEXT(Today())</formula>
+    </fieldOverrides>
+    <label>New Human Ethics Application</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Ethics_Application_Title__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Ethics_Review_Committee__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Human Ethics Application created.</successMessage>
+    <targetObject>Ethics_Request__c</targetObject>
+    <targetRecordType>Ethics_Request__c.Human_Ethics_Application</targetRecordType>
+    <type>Create</type>
+</QuickAction>

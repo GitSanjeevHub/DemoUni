@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Has_been_marked_as_created__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If true, this WBS has been marked as Created in Finance at some point in history</description>
+    <externalId>false</externalId>
+    <label>Has been marked as Created</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

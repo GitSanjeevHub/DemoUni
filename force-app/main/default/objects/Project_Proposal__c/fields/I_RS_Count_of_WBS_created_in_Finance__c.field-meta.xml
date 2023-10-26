@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Count_of_WBS_created_in_Finance__c</fullName>
+    <description>This field will have count of WBS that has been created in finance, i.e., WBS count whose status is Open or Closed</description>
+    <externalId>false</externalId>
+    <label>Count of WBS created in Finance</label>
+    <summaryFilterItems>
+        <field>WBS__c.I_RS_WBS_Status__c</field>
+        <operation>equals</operation>
+        <value>Open, Closed</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WBS__c.I_RS_Project_Proposal__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

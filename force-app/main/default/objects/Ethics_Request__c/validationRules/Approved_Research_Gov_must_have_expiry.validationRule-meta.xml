@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Research_Gov_must_have_expiry</fullName>
+    <active>true</active>
+    <description>If an Ethics Request has a record type of Research Governance, the Ethics Application Expiry Date must be manually provided</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Research_Governance_Authorisation&apos; &amp;&amp;
+
+TEXT(I_RS_Ethics_Application_Review_Outcome__c) = &apos;Approved&apos;
+
+&amp;&amp;
+ISBLANK(I_RS_Ethics_Application_Expiry_Date__c)</errorConditionFormula>
+    <errorDisplayField>I_RS_Ethics_Application_Expiry_Date__c</errorDisplayField>
+    <errorMessage>You must provide an expiry date</errorMessage>
+</ValidationRule>

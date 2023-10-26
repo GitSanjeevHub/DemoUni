@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Supervisor_Declaration_Text__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;I have consulted with the candidate to ascertain there are no conflicts of interest or other barriers with any potential examiners.&quot;+
+BR()+
+&quot;I have declared any potential or perceived conflicts of interest and / or areas where the proposed examiners don’t meet the standard qualifications for examiners.&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Supervisor Declaration</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

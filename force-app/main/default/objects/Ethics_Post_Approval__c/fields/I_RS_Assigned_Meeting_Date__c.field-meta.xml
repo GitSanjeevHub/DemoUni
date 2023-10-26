@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Assigned_Meeting_Date__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>The date the ethics request will be reviewed by the Committee.  Populated by the Research Office.</inlineHelpText>
+    <label>Meeting Date</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2 AND 3) OR (4 AND 5 AND 6) OR (7 AND 8 AND 9)</booleanFilter>
+        <filterItems>
+            <field>$Source.I_RS_Ethics_Request_Type__c</field>
+            <operation>equals</operation>
+            <value>Animal Ethics Application, SOP/Phenotype Report, Externally Approved Application</value>
+        </filterItems>
+        <filterItems>
+            <field>Meeting_Date__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Animal Ethics Application</value>
+        </filterItems>
+        <filterItems>
+            <field>Meeting_Date__c.I_RS_Expired__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.I_RS_Ethics_Request_Type__c</field>
+            <operation>equals</operation>
+            <value>Human Ethics Application, Externally Approved Application</value>
+        </filterItems>
+        <filterItems>
+            <field>Meeting_Date__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Human Ethics Application</value>
+        </filterItems>
+        <filterItems>
+            <field>Meeting_Date__c.I_RS_Expired__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.I_RS_Ethics_Request_Type__c</field>
+            <operation>equals</operation>
+            <value>Externally Approved Application, Institutional Biosafety Committee</value>
+        </filterItems>
+        <filterItems>
+            <field>Meeting_Date__c.Type__c</field>
+            <operation>equals</operation>
+            <value>IBC Ethics Application</value>
+        </filterItems>
+        <filterItems>
+            <field>Meeting_Date__c.I_RS_Expired__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Meeting_Date__c</referenceTo>
+    <relationshipLabel>Post Approvals</relationshipLabel>
+    <relationshipName>Related_Ethics_Requests</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

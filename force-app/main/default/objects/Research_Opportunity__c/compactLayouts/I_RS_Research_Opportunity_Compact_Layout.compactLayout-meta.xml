@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Research_Opportunity_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>I_RS_Proposal_to_be_Submitted_By__c</fields>
+    <fields>I_RS_Funding_Category__c</fields>
+    <fields>I_RS_Organisation__c</fields>
+    <fields>I_RS_Research_Office_Contact__c</fields>
+    <fields>I_RS_Submission_Date__c</fields>
+    <fields>I_RS_Research_Office_Due_Date__c</fields>
+    <label>Research Opportunity - Compact Layout</label>
+</CompactLayout>

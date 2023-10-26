@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Last_Report_Reminder_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Report reminders are usually sent at 4, 7, and 9 weeks, there is also an option of &apos;other&apos; for any additional reminders</inlineHelpText>
+    <label>Last Report Reminder Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4 week</fullName>
+                <default>false</default>
+                <label>4 week</label>
+            </value>
+            <value>
+                <fullName>7 week</fullName>
+                <default>false</default>
+                <label>7 week</label>
+            </value>
+            <value>
+                <fullName>9 week</fullName>
+                <default>false</default>
+                <label>9 week</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

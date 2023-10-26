@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Inactive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If checked, Tasks for this Task Matrix record are not created during automations. Activating it does not retroactively create Tasks from updates that occurred previously.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If checked, Tasks for this Task Matrix record are not created during automations. Activating it does not retroactively create Tasks from updates that occurred previously.</inlineHelpText>
+    <label>Inactive</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_First_3_Characters_on_Record_Ids__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>In the &quot;Approval Process: Approver&apos;s Queue&quot; flow, we use this field to find records of the relevant object that have been submitted for approval. We cannot simply use the object&apos;s api name as this isn&apos;t recorded in the underlying system data that we are querying.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Simply go to any record of the specific object, find the 15-character record Id in the URL, and copy its first 3 characters</inlineHelpText>
+    <label>First 3 Characters on Record Ids</label>
+    <length>3</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

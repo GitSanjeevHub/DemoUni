@@ -1,0 +1,10 @@
+.THIS.captcha-container{
+    position: relative;
+    height: 90px;
+}
+
+.THIS .captcha-iframe{
+    border: 0px;
+    position: absolute;
+    z-index: 999;
+}

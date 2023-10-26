@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Opportunity__c</fullName>
+    <externalId>false</externalId>
+    <label>Opportunity Name</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>You can only select PRM Opportunity</errorMessage>
+        <filterItems>
+            <field>Opportunity.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>PRM Opportunity</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Opportunity Affiliation Relationship</relationshipLabel>
+    <relationshipName>Opportunity_Affiliation_Relationship</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

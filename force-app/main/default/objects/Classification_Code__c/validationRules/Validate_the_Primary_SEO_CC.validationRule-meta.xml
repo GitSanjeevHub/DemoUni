@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_the_Primary_SEO_CC</fullName>
+    <active>true</active>
+    <description>Can only have one Primary &quot;Socio-economic Objective (SEO)&quot; Classification Code</description>
+    <errorConditionFormula>OR(
+
+AND(
+ISNEW(),
+I_RS_Project_Proposal__r.I_RS_CC_SEO_Primary_Count__c = 1,
+I_RS_Primary__c = TRUE,
+TEXT(I_RS_Classification_Master__r.I_RS_Type__c) = &quot;Socio-economic Objective (SEO)&quot;,  I_RS_Classification_Master__r.I_RS_Active__c = TRUE
+
+
+),
+
+AND(
+NOT(ISNEW()),
+ISCHANGED(I_RS_Primary__c),
+I_RS_Primary__c = TRUE,
+I_RS_Project_Proposal__r.I_RS_CC_SEO_Primary_Count__c = 1,
+TEXT(I_RS_Classification_Master__r.I_RS_Type__c) = &quot;Socio-economic Objective (SEO)&quot;, I_RS_Classification_Master__r.I_RS_Active__c = TRUE
+
+)
+)</errorConditionFormula>
+    <errorMessage>You can only have one (1) Primary Classification Master with a Type of &quot;Socio-economic Objective (SEO)&quot; within a Project Proposal.</errorMessage>
+</ValidationRule>

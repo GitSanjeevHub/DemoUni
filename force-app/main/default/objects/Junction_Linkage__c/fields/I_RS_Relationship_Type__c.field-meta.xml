@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Relationship_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Relationship Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Funding Body</fullName>
+                <default>false</default>
+                <label>Funding Body</label>
+            </value>
+            <value>
+                <fullName>Other Organisation</fullName>
+                <default>false</default>
+                <label>Other Organisation</label>
+            </value>
+            <value>
+                <fullName>La Trobe Internal Cash</fullName>
+                <default>false</default>
+                <label>La Trobe Internal Cash</label>
+            </value>
+            <value>
+                <fullName>La Trobe External Cash</fullName>
+                <default>false</default>
+                <label>La Trobe External Cash</label>
+            </value>
+            <value>
+                <fullName>La Trobe In-kind</fullName>
+                <default>false</default>
+                <label>La Trobe In-kind</label>
+            </value>
+            <value>
+                <fullName>Administering Organisation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Administering Organisation</label>
+            </value>
+            <value>
+                <fullName>Collaborator</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Collaborator</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>La Trobe Contribution</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>La Trobe Contribution</label>
+            </value>
+            <value>
+                <fullName>Sub-Contractor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sub-Contractor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Template_needs_Related_File_names__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Some templates are prescribed to show the names of all the related files under the Ethics Request. As that operation is slightly intensive, we only run that logic when we need it for a specific template.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Template needs Related File names</label>
+    <type>Checkbox</type>
+</CustomField>

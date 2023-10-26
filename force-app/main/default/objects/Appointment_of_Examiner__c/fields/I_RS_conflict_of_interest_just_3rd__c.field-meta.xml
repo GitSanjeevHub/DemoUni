@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_conflict_of_interest_just_3rd__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If nominating an examiner with a potential or perceived COI, e.g. a co-author, please justify your selection</inlineHelpText>
+    <label>If yes, please provide justification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

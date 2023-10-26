@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Activity Booking form</fullName>
+        <default>false</default>
+        <label>Activity Booking form</label>
+    </customValue>
+    <customValue>
+        <fullName>Agency</fullName>
+        <default>false</default>
+        <label>Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Ask a Question form</fullName>
+        <default>false</default>
+        <label>Ask a Question form</label>
+    </customValue>
+    <customValue>
+        <fullName>Aspire Keep in touch</fullName>
+        <default>false</default>
+        <label>Aspire Keep in touch</label>
+    </customValue>
+    <customValue>
+        <fullName>Campaign</fullName>
+        <default>false</default>
+        <label>Campaign</label>
+    </customValue>
+    <customValue>
+        <fullName>Contact Card</fullName>
+        <default>false</default>
+        <label>Contact Card</label>
+    </customValue>
+    <customValue>
+        <fullName>Event Registration</fullName>
+        <default>false</default>
+        <label>Event Registration</label>
+    </customValue>
+    <customValue>
+        <fullName>FAQ Form</fullName>
+        <default>false</default>
+        <label>FAQ Form</label>
+    </customValue>
+    <customValue>
+        <fullName>FlexiDirect</fullName>
+        <default>false</default>
+        <label>FlexiDirect</label>
+    </customValue>
+    <customValue>
+        <fullName>In Person</fullName>
+        <default>false</default>
+        <label>In Person</label>
+    </customValue>
+    <customValue>
+        <fullName>Keep in touch form</fullName>
+        <default>false</default>
+        <label>Keep in touch form</label>
+    </customValue>
+    <customValue>
+        <fullName>Aspire Keep In Touch - Early Entry</fullName>
+        <default>false</default>
+        <label>Aspire Keep In Touch - Early Entry</label>
+    </customValue>
+    <customValue>
+        <fullName>Aspire Keep In Touch - Community</fullName>
+        <default>false</default>
+        <label>Aspire Keep In Touch - Community</label>
+    </customValue>
+    <customValue>
+        <fullName>Aspire Keep In Touch - Early Uni Study</fullName>
+        <default>false</default>
+        <label>Aspire Keep In Touch - Early Uni Study</label>
+    </customValue>
+    <customValue>
+        <fullName>Aspire Keep In Touch - Achieve Plus</fullName>
+        <default>false</default>
+        <label>Aspire Keep In Touch - Achieve Plus</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest Page</fullName>
+        <default>false</default>
+        <label>Interest Page</label>
+    </customValue>
+    <customValue>
+        <fullName>Year 11 Early Entry form</fullName>
+        <default>false</default>
+        <label>Year 11 Early Entry form</label>
+    </customValue>
+    <customValue>
+        <fullName>Preferences Checklist</fullName>
+        <default>false</default>
+        <label>Preferences Checklist</label>
+    </customValue>
+    <customValue>
+        <fullName>Migrated</fullName>
+        <default>false</default>
+        <label>Migrated</label>
+    </customValue>
+    <customValue>
+        <fullName>NGV Event</fullName>
+        <default>false</default>
+        <label>NGV Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Open Day</fullName>
+        <default>false</default>
+        <label>Open Day</label>
+    </customValue>
+    <customValue>
+        <fullName>Other form</fullName>
+        <default>false</default>
+        <label>Other form</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Marketing Activation</fullName>
+        <default>false</default>
+        <label>Other Marketing Activation</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Postgraduate</fullName>
+        <default>false</default>
+        <label>Postgraduate</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Lecture</fullName>
+        <default>false</default>
+        <label>Public Lecture</label>
+    </customValue>
+    <customValue>
+        <fullName>School Publication Order Form</fullName>
+        <default>false</default>
+        <label>School Publication Order Form</label>
+    </customValue>
+    <customValue>
+        <fullName>SIS</fullName>
+        <default>false</default>
+        <label>SIS</label>
+    </customValue>
+    <customValue>
+        <fullName>Stay Connected Form</fullName>
+        <default>false</default>
+        <label>Stay Connected Form</label>
+    </customValue>
+    <customValue>
+        <fullName>Undergraduate</fullName>
+        <default>false</default>
+        <label>Undergraduate</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual</fullName>
+        <default>false</default>
+        <label>Virtual</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>OUA</fullName>
+        <default>false</default>
+        <label>OUA</label>
+    </customValue>
+    <customValue>
+        <fullName>VTAC</fullName>
+        <default>false</default>
+        <label>VTAC</label>
+    </customValue>
+    <customValue>
+        <fullName>UAC</fullName>
+        <default>false</default>
+        <label>UAC</label>
+    </customValue>
+    <customValue>
+        <fullName>CAMS</fullName>
+        <default>false</default>
+        <label>CAMS</label>
+    </customValue>
+    <customValue>
+        <fullName>SIS-Direct</fullName>
+        <default>false</default>
+        <label>SIS-Direct</label>
+    </customValue>
+    <customValue>
+        <fullName>SIS-Other</fullName>
+        <default>false</default>
+        <label>SIS-Other</label>
+    </customValue>
+    <customValue>
+        <fullName>HEMS Web form</fullName>
+        <default>false</default>
+        <label>HEMS Web form</label>
+    </customValue>
+    <customValue>
+        <fullName>Keystone Academic Solutions</fullName>
+        <default>false</default>
+        <label>Keystone Academic Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>IDP Connect</fullName>
+        <default>false</default>
+        <label>IDP Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>Studies in Australia (Good Education)</fullName>
+        <default>false</default>
+        <label>Studies in Australia (Good Education)</label>
+    </customValue>
+    <customValue>
+        <fullName>Topuniversities.com</fullName>
+        <default>false</default>
+        <label>Topuniversities.com</label>
+    </customValue>
+    <customValue>
+        <fullName>Study International</fullName>
+        <default>false</default>
+        <label>Study International</label>
+    </customValue>
+    <customValue>
+        <fullName>Times Higher Education</fullName>
+        <default>false</default>
+        <label>Times Higher Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Study Australia</fullName>
+        <default>false</default>
+        <label>Study Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotcourses</fullName>
+        <default>false</default>
+        <label>Hotcourses</label>
+    </customValue>
+    <customValue>
+        <fullName>Study Melbourne</fullName>
+        <default>false</default>
+        <label>Study Melbourne</label>
+    </customValue>
+    <customValue>
+        <fullName>WhatsApp</fullName>
+        <default>false</default>
+        <label>WhatsApp</label>
+    </customValue>
+    <customValue>
+        <fullName>Facebook</fullName>
+        <default>false</default>
+        <label>Facebook</label>
+    </customValue>
+    <customValue>
+        <fullName>WeChat</fullName>
+        <default>false</default>
+        <label>WeChat</label>
+    </customValue>
+    <customValue>
+        <fullName>Weibo</fullName>
+        <default>false</default>
+        <label>Weibo</label>
+    </customValue>
+    <customValue>
+        <fullName>Instagram</fullName>
+        <default>false</default>
+        <label>Instagram</label>
+    </customValue>
+    <customValue>
+        <fullName>LinkedIn</fullName>
+        <default>false</default>
+        <label>LinkedIn</label>
+    </customValue>
+    <customValue>
+        <fullName>Face-Face Consultation</fullName>
+        <default>false</default>
+        <label>Face-Face Consultation</label>
+    </customValue>
+    <customValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+    </customValue>
+    <customValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </customValue>
+    <customValue>
+        <fullName>Course Webinars</fullName>
+        <default>false</default>
+        <label>Course Webinars</label>
+    </customValue>
+    <customValue>
+        <fullName>General Webinars</fullName>
+        <default>false</default>
+        <label>General Webinars</label>
+    </customValue>
+    <customValue>
+        <fullName>University Business Partner Office Visits</fullName>
+        <default>false</default>
+        <label>University Business Partner Office Visits</label>
+    </customValue>
+    <customValue>
+        <fullName>University Business Partner Marketing Events</fullName>
+        <default>false</default>
+        <label>University Business Partner Marketing Events</label>
+    </customValue>
+    <customValue>
+        <fullName>University Business Partner Admission days</fullName>
+        <default>false</default>
+        <label>University Business Partner Admission days</label>
+    </customValue>
+    <customValue>
+        <fullName>University RoadShows</fullName>
+        <default>false</default>
+        <label>University RoadShows</label>
+    </customValue>
+    <customValue>
+        <fullName>University Business Partner Web marketing campaigns</fullName>
+        <default>false</default>
+        <label>University Business Partner Web marketing campaigns</label>
+    </customValue>
+    <customValue>
+        <fullName>University Marketing Campaigns</fullName>
+        <default>false</default>
+        <label>University Marketing Campaigns</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner institution events (Eg. LTCA, SunnyTAFE)</fullName>
+        <default>false</default>
+        <label>Partner institution events (Eg. LTCA, SunnyTAFE)</label>
+    </customValue>
+    <customValue>
+        <fullName>Onshore School Lists</fullName>
+        <default>false</default>
+        <label>Onshore School Lists</label>
+    </customValue>
+    <customValue>
+        <fullName>Offshore School Visits</fullName>
+        <default>false</default>
+        <label>Offshore School Visits</label>
+    </customValue>
+    <customValue>
+        <fullName>QSES-Other</fullName>
+        <default>false</default>
+        <label>QSES-Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Regional, International, Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Regional, International, Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Ask a Question from</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ask a Question from</label>
+    </customValue>
+    <customValue>
+        <fullName>International (Partner)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>International (Partner)</label>
+    </customValue>
+    <customValue>
+        <fullName>FAQ from</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FAQ from</label>
+    </customValue>
+    <customValue>
+        <fullName>PG</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PG</label>
+    </customValue>
+    <customValue>
+        <fullName>UG</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>UG</label>
+    </customValue>
+    <customValue>
+        <fullName>Primary, International (QSES)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Primary, International (QSES)</label>
+    </customValue>
+    <customValue>
+        <fullName>Ask La Trobe form</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ask La Trobe form</label>
+    </customValue>
+    <customValue>
+        <fullName>International (Peer to Peer)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>International (Peer to Peer)</label>
+    </customValue>
+    <description>Created for IST-45</description>
+    <masterLabel>I_ST_Lead_Source_sub_category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

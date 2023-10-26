@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Number_of_Lead_Chief_Investigator__c</fullName>
+    <externalId>false</externalId>
+    <label>Number of Lead Chief Investigator</label>
+    <summaryFilterItems>
+        <field>Project_Team_Member__c.I_RS_Role__c</field>
+        <operation>equals</operation>
+        <value>Lead Chief Investigator</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Project_Team_Member__c.I_RS_Active__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Project_Team_Member__c.I_RS_Project_Proposal__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

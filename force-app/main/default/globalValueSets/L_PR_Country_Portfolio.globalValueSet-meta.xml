@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Australia (Onshore)</fullName>
+        <default>false</default>
+        <label>Australia (Onshore)</label>
+    </customValue>
+    <customValue>
+        <fullName>Europe</fullName>
+        <default>false</default>
+        <label>Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Greater China</fullName>
+        <default>false</default>
+        <label>Greater China</label>
+    </customValue>
+    <customValue>
+        <fullName>Latin America</fullName>
+        <default>false</default>
+        <label>Latin America</label>
+    </customValue>
+    <customValue>
+        <fullName>Middle East</fullName>
+        <default>false</default>
+        <label>Middle East</label>
+    </customValue>
+    <customValue>
+        <fullName>North Africa</fullName>
+        <default>false</default>
+        <label>North Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>North America</fullName>
+        <default>false</default>
+        <label>North America</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific Islands</fullName>
+        <default>false</default>
+        <label>Pacific Islands</label>
+    </customValue>
+    <customValue>
+        <fullName>South Asia</fullName>
+        <default>false</default>
+        <label>South Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>South East Asia (Japan &amp; Korea)</fullName>
+        <default>false</default>
+        <label>South East Asia (Japan &amp; Korea)</label>
+    </customValue>
+    <customValue>
+        <fullName>Sub-Saharan Africa</fullName>
+        <default>false</default>
+        <label>Sub-Saharan Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>Vietnam</fullName>
+        <default>false</default>
+        <label>Vietnam</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <masterLabel>Country Portfolio</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

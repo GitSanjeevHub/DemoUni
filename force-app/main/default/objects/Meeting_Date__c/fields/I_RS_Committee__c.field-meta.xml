@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Committee__c</fullName>
+    <externalId>false</externalId>
+    <label>Committee</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AEC</fullName>
+                <default>false</default>
+                <label>AEC</label>
+            </value>
+            <value>
+                <fullName>AEC Executive</fullName>
+                <default>false</default>
+                <label>AEC Executive</label>
+            </value>
+            <value>
+                <fullName>IBC</fullName>
+                <default>false</default>
+                <label>IBC</label>
+            </value>
+            <value>
+                <fullName>IBC Executive Incidents</fullName>
+                <default>false</default>
+                <label>IBC Executive Incidents</label>
+            </value>
+            <value>
+                <fullName>HREC A</fullName>
+                <default>false</default>
+                <label>HREC A</label>
+            </value>
+            <value>
+                <fullName>HREC B</fullName>
+                <default>false</default>
+                <label>HREC B</label>
+            </value>
+            <value>
+                <fullName>HREC Executive</fullName>
+                <default>false</default>
+                <label>HREC Executive</label>
+            </value>
+            <value>
+                <fullName>Low Risk</fullName>
+                <default>false</default>
+                <label>Low Risk</label>
+            </value>
+            <value>
+                <fullName>Low Risk Executive</fullName>
+                <default>false</default>
+                <label>Low Risk Executive</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Animal Ethics Application</controllingFieldValue>
+            <valueName>AEC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Animal Ethics Application</controllingFieldValue>
+            <valueName>AEC Executive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Ethics Application</controllingFieldValue>
+            <valueName>HREC A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Ethics Application</controllingFieldValue>
+            <valueName>HREC B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Ethics Application</controllingFieldValue>
+            <valueName>HREC Executive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Ethics Application</controllingFieldValue>
+            <valueName>Low Risk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Ethics Application</controllingFieldValue>
+            <valueName>Low Risk Executive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Biosafety Ethics Application</controllingFieldValue>
+            <valueName>IBC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Biosafety Ethics Application</controllingFieldValue>
+            <valueName>IBC Executive Incidents</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

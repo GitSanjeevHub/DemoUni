@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Administring_Organisation__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>The Lead Organisation for this proposal/project if not La Trobe</inlineHelpText>
+    <label>Administering Organisation</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Project Proposals - Lead Organisation</relationshipLabel>
+    <relationshipName>Project_Proposals_Lead_Organisations</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

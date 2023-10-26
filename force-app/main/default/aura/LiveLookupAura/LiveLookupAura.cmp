@@ -1,0 +1,120 @@
+<aura:component
+  controller="LiveLookupController"
+  implements="force:lightningQuickAction,force:hasRecordId"
+>
+  	<aura:attribute name="data" type="List" />
+  	<aura:attribute name="columns" type="List" />
+
+    <aura:attribute name="calloutState" type="string" />
+    
+  	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+  	<div class="slds-border_bottom">
+      
+        <lightning:card title="Enter Search Terms">
+            
+            <div class="slds-p-around_medium">
+            
+                <lightning:recordEditForm
+                    aura:id="editForm"
+                    recordId="{!v.recordId}"
+                    objectApiName="Account"
+                    onload="{!c.handleRecordDataLoad}"
+                    onsuccess="{!c.handleSuccessfulSave}"
+                >
+                    
+                    <!-- the messages component is for error messages -->
+                    <lightning:messages />
+            
+                    <!--Visible Account Fields-->            
+                    <div class="slds-grid slds-wrap">
+                            
+                        <div style="width:450px">  
+                            <lightning:inputField aura:id="legalName" fieldName="I_RS_Legal_Name__c" variant="label-stacked" onchange="{!c.handleSearchInputOverride}"/>
+                        </div>
+                            
+                        <div style="width:150px">
+                            <lightning:inputField aura:id="abn" fieldName="I_RS_ABN__c" variant="label-stacked" disabled="true"/>
+                        </div>
+                        
+                    </div>
+                        
+                    <!--Back-end only Account fields-->
+                    <div style="display:none">
+                        <lightning:inputField aura:id="name" fieldName="Name"/>
+                        
+                         <lightning:inputField aura:id="sapCustomerNumber" fieldName="I_RS_SAP_Customer_Number__c"/>
+                    </div>     
+                
+                    <!--Search Button-->  
+                    <div class="slds-m-top_medium">
+                        <lightning:button aura:id="searchButton" label="Search Orgs in Finance" variant="brand" onclick="{!c.handleSearchClick}" disabled="true"/>
+                        
+                        <!--<lightning:helptext 
+                            content="The tooltip displays on the lower left of the icon or above the icon if space is available. It automatically adjusts its position according to the viewport."/>-->
+                    </div>
+                  
+                </lightning:recordEditForm>
+            
+            </div>
+            
+        </lightning:card>
+      
+  	</div>
+
+	<div class="slds-p-top_large">
+        <lightning:card>
+            
+            <aura:set attribute="title">
+                Matching Orgs in Finance
+                <!--<lightning:helptext content="Tick box on any row to copy details to this PRIME Organisation."/>-->
+            </aura:set>
+            
+			<div class="slds-p-around_medium">
+        
+                <aura:if isTrue="{!v.calloutState == 'IN_PROGRESS'}">
+                    <lightning:spinner variant="brand" size="large"/>
+                </aura:if>
+                
+                
+                <aura:if isTrue="{!v.calloutState == 'SUCCESS'}">
+
+                    <div class="slds-scrollable" style="height:50vh;width:100%">
+                        <lightning:datatable
+                                             aura:id="dataTable"
+                                             keyField="name"
+                                             data="{! v.data }"
+                                             columns="{! v.columns }"
+                                             hideCheckboxColumn="true"
+                                             onrowaction="{! c.handleRowAction }"
+                                             />
+                    </div>
+                </aura:if>
+                    
+                
+                <aura:if isTrue="{!v.calloutState == 'NO_RESULTS'}">
+                    No results found.
+                </aura:if>
+                
+                
+                <aura:if isTrue="{!v.calloutState == 'CALLOUT_ERROR'}">
+                    
+                    <lightning:icon variant="error" iconName="utility:warning"/>
+                    An error has occurred while attempting to access our Finance System. Please notify
+                    your admin.
+                    
+                </aura:if>
+                
+            </div>
+                
+        </lightning:card>
+        
+	</div>
+
+	<aura:html tag="style">
+        .slds-modal__container { min-width: 90vw; }
+    </aura:html>
+    
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    
+</aura:component>

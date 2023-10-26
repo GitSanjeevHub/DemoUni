@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_provide_Principal_Investigator</fullName>
+    <active>true</active>
+    <description>At certain points in the Ethics Request life-cycle, a Principal Investigator is mandatory.
+Note that it the rule only fires if the PI DOESN&apos;T change. This to enable the removal of a PI so it can be replaced by a new one in the next transaction.</description>
+    <errorConditionFormula>ISBLANK(I_RS_Principal_Investigator_Contact__c) 
+&amp;&amp;
+!ISCHANGED(I_RS_Principal_Investigator_Contact__c) 
+&amp;&amp; 
+!ISCHANGED(I_RS_Principal_Investigator_Count__c)
+&amp;&amp;
+(
+   (
+    TEXT(I_RS_Ethics_Application_Review_Outcome__c) = &apos;Approved&apos; 
+      ||
+    TEXT(I_RS_Ethics_Application_Review_Outcome__c) = &apos;Expired&apos;
+   )
+|| 
+   ( TEXT(I_RS_Status__c)= &apos;Review by Research Office&apos;)
+)</errorConditionFormula>
+    <errorMessage>Please provide a Principal Investigator, this can be done by clicking on the &apos;Add Research Personnel&apos; button located on the top right hand side of the Ethics record.</errorMessage>
+</ValidationRule>

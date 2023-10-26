@@ -1,0 +1,207 @@
+I_ST_Contact_Transition_Rule__c,Name,I_ST_Criterion_Object__c,I_ST_Criterion_Field__c,I_ST_Criterion_Operator__c,I_ST_Criterion_Value_Type__c,I_ST_Criterion_Value__c
+1,1,Contact,I_RS_Deceased__c,=,Static,TRUE
+1,2,Contact,I_RS_HDR_Student__c,=,Static,TRUE
+1,3,Contact,I_ST_International_Student__c,=,Static,TRUE
+1,4,Contact,I_ST_Sanctioned_Student__c,=,Static,TRUE
+1,5,Contact,I_ST_Contact_Stage__c,!=,Static,Inactive
+2,1,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,=,Static,ADM
+2,2,I_ST_Student_Course__c,I_ST_Enrolled_Credit_Points__c,IS NOT BLANK,Static,TRUE
+2,3,I_ST_Student_Course__c,I_ST_Enrolled_Credit_Points__c,>=,Static,5
+2,4,Contact,I_ST_LatestApplicationStatusChangeDate__c,IS BLANK,Static,TRUE
+2,5,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_LatestApplicationStatusChangeDate__c
+2,6,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+2,7,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Latest_Case_Created_Date__c
+2,8,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+2,9,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Became_Inactive_On__c
+3,1,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,IN,Static,POTC;CONDC
+3,2,Contact,I_ST_LatestApplicationStatusChangeDate__c,IS BLANK,Static,TRUE
+3,3,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_LatestApplicationStatusChangeDate__c
+3,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+3,5,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Latest_Case_Created_Date__c
+3,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+3,7,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Became_Inactive_On__c
+4,1,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,=,Static,LOA
+4,2,Contact,I_ST_LatestApplicationStatusChangeDate__c,IS BLANK,Static,TRUE
+4,3,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_LatestApplicationStatusChangeDate__c
+4,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+4,5,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Latest_Case_Created_Date__c
+4,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+4,7,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Became_Inactive_On__c
+5,1,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,=,Static,ADM
+5,2,I_ST_Student_Course__c,I_ST_Enrolled_Credit_Points__c,IS BLANK,Static,TRUE
+5,3,I_ST_Student_Course__c,I_ST_Enrolled_Credit_Points__c,<,Static,5
+5,4,Contact,I_ST_LatestApplicationStatusChangeDate__c,IS BLANK,Static,TRUE
+5,5,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_LatestApplicationStatusChangeDate__c
+5,6,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+5,7,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Latest_Case_Created_Date__c
+5,8,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+5,9,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Became_Inactive_On__c
+6,1,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,=,Static,OFF
+6,2,I_ST_Student_Course__c,I_ST_OfferStatus__c,=,Static,"Admitted
+Accepted"
+6,3,Contact,I_ST_LatestApplicationStatusChangeDate__c,IS BLANK,Static,TRUE
+6,4,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_LatestApplicationStatusChangeDate__c
+6,5,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+6,6,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Latest_Case_Created_Date__c
+6,7,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+6,8,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Became_Inactive_On__c
+7,1,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,=,Static,OFF
+7,2,I_ST_Student_Course__c,I_ST_OfferStatus__c,=,Static,Offered
+7,3,Contact,I_ST_LatestApplicationStatusChangeDate__c,IS BLANK,Static,TRUE
+7,4,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_LatestApplicationStatusChangeDate__c
+7,5,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+7,6,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Latest_Case_Created_Date__c
+7,7,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+7,8,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Became_Inactive_On__c
+8,1,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,=,Static,OFF
+8,2,I_ST_Student_Course__c,I_ST_OfferStatus__c,=,Static,Deferred
+8,3,Contact,I_ST_LatestApplicationStatusChangeDate__c,IS BLANK,Static,TRUE
+8,4,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_LatestApplicationStatusChangeDate__c
+8,5,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+8,6,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Latest_Case_Created_Date__c
+8,7,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+8,8,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Became_Inactive_On__c
+9,1,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,=,Static,OFF
+9,2,I_ST_Student_Course__c,I_ST_OfferStatus__c,=,Static,Lapsed
+9,3,Contact,I_ST_LatestApplicationStatusChangeDate__c,IS BLANK,Static,TRUE
+9,4,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_LatestApplicationStatusChangeDate__c
+9,5,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+9,6,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Latest_Case_Created_Date__c
+9,7,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+9,8,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Became_Inactive_On__c
+10,1,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,=,Static,OFF
+10,2,I_ST_Student_Course__c,I_ST_OfferStatus__c,IN,Static,Declined;Unoffered;Rescinded
+10,3,I_ST_Student_Course__c,I_ST_Course_Admission_Stage_Code__c,IN,Static,WD;TERM
+10,4,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,IN,Static,AWOL;Other
+10,5,Contact,I_ST_LatestApplicationStatusChangeDate__c,IS BLANK,Static,TRUE
+10,6,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_LatestApplicationStatusChangeDate__c
+10,7,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+10,8,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Latest_Case_Created_Date__c
+10,9,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+10,10,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Became_Inactive_On__c
+11,1,I_ST_Student_Course__c,I_ST_Course_Admission_Status_Code__c,=,Static,PASS
+11,2,Contact,I_ST_LatestApplicationStatusChangeDate__c,IS BLANK,Static,TRUE
+11,3,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_LatestApplicationStatusChangeDate__c
+11,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+11,5,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Latest_Case_Created_Date__c
+11,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+11,7,I_ST_Student_Course__c,I_ST_Selected_Course_Run_Date__c,>=,Reference,I_ST_Student__r.I_ST_Became_Inactive_On__c
+12,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Offered
+12,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+12,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+12,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+12,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+12,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+12,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+13,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Conditional offer
+13,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+13,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+13,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+13,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+13,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+13,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+14,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Alternate offer made
+14,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+14,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+14,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+14,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+14,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+14,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+15,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Other Preference offered
+15,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+15,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+15,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+15,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+15,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+15,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+16,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Await academic advice
+16,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+16,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+16,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+16,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+16,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+16,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+17,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Awaiting interview
+17,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+17,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+17,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+17,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+17,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+17,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+18,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Await further doco
+18,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+18,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+18,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+18,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+18,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+18,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+19,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Await required doco
+19,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+19,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+19,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+19,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+19,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+19,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+20,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Pending results
+20,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+20,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+20,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+20,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+20,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+20,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+21,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Escalated
+21,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+21,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+21,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+21,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+21,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+21,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+22,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Await applicant comms
+22,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+22,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+22,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+22,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+22,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+22,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+23,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Make an offer
+23,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+23,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+23,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+23,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+23,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+23,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+24,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Make a conditional offer
+24,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+24,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+24,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+24,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+24,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+24,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+25,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Alternate offer considered
+25,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+25,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+25,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+25,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+25,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+25,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+26,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Make alternate offer
+26,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+26,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+26,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+26,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+26,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+26,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+27,1,I_ST_Application__c,I_ST_Application_Status__c,=,Static,Not processed
+27,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+27,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+27,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+27,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+27,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+27,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c
+28,1,I_ST_Application__c,I_ST_Application_Status__c,IN,Static,"Rejected & Referred;Unsuccessful;Unsuccessful, not notified;Alternate Offer Declined;Withdrawn preference;Offer Rescinded;Application Withdrawn;Application in error"
+28,2,Contact,I_ST_LatestSelectedCourseRunDate__c,IS BLANK,Static,TRUE
+28,3,I_ST_Application__c,I_ST_Status_Change_Date__c,>,Reference,I_ST_Contact__r.I_ST_LatestSelectedCourseRunDate__c
+28,4,Contact,I_ST_Latest_Case_Created_Date__c,IS BLANK,Static,TRUE
+28,5,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Latest_Case_Created_Date__c
+28,6,Contact,I_ST_Became_Inactive_On__c,IS BLANK,Static,TRUE
+28,7,I_ST_Application__c,I_ST_Status_Change_Date__c,>=,Reference,I_ST_Contact__r.I_ST_Became_Inactive_On__c

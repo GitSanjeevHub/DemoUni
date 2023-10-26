@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Researchers_cannot_edit_Email_and_or_Org</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+     CONTAINS($Profile.Name, &quot;Partner Community&quot;), 
+     OR(
+          ISCHANGED(Email),
+           ISCHANGED(I_RS_Organisation_Name__c)
+        )
+    )</errorConditionFormula>
+    <errorMessage>To update the Email or Organisation fields, please contact the PRIME Support (prime.support@latrobe.edu.au)</errorMessage>
+</ValidationRule>

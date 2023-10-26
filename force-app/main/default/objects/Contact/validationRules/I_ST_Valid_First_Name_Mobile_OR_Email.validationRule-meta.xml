@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Valid_First_Name_Mobile_OR_Email</fullName>
+    <active>true</active>
+    <description>Contact need First Name as required</description>
+    <errorConditionFormula>ISBLANK( FirstName )</errorConditionFormula>
+    <errorMessage>First Name is required to create a Contact</errorMessage>
+</ValidationRule>

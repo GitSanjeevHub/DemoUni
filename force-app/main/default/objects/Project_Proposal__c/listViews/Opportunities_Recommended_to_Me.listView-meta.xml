@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunities_Recommended_to_Me</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Recommended_By__c</columns>
+    <columns>I_RS_Recommendation_Reason__c</columns>
+    <columns>I_RS_Date_Recommended__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Project_Proposal__c.I_RS_Recommendation</value>
+    </filters>
+    <filters>
+        <field>I_RS_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Dismissed</value>
+    </filters>
+    <label>Project Opportunities Recommended to Me</label>
+</ListView>

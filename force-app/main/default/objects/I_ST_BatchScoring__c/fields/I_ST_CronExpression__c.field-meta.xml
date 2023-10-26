@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_CronExpression__c</fullName>
+    <description>Example: 0 0 0,4,8,12,16,20 ? * *
+
+Seconds - so 0 here i.e. start of the minute.
+Minutes - 0 again so start of the hour.
+Start Time - 0 means 12 am
+Hours - 4 hours after start time
+- 
+- 
+- 
+-
+Day_of_week - 1,2,3,4,5,6,7 here specifies days 1,2,3,4,5,6,7 in the week. We could also write this string as MON-FRI or preferably as * to indicate all values.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For example. Use 0 0 0,4,8,12,16,20 ? * * to schedule every 4 hours</inlineHelpText>
+    <label>I_ST_CronExpression</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

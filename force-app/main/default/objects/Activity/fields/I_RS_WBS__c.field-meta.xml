@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_WBS__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>WBS</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+        <errorMessage>WBS shouldn&apos;t be Closed and should be related to the same Project as on the Milestone</errorMessage>
+        <filterItems>
+            <field>WBS__c.I_RS_WBS_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.WhatId</field>
+            <operation>equals</operation>
+            <valueField>WBS__c.I_RS_Project_Proposal__r.Id</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$User.Username</field>
+            <operation>contains</operation>
+            <value>sfdcadministrator@latrobe.edu.au</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>WBS__c</referenceTo>
+    <relationshipLabel>Activities</relationshipLabel>
+    <relationshipName>Activities</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Mobile_OR_Email_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISNEW() ,$Profile.Name =&apos;SACE User&apos;,
+RecordType.DeveloperName = &apos;I_ST_Enquiry&apos;, ISBLANK( SuppliedEmail ) ,ISBLANK( SuppliedPhone ), ISBLANK( I_RM_Affiliation__c ) )</errorConditionFormula>
+    <errorMessage>Phone Number OR Email are required to create a Student Lead (Dom)</errorMessage>
+</ValidationRule>

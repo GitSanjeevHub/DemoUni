@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Nominee_Flag__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>LTU360-2095:  If this flag is ticked, all communication is sent to the email address that is on the Nominee’s Affiliation record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Tick the check box if a candidate has got a nominee. (Note: For leads over 18yrs, a consent is required from the lead).</inlineHelpText>
+    <label>Nominee Flag</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Career_Area__c</fullName>
+    <description>Created for IST- 188</description>
+    <externalId>false</externalId>
+    <label>Career Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_ST_Study_Interest__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>I_ST_Career_Interest</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Arts, Social Sciences and Communications</controllingFieldValue>
+            <valueName>Arts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Social Sciences and Communications</controllingFieldValue>
+            <valueName>Creative Arts And English</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Social Sciences and Communications</controllingFieldValue>
+            <valueName>Historical And Cultural Studies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Social Sciences and Communications</controllingFieldValue>
+            <valueName>International Relations And Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Social Sciences and Communications</controllingFieldValue>
+            <valueName>Languages And Linguistics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Social Sciences and Communications</controllingFieldValue>
+            <valueName>Media, Communication And Journalism</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Social Sciences and Communications</controllingFieldValue>
+            <valueName>Planning, Environment And Sustainability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Social Sciences and Communications</controllingFieldValue>
+            <valueName>Politics, Philosophy And Economics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arts, Social Sciences and Communications</controllingFieldValue>
+            <valueName>Social Sciences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business and Commerce</controllingFieldValue>
+            <valueName>Accounting And Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business and Commerce</controllingFieldValue>
+            <valueName>Business And Commerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business and Commerce</controllingFieldValue>
+            <valueName>Economics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business and Commerce</controllingFieldValue>
+            <valueName>Marketing And Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business and Commerce</controllingFieldValue>
+            <valueName>Technology Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and teaching</controllingFieldValue>
+            <valueName>Teaching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and teaching</controllingFieldValue>
+            <valueName>Outdoor And Environmental Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and teaching</controllingFieldValue>
+            <valueName>Career Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and teaching</controllingFieldValue>
+            <valueName>Linguistics And TESOL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Allied Health And Rehabilitation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Psychology, counselling and social work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Dentistry and Oral Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Health Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Ageing And End Of Life Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Medical Sciences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Nursing, Midwifery And Paramedicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Public Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Disability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health</controllingFieldValue>
+            <valueName>Digital Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT and engineering</controllingFieldValue>
+            <valueName>Big Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT and engineering</controllingFieldValue>
+            <valueName>Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT and engineering</controllingFieldValue>
+            <valueName>Information Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT and engineering</controllingFieldValue>
+            <valueName>Computer Science</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Law and criminology</controllingFieldValue>
+            <valueName>Law</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Law and criminology</controllingFieldValue>
+            <valueName>Crime And Justice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Law and criminology</controllingFieldValue>
+            <valueName>Cybersecurity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Science</controllingFieldValue>
+            <valueName>Agricultural And Environmental Sciences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Science</controllingFieldValue>
+            <valueName>Molecular And Biological Sciences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Science</controllingFieldValue>
+            <valueName>Mathematical And Computer Sciences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Science</controllingFieldValue>
+            <valueName>Medical And Psychological Sciences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Science</controllingFieldValue>
+            <valueName>Physical And Chemical Sciences</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

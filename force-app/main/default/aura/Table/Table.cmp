@@ -1,0 +1,84 @@
+<aura:component >
+    <aura:attribute name="items" type="List" access="public" required="true" description="A list of items to display in this table" />
+    <aura:attribute name="var" type="String" access="public" required="true" description="The var to assign each element in the table to" />
+    <aura:attribute name="filterFunction" type="Object" access="public" description="A javascript function used to filter the items on the table." />
+
+    <aura:attribute name="body" type="Aura.Component[]" access="public" required="true" description="A list of column headers to display" />
+    <aura:attribute name="header" type="Aura.Component[]" access="public" description="Overrides the standard column headers with a custom header. Must include the &lt;th&gt; tag." />
+    <aura:attribute name="footer" type="Aura.Component[]" access="public" description="Sets a footer for the entire table. Must include a &lt;tr&gt; tag." />
+
+    <aura:attribute name="tableClass" type="String" access="public" default="slds-table slds-table_bordered slds-table_cell-buffer slds-table_resizable-cols" description="Classes to apply to the table tag" />
+    <aura:attribute name="cellClass" type="String" access="public" default="" description="Classes to apply to each cell in the body" />
+    <aura:attribute name="footerClass" type="String" access="public" default="" description="Classes to apply to each cell in the footer" />
+
+    <aura:attribute name="rowTemplate" type="Aura.ComponentDefRef[]" access="public" description="Overrides the standard row with a custom built one." />
+
+    <aura:attribute name="rows" type="Aura.Component[]" access="private" />
+    <aura:attribute name="columnFooters" type="List" access="private" />
+    <aura:attribute name="cells" type="List" access="private" />
+
+    <aura:attribute name="sortColumn" type="Aura.Component" access="private" />
+    <aura:attribute name="compareFunction" type="Object" access="private" />
+    <aura:attribute name="sortOrder" type="String" access="private" />
+
+    <aura:attribute name="suspendRowRebuild" type="Boolean" access="private" default="false" />
+
+    <aura:method name="appendRows" action="{!c.appendRows}" access="public" description="Appends rows to the table without rebuilding existing rows.">
+        <aura:attribute name="items" type="List" required="true" description="The items to append to the table." />
+    </aura:method>
+
+    <aura:method name="sort" action="{!c.manualSort}" access="public" description="Manually updates the sort of the table.">
+        <aura:attribute name="compareFunction" type="Object" required="true" description="A Javascript function which compares two items in the table." />
+        <aura:attribute name="sortOrder" type="String" required="true" description="Whether or not the column is sorted ASC or DESC." />
+        <aura:attribute name="column" type="Aura.Component" required="false" description="The column which fired this event." />
+    </aura:method>
+
+    <aura:method name="rebuild" action="{!c.onRebuild}" access="public" description="Rebuilds the columns in the table." />
+    <aura:method name="updateFilter" action="{!c.onFilter}" access="public" description="Reapplies the current filter to the table." />
+
+    <aura:handler name="sortChanged" event="c:TableSort" action="{!c.updateSort}" includeFacets="true" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+    <aura:handler name="change" value="{!v.items}" action="{!c.onItemsChange}" />
+    <aura:handler name="change" value="{!v.body}" action="{!c.onRebuild}" />
+    <aura:handler name="change" value="{!v.filterFunction}" action="{!c.onFilter}" />
+
+    <aura:dependency resource="c:TableRow" type="COMPONENT" />
+
+    <table class="{!v.tableClass}" role="grid">
+        <thead>
+            <aura:if isTrue="{#empty(v.header)}">
+                <tr>
+                    {!v.body}
+                </tr>
+            <aura:set attribute="else">
+                {!v.header}
+            </aura:set>
+            </aura:if>
+        </thead>
+
+        <aura:if isTrue="{#not(empty(v.footer))}">
+            <tfoot>
+                {!v.footer}
+            </tfoot>
+        <aura:set attribute="else">
+            <c:DelayedConstruction buildWhen="{!not(empty(v.columnFooters))}">
+                <tfoot>
+                    <tr>
+                        <aura:iteration items="{!v.columnFooters}" var="columnFooter">
+                            <td class="{!v.footerClass}">
+                                {#columnFooter}
+                            </td>
+                        </aura:iteration>
+                    </tr>
+                </tfoot>
+            </c:DelayedConstruction>
+        </aura:set>
+        </aura:if>
+
+        <tbody>
+            {!v.rows}
+        </tbody>
+    </table>
+
+</aura:component>

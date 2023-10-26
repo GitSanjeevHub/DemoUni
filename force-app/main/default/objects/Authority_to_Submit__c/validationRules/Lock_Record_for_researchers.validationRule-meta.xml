@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Record_for_researchers</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+
+AND(
+($User.I_RS_Is_Researcher_User__c = &apos;1&apos;),
+(ISCHANGED(I_RS_Status__c)),
+(TEXT(PRIORVALUE(I_RS_Status__c)) &lt;&gt; &apos;Draft&apos;)
+),
+
+AND(
+($User.I_RS_Is_Researcher_User__c = &apos;1&apos;),
+NOT(ISCHANGED(I_RS_Status__c)),
+(TEXT(I_RS_Status__c) &lt;&gt; &apos;Draft&apos;)
+)
+
+)</errorConditionFormula>
+    <errorMessage>You do not have the permission to modify</errorMessage>
+</ValidationRule>

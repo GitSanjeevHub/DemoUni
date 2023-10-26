@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Training_Status</fullName>
+        <field>L_TC_Status__c</field>
+        <literalValue>Completed</literalValue>
+        <name>Update Training Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Training marked Completed</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Training__c.L_TC_Status__c</field>
+            <operation>equals</operation>
+            <value>Upcoming</value>
+        </criteriaItems>
+        <description>Once due date has passed, training status to be updated to &apos;Completed&apos;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Update_Training_Status</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Training__c.L_TC_Training_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Funding Opportunity - Researchers</label>
+    <protected>false</protected>
+    <values>
+        <field>I_RS_Baseline_Fields__c</field>
+        <value xsi:type="xsd:string">Id, I_RS_Record_URL__c</value>
+    </values>
+    <values>
+        <field>I_RS_Baseline_Filters__c</field>
+        <value xsi:type="xsd:string">(I_RS_Submission_Date__c &gt;= TODAY OR I_RS_Submission_Date__c = NULL) AND I_RS_Record_Type_Developer_Name__c = &apos;I_RS_Funding_Opportunity&apos; AND
+I_RS_Status__c != &apos;Closed&apos;</value>
+    </values>
+    <values>
+        <field>I_RS_Object__c</field>
+        <value xsi:type="xsd:string">Research_Opportunity__c</value>
+    </values>
+</CustomMetadata>

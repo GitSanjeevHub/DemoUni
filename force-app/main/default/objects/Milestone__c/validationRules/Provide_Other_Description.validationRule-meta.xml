@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_Other_Description</fullName>
+    <active>false</active>
+    <description>If Milestone Type is Other, provide comments in Other Description</description>
+    <errorConditionFormula>ISPICKVAL ( I_RS_Milestone_Type__c , &apos;Other&apos;) 
+   &amp;&amp;
+ I_RS_Other_Description__c == &apos;&apos;</errorConditionFormula>
+    <errorDisplayField>I_RS_Other_Description__c</errorDisplayField>
+    <errorMessage>Please provide your comments</errorMessage>
+</ValidationRule>

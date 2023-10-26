@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Set_Manager_Lookups_Based_On_Query</name>
+        <label>Set Manager Lookups Based On Query</label>
+        <locationX>50</locationX>
+        <locationY>791</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Manager__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Manager_Contact_Details.I_RS_Related_User__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Manager_Contact__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Manager_Contact_Details.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>As Manager Staff Id empty, this denotes that they do not have a manager, so we&apos;ll erase the Manager lookup fields</description>
+        <name>Set_Manager_lookups_to_blank</name>
+        <label>Set Manager lookups to blank</label>
+        <locationX>336</locationX>
+        <locationY>1223</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Manager__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Manager_Contact__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Manager_Contact_exists_in_database</name>
+        <label>Manager Contact exists in database</label>
+        <locationX>182</locationX>
+        <locationY>671</locationY>
+        <defaultConnector>
+            <targetReference>Set_Manager_lookups_to_blank</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Manager_Contact_exists_in_database_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Manager_Contact_Details</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Manager_Lookups_Based_On_Query</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Based on whether Staff Id is set to null, perform certain logic</description>
+        <name>Manager_Staff_Id_is_populated</name>
+        <label>Manager Staff Id is populated</label>
+        <locationX>336</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Set_Manager_lookups_to_blank</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Manager_Staff_Id_is_populated_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Manager_Staff_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Manager_Contact_Details</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This typically occurs as part of HR integration.</description>
+        <name>Manager_Staff_Id_Is_Set</name>
+        <label>Manager Staff Id Is Set</label>
+        <locationX>501</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Manager_Staff_Id_Is_Set_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Manager_Staff_ID__c</leftValueReference>
+                <operator>WasSet</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Manager_Staff_Id_is_populated</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>For Contacts under the PRIME Project, perform pre-save logic.</description>
+    <interviewLabel>PRIME Contact Field Prepopulation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PRIME Contact Field Prepopulation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Manager_Contact_Details</name>
+        <label>Get Manager Contact Details</label>
+        <locationX>182</locationX>
+        <locationY>551</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Manager_Contact_exists_in_database</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>I_RS_Staff_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.I_RS_Manager_Staff_ID__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>I_RS_Related_User__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>375</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Manager_Staff_Id_Is_Set</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>I_RS_Manager_Staff_ID__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

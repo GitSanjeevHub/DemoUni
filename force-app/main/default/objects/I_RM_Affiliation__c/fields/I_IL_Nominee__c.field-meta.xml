@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Nominee__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>LTU360-2095: Depicts a Candidate’s nominated contact/affiliation details</description>
+    <externalId>false</externalId>
+    <label>Nominee</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>I_RM_Affiliation__c.I_RM_Role__c</field>
+            <operation>equals</operation>
+            <value>Nominated Affiliation</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>I_RM_Affiliation__c</referenceTo>
+    <relationshipLabel>Nominated Affiliations</relationshipLabel>
+    <relationshipName>NominatedAffiliations</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

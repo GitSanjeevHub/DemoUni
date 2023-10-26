@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Albury Wodonga CAA</fullName>
+        <default>false</default>
+        <label>Albury Wodonga CAA</label>
+    </customValue>
+    <customValue>
+        <fullName>Ballarat CEN</fullName>
+        <default>false</default>
+        <label>Ballarat CEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Banyule/Whittlesea</fullName>
+        <default>false</default>
+        <label>Banyule/Whittlesea</label>
+    </customValue>
+    <customValue>
+        <fullName>Bayside</fullName>
+        <default>false</default>
+        <label>Bayside</label>
+    </customValue>
+    <customValue>
+        <fullName>Bendigo Region CA</fullName>
+        <default>false</default>
+        <label>Bendigo Region CA</label>
+    </customValue>
+    <customValue>
+        <fullName>Brimbank Careers and Pathways Network</fullName>
+        <default>false</default>
+        <label>Brimbank Careers and Pathways Network</label>
+    </customValue>
+    <customValue>
+        <fullName>Campaspe CN</fullName>
+        <default>false</default>
+        <label>Campaspe CN</label>
+    </customValue>
+    <customValue>
+        <fullName>Central Gippsland</fullName>
+        <default>false</default>
+        <label>Central Gippsland</label>
+    </customValue>
+    <customValue>
+        <fullName>Central Murray CG</fullName>
+        <default>false</default>
+        <label>Central Murray CG</label>
+    </customValue>
+    <customValue>
+        <fullName>Dandenong Valley</fullName>
+        <default>false</default>
+        <label>Dandenong Valley</label>
+    </customValue>
+    <customValue>
+        <fullName>Eastern Careers</fullName>
+        <default>false</default>
+        <label>Eastern Careers</label>
+    </customValue>
+    <customValue>
+        <fullName>Geelong</fullName>
+        <default>false</default>
+        <label>Geelong</label>
+    </customValue>
+    <customValue>
+        <fullName>Knox</fullName>
+        <default>false</default>
+        <label>Knox</label>
+    </customValue>
+    <customValue>
+        <fullName>Maroondah</fullName>
+        <default>false</default>
+        <label>Maroondah</label>
+    </customValue>
+    <customValue>
+        <fullName>Moreland Darebin</fullName>
+        <default>false</default>
+        <label>Moreland Darebin</label>
+    </customValue>
+    <customValue>
+        <fullName>North East CN</fullName>
+        <default>false</default>
+        <label>North East CN</label>
+    </customValue>
+    <customValue>
+        <fullName>North West</fullName>
+        <default>false</default>
+        <label>North West</label>
+    </customValue>
+    <customValue>
+        <fullName>ORCAA</fullName>
+        <default>false</default>
+        <label>ORCAA</label>
+    </customValue>
+    <customValue>
+        <fullName>Peninsula</fullName>
+        <default>false</default>
+        <label>Peninsula</label>
+    </customValue>
+    <customValue>
+        <fullName>Shepparton and District CA (SDCA)</fullName>
+        <default>false</default>
+        <label>Shepparton and District CA (SDCA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Sunbury – Gisborne</fullName>
+        <default>false</default>
+        <label>Sunbury – Gisborne</label>
+    </customValue>
+    <customValue>
+        <fullName>Sunraysia CA</fullName>
+        <default>false</default>
+        <label>Sunraysia CA</label>
+    </customValue>
+    <customValue>
+        <fullName>Wagga Wagga CA</fullName>
+        <default>false</default>
+        <label>Wagga Wagga CA</label>
+    </customValue>
+    <customValue>
+        <fullName>Waverley</fullName>
+        <default>false</default>
+        <label>Waverley</label>
+    </customValue>
+    <customValue>
+        <fullName>Western Riverina</fullName>
+        <default>false</default>
+        <label>Western Riverina</label>
+    </customValue>
+    <customValue>
+        <fullName>Wimmera and Southern Mallee CA</fullName>
+        <default>false</default>
+        <label>Wimmera and Southern Mallee CA</label>
+    </customValue>
+    <customValue>
+        <fullName>WRICA</fullName>
+        <default>false</default>
+        <label>WRICA</label>
+    </customValue>
+    <customValue>
+        <fullName>Yarra</fullName>
+        <default>false</default>
+        <label>Yarra</label>
+    </customValue>
+    <description>Account Management</description>
+    <masterLabel>I_ST_Career_Network</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

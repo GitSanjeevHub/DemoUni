@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Intended_View</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Time_frame_to_Study__c</columns>
+    <columns>Month__c</columns>
+    <columns>Semester__c</columns>
+    <columns>No_of_Yrs__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Intended View</label>
+    <language>en_US</language>
+</ListView>

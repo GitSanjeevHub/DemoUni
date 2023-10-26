@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Lead_Age__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  (BLANKVALUE(I_ST_Became_Applicant_On__c, NOW()) - I_ST_Became_Lead_On__c) &gt; 0,
+  BLANKVALUE(I_ST_Became_Applicant_On__c, NOW()) - I_ST_Became_Lead_On__c,
+  NOW() - I_ST_Became_Lead_On__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lead Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

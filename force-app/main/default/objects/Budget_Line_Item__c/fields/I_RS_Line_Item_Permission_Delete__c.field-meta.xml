@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Line_Item_Permission_Delete__c</fullName>
+    <description>Dictates whether a user is allowed (excluding config such as Profile) to delete this record. Is currently based solely on Budget object formula, but can be changed. Is used as safeguard on deleting Budget Line Items that shouldn&apos;t be deleted, in the event the Budget Calculator doesn&apos;t lock down properly.</description>
+    <externalId>false</externalId>
+    <formula>I_RS_Budget__r.I_RS_Line_Item_Permission_Delete__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Line Item Permission - Delete</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

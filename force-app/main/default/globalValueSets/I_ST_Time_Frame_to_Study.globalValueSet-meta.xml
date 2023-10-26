@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1-3 months</fullName>
+        <default>false</default>
+        <label>1-3 months</label>
+    </customValue>
+    <customValue>
+        <fullName>3-6 months</fullName>
+        <default>false</default>
+        <label>3-6 months</label>
+    </customValue>
+    <customValue>
+        <fullName>6-12 months</fullName>
+        <default>false</default>
+        <label>6-12 months</label>
+    </customValue>
+    <customValue>
+        <fullName>1-2 years</fullName>
+        <default>false</default>
+        <label>1-2 years</label>
+    </customValue>
+    <customValue>
+        <fullName>2-3 years</fullName>
+        <default>false</default>
+        <label>2-3 years</label>
+    </customValue>
+    <customValue>
+        <fullName>3+ years</fullName>
+        <default>false</default>
+        <label>3+ years</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsure</fullName>
+        <default>false</default>
+        <label>Unsure</label>
+    </customValue>
+    <customValue>
+        <fullName>12+ months</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>12+ months</label>
+    </customValue>
+    <description>Created for IST 43</description>
+    <masterLabel>I_ST_Time_Frame_to_Study</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Community_Page_Default_Tab_Code__c</fullName>
+    <description>For Communities, the index number of the default tab. Can be a number but can often be a random multi-character string. You will need to manually click on a tab on the page to see it&apos;s code.
+
+Also note that the code changes with every Community publishing, and Lightning Page deployment. 
+
+If a code is stored in this setting that does not match an existing tab, the browser simply strips it off.</description>
+    <externalId>false</externalId>
+    <label>Community Page Default Tab Code</label>
+    <length>40</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

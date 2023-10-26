@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estiamted_Size__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Effort required from 1 resource to complete 
+if it is planned in roadmap 
+High = &gt;2 Sprints
+Medium = 1-2 Sprints
+Low = &lt; 1 sprint )
+
+OR 
+
+Number of stories in group 
+&gt; 40 = High
+20-40 = Medium
+&lt;20 = Low</inlineHelpText>
+    <label>Estimated Effort Required</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Small</fullName>
+                <default>false</default>
+                <label>Small</label>
+            </value>
+            <value>
+                <fullName>Medium</fullName>
+                <default>false</default>
+                <label>Medium</label>
+            </value>
+            <value>
+                <fullName>Large</fullName>
+                <default>false</default>
+                <label>Large</label>
+            </value>
+            <value>
+                <fullName>High</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>High</label>
+            </value>
+            <value>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Low</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

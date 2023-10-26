@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Closure_Reason_Not_Editable</fullName>
+    <active>true</active>
+    <description>This field can only have a value when the Status is &apos;Closed&apos; and Closure Reason has a value of &apos;Other&apos;.</description>
+    <errorConditionFormula>(
+  NOT(ISPICKVAL(I_RS_Status__c,&apos;Closed&apos;))
+      &amp;&amp;
+  NOT(ISBLANK( I_RS_Other_Reason_For_Closure__c ))
+)
+      ||
+(
+  (ISPICKVAL(I_RS_Status__c,&apos;Closed&apos;))
+      &amp;&amp; 
+   NOT((ISPICKVAL( I_RS_Closure_Reason__c , &apos;Other&apos;)))
+      &amp;&amp;
+  NOT(ISBLANK( I_RS_Other_Reason_For_Closure__c ))
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Other_Reason_For_Closure__c</errorDisplayField>
+    <errorMessage>This field can only have a value when the Status is &apos;Closed&apos; and Closure Reason has a value of &apos;Other&apos;.</errorMessage>
+</ValidationRule>

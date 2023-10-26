@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Chat</fullName>
+        <default>false</default>
+        <label>Chat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consultation</fullName>
+        <default>false</default>
+        <label>Consultation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Event</fullName>
+        <default>false</default>
+        <label>Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evolve</fullName>
+        <default>false</default>
+        <label>Evolve</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Offline Chat</fullName>
+        <default>false</default>
+        <label>Offline Chat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound</fullName>
+        <default>false</default>
+        <label>Outbound</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone</fullName>
+        <default>true</default>
+        <label>Phone</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Self Service</fullName>
+        <default>false</default>
+        <label>Self Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Studio</fullName>
+        <default>false</default>
+        <label>Social Studio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Walk In</fullName>
+        <default>false</default>
+        <label>Walk In</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Aspire form</fullName>
+        <default>false</default>
+        <label>Aspire form</label>
+    </standardValue>
+</StandardValueSet>

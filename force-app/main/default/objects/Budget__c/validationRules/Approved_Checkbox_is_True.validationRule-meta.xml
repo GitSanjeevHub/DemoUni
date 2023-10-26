@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Checkbox_is_True</fullName>
+    <active>true</active>
+    <description>The approved checkbox is true but StatuS is not active or superseded</description>
+    <errorConditionFormula>AND(
+I_RS_Approved__c = True,
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Active&quot;,
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Superseded&quot;
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Approved__c</errorDisplayField>
+    <errorMessage>Please set the Status field to Active or Superseded to proceed.</errorMessage>
+</ValidationRule>

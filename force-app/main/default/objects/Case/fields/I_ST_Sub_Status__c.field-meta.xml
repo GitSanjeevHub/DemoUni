@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Sub_Status__c</fullName>
+    <description>Created for IST 188</description>
+    <externalId>false</externalId>
+    <label>Sub Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>I_ST_CaseSub_Status</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Conditional 11</controllingFieldValue>
+            <valueName>Awaiting School form and Year 11 results</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conditional 11</controllingFieldValue>
+            <valueName>Awaiting Year 11 results</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conditional 11</controllingFieldValue>
+            <valueName>Awaiting School Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Received 12</controllingFieldValue>
+            <valueName>Received Community form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <valueName>Received Aspire Year 11 docs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conditional 12</controllingFieldValue>
+            <valueName>Victorian School</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conditional 12</controllingFieldValue>
+            <valueName>Non-Victorian School</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Cancelled Consultation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Accepted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Declined</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Unsuccessful</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Docs Not Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Duplicate Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Personal Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Community Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Reference</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Review and Submit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>Academic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>Admissions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>Ask La Trobe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>College</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>International Recruitment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>International Operations and Compliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>Educational Partnership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>La Trobe College Australia (Navitas)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>La Trobe Sydney Campus (Navitas)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>Scholarships</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>Domestic student enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <valueName>Current student enquiry</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

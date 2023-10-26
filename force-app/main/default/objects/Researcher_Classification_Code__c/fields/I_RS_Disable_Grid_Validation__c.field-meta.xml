@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Disable_Grid_Validation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>In some cases, we want to turn off the typical validation for Classification Codes. We can do that on a record-by-record basis via this tickbox</description>
+    <externalId>false</externalId>
+    <label>Disable Grid Validation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

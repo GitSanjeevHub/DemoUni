@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Sub_Type__c</fullName>
+    <description>Sub Type field provides further  categorisation/ classification list based on the type for this Lead/Idea</description>
+    <externalId>false</externalId>
+    <label>Lead Sub Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>L_PR_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>L_PR_Sub_Type</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Advocacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Articulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Clinical Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Course Development: Industry led/input Co-creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Courseware Licensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Memorandum of Understanding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Mobility – Overseas Short Programs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Mobility – Semester Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Mobility – Study Abroad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Mobility – Study Abroad and Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Mobility – Third Party Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Talent Development: Micro credentials, Short course, Custom Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Talent Pipeline: Employment program</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Third Party Teaching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Work Based Learning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education and Students</controllingFieldValue>
+            <valueName>Work Integrated Learning Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure &amp; Resources</controllingFieldValue>
+            <valueName>Co-location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure &amp; Resources</controllingFieldValue>
+            <valueName>Philanthropy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure &amp; Resources</controllingFieldValue>
+            <valueName>Procurement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure &amp; Resources</controllingFieldValue>
+            <valueName>Sponsorship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innovation Ecosystem</controllingFieldValue>
+            <valueName>Bio Innovation Labs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innovation Ecosystem</controllingFieldValue>
+            <valueName>Digital Innovation Hub</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innovation Ecosystem</controllingFieldValue>
+            <valueName>I&amp;E Programs: Mentoring, Workshops, Accelerator &amp; Incubator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innovation Ecosystem</controllingFieldValue>
+            <valueName>Innovation Partnership: Innovation funds, Co-creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innovation Ecosystem</controllingFieldValue>
+            <valueName>Student: Problem validation, Solution development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research and Innovation</controllingFieldValue>
+            <valueName>Access to equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research and Innovation</controllingFieldValue>
+            <valueName>Collaboration, Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research and Innovation</controllingFieldValue>
+            <valueName>Licensing, spin outs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research and Innovation</controllingFieldValue>
+            <valueName>PhD, Industry PhD, APR interns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research and Innovation</controllingFieldValue>
+            <valueName>Prof Practice, Chair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Research and Innovation</controllingFieldValue>
+            <valueName>Research services</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Last_N_Hour__c</fullName>
+    <description>Used for Activity Scoring batch to run batch and pick records modified &apos;N&apos; hours before current time</description>
+    <externalId>false</externalId>
+    <label>I_ST_Last_N_Hour</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

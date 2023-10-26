@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Create_Modify_for_Researcher</fullName>
+    <active>true</active>
+    <description>This validation will stop Researcher from creating new record or modify existing record if the Ethics request Status is not &quot;Draft&quot;</description>
+    <errorConditionFormula>AND(
+($User.I_RS_Is_Researcher_User__c = &apos;1&apos;),
+NOT(ISBLANK( I_RS_Ethics_Request__c)),
+NOT(ISPICKVAL(I_RS_Ethics_Request__r.I_RS_Status__c, &quot;Draft&quot;)) 
+)</errorConditionFormula>
+    <errorMessage>Please contact Research Office if this record needs to be changed.</errorMessage>
+</ValidationRule>

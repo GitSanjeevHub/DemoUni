@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Valid_PostCode_For_Australia</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( (ISPICKVAL(I_RM_Role__c,&apos;Domestic Lead&apos;)),  
+    IF(
+    AND(
+        OR(
+            NOT(
+                ISBLANK(TEXT(I_RM_Mailing_Country__c)))),AND(ISPICKVAL(I_RM_Mailing_Country__c , &apos;Australia&apos;) ,I_RM_Mailing_Postcode__c&lt;&gt;&quot;&quot;,NOT(OR(REGEX(I_RM_Mailing_Postcode__c, &quot;((0|)200|2540|26[0-9]{2}|29[0-1][0-9])&quot;),REGEX(I_RM_Mailing_Postcode__c, &quot;(3644|3691|3707|4375|4377|4380|4383|4385|[1-2][0-9]{3})&quot;),REGEX(I_RM_Mailing_Postcode__c, &quot;((0|)8[0-9]{2}|909)&quot;),REGEX(I_RM_Mailing_Postcode__c, &quot;(2406|9726|4[0-9]{3})&quot;),REGEX(I_RM_Mailing_Postcode__c,&quot;(7[0-9]{3})&quot;),REGEX(I_RM_Mailing_Postcode__c,&quot;(800[0-9]|801[0-2]|3[0-9]{3})&quot;),REGEX(I_RM_Mailing_Postcode__c,&quot;((0|)872|5[0-9]{3})&quot;),REGEX(I_RM_Mailing_Postcode__c,&quot;(6[0-9]{3})&quot;)))),NOT (CONTAINS(   $Label.I_RM_Profile_To_Exclude , $Profile.Name))),TRUE,
+AND(   
+    IF(
+        AND(
+            OR(
+                NOT(ISBLANK(TEXT(I_RM_Country__c)))),AND(ISPICKVAL(I_RM_Country__c , &apos;Australia&apos;),NOT(OR(REGEX(I_RM_Postcode__c, &quot;((0|)200|2540|26[0-9]{2}|29[0-1][0-9])&quot;),REGEX(I_RM_Postcode__c, &quot;(3644|3691|3707|4375|4377|4380|4383|4385|[1-2][0-9]{3})&quot;),REGEX(I_RM_Postcode__c, &quot;((0|)8[0-9]{2}|909)&quot;),REGEX(I_RM_Postcode__c, &quot;(2406|9726|4[0-9]{3})&quot;),REGEX(I_RM_Postcode__c,&quot;(7[0-9]{3})&quot;),REGEX(I_RM_Postcode__c,&quot;(800[0-9]|801[0-2]|3[0-9]{3})&quot;),REGEX(I_RM_Postcode__c,&quot;((0|)872|5[0-9]{3})&quot;),REGEX(I_RM_Postcode__c,&quot;(6[0-9]{3})&quot;)) )),NOT (CONTAINS(   $Label.I_RM_Profile_To_Exclude , $Profile.Name))),TRUE,FALSE))))</errorConditionFormula>
+    <errorMessage>Please add valid Australian Postal Code</errorMessage>
+</ValidationRule>

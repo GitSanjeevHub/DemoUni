@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intake_Period_Required</fullName>
+    <active>true</active>
+    <description>If Commencement Date is selected, Intake Period should be selected as NA is required.</description>
+    <errorConditionFormula>AND (
+     ISBLANK(L_AD_Intake_Period_Code__c), 
+     ISBLANK( L_AD_Overriding_Start_Date__c) &lt;&gt; TRUE 
+    )</errorConditionFormula>
+    <errorDisplayField>L_AD_Intake_Period__c</errorDisplayField>
+    <errorMessage>If Commencement Date is not blank&apos;, then Intake Period must be selected as &apos;NA&apos;.</errorMessage>
+</ValidationRule>

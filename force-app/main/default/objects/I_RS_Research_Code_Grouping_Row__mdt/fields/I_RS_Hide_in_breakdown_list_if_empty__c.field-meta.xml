@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Hide_in_breakdown_list_if_empty__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When using the &apos;breakdown&apos; UI component that aggregates code data by grouping, you can opt to hide rows where no records are found. For example, historical data that is less important than the other codes.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>When using the &apos;breakdown&apos; UI component that aggregates code data by grouping, you can opt to hide rows where no records are found. For example, historical data that is less important than the other codes.</inlineHelpText>
+    <label>Hide in breakdown list if empty</label>
+    <type>Checkbox</type>
+</CustomField>

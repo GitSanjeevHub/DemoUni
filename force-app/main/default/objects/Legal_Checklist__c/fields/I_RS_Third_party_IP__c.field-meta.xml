@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Third_party_IP__c</fullName>
+    <externalId>false</externalId>
+    <label>Third Party IP</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None to be used</fullName>
+                <default>false</default>
+                <label>None to be used</label>
+            </value>
+            <value>
+                <fullName>Yes-IP of another party to this contract to be used-ownership &amp; licences acceptable</fullName>
+                <default>false</default>
+                <label>Yes-IP of another party to this contract to be used-ownership &amp; licences acceptable</label>
+            </value>
+            <value>
+                <fullName>Yes-external party&apos;s IP to be used and LTU has all necessary rights/licences to use and warrant this</fullName>
+                <default>false</default>
+                <label>Yes-external party&apos;s IP to be used and LTU has all necessary rights/licences to use and warrant this</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

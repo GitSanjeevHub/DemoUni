@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Andrew_Hill</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Project_Proposal__c</columns>
+    <columns>I_RS_Team_Member_User__c</columns>
+    <columns>I_RS_Team_Member_Contact__c</columns>
+    <columns>I_RS_Role__c</columns>
+    <columns>I_RS_Status__c</columns>
+    <columns>I_RS_Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>I_RS_Team_Member_User__c</field>
+        <operation>contains</operation>
+        <value>Alahakoon</value>
+    </filters>
+    <label>Find Researcher</label>
+</ListView>

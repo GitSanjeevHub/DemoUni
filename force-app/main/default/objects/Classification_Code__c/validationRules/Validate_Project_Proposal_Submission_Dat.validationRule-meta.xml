@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Project_Proposal_Submission_Dat</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (ISNEW(), (
+TEXT( I_RS_Project_Proposal__r.I_RS_Status__c) = &apos;Submission To Funding Body&apos; ||
+TEXT(I_RS_Project_Proposal__r.I_RS_Status__c) = &apos;Submitted&apos; ||
+TEXT(I_RS_Project_Proposal__r.I_RS_Status__c) = &apos;Successful&apos; ||
+TEXT(I_RS_Project_Proposal__r.I_RS_Status__c) = &apos;Unsuccessful&apos; ||
+TEXT(I_RS_Project_Proposal__r.I_RS_Status__c) = &apos;Rejoinders&apos;
+)
+&amp;&amp;
+ISBLANK(I_RS_Project_Proposal__r.I_RS_Submission_Date__c) )</errorConditionFormula>
+    <errorMessage>Please provide a value for the Project Proposal&apos;s Submission Date</errorMessage>
+</ValidationRule>

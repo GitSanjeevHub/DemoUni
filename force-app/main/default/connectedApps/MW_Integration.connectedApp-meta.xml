@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>IS-Integration-Services-ALERTS@latrobe.edu.au</contactEmail>
+    <label>MW Integration</label>
+    <oauthConfig>
+        <callbackUrl>https://latrobe.lightning.force.com/</callbackUrl>
+        <consumerKey>3MVG9sJgqz9F5RxNqnfCNPP1r8Qv4QT0KvFpl7K1GvO_sLsZzVJutOt8fEHZUZWP6CO9ksfEOMX6IfyezftOE</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

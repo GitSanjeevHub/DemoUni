@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRIME_back_office_cannot_edit_Email</fullName>
+    <active>true</active>
+    <description>This validation rule prevents the PRIME back office users from editing the Contact.Email field</description>
+    <errorConditionFormula>AND(
+  OR(
+      CONTAINS($Profile.Name, &quot;PRIME&quot;),
+      CONTAINS($Profile.Name, &quot;Ethics&quot;),
+      CONTAINS($Profile.Name, &quot;Industry Engagement&quot;)
+     ),
+OR(
+ISCHANGED(Email)
+  )
+)</errorConditionFormula>
+    <errorMessage>To update the Email, please contact the PRIME Support (prime.support@latrobe.edu.au)</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Agreement__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The legal agreement detailing the variation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The legal agreement detailing the variation</inlineHelpText>
+    <label>Agreement</label>
+    <referenceTo>Contract__c</referenceTo>
+    <relationshipLabel>Project Histories</relationshipLabel>
+    <relationshipName>Project_Histories</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

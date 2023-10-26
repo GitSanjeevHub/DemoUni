@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification_Master_is_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK( I_RS_Classification_Master__c )</errorConditionFormula>
+    <errorDisplayField>I_RS_Classification_Master__c</errorDisplayField>
+    <errorMessage>Classification Code is mandatory</errorMessage>
+</ValidationRule>

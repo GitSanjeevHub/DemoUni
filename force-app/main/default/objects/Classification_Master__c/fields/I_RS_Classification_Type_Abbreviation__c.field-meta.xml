@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Classification_Type_Abbreviation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( TEXT ( I_RS_Type__c ) = &apos;Type of Activity (TOA)&apos; , &apos;TOA&apos; , 
+    IF( TEXT ( I_RS_Type__c ) = &apos;Fields of Research (FOR)&apos; , &apos;FOR&apos; ,
+     IF( TEXT ( I_RS_Type__c ) = &apos;Fields of Research - 2008 (FOR - 08)&apos;, &apos;FOR - 08&apos; ,
+       IF( TEXT ( I_RS_Type__c ) = &apos;Socio-economic Objective - 2008 (SEO - 08)&apos;, &apos;SEO - 08&apos;,&apos;SEO&apos; ) ) )
+    
+  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Classification Type Abbreviation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

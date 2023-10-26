@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Aspire Admission</name>
+    <queueMembers>
+        <roles>
+            <role>I_ST_SACE_Consultant</role>
+            <role>I_ST_SACE_Manager</role>
+            <role>I_ST_SACE_Team_Lead</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

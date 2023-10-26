@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Project_Proposal__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Contract(La Trobe template)</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office seeks approvals from authorised approver/s. Once approved, the Research Office updates the status in the Researcher Portal and moves the proposal to the next stage.&lt;/p&gt;</info>
+        <picklistValueName>Approvals</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ol&gt;&lt;li&gt;Researcher providing project details.&lt;/li&gt;&lt;li&gt;Researcher completing budget.&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>Contract Instructions</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Research Office drafting contract.&lt;/p&gt;</info>
+        <picklistValueName>Draft contract</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Research Office finalising and organising signing of contract.&lt;/p&gt;</info>
+        <picklistValueName>Formalise Contract</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office reviews the draft proposal including compliance checks, if relevant. If additional information or feedback is required, the Research Office will contact the researcher. If the draft proposal is ready for approvals, the Research Office will submit for approval.&lt;/p&gt;</info>
+        <picklistValueName>Review by Research Office</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_RS_Contract_La_Trobe_template</recordTypeName>
+</PathAssistant>

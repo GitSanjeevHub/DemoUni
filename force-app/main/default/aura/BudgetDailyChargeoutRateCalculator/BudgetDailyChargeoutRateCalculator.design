@@ -1,0 +1,23 @@
+<design:component>
+    
+    <design:attribute name="recordId" label="Budget Record ID"/>
+    
+    <design:attribute name="showHeader" label="Show Header"/>
+    <design:attribute name="showSaveButton" label="Show manual save button"/>
+    
+    <design:attribute name="outputField_LeadChiefInvestigator" label="Output Only - Lead Chief Investigator"/>
+
+    <design:attribute name="outputField_projectRate" label="Output Only - Actual Project Rate"/>
+    <design:attribute name="outputField_salaryOverhead" label="Output Only - Actual Salary Overhead"/>
+    <design:attribute name="outputField_salaryProfit" label="Output Only - Actual Salary Profit"/>
+    <design:attribute name="outputField_nonSalaryOverhead" label="Output Only - Actual Non-Salary Overhead"/> 
+    
+    <design:attribute name="outputField_baseSalary" label="Output Only - Base Salary"/>
+    
+    <design:attribute name="outputField_dailyBaseSalary" label="Output Only - Daily Base Salary"/> 
+    <design:attribute name="outputField_dailySalaryOnCosts" label="Output Only - Daily Salary On Costs"/>
+    <design:attribute name="outputField_dailySalaryOverhead" label="Output Only - Daily Salary Overhead"/>
+    <design:attribute name="outputField_dailySalaryProfit" label="Output Only - Daily Salary Profit"/>
+
+    
+</design:component>

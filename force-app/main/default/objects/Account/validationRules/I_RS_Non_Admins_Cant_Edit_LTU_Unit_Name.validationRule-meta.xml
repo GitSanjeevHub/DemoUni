@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Non_Admins_Cant_Edit_LTU_Unit_Name</fullName>
+    <active>true</active>
+    <description>Only Sys Admins and Integration Users may change the Name of a La Trobe Org Unit</description>
+    <errorConditionFormula>/*LTU Org Unit record type*/
+RecordType.DeveloperName = &apos;I_RS_La_Trobe_Organisation_Unit&apos; 
+
+&amp;&amp;
+
+/*Whitelisted profiles*/
+!
+($Profile.Name = &apos;System Administrator&apos; ||
+$Profile.Name = &apos;LTU Integration&apos; )
+
+&amp;&amp;
+
+/*Name cannot be changed*/
+ISCHANGED(Name)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>The Organisation Name on La Trobe Org Units cannot be changed</errorMessage>
+</ValidationRule>

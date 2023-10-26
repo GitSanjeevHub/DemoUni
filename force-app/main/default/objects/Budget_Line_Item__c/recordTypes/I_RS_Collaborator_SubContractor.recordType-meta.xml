@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Collaborator_SubContractor</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Budget_Line_Item</compactLayoutAssignment>
+    <label>Collaborator/SubContractor</label>
+    <picklistValues>
+        <picklist>I_RS_Category__c</picklist>
+        <values>
+            <fullName>Cash External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_SAP_Category__c</picklist>
+        <values>
+            <fullName>Advertising%2F Promotional Activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Books %26 Publications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licenses%2F Registration%2F Subscriptions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials %2F Consumables %2F Sundry expenses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plant %26 Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional%2FConsulting%2FContractual Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repairs%2FMaintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salary Costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stationery %26 Office Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer to Other Universities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Status__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Sub_Category__c</picklist>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Unit_of_Time__c</picklist>
+        <values>
+            <fullName>Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Store the Project Proposal Record Id in a text field so it can be used in the Duplicate Matching Rule.</description>
+        <name>Set_I_RS_Project_Proposal_Record_Id_Text_Field</name>
+        <label>Set Project Proposal Record Id Text Field</label>
+        <locationX>225</locationX>
+        <locationY>50</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Project_Proposal_Record_Id__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ProjectProposalRecordID15char</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Pre-populates Project Team Member fields prior to process builder and trigger operations.</description>
+    <formulas>
+        <description>15-character representation of Project Proposal record Id</description>
+        <name>ProjectProposalRecordID15char</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Record.I_RS_Project_Proposal__c}, 15)</expression>
+    </formulas>
+    <interviewLabel>Project Team Member Field Prepopulation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Project Team Member Field Prepopulation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Set_I_RS_Project_Proposal_Record_Id_Text_Field</targetReference>
+        </connector>
+        <object>Project_Team_Member__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

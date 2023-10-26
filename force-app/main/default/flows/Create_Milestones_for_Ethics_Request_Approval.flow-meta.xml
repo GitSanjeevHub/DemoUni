@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Get_Ethics_Milestone_Record_Type_Id</name>
+        <label>Get Ethics Milestone Record Type Id</label>
+        <locationX>390</locationX>
+        <locationY>131</locationY>
+        <actionName>FlowGetRecordTypeId</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Check_for_existing_Milestones</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>objectName</name>
+            <value>
+                <stringValue>Task</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordTypeName</name>
+            <value>
+                <stringValue>Ethics</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>ethicsMilestoneRecordTypeId</assignToReference>
+            <name>output</name>
+        </outputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Add Report Milestones to insert-list for batch insert</description>
+        <name>Add_Milestones_to_Insert_List</name>
+        <label>Add Milestones to Insert List</label>
+        <locationX>577</locationX>
+        <locationY>856</locationY>
+        <assignmentItems>
+            <assignToReference>MilestonesInsertList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>FinalReportMilestone</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestonesInsertList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>AnnualReportMilestoneRecurrence</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestonesInsertList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>MilestoneExpiry</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Any_Milestones_to_insert</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Add Report Milestones to insert-list for batch insert</description>
+        <name>Add_Milestones_to_Insert_List_0</name>
+        <label>Add Milestones to Insert List</label>
+        <locationX>840</locationX>
+        <locationY>588</locationY>
+        <assignmentItems>
+            <assignToReference>MilestonesInsertList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>MilestoneExpiry</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Any_Milestones_to_insert</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>This creates a recurring series of Milestones so we&apos;ll use the standard functionality for that.</description>
+        <name>Set_Annual_Report_Milestone_Recurrence</name>
+        <label>Set Annual Report Milestone Recurrence</label>
+        <locationX>571</locationX>
+        <locationY>668</locationY>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.RecurrenceStartDateOnly</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DayAfterApprovalOutcome</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.RecurrenceEndDateOnly</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DayBeforeApplicationExpiry</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.I_RS_Milestone_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Annual Report</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Action required for {!EthicsRequest.Name} - please submit your Annual Report</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EthicsRequest.I_RS_Principal_Investigator__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.RecurrenceType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>RecursYearly</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.IsRecurrence</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.RecurrenceDayOfMonth</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EthicsRequest.I_RS_Approval_Date_Day_of_Month__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ethicsMilestoneRecordTypeId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.RecurrenceMonthOfYear</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ApprovalDateMonthOfYearText</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.WhatId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EthicsRequest.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AnnualReportMilestoneRecurrence.I_RS_Pre_Conditions_and_Instructions__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Preconditions_and_Instructions_default_content</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Milestones_to_Insert_List</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Final_Report_Milestone</name>
+        <label>Set Final Report Milestone</label>
+        <locationX>582</locationX>
+        <locationY>326</locationY>
+        <assignmentItems>
+            <assignToReference>FinalReportMilestone.ActivityDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinalReportMilestone.I_RS_Milestone_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Final report</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinalReportMilestone.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue> Action required for {!EthicsRequest.Name} - please submit your Final Report by {!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinalReportMilestone.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EthicsRequest.I_RS_Principal_Investigator__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinalReportMilestone.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ethicsMilestoneRecordTypeId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinalReportMilestone.WhatId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EthicsRequest.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinalReportMilestone.I_RS_Pre_Conditions_and_Instructions__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Preconditions_and_Instructions_default_content</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Milestone_Expiry</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Milestone_Expiry</name>
+        <label>Set Milestone Expiry</label>
+        <locationX>552</locationX>
+        <locationY>510</locationY>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.ActivityDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ExpiryDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.I_RS_Milestone_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Expiry/Renewal Submission</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue> Action required for {!EthicsRequest.Name} - upcoming expiry date</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EthicsRequest.I_RS_Principal_Investigator__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ethicsMilestoneRecordTypeId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.WhatId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EthicsRequest.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.I_RS_Pre_Conditions_and_Instructions__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Preconditions_and_Instructions_2</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Annual_Report_Milestone_Recurrence</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Milestone_Expiry_0</name>
+        <label>Set Milestone Expiry</label>
+        <locationX>837</locationX>
+        <locationY>448</locationY>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.ActivityDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ExpiryDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.I_RS_Milestone_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Expiry/Renewal Submission</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue> Action required for {!EthicsRequest.Name} - upcoming expiry date</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EthicsRequest.I_RS_Principal_Investigator__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ethicsMilestoneRecordTypeId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.WhatId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EthicsRequest.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MilestoneExpiry.I_RS_Pre_Conditions_and_Instructions__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>This SOP is due to be reviewed. Please do this and submit any changes. If you wish to retire the SOP please state in the milestone ‘comments’ you would like it to be retired</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Milestones_to_Insert_List_0</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <name>Preconditions_and_Instructions_default_content</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Please download the annual/final report template by clicking the following link: https://www.latrobe.edu.au/researchers/research-office/ethics.    Submit using the instructions in the downloaded form.</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Any_Milestones_to_insert</name>
+        <label>Any Milestones to insert</label>
+        <locationX>1033</locationX>
+        <locationY>729</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Any_Milestones_to_insert_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>MilestonesInsertList</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Insert_Milestones</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SOP/Phenotype Report is currently excluded for annual/final report Milestone reminders</description>
+        <name>Is_SOP_Phenotype_Report</name>
+        <label>Is SOP/Phenotype Report</label>
+        <locationX>998</locationX>
+        <locationY>143</locationY>
+        <defaultConnector>
+            <targetReference>Any_Milestones_to_insert</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_SOP_Phenotype_Report_No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>EthicsRequest.RecordType.DeveloperName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>I_RS_SOP_Phenotype_Report</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Final_Report_Milestone</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>EthicsRequest.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>I_RS_SOP_Phenotype_Report</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Milestone_Expiry_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Milestones_already_exist</name>
+        <label>Milestones already exist?</label>
+        <locationX>728</locationX>
+        <locationY>54</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Existing_Milestones_Found_No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Check_for_existing_Milestones</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_SOP_Phenotype_Report</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <description>- When an Ethics Request&apos;s Application Review Outcome is set to Approved, create relevant Milestones for it
+- Added a milestone related to Ethics Expiry
+- Fixed issues
+- Revised Milestone Type for Expiring Milestones
+-Added Expiring Milestone for SOP/Phenotype record type
+-Removed the description for Expiring Milestones
+-Fixed the defect raised in T2-653</description>
+    <formulas>
+        <description>The Approval Date - the specific field depends on the Ethics Request record type</description>
+        <name>ApprovalDate</name>
+        <dataType>Date</dataType>
+        <expression>IF (
+{!EthicsRequest.RecordType.DeveloperName} &lt;&gt; &apos;Research_Governance_Authorisation&apos;, 
+{!EthicsRequest.I_RS_Ethics_Application_Approval_Date__c} ,
+{!EthicsRequest.I_RS_Approving_Ethics_Committee_Approval__c} 
+)</expression>
+    </formulas>
+    <formulas>
+        <description>Used as variable when defining recurring Annual Report Milestone Task</description>
+        <name>ApprovalDateDayofMonth</name>
+        <dataType>Number</dataType>
+        <expression>DAY({!ApprovalDate})</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>ApprovalDateMonthOfYearText</name>
+        <dataType>String</dataType>
+        <expression>CASE(
+  MONTH( {!ApprovalDate} ),
+  1, &quot;January&quot;,
+  2, &quot;February&quot;,
+  3, &quot;March&quot;,
+  4, &quot;April&quot;,
+  5, &quot;May&quot;,
+  6, &quot;June&quot;,
+  7, &quot;July&quot;,
+  8, &quot;August&quot;,
+  9, &quot;September&quot;,
+  10, &quot;October&quot;,
+  11, &quot;November&quot;,
+  &quot;December&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>DayAfterApprovalOutcome</name>
+        <dataType>Date</dataType>
+        <expression>{!ApprovalDate} + 1</expression>
+    </formulas>
+    <formulas>
+        <description>Used to ensure that Annual Reports do not recur on the same date as the Final Report</description>
+        <name>DayBeforeApplicationExpiry</name>
+        <dataType>Date</dataType>
+        <expression>{!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}-1</expression>
+    </formulas>
+    <formulas>
+        <description>retuns 5 months prior to the expiration date</description>
+        <name>ExpiryDate</name>
+        <dataType>Date</dataType>
+        <expression>DATE (
+ 
+    /*YEAR*/
+    YEAR ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - FLOOR(5 / 12) - IF (MONTH ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - MOD(5, 12) &gt; 0, 0, 1),
+        
+    /*MONTH*/ 
+    IF (MONTH ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - MOD (5, 12) &gt; 0, MONTH ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - MOD (5, 12), MONTH ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - MOD (5, 12) + 12),
+ 
+    /*DAY*/ 
+    MIN (DAY ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}), 
+        CASE (
+        /* Month */
+        IF (MONTH ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - MOD (5, 12) &gt; 0, MONTH ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - MOD (5, 12), MONTH ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - MOD (5, 12) + 12), 9, 30, 4, 30, 6, 30, 11, 30, 2, 
+        /* return max days for February dependent on if end date is leap year */
+        IF (MOD (YEAR ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - FLOOR(5 / 12) - IF (MONTH ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - MOD(5, 12) &gt; 0, 0, 1), 400) = 0 || (MOD (YEAR ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - FLOOR(5 / 12) - IF (MONTH ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - MOD(5, 12) &gt; 0, 0, 1) ,4) = 0 &amp;&amp; MOD (YEAR ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - FLOOR(5 / 12) - IF (MONTH ({!EthicsRequest.I_RS_Ethics_Application_Expiry_Date__c}) - MOD(5, 12) &gt; 0, 0, 1) ,100) &lt;&gt; 0 ), 29, 28), 31)
+    )
+)/* End of Date function */</expression>
+    </formulas>
+    <interviewLabel>Create Milestones for Ethics Request Approval {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Milestones for Ethics Request Approval</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Insert_Milestones</name>
+        <label>Insert Milestones</label>
+        <locationX>1279</locationX>
+        <locationY>736</locationY>
+        <inputReference>MilestonesInsertList</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>Check_for_existing_Milestones</name>
+        <label>Check for existing Milestones</label>
+        <locationX>588</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Milestones_already_exist</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4)</filterLogic>
+        <filters>
+            <field>WhatId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>EthicsRequest.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>I_RS_Milestone_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Annual Report</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>I_RS_Milestone_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Final report</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>I_RS_Milestone_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Expiry/Renewal Submission</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>148</locationY>
+        <connector>
+            <targetReference>Get_Ethics_Milestone_Record_Type_Id</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Preconditions and instructions for Milestone Expiry</description>
+        <name>Preconditions_and_Instructions_2</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>If completed, submit a final report.
+For an extension, complete a modification request.
+Submit using the instructions in the applicable forms  https://www.latrobe.edu.au/researchers/research-office/ethics</text>
+    </textTemplates>
+    <variables>
+        <description>We will use a recurring Task for the Annual Report Milestones</description>
+        <name>AnnualReportMilestoneRecurrence</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+    <variables>
+        <name>ethicsMilestoneRecordTypeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The Ethics Request that has been approved</description>
+        <name>EthicsRequest</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Ethics_Request__c</objectType>
+    </variables>
+    <variables>
+        <description>The Milestone with the Milestone Type of &apos;Annual Report&apos;</description>
+        <name>FinalReportMilestone</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+    <variables>
+        <name>MilestoneExpiry</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+    <variables>
+        <description>We&apos;ll club the different Milestones into a single list for insertion for efficiency purposes</description>
+        <name>MilestonesInsertList</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+</Flow>

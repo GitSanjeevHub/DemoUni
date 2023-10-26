@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Inactive_for_Non_Admins__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Signifies a soft-delete</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This record is excluded from reporting and code-editing screens.</inlineHelpText>
+    <label>Deleted</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

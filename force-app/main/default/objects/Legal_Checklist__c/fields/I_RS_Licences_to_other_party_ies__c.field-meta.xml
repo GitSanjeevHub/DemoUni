@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Licences_to_other_party_ies__c</fullName>
+    <externalId>false</externalId>
+    <label>Licences To Other Party/ies</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>not applicable-other party will own all IP</fullName>
+                <default>false</default>
+                <label>not applicable-other party will own all IP</label>
+            </value>
+            <value>
+                <fullName>no licence to other party</fullName>
+                <default>false</default>
+                <label>no licence to other party</label>
+            </value>
+            <value>
+                <fullName>licence for non-commercial purposes only</fullName>
+                <default>false</default>
+                <label>licence for non-commercial purposes only</label>
+            </value>
+            <value>
+                <fullName>licence for any purpose incl. commercial</fullName>
+                <default>false</default>
+                <label>licence for any purpose incl. commercial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

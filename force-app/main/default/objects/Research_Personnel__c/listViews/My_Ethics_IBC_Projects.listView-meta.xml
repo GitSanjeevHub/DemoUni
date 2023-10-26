@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Ethics_IBC_Projects</fullName>
+    <columns>I_RS_Ethics_Request__c</columns>
+    <columns>I_RS_Ethics_PI__c</columns>
+    <columns>I_RS_Role__c</columns>
+    <columns>I_RS_ER_Status__c</columns>
+    <columns>I_RS_Ethics_Review_Outcome__c</columns>
+    <columns>I_RS_Ethics_Approval_Date__c</columns>
+    <columns>I_RS_Ethics_Expiry_Date__c</columns>
+    <columns>I_RS_Ethics_Milestone_Status__c</columns>
+    <columns>I_RS_Ethics_Request_Type__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>I_RS_Current_User_Ethics__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>I_RS_End_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>My Ethics &amp; IBC Projects</label>
+</ListView>

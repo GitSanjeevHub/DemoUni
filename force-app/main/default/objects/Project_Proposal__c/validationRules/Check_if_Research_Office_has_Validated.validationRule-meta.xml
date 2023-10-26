@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_if_Research_Office_has_Validated</fullName>
+    <active>true</active>
+    <description>Returns an error if Validated by Research Office is False and stage status is changed to another value</description>
+    <errorConditionFormula>AND(
+I_RS_Approval_Complete__c = FALSE,
+ISPICKVAL(PRIORVALUE(I_RS_Status__c),&quot;Approvals&quot;),
+
+OR(
+ISPICKVAL(I_RS_Status__c, &quot;Formalise Contract&quot;),
+ISPICKVAL(I_RS_Status__c, &quot;Submission to Funding Body&quot;),
+ISPICKVAL(I_RS_Status__c, &quot;Submission to Client&quot;),
+ISPICKVAL(I_RS_Status__c, &quot;Negotiating&quot;),
+ISPICKVAL(I_RS_Status__c, &quot;Submitted&quot;),
+ISPICKVAL(I_RS_Status__c, &quot;Rejoinders&quot;),
+ISPICKVAL(I_RS_Status__c, &quot;Successful&quot;),
+ISPICKVAL(I_RS_Status__c, &quot;Unsuccessful&quot;)
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Approval_Complete__c</errorDisplayField>
+    <errorMessage>Please validate this record to proceed.</errorMessage>
+</ValidationRule>

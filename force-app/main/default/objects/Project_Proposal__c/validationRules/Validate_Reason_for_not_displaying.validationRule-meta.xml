@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Reason_for_not_displaying</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( I_RS_Display_on_Researcher_Profile__c , &quot;No&quot;),
+ISPICKVAL( I_RS_Display_on_Researcher_Profile_Reaso__c ,  &quot;&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Display_on_Researcher_Profile_Reaso__c</errorDisplayField>
+    <errorMessage>Please select a value for &quot;Reason for not displaying&quot;.</errorMessage>
+</ValidationRule>

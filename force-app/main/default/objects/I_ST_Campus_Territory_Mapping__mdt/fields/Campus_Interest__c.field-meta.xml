@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campus_Interest__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Campus Interest</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Albury-Wodonga</fullName>
+                <default>true</default>
+                <label>Albury-Wodonga</label>
+            </value>
+            <value>
+                <fullName>Bendigo</fullName>
+                <default>false</default>
+                <label>Bendigo</label>
+            </value>
+            <value>
+                <fullName>City Campus</fullName>
+                <default>false</default>
+                <label>City Campus</label>
+            </value>
+            <value>
+                <fullName>Melbourne (Bundoora)</fullName>
+                <default>false</default>
+                <label>Melbourne (Bundoora)</label>
+            </value>
+            <value>
+                <fullName>Mildura</fullName>
+                <default>false</default>
+                <label>Mildura</label>
+            </value>
+            <value>
+                <fullName>Online</fullName>
+                <default>false</default>
+                <label>Online</label>
+            </value>
+            <value>
+                <fullName>Shepparton</fullName>
+                <default>false</default>
+                <label>Shepparton</label>
+            </value>
+            <value>
+                <fullName>Sydney</fullName>
+                <default>false</default>
+                <label>Sydney</label>
+            </value>
+            <value>
+                <fullName>Berwick (Chisholm Institute)</fullName>
+                <default>false</default>
+                <label>Berwick (Chisholm Institute)</label>
+            </value>
+            <value>
+                <fullName>Brunswick (Bouverie)</fullName>
+                <default>false</default>
+                <label>Brunswick (Bouverie)</label>
+            </value>
+            <value>
+                <fullName>Bundoora (Latrobe College)</fullName>
+                <default>false</default>
+                <label>Bundoora (Latrobe College)</label>
+            </value>
+            <value>
+                <fullName>Carlton (Carlton College Sport)</fullName>
+                <default>false</default>
+                <label>Carlton (Carlton College Sport)</label>
+            </value>
+            <value>
+                <fullName>Chisholm311 (Chisholm Institute)</fullName>
+                <default>false</default>
+                <label>Chisholm311 (Chisholm Institute)</label>
+            </value>
+            <value>
+                <fullName>Dandenong (Chisholm Institute)</fullName>
+                <default>false</default>
+                <label>Dandenong (Chisholm Institute)</label>
+            </value>
+            <value>
+                <fullName>Distance Education</fullName>
+                <default>false</default>
+                <label>Distance Education</label>
+            </value>
+            <value>
+                <fullName>Epping (Melbourne Polytechnic)</fullName>
+                <default>false</default>
+                <label>Epping (Melbourne Polytechnic)</label>
+            </value>
+            <value>
+                <fullName>Frankston (Chisholm Institute)</fullName>
+                <default>false</default>
+                <label>Frankston (Chisholm Institute)</label>
+            </value>
+            <value>
+                <fullName>Myrtleford (Alpine Health)</fullName>
+                <default>false</default>
+                <label>Myrtleford (Alpine Health)</label>
+            </value>
+            <value>
+                <fullName>Online (Didasko)</fullName>
+                <default>false</default>
+                <label>Online (Didasko)</label>
+            </value>
+            <value>
+                <fullName>Online (OUA)</fullName>
+                <default>false</default>
+                <label>Online (OUA)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

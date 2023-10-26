@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Classification Codes - Research Output</label>
+    <protected>false</protected>
+    <values>
+        <field>I_RS_Not_Soft_Deleted_Filter__c</field>
+        <value xsi:type="xsd:string">I_RS_Inactive_for_Non_Admins__c = FALSE</value>
+    </values>
+    <values>
+        <field>I_RS_Object_to_aggregate__c</field>
+        <value xsi:type="xsd:string">Research_Output_Classification_Code__c</value>
+    </values>
+    <values>
+        <field>I_RS_PRIME_Back_Office_Page_Name__c</field>
+        <value xsi:type="xsd:string">Classification_Code_Full_List</value>
+    </values>
+    <values>
+        <field>I_RS_PRIME_Researcher_Page_Name__c</field>
+        <value xsi:type="xsd:string">classificationcodefulllist</value>
+    </values>
+    <values>
+        <field>I_RS_Parent_Lookup_Reference__c</field>
+        <value xsi:type="xsd:string">I_RS_Research_Output__c</value>
+    </values>
+    <values>
+        <field>I_RS_Parent_Object_Name__c</field>
+        <value xsi:type="xsd:string">Research_Output__c</value>
+    </values>
+    <values>
+        <field>I_RS_Parent_Record_Display_Fields__c</field>
+        <value xsi:type="xsd:string">Name</value>
+    </values>
+    <values>
+        <field>I_RS_Parent_Record_Widget_Header__c</field>
+        <value xsi:type="xsd:string">Research Output Details</value>
+    </values>
+    <values>
+        <field>I_RS_Researcher_Portal_if_applicable__c</field>
+        <value xsi:type="xsd:string">PRIME Researcher</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Inactive_for_Non_Admins__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>&apos;Soft-deleted&apos; variable that hides this row from various UIs</description>
+    <externalId>false</externalId>
+    <inlineHelpText>&apos;Soft-deleted&apos; variable that hides this row from various UIs</inlineHelpText>
+    <label>Deleted</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

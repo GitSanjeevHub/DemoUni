@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Role__c</fullName>
+    <description>Project Team Member Role</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Role</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chief Investigator</fullName>
+                <default>false</default>
+                <label>Chief Investigator</label>
+            </value>
+            <value>
+                <fullName>Lead Chief Investigator</fullName>
+                <default>true</default>
+                <label>Lead Chief Investigator</label>
+            </value>
+            <value>
+                <fullName>External Investigator</fullName>
+                <default>false</default>
+                <label>External Investigator</label>
+            </value>
+            <value>
+                <fullName>Partner Researcher</fullName>
+                <default>false</default>
+                <label>Partner Researcher</label>
+            </value>
+            <value>
+                <fullName>Graduate Researcher</fullName>
+                <default>false</default>
+                <label>Graduate Researcher</label>
+            </value>
+            <value>
+                <fullName>Adjunct Researcher</fullName>
+                <default>false</default>
+                <label>Adjunct Researcher</label>
+            </value>
+            <value>
+                <fullName>Honorary Researcher</fullName>
+                <default>false</default>
+                <label>Honorary Researcher</label>
+            </value>
+            <value>
+                <fullName>Research Assistant</fullName>
+                <default>false</default>
+                <label>Research Assistant</label>
+            </value>
+            <value>
+                <fullName>Administrator</fullName>
+                <default>false</default>
+                <label>Administrator</label>
+            </value>
+            <value>
+                <fullName>Student</fullName>
+                <default>false</default>
+                <label>Student</label>
+            </value>
+            <value>
+                <fullName>Student or Graduate Researcher Supervisor</fullName>
+                <default>false</default>
+                <label>Student or Graduate Researcher Supervisor</label>
+            </value>
+            <value>
+                <fullName>Approver</fullName>
+                <default>false</default>
+                <label>Approver</label>
+            </value>
+            <value>
+                <fullName>Assigned</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Assigned</label>
+            </value>
+            <value>
+                <fullName>Partner Investigator</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partner Investigator</label>
+            </value>
+            <value>
+                <fullName>Peer reviewer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Peer reviewer</label>
+            </value>
+            <value>
+                <fullName>Pitch panel member</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pitch panel member</label>
+            </value>
+            <value>
+                <fullName>Postgraduate student</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Postgraduate student</label>
+            </value>
+            <value>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Project Manager</label>
+            </value>
+            <value>
+                <fullName>Student supervisor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Student supervisor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>PRIME Researcher Portal</container>
+    <containerType>Network</containerType>
+    <label>Help Menu</label>
+    <navigationMenuItem>
+        <label>Raise a Case</label>
+        <menuItemBranding>
+            <tileImage>Raise_a_Case</tileImage>
+        </menuItemBranding>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>NewCase</target>
+        <type>GlobalAction</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Contact Us</label>
+        <menuItemBranding>
+            <tileImage>contact_us</tileImage>
+        </menuItemBranding>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>https://myskills.latrobe.edu.au/sites/guides/prime/SitePages/contact.aspx</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>PRIME Support Page</label>
+        <menuItemBranding>
+            <tileImage>SupportPage</tileImage>
+        </menuItemBranding>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>https://research.latrobe/support</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

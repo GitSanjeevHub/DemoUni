@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Contract_or_Variation_Request</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Project_Proposal__c</columns>
+    <columns>I_RS_Project_Number__c</columns>
+    <columns>I_RS_Organisation__c</columns>
+    <columns>I_RS_Research_Office_Contact__c</columns>
+    <columns>I_RS_Contract_Start_Date__c</columns>
+    <columns>I_RS_Contract_End_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contract__c.New_Contract_Or_Variation_Request</value>
+    </filters>
+    <label>New Agreement or Variation Request</label>
+</ListView>

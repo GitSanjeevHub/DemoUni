@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Rating__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(
+IF(  ISBLANK((I_ST_Rank__c)), &quot;/img/samples/stars_000.gif&quot;,
+IF((I_ST_Rank__c)=&apos;Cold&apos;, &quot;/img/samples/stars_100.gif&quot;,
+IF((I_ST_Rank__c)=&apos;Warm&apos;, &quot;/resource/MilestoneTrafficLight_Green&quot;,
+IF((I_ST_Rank__c)=&apos;Hot&apos;, &quot;/resource/MilestoneTrafficLight_Yellow&quot;,
+IF((I_ST_Rank__c)=&apos;Sizzling&apos;, &quot;/resource/MilestoneTrafficLight_red&quot;, &quot;/img/samples/flag_green.gif&quot;
+))))),
+&quot;Rating&quot;,23,23)</formula>
+    <label>Rating</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

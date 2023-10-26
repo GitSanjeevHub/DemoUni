@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Examiner_Interaction__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Examiner Interaction Status</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The examiner has accepted the invitation to examine the thesis. &lt;/p&gt;</info>
+        <picklistValueName>Accepted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The record has been closed, either because the examiner has fulfilled all requirements and been paid, or because the examiner has withdrawn or become unresponsive. &lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The examiner has been invited to examine the thesis. &lt;/p&gt;</info>
+        <picklistValueName>Invited</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The thesis / examinable works have been sent to the examiner&lt;/p&gt;</info>
+        <picklistValueName>Material sent</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The payment request for the examination has been processed. &lt;/p&gt;</info>
+        <picklistValueName>Payment processed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The examiner’s report has been received. &lt;/p&gt;</info>
+        <picklistValueName>Report received</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

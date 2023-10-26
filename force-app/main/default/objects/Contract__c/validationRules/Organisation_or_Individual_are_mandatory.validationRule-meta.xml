@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organisation_or_Individual_are_mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>(
+RecordType.DeveloperName = &apos;I_RS_New_La_Trobe_contract&apos; ||
+RecordType.DeveloperName = &apos;I_RS_Draft_from_LTU_template&apos; ||
+RecordType.DeveloperName = &apos;I_RS_Variation_Using_a_New_Contract&apos; ||
+RecordType.DeveloperName = &apos;I_RS_Variation_Using_a_Letter&apos; ||
+RecordType.DeveloperName = &apos;L_PR_Agent_Agreement&apos; ||
+RecordType.DeveloperName = &apos;I_RS_Draft_from_client_template_legal_review&apos; ||
+RecordType.DeveloperName = &apos;I_RS_Draft_from_client_template_no_legal_review&apos; ||
+RecordType.DeveloperName = &apos;I_RS_Variation_from_Client_Template_Legal_Review&apos; ||
+RecordType.DeveloperName = &apos;I_RS_Variation_from_Client_Template_No_Legal_Review&apos; ||
+RecordType.DeveloperName = &apos;L_PR_Agreement&apos;
+)
+&amp;&amp;
+(ISBLANK(I_RS_Organisation__c) &amp;&amp;
+ISBLANK(I_RS_Individual__c))</errorConditionFormula>
+    <errorMessage>You must provide a Primary Organisation or an Individual</errorMessage>
+</ValidationRule>

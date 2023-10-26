@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Additional_deatils_help_text__c</fullName>
+    <defaultValue>&quot;Please provide a list of all the separate components that will be submitted to examiners and the date they will be submitted (add specific text where required).&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Additional details help text</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Course_Type_Name__c</fullName>
+    <description>This field Shows Course Name of selected Course Code.</description>
+    <externalId>false</externalId>
+    <formula>I_RM_Course_Parent__r.L_AD_Award_Title__c</formula>
+    <inlineHelpText>Course Name of selected Course Code</inlineHelpText>
+    <label>Course Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

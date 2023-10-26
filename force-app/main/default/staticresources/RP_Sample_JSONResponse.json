@@ -1,0 +1,1047 @@
+{
+    "metadata": {
+        "page": 1,
+        "pageSize": 100,
+        "pageCount": 8,
+        "totalCount": 795
+    },
+    "records": [
+        {
+            "id": 1160363,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1160363",
+            "name": "Athenapriset",
+            "bullet": "Detta syftar till att lyfta fram klinisk forskning av hög vetenskaplig kvalitet där sjukvård, akademi och näringsliv samarbetar för att utveckla sjukvården. Priset är värt SEK 150,000.",
+            "description": "Detta kan utgå i form av utveckling och förbättring av diagnostik, behandling eller prevention; nya metoder, tekniker eller produkter som utvecklar vården; samt tjänster eller plattformar som ger patienter ökad tillgänglighet till vården, eller bidrar till ökad patientdelaktighet. <br/>Projektet måste inkludera samarbete mellan sjukvården, akademin och näringslivet. Man kan nominera sig själv eller andra.",
+            "locale": "EN",
+            "added": "2019-04-10T12:23:03Z",
+            "deadlineInfo": "We have no information from the funder yet about the next call. Based on past experience, we forecast the deadline to be around June 2020. This call is repeated once a year. ",
+            "webpage": "https://www.dagensmedicin.se/mer/utmarkelser/athenapriset-2019/",
+            "primaryFunder": {
+                "id": 112633,
+                "name": "Vinnova",
+                "region": {
+                    "name": "Sweden",
+                    "regionCode": "SE"
+                }
+            },
+            "funders": [
+                {
+                    "id": 112363,
+                    "name": "Swedish Research Council | Vetenskapsrådet",
+                    "region": {
+                        "name": "Sweden",
+                        "regionCode": "SE"
+                    }
+                },
+                {
+                    "id": 112367,
+                    "name": "Swedish Research Council for Health, Working Life and Welfare | Forskningsrådet för hälsa, arbetsliv och välfärd",
+                    "region": {
+                        "name": "Sweden",
+                        "regionCode": "SE"
+                    }
+                },
+                {
+                    "id": 114353,
+                    "name": "Swedish Association of Local Authorities and Regions | Sveriges Kommuner och Landsting",
+                    "region": {
+                        "name": "Sweden",
+                        "regionCode": "SE"
+                    }
+                }
+            ],
+            "deadlines": [
+                {
+                    "deadline": "2020-06-10",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2021-06-10",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2022-06-10",
+                    "unconfirmed": true
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Diagnostic Sciences",
+                    "focus": true
+                },
+                {
+                    "label": "Preventive Medicine",
+                    "focus": true
+                },
+                {
+                    "label": "Patient Care & Education",
+                    "focus": true
+                },
+                {
+                    "label": "Medical Effectiveness & Patient Outcomes",
+                    "focus": true
+                },
+                {
+                    "label": "Public Health, Health Services & Primary Care",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Any"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "Sweden",
+                            "regionCode": "SE"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1161041,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1161041",
+            "name": "Collaborative research grants – São Paulo Research Foundation",
+            "bullet": "These enable transnational British and Brazilian teams to carry out collaborative research projects. The overall proposal budget must not exceed £2m. Projects may last for up to five years.",
+            "description": "UK-based researchers must be actively engaged in postdoctoral research and be of postdoctoral standing. This means they either have a doctorate or can demonstrate equivalent research experience or training. Brazil-based researchers must be formally associated with institutions within the São Paulo state. Co-investigators are permitted. Standard route grants are worth between £50,000 and £1 million and early-career grants are worth between £50,000 and £250,000 at 80 per cent full economic cost. The São Paulo Research Foundation provides the equivalent of £1m for Brazilian researchers. The overall proposed budget must not exceed £2m.",
+            "locale": "EN",
+            "added": "2018-11-07T11:55:37Z",
+            "deadlineInfo": "You can apply for this opportunity at any time. ",
+            "webpage": "http://www.ahrc.ac.uk/funding/opportunities/current/saopauloresearchfoundation/",
+            "primaryFunder": {
+                "id": 271,
+                "name": "Arts and Humanities Research Council",
+                "region": {
+                    "name": "United Kingdom",
+                    "regionCode": "GB"
+                }
+            },
+            "funders": [
+                {
+                    "id": 10038268,
+                    "name": "São Paulo Research Foundation",
+                    "region": {
+                        "name": "Brazil",
+                        "regionCode": "BR"
+                    }
+                }
+            ],
+            "deadlines": [
+                {
+                    "unconfirmed": false
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Arts and Humanities",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Non-Profit",
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "United Kingdom",
+                            "regionCode": "GB"
+                        },
+                        {
+                            "name": "Brazil",
+                            "regionCode": "BR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1161124,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1161124",
+            "name": "Follow-on funding for impact and engagement scheme",
+            "bullet": "These support innovative and creative engagements with new audiences and user communities that stimulate pathways to impact within the area of arts and humanities. Grants are worth up to £100,000 over a maximum period of one year. Smaller grants of up to £30,000 may be awarded for shorter or higher risk activities.  ",
+            "description": "Funds are awarded for knowledge exchange, public engagement, dissemination and commercialisation activities that arise unforeseeably during the lifespan of, or following, an AHRC-funded project. The scheme does not support supplementary funding for continuation of research activities or substantively new projects. The scheme has the following aims:<br/><li>explore unforeseen pathways to impact either within the lifespan of an AHRC research project or resulting from a completed research project;</li><li>enhance the value and benefits of AHRC-funded research beyond academia;</li><li>encourage and facilitate a range of interactions and creative engagements between arts and humanities research and a  variety of user communities. </li>Proposed activities must enhance the value and wider benefit of the original research project, and clearly demonstrate how they will deliver significant economic, social, cultural or policy impacts. Proposals must clearly demonstrate both a well-defined non-academic need for the work, and engagement with potential users and stakeholders in developing their project. They must be based on either previous or current research directly funded by the AHRC, excluding research conducted under masters, doctoral or collaborative doctoral and knowledge transfer partnerships. They may also be based on research co-funded or funded entirely by another UK research council, or funded under a UKRI supported scheme if they fall within the AHRC’s remit. The project must be led by the original principal investigator or a member of the original team if appropriate. PIs must be resident in the UK and they must be actively engaged in postdoctoral research and be of postdoctoral standing. International co-investigators can be included.",
+            "locale": "EN",
+            "added": "2018-11-16T11:57:28Z",
+            "deadlineInfo": "You can apply for this opportunity at any time. Projects should start no earlier than five and no later than nine months after submission.  ",
+            "webpage": "http://www.ahrc.ac.uk/funding/opportunities/current/followonfunding/",
+            "primaryFunder": {
+                "id": 271,
+                "name": "Arts and Humanities Research Council",
+                "region": {
+                    "name": "United Kingdom",
+                    "regionCode": "GB"
+                }
+            },
+            "deadlines": [
+                {
+                    "unconfirmed": false
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Arts and Humanities",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Non-Profit",
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "United Kingdom",
+                            "regionCode": "GB"
+                        }
+                    ]
+                },
+                {
+                    "hosts": [
+                        "Non-Profit",
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Participation"
+                    ],
+                    "regions": [
+                        {
+                            "name": "Any",
+                            "regionCode": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1161307,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1161307",
+            "name": "New generation thinkers scheme",
+            "bullet": "This enables early-career researchers to cultivate skills to communicate their findings to those outside the academic community by developing their own programme for BBC Radio 3 and appearing regularly on air. Up to 10 placements are available.",
+            "description": "Applications should demonstrate an engaging and stimulating programme but an ability to talk about other subject areas within the arts and humanities in an accessible and refreshing manner, with awareness of the wider listening audiences. Applications may relate to any area of arts and humanities. In addition, applications from researchers working in all academic disciplines whose work fuses with arts and humanities are welcomed. <br/>Applicants must UK residents over the age of 18 currently working or studying at a UK research organisation, including HEIs and independent research organisations. They may be either current PhD students who have made considerable progress on their research or individuals within eight years of the award of their PhD or within six years of their first academic appointment. Travel and subsistence is reimbursed for the winners event. Winners are also invited to the BBC3 free thinking festival of ideas and they are offered media training and other support provided by AHRC and BBC3.",
+            "locale": "EN",
+            "added": "2018-07-19T12:30:02Z",
+            "deadlineInfo": "We have no information from the funder yet about the next call. Based on past experience, we forecast the deadline to be around October 2019. This call is repeated once a year. ",
+            "webpage": "https://ahrc.ukri.org/funding/apply-for-funding/current-opportunities/new-generation-thinkers-2019/",
+            "primaryFunder": {
+                "id": 271,
+                "name": "Arts and Humanities Research Council",
+                "region": {
+                    "name": "United Kingdom",
+                    "regionCode": "GB"
+                }
+            },
+            "funders": [
+                {
+                    "id": 461,
+                    "name": "BBC",
+                    "region": {
+                        "name": "United Kingdom",
+                        "regionCode": "GB"
+                    }
+                }
+            ],
+            "deadlines": [
+                {
+                    "deadline": "2019-10-04",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2020-10-04",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2021-10-04",
+                    "unconfirmed": true
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Arts and Humanities",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Non-Profit",
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "United Kingdom",
+                            "regionCode": "GB"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1161647,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1161647",
+            "name": "Physics free programmes",
+            "bullet": "This supports research with a physics or applied physics objective, the realisation of which requires a major deployment of human resources and funding. The budget for this call is €10 million, with grants being worth €2.2m on average for projects lasting five years on average.",
+            "description": "Proposals may address the following sub areas:<br/><li>phenomenological physics;</li><li>physics of life processes;</li><li>subatomic physics;</li><li>nanophysics and nanotechnology;</li><li>condensed matter and optical physics;</li><li>fusion physics;</li><li>other physics. </li>Proposals can be submitted by professors and permanent scientific staff at Dutch universities, at NWO or at other research organisations that are at least in part funded by the Ministry of Education, Culture and Science. Individuals who hold a tenure-track position, a Vidi grant or a Vici grant but who do not yet have a permanent appointment, can also submit a proposal. Both individuals and consortia may apply. <br/>The total available budget for this call is €10 million, with grants being worth €2. Funds may be used towards personnel positions, materials and equipment.",
+            "locale": "EN",
+            "added": "2018-01-22T16:05:52Z",
+            "deadlineInfo": "We have no information from the funder yet about the next call. Based on past experience, we forecast the deadline to be around March 2020. This call is repeated every 2 years. ",
+            "webpage": "https://www.nwo.nl/en/funding/our-funding-instruments/enw/physics-vrije-programmas/physics-vrije-programmas.html",
+            "primaryFunder": {
+                "id": 116499,
+                "name": "Dutch Research Council | Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                "region": {
+                    "name": "Netherlands",
+                    "regionCode": "NL"
+                }
+            },
+            "funders": [
+                {
+                    "id": 116490,
+                    "name": "Netherlands Foundation of Scientific Research Institutes (NWO-I) | Stichting Nederlandse Wetenschappelijk Onderzoek Instituten",
+                    "region": {
+                        "name": "Netherlands",
+                        "regionCode": "NL"
+                    }
+                }
+            ],
+            "deadlines": [
+                {
+                    "deadline": "2020-03-01",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2022-03-01",
+                    "unconfirmed": true
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Physics",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Non-Profit",
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "Netherlands",
+                            "regionCode": "NL"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1161652,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1161652",
+            "name": "Leadership fellows scheme – standard route",
+            "bullet": "This provides time for research leaders to undertake individual research alongside collaborative activities with a potentially transformative impact on their subject area and beyond. Grants are worth between £50,000 and £250,000 for a period of six to 18 months.",
+            "description": "Applications to the scheme will be welcomed for research in any subject area within the council’s remit. <br/>The standard route is open to mid- and senior-career researchers. All UK HEIs that receive grant funding from one of the UK higher education funding bodies are eligible. Other independent research organisations may also be eligible, provided they have the capabilities to carry out the proposed research.",
+            "locale": "EN",
+            "added": "2018-02-08T11:46:10Z",
+            "deadlineInfo": "You can apply for this opportunity at any time. ",
+            "webpage": "http://www.ahrc.ac.uk/funding/opportunities/current/leadershipfellows/",
+            "primaryFunder": {
+                "id": 271,
+                "name": "Arts and Humanities Research Council",
+                "region": {
+                    "name": "United Kingdom",
+                    "regionCode": "GB"
+                }
+            },
+            "deadlines": [
+                {
+                    "unconfirmed": false
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Arts and Humanities",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Non-Profit",
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "United Kingdom",
+                            "regionCode": "GB"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1161927,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1161927",
+            "name": "STFC enterprise fellowships",
+            "bullet": "These enable the development of new businesses that stem from previously-funded STFC research in particle physics, astronomy, particle astrophysics, solar and planetary science, and nuclear physics. Fellowships include funding and support worth up to £100,000 over one year.",
+            "description": "The fellowships enable science and technology researchers to develop into successful entrepreneurs and provides them with the skills necessary to succeed in the global business environment. <br/>Projects must originate from research that has been largely funded by either the STFC, the Particle Physics and Astronomy Research Council, CERN or the EPSRC nuclear physics programme. Graduates, postgraduates, PhD students, academic researchers or members of HEI staff may apply. Non-trading spinout or shell companies may also apply. Applicants must be able to remain and work legally in the UK for the duration of the fellowship and must demonstrate commercial and technical proof of concept. Previous fellows may not apply. The applicant should be hosted within a UK higher education or research institute and must be prepared to take a leading role in the company formed. <br/>Fellowships are worth up to £90,000 each in funding and training support and last for one year. Other benefits include up to £10,000 of business support funding, expert training in entreprenership, access to RSE affiliated mentors and entrepreneurs in the business community.",
+            "locale": "EN",
+            "added": "2019-03-29T12:21:03Z",
+            "deadlineInfo": "We have no information from the funder yet about the next call. Based on past experience, we forecast the deadline to be around October 2019. This call is repeated 2 times a year. ",
+            "webpage": "http://www.royalsoced.org.uk/637_STFCEnterpriseFellowships.html",
+            "primaryFunder": {
+                "id": 317,
+                "name": "Royal Society of Edinburgh",
+                "region": {
+                    "name": "United Kingdom",
+                    "regionCode": "GB"
+                }
+            },
+            "funders": [
+                {
+                    "id": 115410,
+                    "name": "Science and Technology Facilities Council ",
+                    "region": {
+                        "name": "United Kingdom",
+                        "regionCode": "GB"
+                    }
+                }
+            ],
+            "deadlines": [
+                {
+                    "deadline": "2019-10-17",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2020-04-17",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2020-10-17",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2021-04-17",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2021-10-17",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2022-04-17",
+                    "unconfirmed": true
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Universe Sciences",
+                    "focus": false
+                },
+                {
+                    "label": "Particle, Plasma & Nuclear Physics",
+                    "focus": false
+                },
+                {
+                    "label": "Innovation & Technology Management",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Non-Profit",
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "United Kingdom",
+                            "regionCode": "GB"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1161974,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1161974",
+            "name": "Centres of excellence in neurodegeneration initiative  – pathfinder 4",
+            "bullet": "This aims to build collaborative research activity in neurodegeneration research across borders in order to accelerate progress in understanding the mechanisms of disease as well as the identification of new therapeutic approaches. Grants are worth up to £575,000 each for up to two years. ",
+            "description": "The scientific remit for the award is broad in scope and projects may include studies in basic and clinical health services and policies as well as social aspects of neurogenerative diseases. Connectivity with research in related areas, such as inflammation and sensory neuroscience or vascular and mental health is encouraged. Within the remit of this call, neurodegeneration applies to: <br/><li>Alzheimer's disease and other dementias;</li><li>Huntington's disease;</li><li>Parkinson's disease and related disorders;</li><li>multiple sclerosis; </li><li>motor neurone diseases; </li><li>prion disease; </li><li>spinocerebellar ataxia;</li><li>spinal muscular atrophy. </li>Proposals must involve at least two identified centres of excellence or eligible institutions from at least two different countries. More than one CoE may be involved within any single country, as long as the primary cross-border criterion is met. Essential expertise may be included from outside the CoEs as an identified collaborator. Projects with cross-disciplinary elements are encouraged and collaborators from outside the field, such as in the physical sciences, are encouraged, as are industry partners. <br/>The total budget is £3. 6 million to fund collaborative projects, with £1 million available from MRC for UK-based research groups for up to two years. Funding across collaborating CoEs is typically between £100,000 and £350,000. Proposals worth up to £575,000 will be considered if the proposal involves clinical studies or animal models.",
+            "locale": "EN",
+            "added": "2019-06-20T11:24:12Z",
+            "deadlineInfo": "Applications due by 4pm GMT. ",
+            "webpage": "https://mrc.ukri.org/funding/browse/coen-2019/pathfinder/?utm_medium=email&utm_source=govdelivery",
+            "primaryFunder": {
+                "id": 274,
+                "name": "Medical Research Council",
+                "region": {
+                    "name": "United Kingdom",
+                    "regionCode": "GB"
+                }
+            },
+            "funders": [
+                {
+                    "id": 111678,
+                    "name": "Canadian Institutes of Health Research | Instituts de Recherche en Santé du Canada",
+                    "region": {
+                        "name": "Canada",
+                        "regionCode": "CA"
+                    }
+                },
+                {
+                    "id": 114546,
+                    "name": "Science Foundation Ireland",
+                    "region": {
+                        "name": "Ireland",
+                        "regionCode": "IE"
+                    }
+                },
+                {
+                    "id": 10035053,
+                    "name": "French National Research Agency (ANR) | Agence Nationale de la Recherche",
+                    "region": {
+                        "name": "Denmark",
+                        "regionCode": "DK"
+                    }
+                },
+                {
+                    "id": 10040561,
+                    "name": "Ministry of Health | Ministero della Salute ",
+                    "region": {
+                        "name": "Italy",
+                        "regionCode": "IT"
+                    }
+                }
+            ],
+            "deadlines": [
+                {
+                    "deadline": "2019-11-04",
+                    "unconfirmed": false
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Neurology",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Non-Profit",
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "France",
+                            "regionCode": "FR"
+                        },
+                        {
+                            "name": "United Kingdom",
+                            "regionCode": "GB"
+                        },
+                        {
+                            "name": "Italy",
+                            "regionCode": "IT"
+                        },
+                        {
+                            "name": "Canada",
+                            "regionCode": "CA"
+                        },
+                        {
+                            "name": "Germany",
+                            "regionCode": "DE"
+                        },
+                        {
+                            "name": "Spain",
+                            "regionCode": "ES"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1162017,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1162017",
+            "name": "Discovery early-career researcher award",
+            "bullet": "This supports early-career researchers in both teaching and research, and research-only positions. Awards are worth between AUD 307,116 and AUD 427,116 per applicant over three years.",
+            "description": "The objectives are to:<br/><li>support basic and applied research by early-career researchers;</li><li>advance early-career researchers and promote enhanced opportunities for diverse career pathways;</li><li>enable research and training;</li><li>expand Australia’s knowledge base and research capability;</li><li>enhance the scale and focus of research in the government’s science and research priorities. </li>Researchers who have been awarded a PhD on or after 1 March 2014 may be nominated by administering organisations. <br/>GO ID: GO1742.",
+            "locale": "EN",
+            "added": "2018-10-23T12:18:59Z",
+            "deadlineInfo": "We have no information from the funder yet about the next call. Based on past experience, we forecast the deadline to be around March 2020. This call is repeated once a year. ",
+            "webpage": "https://www.arc.gov.au/grants/discovery-program/discovery-early-career-researcher-award-decra",
+            "primaryFunder": {
+                "id": 491,
+                "name": "Australian Research Council",
+                "region": {
+                    "name": "Australia",
+                    "regionCode": "AU"
+                }
+            },
+            "deadlines": [
+                {
+                    "deadline": "2020-03-13",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2021-03-13",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2022-03-13",
+                    "unconfirmed": true
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Any",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "Australia",
+                            "regionCode": "AU"
+                        }
+                    ]
+                }
+            ],
+            "australianFundingCategory": "Category 1"
+        },
+        {
+            "id": 1162213,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1162213",
+            "name": "Investment grant NWO large",
+            "bullet": "This stimulates investments in innovative scientific equipment or data collections of national or international importance. The total budget is €17.9 million. A minimum of €1.5m can be requested for all scientific areas, with the exception of the arts, social sciences and humanities, for which a lower limit of €1m applies.",
+            "description": "Applications are accepted from Dutch universities, NWO and Royal Netherlands Academy of Arts and Sciences (KNAW) institutes, academic libraries, the Netherlands Cancer Institute (NKI), the Max Planck Institute for Psycholinguistics, the Prinses Maxima Center, the DUBBLE Beamline, Naturalis Biodiversity Centre, the NL eScience Center and the Advanced Research Centre for NanoLithogrpahy (ARCNL).",
+            "locale": "EN",
+            "added": "2017-05-15T12:33:29Z",
+            "deadlineInfo": "We have no information from the funder yet about the next call. Based on past experience, we forecast the deadline to be around October 2019. This call is repeated every 2 years. ",
+            "webpage": "http://www.nwo.nl/en/funding/our-funding-instruments/nwo/investment-grant-nwo-large/investment-grant-nwo-large.html",
+            "primaryFunder": {
+                "id": 116499,
+                "name": "Dutch Research Council | Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                "region": {
+                    "name": "Netherlands",
+                    "regionCode": "NL"
+                }
+            },
+            "deadlines": [
+                {
+                    "deadline": "2019-10-03",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2021-10-03",
+                    "unconfirmed": true
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Any",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Non-Profit",
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "Netherlands",
+                            "regionCode": "NL"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1162285,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1162285",
+            "name": "Research post as academy research fellow",
+            "bullet": "This scheme enables experienced researchers to focus on a five-year research project on a topic of their choice. Funding covers a monthly salary of €5,000 for each fellow for a period of five years and additional funding for research costs for up to 70 per cent of the total expenses.",
+            "description": "Fellows are expected to supervise thesis work and teach in their field. <br/>Applicants must have completed their doctoral degree three to nine years prior to applying, or within the past 13 years in cases where the applicant has completed specialist studies in medicine following the award of their doctorate. All fellows must be placed at an institute in Finland for the duration of the fellowship but international and cross-sectoral collaboration and exchanges are encouraged.",
+            "locale": "EN",
+            "added": "2019-06-04T12:44:58Z",
+            "deadlineInfo": "Applications are invited between 3 September and 4.15 pm Finnish time, 25 September 2019. This call is repeated once a year. ",
+            "webpage": "https://www.aka.fi/en/funding/apply-for-funding/for-researchers/funding-for-research-post-as-academy-research-fellow-all-research-fields/",
+            "primaryFunder": {
+                "id": 111919,
+                "name": "Academy of Finland | Suomen Akatemia",
+                "region": {
+                    "name": "Finland",
+                    "regionCode": "FI"
+                }
+            },
+            "deadlines": [
+                {
+                    "deadline": "2019-09-25",
+                    "unconfirmed": false
+                },
+                {
+                    "deadline": "2020-09-25",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2021-09-25",
+                    "unconfirmed": true
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Any",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Not Known"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "Finland",
+                            "regionCode": "FI"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1162286,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1162286",
+            "name": "Research post as postdoctoral researcher",
+            "bullet": "This aims to support researchers who have recently completed their doctoral degree in gaining competence for demanding researcher or expert positions. The average funding amount is approximately between €200,000 and €300,000 per researcher. ",
+            "description": "Fellows are encouraged to be mobile and collaborate internationally, and up to two applicants may be selected to spend one to two years conducting research at the European University Institute. In addition, fellows are expected to supervise thesis work and teach in their field. Successful applicants may also visit the International Institute for Applied Systems Analysis in Austria during their funded period. <br/>Applicants must have completed their doctorate degree no more than four years prior to applying. Alternatively, applicants who have completed their doctorate alongside their specialist medical training must have completed the degree within eight years of applying. <br/>Funding is granted for three years and covers up to 70 per cent of the total project costs, such as travels, collaborations, publishing, mobility allowance and implementation costs.",
+            "locale": "EN",
+            "added": "2019-06-04T12:58:07Z",
+            "deadlineInfo": "Applications are invited between 3 September 2018 and 4.15pm Finnish time, 25 September 2019. This call is repeated once a year. ",
+            "webpage": "https://www.aka.fi/fi/rahoitus/hae-rahoitusta/",
+            "primaryFunder": {
+                "id": 111919,
+                "name": "Academy of Finland | Suomen Akatemia",
+                "region": {
+                    "name": "Finland",
+                    "regionCode": "FI"
+                }
+            },
+            "deadlines": [
+                {
+                    "deadline": "2019-09-25",
+                    "unconfirmed": false
+                },
+                {
+                    "deadline": "2020-09-25",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2021-09-25",
+                    "unconfirmed": true
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Any",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Not Known"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "Finland",
+                            "regionCode": "FI"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1163374,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1163374",
+            "name": "Māori health research development grant",
+            "bullet": "This enables Māori health researchers to develop a project proposal for the council’s annual contestable funding round. Grants are worth up to NZD 10,000 each.",
+            "description": "New Zealand citizens and residents, who are of Māori descent may apply. The grant must be administered through a host institution and not by an individual. <br/>Grants are worth up to NZD 10,000 each and may be used to obtain reputable advice, mitigate costs of consulting with particular communities or access resources critical to proposal development.",
+            "locale": "EN",
+            "added": "2019-03-25T12:51:50Z",
+            "deadlineInfo": "Applications and registrations are invited between 24 May and 1pm, 5 July 2019; hard copies due by 5pm, 10 July 2019. This call is repeated once a year. ",
+            "webpage": "https://gateway.hrc.govt.nz/funding/maori-health-research/2020-maori-health-research-development-grants",
+            "primaryFunder": {
+                "id": 112216,
+                "name": "Health Research Council of New Zealand",
+                "region": {
+                    "name": "New Zealand",
+                    "regionCode": "NZ"
+                }
+            },
+            "deadlines": [
+                {
+                    "deadline": "2019-07-05",
+                    "unconfirmed": false
+                },
+                {
+                    "deadline": "2020-07-05",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2021-07-05",
+                    "unconfirmed": true
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Health of Minority Groups",
+                    "focus": true
+                },
+                {
+                    "label": "Medicine & Health",
+                    "focus": false
+                },
+                {
+                    "label": "Māori People",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Not Known"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "New Zealand",
+                            "regionCode": "NZ"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1163517,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1163517",
+            "name": "Fellowships",
+            "bullet": "These aim to develop the next generation of researchers with the greatest potential across the postdoctoral, early and established career stages. Fellowships last up to five years.",
+            "description": "Fellows develop their leadership by establishing or extending their research group and act as an advocate for the STEM disciplines in general and the EPSRC. Applications are invited only in specific research areas and it is expected that a greater proportion of fellows will be focused on areas where growth is required and where developing leaders can integrate their work into the wider landscape. These areas are:<br/><li>digital economy;</li><li>engineering;</li><li>energy;</li><li>healthcare technologies and fellowships;</li><li>information and communication technologies;</li><li>manufacturing the future;</li><li>physical sciences;</li><li>mathematical sciences. </li>Not all priority areas are available for all career stages. <br/>Fellowships may be held at any UK university or higher education institution eligible for research council funding. Applicants should hold a PhD or have equivalent research experience but consideration is given to applicants who have taken a non-standard career path after their primary degree. There are no nationality restrictions. <br/>Fellowships may last up to five years for early-career and established career researchers, or up to three years for postdoctoral researchers. Shorter fellowships that allow fellows the freedom to initially explore new research avenues are welcomed. Support covers salary, travel and subsistence, staff, visiting researchers, equipment,  consumables, access to facilities and public communication training. Applicants can choose to spend anywhere between 50 per cent to 100 per cent full time equivalent on their fellowship.",
+            "locale": "EN",
+            "added": "2018-11-08T11:43:28Z",
+            "deadlineInfo": "You can apply for this opportunity at any time. ",
+            "webpage": "http://www.epsrc.ac.uk/skills/fellows/",
+            "primaryFunder": {
+                "id": 2,
+                "name": "Engineering and Physical Sciences Research Council",
+                "region": {
+                    "name": "United Kingdom",
+                    "regionCode": "GB"
+                }
+            },
+            "deadlines": [
+                {
+                    "unconfirmed": false
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Mathematical Sciences",
+                    "focus": false
+                },
+                {
+                    "label": "Network Infrastructure",
+                    "focus": false
+                },
+                {
+                    "label": "Health & Medical Informatics",
+                    "focus": false
+                },
+                {
+                    "label": "Information Technology & Internet Law",
+                    "focus": false
+                },
+                {
+                    "label": "Physical Sciences",
+                    "focus": false
+                },
+                {
+                    "label": "Engineering",
+                    "focus": false
+                },
+                {
+                    "label": "Virtual Economy",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Non-Profit",
+                        "Public Sector or Government Organisation",
+                        "University"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "United Kingdom",
+                            "regionCode": "GB"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1164207,
+            "researchProfessionalWebpage": "https://www.researchprofessional.com/funding/opportunity?fopShortId=1164207",
+            "name": "VicHealth/NHMRC partnership projects grant",
+            "bullet": "This provides industry support for institutions applying for an National Health and Medical Research Council grant focusing on health promotion and public health research and development. Grants are worth up to 187,500 each for up to three years.",
+            "description": "Projects must focus on health promotion and public health research and development and address one of the following research priorities:<br/><li>healthy eating;</li><li>physical activity;</li><li>tobacco;</li><li>alcohol;</li><li>mental wellbeing. </li>The project must be administered by an Australian-based organisation that is an NHMRC administering institution. The administering institution may be based interstate. A minimum of 50 per cent of the research project must be conducted in Victoria. <br/>Each grant is worth between AUD 25,000 and AUD 50,000 in cash as well as AUD 12,500 in in-kind support per year for up to three years.",
+            "locale": "EN",
+            "added": "2018-05-16T12:31:35Z",
+            "deadlineInfo": "We have no information from the funder yet about the next call. Based on past experience, we have forecast the deadline to be around July 2019. But normally we'd expect to have heard something long since, so there is a strong chance the next round could be delayed or cancelled. This call is repeated once a year. ",
+            "webpage": "https://www.vichealth.vic.gov.au/funding/nhmrc-partnerships",
+            "primaryFunder": {
+                "id": 112322,
+                "name": "VicHealth – Victorian Health Promotion Foundation",
+                "region": {
+                    "name": "Australia",
+                    "regionCode": "AU"
+                }
+            },
+            "funders": [
+                {
+                    "id": 491,
+                    "name": "Australian Research Council",
+                    "region": {
+                        "name": "Australia",
+                        "regionCode": "AU"
+                    }
+                },
+                {
+                    "id": 111926,
+                    "name": "National Health and Medical Research Council",
+                    "region": {
+                        "name": "Australia",
+                        "regionCode": "AU"
+                    }
+                }
+            ],
+            "deadlines": [
+                {
+                    "deadline": "2019-07-19",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2020-07-19",
+                    "unconfirmed": true
+                },
+                {
+                    "deadline": "2021-07-19",
+                    "unconfirmed": true
+                }
+            ],
+            "disciplines": [
+                {
+                    "label": "Exercise Physiology",
+                    "focus": false
+                },
+                {
+                    "label": "Health Promotion",
+                    "focus": false
+                },
+                {
+                    "label": "Alcoholism",
+                    "focus": false
+                },
+                {
+                    "label": "Smoking & Tobacco",
+                    "focus": false
+                },
+                {
+                    "label": "Mental Health",
+                    "focus": false
+                }
+            ],
+            "eligibility": [
+                {
+                    "hosts": [
+                        "Not Known"
+                    ],
+                    "involvement": [
+                        "Funding"
+                    ],
+                    "regions": [
+                        {
+                            "name": "Australia",
+                            "regionCode": "AU"
+                        }
+                    ]
+                }
+            ],
+            "australianFundingCategory": "Category 2"
+        }
+	]
+}
+        

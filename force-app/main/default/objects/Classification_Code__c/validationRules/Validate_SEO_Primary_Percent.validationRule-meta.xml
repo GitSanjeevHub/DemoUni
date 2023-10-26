@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_SEO_Primary_Percent</fullName>
+    <active>true</active>
+    <description>This will validate to ensure the Primary SEO Code has the highest %</description>
+    <errorConditionFormula>OR(
+
+AND(
+(I_RS_Primary__c = TRUE),
+(TEXT(I_RS_Classification_Master__r.I_RS_Type__c) = &quot;Socio-economic Objective (SEO)&quot;),I_RS_Classification_Master__r.I_RS_Active__c = TRUE,
+(I_RS_Percentage__c &lt; I_RS_Project_Proposal__r.I_RS_Max_SEO_Percentage__c)
+),
+
+AND(
+(I_RS_Primary__c = FALSE),
+(TEXT(I_RS_Classification_Master__r.I_RS_Type__c) = &quot;Socio-economic Objective (SEO)&quot;),I_RS_Classification_Master__r.I_RS_Active__c = TRUE,
+(I_RS_Project_Proposal__r.I_RS_CC_SEO_Primary_Count__c&gt;0),
+(I_RS_Percentage__c &gt; I_RS_Project_Proposal__r.I_RS_Primary_SEO_Percentage__c)
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Percentage__c</errorDisplayField>
+    <errorMessage>Primary SEO code should have highest %age allocation.</errorMessage>
+</ValidationRule>

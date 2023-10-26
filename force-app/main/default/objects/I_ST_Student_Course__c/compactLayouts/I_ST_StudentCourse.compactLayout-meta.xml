@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_StudentCourse</fullName>
+    <fields>Name</fields>
+    <fields>I_ST_Course_Admission_Stage_Desc__c</fields>
+    <fields>I_ST_Course_Admission_Status_Desc__c</fields>
+    <fields>I_ST_Enrolled_Credit_Points__c</fields>
+    <fields>I_ST_Admission_Change_Date__c</fields>
+    <fields>I_ST_Admission_Period_Start_Date__c</fields>
+    <label>I_ST_StudentCourse</label>
+</CompactLayout>

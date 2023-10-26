@@ -1,0 +1,4 @@
+<aura:component implements="lightning:availableForFlowActions,lightning:availableForFlowScreens">
+	
+    
+</aura:component>

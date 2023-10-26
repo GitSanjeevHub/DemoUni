@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Candidate_declaration_Text__c</fullName>
+    <defaultValue>&quot;- I confirm that the information I have provided is true and accurate.&quot; &amp; BR() &amp; 
+&quot;- I hereby give notice of my intention to submit my thesis / examinable works by the anticipated submission date(s).&quot; &amp; BR() &amp;
+&quot;- I certify that my thesis/exegesis complies with the provisions in Graduate Research Examinations Schedule B-Presentation of Theses for Graduate Research Degrees(https://policies.latrobe.edu.au/download.php?associated=1&amp;id=80) and for practice-based degrees that the artefact(s) comply with the Guidelines for examinable components of practice-based degrees by research(http://www.latrobe.edu.au/__data/assets/pdf_file/0008/724517/BGR16-23-Practice-Based-Guidelines-for-examination.pdf).&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Candidate declaration Text</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

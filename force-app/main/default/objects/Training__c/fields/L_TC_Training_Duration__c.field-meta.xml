@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_TC_Training_Duration__c</fullName>
+    <description>Difference between the Start and FInish Time in minutes</description>
+    <externalId>false</externalId>
+    <formula>(HOUR(L_TC_Training_Finish_Time__c) - HOUR(L_TC_Training_Time__c))*60+ (MINUTE(L_TC_Training_Finish_Time__c) - MINUTE(L_TC_Training_Time__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Training Duration (mins)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Lead</fullName>
+        <default>false</default>
+        <label>Lead</label>
+    </customValue>
+    <customValue>
+        <fullName>Applicant</fullName>
+        <default>false</default>
+        <label>Applicant</label>
+    </customValue>
+    <customValue>
+        <fullName>Student</fullName>
+        <default>false</default>
+        <label>Student</label>
+    </customValue>
+    <customValue>
+        <fullName>Alumni</fullName>
+        <default>false</default>
+        <label>Alumni</label>
+    </customValue>
+    <customValue>
+        <fullName>Inactive</fullName>
+        <default>false</default>
+        <label>Inactive</label>
+    </customValue>
+    <description>Global value set being created for Lead(Contact) field ST -51</description>
+    <masterLabel>I_ST_Contact_Stage</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

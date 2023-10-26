@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>Community Sharing</name>
+    <profiles>ltu partner community login user</profiles>
+    <profiles>ltu partner community user</profiles>
+</SharingSet>

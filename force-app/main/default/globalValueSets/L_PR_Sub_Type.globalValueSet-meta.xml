@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Access to equipment</fullName>
+        <default>false</default>
+        <label>Access to equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Advocacy</fullName>
+        <default>false</default>
+        <label>Advocacy</label>
+    </customValue>
+    <customValue>
+        <fullName>Agency</fullName>
+        <default>false</default>
+        <label>Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Articulation</fullName>
+        <default>false</default>
+        <label>Articulation</label>
+    </customValue>
+    <customValue>
+        <fullName>Bio Innovation Labs</fullName>
+        <default>false</default>
+        <label>Bio Innovation Labs</label>
+    </customValue>
+    <customValue>
+        <fullName>Clinical Education</fullName>
+        <default>false</default>
+        <label>Clinical Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Collaboration, Contract</fullName>
+        <default>false</default>
+        <label>Collaboration, Contract</label>
+    </customValue>
+    <customValue>
+        <fullName>Co-location</fullName>
+        <default>false</default>
+        <label>Co-location</label>
+    </customValue>
+    <customValue>
+        <fullName>Course Development: Industry led/input Co-creation</fullName>
+        <default>false</default>
+        <label>Course Development: Industry led/input Co-creation</label>
+    </customValue>
+    <customValue>
+        <fullName>Courseware Licensing</fullName>
+        <default>false</default>
+        <label>Courseware Licensing</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Innovation Hub</fullName>
+        <default>false</default>
+        <label>Digital Innovation Hub</label>
+    </customValue>
+    <customValue>
+        <fullName>I&amp;E Programs: Mentoring, Workshops, Accelerator &amp; Incubator</fullName>
+        <default>false</default>
+        <label>I&amp;E Programs: Mentoring, Workshops, Accelerator &amp; Incubator</label>
+    </customValue>
+    <customValue>
+        <fullName>Innovation Partnership: Innovation funds, Co-creation</fullName>
+        <default>false</default>
+        <label>Innovation Partnership: Innovation funds, Co-creation</label>
+    </customValue>
+    <customValue>
+        <fullName>Licensing, spin outs</fullName>
+        <default>false</default>
+        <label>Licensing, spin outs</label>
+    </customValue>
+    <customValue>
+        <fullName>Memorandum of Understanding</fullName>
+        <default>false</default>
+        <label>Memorandum of Understanding</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobility – Overseas Short Programs</fullName>
+        <default>false</default>
+        <label>Mobility – Overseas Short Programs</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobility – Semester Exchange</fullName>
+        <default>false</default>
+        <label>Mobility – Semester Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobility – Study Abroad</fullName>
+        <default>false</default>
+        <label>Mobility – Study Abroad</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobility – Study Abroad and Exchange</fullName>
+        <default>false</default>
+        <label>Mobility – Study Abroad and Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobility – Third Party Provider</fullName>
+        <default>false</default>
+        <label>Mobility – Third Party Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>PhD, Industry PhD, APR interns</fullName>
+        <default>false</default>
+        <label>PhD, Industry PhD, APR interns</label>
+    </customValue>
+    <customValue>
+        <fullName>Philanthropy</fullName>
+        <default>false</default>
+        <label>Philanthropy</label>
+    </customValue>
+    <customValue>
+        <fullName>Procurement</fullName>
+        <default>false</default>
+        <label>Procurement</label>
+    </customValue>
+    <customValue>
+        <fullName>Prof Practice, Chair</fullName>
+        <default>false</default>
+        <label>Prof Practice, Chair</label>
+    </customValue>
+    <customValue>
+        <fullName>Research services</fullName>
+        <default>false</default>
+        <label>Research services</label>
+    </customValue>
+    <customValue>
+        <fullName>Sponsorship</fullName>
+        <default>false</default>
+        <label>Sponsorship</label>
+    </customValue>
+    <customValue>
+        <fullName>Student: Problem validation, Solution development</fullName>
+        <default>false</default>
+        <label>Student: Problem validation, Solution development</label>
+    </customValue>
+    <customValue>
+        <fullName>Talent Development: Micro credentials, Short course, Custom Education</fullName>
+        <default>false</default>
+        <label>Talent Development: Micro credentials, Short course, Custom Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Talent Pipeline: Employment program</fullName>
+        <default>false</default>
+        <label>Talent Pipeline: Employment program</label>
+    </customValue>
+    <customValue>
+        <fullName>Third Party Teaching</fullName>
+        <default>false</default>
+        <label>Third Party Teaching</label>
+    </customValue>
+    <customValue>
+        <fullName>Work Based Learning</fullName>
+        <default>false</default>
+        <label>Work Based Learning</label>
+    </customValue>
+    <customValue>
+        <fullName>Work Integrated Learning Projects</fullName>
+        <default>false</default>
+        <label>Work Integrated Learning Projects</label>
+    </customValue>
+    <customValue>
+        <fullName>WIL Projects</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WIL Projects</label>
+    </customValue>
+    <customValue>
+        <fullName>WBL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WBL</label>
+    </customValue>
+    <customValue>
+        <fullName>Student Mobility</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Student Mobility</label>
+    </customValue>
+    <description>This picklist value set provides further  categorisation/ classification list based on the type for Lead/Idea and opportunity</description>
+    <masterLabel>L_PR_Sub_Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

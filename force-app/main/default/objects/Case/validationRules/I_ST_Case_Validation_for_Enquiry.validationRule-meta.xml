@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Case_Validation_for_Enquiry</fullName>
+    <active>true</active>
+    <description>To check if case is closed, outcome is not null.
+(IST-253)
+Added record type
+Updated error condition, message and location based on IST-506</description>
+    <errorConditionFormula>AND
+(
+RecordType.DeveloperName=&apos;I_ST_Enquiry&apos;,
+ISCHANGED(Status), 
+ISPICKVAL(Status,&apos;Closed&apos;), 
+OR(
+ISPICKVAL(I_ST_Study_Level__c,&quot;&quot;),
+ISPICKVAL(I_ST_Enquirer_Type__c,&quot;&quot;),
+ISPICKVAL(I_ST_Study_Interest__c,&quot;&quot;),
+ISPICKVAL(I_ST_Timeframe_To_Study__c,&quot;&quot;),
+ISPICKVAL(I_ST_Career_Area__c,&quot;&quot;),
+ISPICKVAL(I_ST_Campus_Interest__c,&quot;&quot;),
+ISPICKVAL(I_ST_Case_Outcome__c,&quot;&quot;),
+ISPICKVAL(I_ST_Case_Category__c,&quot;&quot;)
+))</errorConditionFormula>
+    <errorMessage>Please fill the below mandatory fields -  Case Outcome, Case Category, Study Level, What best describes you?, Study Interest, Timeframe To Study, Career Area, Campus Interest.</errorMessage>
+</ValidationRule>

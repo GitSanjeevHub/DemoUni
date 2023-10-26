@@ -1,0 +1,14 @@
+<!--
+ - Created by burnside on 2019-05-29.
+ -->
+
+<design:component>
+    <design:attribute name="label_cardTitle" />
+    <design:attribute name="label_baselineFilterCopy" />
+    <design:attribute name="label_action_addSearchFilter" />
+    <design:attribute name="label_action_useFilterLogic" />
+    <design:attribute name="label_action_loadSavedSearch" />
+    <design:attribute name="label_action_search" />
+    <design:attribute name="label_action_saveSearch" />
+    <design:attribute name="label_action_deleteSearch" />
+</design:component>

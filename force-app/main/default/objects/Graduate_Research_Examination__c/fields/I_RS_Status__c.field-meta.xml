@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NOI to Submit</fullName>
+                <default>true</default>
+                <label>NOI to Submit</label>
+            </value>
+            <value>
+                <fullName>Authority to Submit</fullName>
+                <default>false</default>
+                <label>Authority to Submit</label>
+            </value>
+            <value>
+                <fullName>Upload Thesis</fullName>
+                <default>false</default>
+                <label>Upload Thesis</label>
+            </value>
+            <value>
+                <fullName>Under Examination</fullName>
+                <default>false</default>
+                <label>Under Examination</label>
+            </value>
+            <value>
+                <fullName>Outcome Communicated</fullName>
+                <default>false</default>
+                <label>Outcome Communicated</label>
+            </value>
+            <value>
+                <fullName>Completion Requirements</fullName>
+                <default>false</default>
+                <label>Completion Requirements</label>
+            </value>
+            <value>
+                <fullName>Awaiting Academic Board Approval</fullName>
+                <default>false</default>
+                <label>Awaiting Academic Board Approval</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

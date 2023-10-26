@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_BAU_Interested_in_Uni_Study__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Finding out the  interest in undertaking University subjects while completing Year 12?”</description>
+    <externalId>false</externalId>
+    <inlineHelpText>“Are you interested in undertaking University subjects while completing Year 12?”</inlineHelpText>
+    <label>Interested in Uni Study</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

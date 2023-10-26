@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Arts</fullName>
+        <default>false</default>
+        <label>Arts</label>
+    </customValue>
+    <customValue>
+        <fullName>Creative Arts And English</fullName>
+        <default>false</default>
+        <label>Creative Arts And English</label>
+    </customValue>
+    <customValue>
+        <fullName>Historical And Cultural Studies</fullName>
+        <default>false</default>
+        <label>Historical And Cultural Studies</label>
+    </customValue>
+    <customValue>
+        <fullName>International Relations And Development</fullName>
+        <default>false</default>
+        <label>International Relations And Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Languages And Linguistics</fullName>
+        <default>false</default>
+        <label>Languages And Linguistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Media, Communication And Journalism</fullName>
+        <default>false</default>
+        <label>Media, Communication And Journalism</label>
+    </customValue>
+    <customValue>
+        <fullName>Planning, Environment And Sustainability</fullName>
+        <default>false</default>
+        <label>Planning, Environment And Sustainability</label>
+    </customValue>
+    <customValue>
+        <fullName>Politics, Philosophy And Economics</fullName>
+        <default>false</default>
+        <label>Politics, Philosophy And Economics</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Sciences</fullName>
+        <default>false</default>
+        <label>Social Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Accounting And Finance</fullName>
+        <default>false</default>
+        <label>Accounting And Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Business And Commerce</fullName>
+        <default>false</default>
+        <label>Business And Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Economics</fullName>
+        <default>false</default>
+        <label>Economics</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing And Management</fullName>
+        <default>false</default>
+        <label>Marketing And Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Technology Management</fullName>
+        <default>false</default>
+        <label>Technology Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Big Data</fullName>
+        <default>false</default>
+        <label>Big Data</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering</fullName>
+        <default>false</default>
+        <label>Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Information Technology</fullName>
+        <default>false</default>
+        <label>Information Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Computer Science</fullName>
+        <default>false</default>
+        <label>Computer Science</label>
+    </customValue>
+    <customValue>
+        <fullName>Teaching</fullName>
+        <default>false</default>
+        <label>Teaching</label>
+    </customValue>
+    <customValue>
+        <fullName>Outdoor And Environmental Education</fullName>
+        <default>false</default>
+        <label>Outdoor And Environmental Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Career Development</fullName>
+        <default>false</default>
+        <label>Career Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Linguistics And TESOL</fullName>
+        <default>false</default>
+        <label>Linguistics And TESOL</label>
+    </customValue>
+    <customValue>
+        <fullName>Allied Health And Rehabilitation</fullName>
+        <default>false</default>
+        <label>Allied Health And Rehabilitation</label>
+    </customValue>
+    <customValue>
+        <fullName>Psychology, counselling and social work</fullName>
+        <default>false</default>
+        <label>Psychology, counselling and social work</label>
+    </customValue>
+    <customValue>
+        <fullName>Dentistry and Oral Health</fullName>
+        <default>false</default>
+        <label>Dentistry And Oral Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Health Management</fullName>
+        <default>false</default>
+        <label>Health Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Ageing And End Of Life Care</fullName>
+        <default>false</default>
+        <label>Ageing And End Of Life Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Sciences</fullName>
+        <default>false</default>
+        <label>Medical Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Nursing, Midwifery And Paramedicine</fullName>
+        <default>false</default>
+        <label>Nursing, Midwifery And Paramedicine</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Health</fullName>
+        <default>false</default>
+        <label>Public Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Disability</fullName>
+        <default>false</default>
+        <label>Disability</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Health</fullName>
+        <default>false</default>
+        <label>Digital Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Law</fullName>
+        <default>false</default>
+        <label>Law</label>
+    </customValue>
+    <customValue>
+        <fullName>Crime And Justice</fullName>
+        <default>false</default>
+        <label>Crime And Justice</label>
+    </customValue>
+    <customValue>
+        <fullName>Cybersecurity</fullName>
+        <default>false</default>
+        <label>Cybersecurity</label>
+    </customValue>
+    <customValue>
+        <fullName>Agricultural And Environmental Sciences</fullName>
+        <default>false</default>
+        <label>Agricultural And Environmental Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Molecular And Biological Sciences</fullName>
+        <default>false</default>
+        <label>Molecular And Biological Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Mathematical And Computer Sciences</fullName>
+        <default>false</default>
+        <label>Mathematical And Computer Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical And Psychological Sciences</fullName>
+        <default>false</default>
+        <label>Medical And Psychological Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Physical And Chemical Sciences</fullName>
+        <default>false</default>
+        <label>Physical And Chemical Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Criminology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Criminology</label>
+    </customValue>
+    <description>Created fro IST- 43</description>
+    <masterLabel>I_ST_Career_Interest</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

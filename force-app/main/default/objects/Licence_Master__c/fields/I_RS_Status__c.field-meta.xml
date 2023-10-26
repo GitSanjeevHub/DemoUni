@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>true</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Expired</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+            <value>
+                <fullName>Void</fullName>
+                <default>false</default>
+                <label>Void</label>
+            </value>
+            <value>
+                <fullName>OGTR Current</fullName>
+                <default>false</default>
+                <label>OGTR Current</label>
+            </value>
+            <value>
+                <fullName>OGTR Suspended</fullName>
+                <default>false</default>
+                <label>OGTR Suspended</label>
+            </value>
+            <value>
+                <fullName>OGTR Surrendered</fullName>
+                <default>false</default>
+                <label>OGTR Surrendered</label>
+            </value>
+            <value>
+                <fullName>OGTR Submitted</fullName>
+                <default>false</default>
+                <label>OGTR Submitted</label>
+            </value>
+            <value>
+                <fullName>OGTR Expired</fullName>
+                <default>false</default>
+                <label>OGTR Expired</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

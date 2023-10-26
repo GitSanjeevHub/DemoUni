@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidateDisplayonProfileForResearcher</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+        OR(
+            ISNEW(),
+             ISCHANGED( I_RS_Display_on_Researcher_Profile__c )
+           ),
+         OR(TEXT(PRIORVALUE(I_RS_Display_on_Researcher_Profile__c)) = &apos;Permitted by funding agreement (RO only)&apos;,
+            TEXT(PRIORVALUE(I_RS_Display_on_Researcher_Profile__c)) = &apos;Not permitted by funding agreement (RO only)&apos;,
+            TEXT(I_RS_Display_on_Researcher_Profile__c) = &apos;Permitted by funding agreement (RO only)&apos; ,  
+            TEXT(I_RS_Display_on_Researcher_Profile__c) =&apos;Not permitted by funding agreement (RO only)&apos;
+            )
+        )</errorConditionFormula>
+    <errorDisplayField>I_RS_Display_on_Researcher_Profile__c</errorDisplayField>
+    <errorMessage>Only Research Office can set that value.</errorMessage>
+</ValidationRule>

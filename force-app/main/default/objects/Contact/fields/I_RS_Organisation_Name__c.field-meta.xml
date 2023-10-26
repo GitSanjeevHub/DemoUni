@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Organisation_Name__c</fullName>
+    <description>Stores name of Contact&apos;s Organisation. Used in Budget Calculator when searching for Contacts.</description>
+    <externalId>false</externalId>
+    <formula>Account.Name</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Stores name of Contact&apos;s Organisation.</inlineHelpText>
+    <label>Organisation Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

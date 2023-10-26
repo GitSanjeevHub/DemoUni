@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Case_Validation_for_Outbound</fullName>
+    <active>true</active>
+    <description>IST-506 &amp; IST-529</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &apos;I_ST_Outbound&apos;,
+ISPICKVAL(Status, &quot;closed&quot;),
+ISBLANK(TEXT(I_ST_Case_Outcome__c))
+)</errorConditionFormula>
+    <errorDisplayField>I_ST_Case_Outcome__c</errorDisplayField>
+    <errorMessage>Please update Case Outcome field before closing the Outbound case.</errorMessage>
+</ValidationRule>

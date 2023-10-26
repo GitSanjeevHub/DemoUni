@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Researcher__c</fullName>
+    <description>The individual this Classification Code is related to</description>
+    <externalId>false</externalId>
+    <label>Researcher</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Classification Codes</relationshipLabel>
+    <relationshipName>Researcher_Classification_Codes</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

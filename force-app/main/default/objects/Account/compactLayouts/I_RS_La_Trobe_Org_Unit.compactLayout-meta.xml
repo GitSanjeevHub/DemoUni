@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_La_Trobe_Org_Unit</fullName>
+    <fields>Name</fields>
+    <fields>RecordTypeId</fields>
+    <fields>Type__c</fields>
+    <fields>ParentId</fields>
+    <fields>I_RS_Organisation_Head__c</fields>
+    <label>La Trobe Org Unit</label>
+</CompactLayout>

@@ -1,0 +1,12 @@
+/**
+ * Created by burnside on 2019-05-29.
+ */
+
+/*adjusting help text position*/
+.THIS .customIcon div{
+    vertical-align: top !important;
+}
+
+.THIS.customIcon div{
+    vertical-align: top !important;
+}

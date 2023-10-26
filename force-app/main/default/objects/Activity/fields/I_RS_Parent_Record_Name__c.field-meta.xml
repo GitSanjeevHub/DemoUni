@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Parent_Record_Name__c</fullName>
+    <description>Record name of Related To record. For this to work for an object, please fill in the object&apos;s details in the Object Metadata custom setting.</description>
+    <externalId>false</externalId>
+    <label>Parent Record Name</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

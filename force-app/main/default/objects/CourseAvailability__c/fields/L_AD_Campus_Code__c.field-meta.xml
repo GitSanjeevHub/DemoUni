@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_AD_Campus_Code__c</fullName>
+    <description>Campus Code from CI</description>
+    <externalId>false</externalId>
+    <formula>L_AD_CourseInstance__r.L_AD_Campus_Code__c</formula>
+    <label>Campus Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

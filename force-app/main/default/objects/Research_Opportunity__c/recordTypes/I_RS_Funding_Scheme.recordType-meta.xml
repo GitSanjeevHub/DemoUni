@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Funding_Scheme</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>I_RS_Research_Opportunity_Compact_Layout</compactLayoutAssignment>
+    <label>Funding Scheme</label>
+    <picklistValues>
+        <picklist>I_RS_Career_Stage__c</picklist>
+        <values>
+            <fullName>Early career</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid career</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior fellowship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Funding_Category__c</picklist>
+        <values>
+            <fullName>Cat 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-HERDC consulting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_NOI_Round__c</picklist>
+        <values>
+            <fullName>ARC%2FNHMRC 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fellowship 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited Applications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linkage 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Opportunity_Sub_Type__c</picklist>
+        <values>
+            <fullName>Commercialisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Research Consultancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Collaboration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Consultancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Proposal_to_be_Submitted_By__c</picklist>
+        <values>
+            <fullName>Research Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Researcher</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Source__c</picklist>
+        <values>
+            <fullName>AAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approach by industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grant connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicly available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Professional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Type_of_Opportunity__c</picklist>
+        <values>
+            <fullName>Grant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote%2FProposal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Type_of_relationship__c</picklist>
+        <values>
+            <fullName>Collaborator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funding body%2Fclient %28i%2Ee%2E awards%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relinquish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub-contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer of administration from La Trobe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer of administration to La Trobe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

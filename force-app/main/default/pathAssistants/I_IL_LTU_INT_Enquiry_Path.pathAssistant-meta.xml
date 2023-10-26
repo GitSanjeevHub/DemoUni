@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>LTU INT - Enquiry Path</masterLabel>
+    <recordTypeName>I_IL_LTU_INT_Enquiry</recordTypeName>
+</PathAssistant>

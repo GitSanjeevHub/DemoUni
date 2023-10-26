@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Existing_background_IP_of_LTU__c</fullName>
+    <externalId>false</externalId>
+    <label>Existing/Background IP Of LTU</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None to be used</fullName>
+                <default>false</default>
+                <label>None to be used</label>
+            </value>
+            <value>
+                <fullName>Yes-LTU IP to be used-no commercial value-licences/warranties acceptable</fullName>
+                <default>false</default>
+                <label>Yes-LTU IP to be used-no commercial value-licences/warranties acceptable</label>
+            </value>
+            <value>
+                <fullName>Yes-LTU IP to be used-no commercial value-advice or changes required</fullName>
+                <default>false</default>
+                <label>Yes-LTU IP to be used-no commercial value-advice or changes required</label>
+            </value>
+            <value>
+                <fullName>Yes-LTU IP to be used-potentially valuable-refer Commercialisation below</fullName>
+                <default>false</default>
+                <label>Yes-LTU IP to be used-potentially valuable-refer Commercialisation below</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

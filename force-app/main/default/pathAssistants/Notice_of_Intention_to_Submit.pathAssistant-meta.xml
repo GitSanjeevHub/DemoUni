@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>NOI_to_Submit__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Notice of Intention to Submit</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The form has been sent to the principal supervisor for approval. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;Supervisors: please review the information provided by the candidate, and if it is correct and the anticipated thesis date is realistic click the ‘approve’ button located at the top right of the screen. If you wish to send the form back to the candidate to make changes, click on ‘reject’ and include your reasons in the comment. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Approvals</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The form has been completed or cancelled. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The GRS is reviewing the form and updating the candidate and examination details as required, before sending it on to the supervisor for approval. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>GRS Processing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;Form has been approved by the principal supervisor and is being reviewed by the GRS. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>GRS review</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Course_School__c</fullName>
+    <description>This field Shows the School from Course Availability</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( I_RM_Course_Availability__c ), &apos;N/A&apos;, I_RM_Course_Availability__r.L_AD_CourseInstance__r.I_ST_School_Name__c )</formula>
+    <inlineHelpText>Shows the value of school from Course Availability</inlineHelpText>
+    <label>Course School</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

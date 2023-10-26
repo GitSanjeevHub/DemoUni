@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Highlight_Panel</fullName>
+    <fields>L_AD_Course_Parent_Award_Title__c</fields>
+    <fields>L_AD_Campus_Name__c</fields>
+    <fields>L_AD_Course_Instance_Version_Year__c</fields>
+    <fields>L_AD_Course_Instance_Code__c</fields>
+    <fields>L_AD_Available_For_Domestic__c</fields>
+    <fields>L_AD_Available_For_Onshore_International__c</fields>
+    <label>Highlight Panel</label>
+</CompactLayout>

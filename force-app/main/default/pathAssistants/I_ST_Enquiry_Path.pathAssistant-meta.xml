@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>IST Enquiry Path</masterLabel>
+    <pathAssistantSteps>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>I_ST_Case_Outcome__c</fieldNames>
+        <picklistValueName>In Progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Open</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>I_ST_Sub_Status__c</fieldNames>
+        <fieldNames>I_ST_Case_Outcome__c</fieldNames>
+        <picklistValueName>Referred</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>I_ST_Case_Outcome__c</fieldNames>
+        <picklistValueName>Updated</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_ST_Enquiry</recordTypeName>
+</PathAssistant>

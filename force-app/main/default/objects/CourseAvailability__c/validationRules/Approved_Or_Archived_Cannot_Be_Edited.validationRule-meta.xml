@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Or_Archived_Cannot_Be_Edited</fullName>
+    <active>true</active>
+    <description>Course Availability record with Status = &apos;Archived&apos; or &apos;Approved&apos; cannot be edited.</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL( L_AD_Course_Availability_Status__c , &quot;Approved&quot;),
+ISPICKVAL( L_AD_Course_Availability_Status__c , &quot;Archived&quot;)
+),
+OR(
+ISCHANGED( L_AD_Intake_Period__c ),
+ISCHANGED( L_AD_Available_For_Domestic__c ),
+ISCHANGED( L_AD_Available_For_Onshore_International__c ),
+ISCHANGED( L_AD_Overriding_Start_Date__c )
+)
+)</errorConditionFormula>
+    <errorMessage>Record is not editable when Status is &apos;Approved or &apos;Archived&apos;.</errorMessage>
+</ValidationRule>

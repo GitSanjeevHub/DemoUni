@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Traffic_Light_Status__c</fullName>
+    <description>Logic that specifies what traffic light status to use - currently Green, Yellow, Red, or nothing</description>
+    <externalId>false</externalId>
+    <formula>/*Milestone?*/
+IF ( (RecordType.DeveloperName = &apos;I_RS_RES_Finance&apos;
+||
+RecordType.DeveloperName = &apos;I_RS_RES_RO&apos;
+||
+RecordType.DeveloperName = &apos;I_RS_RES_RO_Finance&apos;
+||
+RecordType.DeveloperName = &apos;I_RS_Time_Finance&apos;
+||
+RecordType.DeveloperName = &apos;Ethics&apos;),
+
+/*Is a Milestone*/
+/*---Closed?*/
+IF ( IsClosed,
+
+/*---Is Closed...*/
+&apos;&apos;
+/*---Is Not closed*/
+,
+
+/*-------Overdue?*/
+IF( ActivityDate &lt; TODAY(),
+
+/*-------Is overdue*/
+&apos;Red&apos;
+/*-------Is not overdue*/
+,
+
+/*----------Due within 7 days?*/
+IF (ActivityDate - TODAY() &lt;= 7,
+
+/*----------Yes, due within in 7 days*/
+&apos;Yellow&apos;
+
+,
+/*----------No, not due within 7 days*/
+&apos;Green&apos;
+)
+
+))
+
+,
+/*Not a Milestone*/
+&apos;&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Traffic Light Status</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

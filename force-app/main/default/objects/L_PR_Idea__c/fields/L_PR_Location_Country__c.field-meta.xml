@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Location_Country__c</fullName>
+    <description>Identifies Lead/Idea Country based on the Lead/Idea Location.</description>
+    <externalId>false</externalId>
+    <label>Location Country</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>L_PR_Location__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>I_RM_Country</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Domestic</controllingFieldValue>
+            <valueName>Australia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Afghanistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Åland Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Albania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Algeria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>American Samoa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Andorra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Angola</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Anguilla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Antarctica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Antigua and Barbuda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Argentina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Argentinian Antarctic Territory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Armenia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Aruba</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Australian Antarctic Territory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Austria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Azerbaijan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Bahamas (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Bahrain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Bangladesh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Barbados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Belarus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Belgium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Belize</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Benin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Bermuda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Bhutan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Bolivia (Plurinational State of)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Bonaire, Sint Eustatius and Saba</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Bosnia and Herzegovina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Botswana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Bouvet Island</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Brazil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>British Antarctic Territory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>British Indian Ocean Territory (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Brunei Darussalam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Bulgaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Burkina Faso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Burma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Burundi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Byelorussian SSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Cabo Verde</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Cambodia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Cameroon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Canada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Canton and Enderbury Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Cayman Islands (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Central African Republic (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Chad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Chile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>China</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Christmas Island</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Cocos (Keeling) Islands (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Colombia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Comoros (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Congo (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Congo (the Democratic Republic of the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Cook Islands (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Costa Rica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Côte d&apos;Ivoire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Croatia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Cuba</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Curaçao</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Cyprus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Czechoslovakia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Czech Republic (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Dahomey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Denmark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Djibouti</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Dominica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Dominican Republic (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Dronning Maud Land</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>East Timor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Ecuador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Egypt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>El Salvador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Equatorial Guinea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Eritrea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Estonia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Ethiopia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Falkland Islands (the) [Malvinas]</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Faroe Islands (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Fiji</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Finland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>France</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>France, Metropolitan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>French Afars and Issas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>French Guiana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>French Polynesia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>French Southern and Antarctic Territories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>French Southern Territories (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Gabon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Gambia (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Georgia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>German Democratic Republic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Germany</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Ghana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Gibraltar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Gilbert and Ellice Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Greece</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Greenland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Grenada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Guadeloupe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Guam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Guatemala</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Guernsey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Guinea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Guinea-Bissau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Guyana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Haiti</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Heard Island and McDonald Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Holy See (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Honduras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Hong Kong</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Hungary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Iceland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>India</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Indonesia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Iran (Islamic Republic of)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Iraq</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Ireland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Isle of Man</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Israel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Italy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Jamaica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Japan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Jersey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Johnston Island</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Jordan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Kazakhstan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Kenya</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Kiribati</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Korea (the Democratic People&apos;s Republic of)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Korea (the Republic of)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Kuwait</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Kyrgyzstan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Lao People&apos;s Democratic Republic (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Latvia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Lebanon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Lesotho</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Liberia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Libya</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Liechtenstein</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Lithuania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Luxembourg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Macao</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Macedonia (the former Yugoslav Republic of)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Madagascar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Malawi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Malaysia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Maldives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Mali</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Malta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Marshall Islands (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Martinique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Mauritania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Mauritius</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Mayotte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Mexico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Micronesia (Federated States of)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Midway Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Moldova (the Republic of)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Monaco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Mongolia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Montenegro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Montserrat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Morocco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Mozambique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Myanmar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Namibia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Nauru</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Nepal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Netherlands (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Netherlands Antilles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Neutral Zone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>New Caledonia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>New Hebrides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>New Zealand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Nicaragua</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Niger (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Nigeria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Niue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Norfolk Island</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Northern Mariana Islands (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Norway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Oman</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Pacific Islands (Trust Territory)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Pakistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Palau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Palestine, State of</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Panama</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Panama Canal Zone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Papua New Guinea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Paraguay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Peru</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Philippines (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Pitcairn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Poland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Portugal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Puerto Rico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Qatar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Réunion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Romania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Russian Federation (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Rwanda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Saint Barthélemy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Saint Helena, Ascension and Tristan da Cunha</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Saint Kitts and Nevis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Saint Lucia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Saint Martin (French part)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Saint Pierre and Miquelon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Saint Vincent and the Grenadines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Samoa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>San Marino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Sao Tome and Principe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Saudi Arabia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Senegal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Serbia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Serbia and Montenegro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Seychelles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Sierra Leone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Sikkim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Singapore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Sint Maarten (Dutch part)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Slovakia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Slovenia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Solomon Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Somalia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>South Africa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Southern Rodesia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>South Georgia and the South Sandwich Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>South Sudan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Spain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Sri Lanka</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Sudan (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Suriname</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Svalbard and Jan Mayen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Swaziland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Sweden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Switzerland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Syrian Arab Republic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Taiwan (Province of China)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Tajikistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Tanzania, United Republic of</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Thailand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Timor-Leste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Togo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Tokelau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Tonga</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Trinidad and Tobago</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Tunisia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Turkey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Turkmenistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Turks and Caicos Islands (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Tuvalu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Uganda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Ukraine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>United Arab Emirates (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>United Kingdom of Great Britain and Northern Ireland (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>United States Minor Outlying Islands (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>United States of America (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>United States Miscellaneous Pacific Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Upper Volta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Uruguay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>USSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Uzbekistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Vanuatu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Venezuela (Bolivarian Republic of)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Viet Nam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Viet-Nam, Democratic Republic of</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Virgin Islands (British)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Virgin Islands (U.S.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Wake Island</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Wallis and Futuna</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Western Sahara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Yemen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Yemen, Democratic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Yugoslavia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Zaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Zambia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>Zimbabwe</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

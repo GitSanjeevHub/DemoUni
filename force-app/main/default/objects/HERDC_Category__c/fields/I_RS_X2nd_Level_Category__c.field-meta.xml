@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_X2nd_Level_Category__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>2nd Level Category</label>
+    <referenceTo>HERDC_Category__c</referenceTo>
+    <relationshipLabel>HERDC Categories (2nd Level Category)</relationshipLabel>
+    <relationshipName>Second_Level_Categories</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

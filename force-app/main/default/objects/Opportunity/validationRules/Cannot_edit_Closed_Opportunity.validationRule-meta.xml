@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_edit_Closed_Opportunity</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+(
+(ISPICKVAL(PRIORVALUE(StageName),&apos;Closed Won&apos;) || ISPICKVAL(PRIORVALUE( StageName ),&apos;Closed Lost&apos;))
+&amp;&amp; ISCHANGED(StageName)),
+(
+(ISPICKVAL(StageName ,&apos;Closed Won&apos;)|| ISPICKVAL(StageName ,&apos;Closed Lost&apos;)) &amp;&amp; NOT(ISCHANGED(StageName)))
+)
+&amp;&amp; NOT(ISNEW() ) &amp;&amp; RecordType.Name = &apos;PRM Opportunity&apos;</errorConditionFormula>
+    <errorMessage>Closed Opportunity cannot be edited.</errorMessage>
+</ValidationRule>

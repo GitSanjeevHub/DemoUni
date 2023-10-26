@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Examination_Outcome__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Examination Outcome Status</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Candidate has appealed their examination outcome and appeal process is underway.&lt;/p&gt;</info>
+        <picklistValueName>Appeal in Progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The recommended exam outcome has gone to the Chair of the Board of Graduate Research for review.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Chair BGR</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;An examination outcome is usually closed once the candidate has been notified of the outcome and the appeal period has passed. If a candidate appeals the examination outcome, the record will remain open until the appeal is concluded.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The GRS has sent a letter of decision and copies of the examiners’ reports (or a copy of the approved revision plan for deferred outcomes) to the candidate and supervisors. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Communicate outcome</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The GRS Operations Manager reviews the examination recommendations before sending the form to the School Director of Graduate Research for review.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Confirmed by Operations Manager</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;Details of the examiner recommendations to be entered by the GRS.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The GRS reviews the School Director of Graduate Research’s recommendations to determine the next steps.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>GRS Processing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The School Director of Graduate Research has convened an Advisory Panel to make a recommendation on the examination outcome of the grade of a Masters thesis.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Graduate Research Advisory Panel</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The Advisory Panel has recommended the thesis be classified as deferred and is determining a plan for the revision of the thesis.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Revision Plan</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The School Director of Graduate Research reviews the examiners reports and makes a recommendation on examination outcome. If PhD also reviews for recommendation on Nancy Millis Medal. If Masters by Research, also provides a recommended mark.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>SDGR Determination</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

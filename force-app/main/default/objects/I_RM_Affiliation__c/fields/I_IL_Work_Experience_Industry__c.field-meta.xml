@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Work_Experience_Industry__c</fullName>
+    <description>Candidate’s work experience industry</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Job title/ designation of candidate</inlineHelpText>
+    <label>Work Experience Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Administration &amp; Office Support</fullName>
+                <default>false</default>
+                <label>Administration &amp; Office Support</label>
+            </value>
+            <value>
+                <fullName>Advertising, Arts &amp; Media</fullName>
+                <default>false</default>
+                <label>Advertising, Arts &amp; Media</label>
+            </value>
+            <value>
+                <fullName>Banking &amp; Financial Services</fullName>
+                <default>false</default>
+                <label>Banking &amp; Financial Services</label>
+            </value>
+            <value>
+                <fullName>Call Centre &amp; Customer Service</fullName>
+                <default>false</default>
+                <label>Call Centre &amp; Customer Service</label>
+            </value>
+            <value>
+                <fullName>CEO &amp; General Management</fullName>
+                <default>false</default>
+                <label>CEO &amp; General Management</label>
+            </value>
+            <value>
+                <fullName>Community Services &amp; Development</fullName>
+                <default>false</default>
+                <label>Community Services &amp; Development</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Consulting &amp; Strategy</fullName>
+                <default>false</default>
+                <label>Consulting &amp; Strategy</label>
+            </value>
+            <value>
+                <fullName>Design &amp; Architecture</fullName>
+                <default>false</default>
+                <label>Design &amp; Architecture</label>
+            </value>
+            <value>
+                <fullName>Education &amp; Training</fullName>
+                <default>false</default>
+                <label>Education &amp; Training</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>Farming, Animals &amp; Conservation</fullName>
+                <default>false</default>
+                <label>Farming, Animals &amp; Conservation</label>
+            </value>
+            <value>
+                <fullName>Government &amp; Defence</fullName>
+                <default>false</default>
+                <label>Government &amp; Defence</label>
+            </value>
+            <value>
+                <fullName>Healthcare &amp; Medical</fullName>
+                <default>false</default>
+                <label>Healthcare &amp; Medical</label>
+            </value>
+            <value>
+                <fullName>Hospitality &amp; Tourism</fullName>
+                <default>false</default>
+                <label>Hospitality &amp; Tourism</label>
+            </value>
+            <value>
+                <fullName>Human Resources &amp; Recruitment</fullName>
+                <default>false</default>
+                <label>Human Resources &amp; Recruitment</label>
+            </value>
+            <value>
+                <fullName>Information &amp; Communication Technology</fullName>
+                <default>false</default>
+                <label>Information &amp; Communication Technology</label>
+            </value>
+            <value>
+                <fullName>Insurance &amp; Superannuation</fullName>
+                <default>false</default>
+                <label>Insurance &amp; Superannuation</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Manufacturing, Transport &amp; Logistics</fullName>
+                <default>false</default>
+                <label>Manufacturing, Transport &amp; Logistics</label>
+            </value>
+            <value>
+                <fullName>Marketing &amp; Communications</fullName>
+                <default>false</default>
+                <label>Marketing &amp; Communications</label>
+            </value>
+            <value>
+                <fullName>Mining, Resources &amp; Energy</fullName>
+                <default>false</default>
+                <label>Mining, Resources &amp; Energy</label>
+            </value>
+            <value>
+                <fullName>Real Estate &amp; Property</fullName>
+                <default>false</default>
+                <label>Real Estate &amp; Property</label>
+            </value>
+            <value>
+                <fullName>Retail &amp; Consumer Products</fullName>
+                <default>false</default>
+                <label>Retail &amp; Consumer Products</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Science &amp; Technology</fullName>
+                <default>false</default>
+                <label>Science &amp; Technology</label>
+            </value>
+            <value>
+                <fullName>Self-Employment</fullName>
+                <default>false</default>
+                <label>Self-Employment</label>
+            </value>
+            <value>
+                <fullName>Sport &amp; Recreation</fullName>
+                <default>false</default>
+                <label>Sport &amp; Recreation</label>
+            </value>
+            <value>
+                <fullName>Trades &amp; Services</fullName>
+                <default>false</default>
+                <label>Trades &amp; Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

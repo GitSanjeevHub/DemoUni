@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Consultation_Change_To_Be_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>indicate whether a consultation change email needs to be sent for this consultation in the batch</description>
+    <externalId>false</externalId>
+    <label>Consultation Change To Be Sent</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

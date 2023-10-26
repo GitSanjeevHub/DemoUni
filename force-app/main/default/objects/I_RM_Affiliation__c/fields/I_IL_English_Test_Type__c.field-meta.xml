@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_English_Test_Type__c</fullName>
+    <description>Depicts the test type for English test</description>
+    <externalId>false</externalId>
+    <label>English Test Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_IL_Undertaken_English_Test__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IELTS (Academic)</fullName>
+                <default>false</default>
+                <label>IELTS (Academic)</label>
+            </value>
+            <value>
+                <fullName>IELTS (UK Visa and Immigration)</fullName>
+                <default>false</default>
+                <label>IELTS (UK Visa and Immigration)</label>
+            </value>
+            <value>
+                <fullName>Pearson Test of English (Academic) (PTE)</fullName>
+                <default>false</default>
+                <label>Pearson Test of English (Academic) (PTE)</label>
+            </value>
+            <value>
+                <fullName>TOEFL Internet based (iBT)</fullName>
+                <default>false</default>
+                <label>TOEFL Internet based (iBT)</label>
+            </value>
+            <value>
+                <fullName>Cambridge Certificate of Advanced English (CAE)</fullName>
+                <default>false</default>
+                <label>Cambridge Certificate of Advanced English (CAE)</label>
+            </value>
+            <value>
+                <fullName>Cambridge Certificate of Proficiency in English (CPE)</fullName>
+                <default>false</default>
+                <label>Cambridge Certificate of Proficiency in English (CPE)</label>
+            </value>
+            <value>
+                <fullName>Duolingo</fullName>
+                <default>false</default>
+                <label>Duolingo</label>
+            </value>
+            <value>
+                <fullName>Pearson&apos;s Versant test</fullName>
+                <default>false</default>
+                <label>Pearson&apos;s Versant test</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>IELTS (Academic)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>IELTS (UK Visa and Immigration)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Pearson Test of English (Academic) (PTE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>TOEFL Internet based (iBT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Cambridge Certificate of Advanced English (CAE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Cambridge Certificate of Proficiency in English (CPE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Duolingo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Pearson&apos;s Versant test</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

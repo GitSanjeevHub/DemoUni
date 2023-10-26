@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Patents</fullName>
+    <active>false</active>
+    <compactLayoutAssignment>Research_Output_Compact_Layout</compactLayoutAssignment>
+    <label>Patents</label>
+    <picklistValues>
+        <picklist>I_RS_Curated_Exhibition_OR_Event_Sub_Cat__c</picklist>
+        <values>
+            <fullName>Exhibition in a gallery or museum%2C or public event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Festival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other exhibition or event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web based exhibition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MyPub Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIS Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Language__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Live_Perf_Creative_Works_Sub_Cat__c</picklist>
+        <values>
+            <fullName>Dance %28live performance%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Music %28live performance%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other live performance of creative work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Play %28live performance%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Original_creative_works_Sub_Cat__c</picklist>
+        <values>
+            <fullName>Design%2Farchitectural work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other creative work %28including scholarly editions and scholarly translations%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textual creative work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visual art work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Publication_reporting_category__c</picklist>
+        <values>
+            <fullName>A1 - Books - Authored research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A2 - Books - Authored other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A3 - Books - Edited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A4 - Books - Revision%2FNew Edition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B - Book Chapter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BB - Non-DEST book chapter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C1 - Journal Articles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C2 - Journal Articles - Other refereed contribution to a Scholarly Journal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C3 - Journal Articles - Non Refereed Article</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C4 - Journal Articles - Letter or Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercialisation Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E1 - Conference Publication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E2 - Conference - Full paper%2C non refereed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E3 - Conference Publication - Extract of Paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E4 - Edited volume of conference proceedings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I - Patent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J1 - Original Creative Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J3 - Live Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J4 - Recorded or Rendered Creative Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J5 - Curated Exhibition or Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J6- Research Report for an External Body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M - Research Report or Pamphlet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portfolio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portfolio - J1 -Original Creative Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portfolio - J3 -Live Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portfolio - J4 - Recorded or Rendered Creative Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portfolio - J5 - Curated Exhibition or Event</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Recorded_or_rendered_works_Sub_Cat__c</picklist>
+        <values>
+            <fullName>Digital creative work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Film%2C video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inter-arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other recorded%2Frendered creative work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website%2Fweb exhibition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Research_Output_Status__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In preparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Published</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Published online</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Research_Report_Ext_Body_Sub_Cat__c</picklist>
+        <values>
+            <fullName>Industry research report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not-for-profit research report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other research report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public sector research report</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Type_of_Applied_Measure__c</picklist>
+        <values>
+            <fullName>NHMRC endorsed guidelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patent Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plant Breeders Rights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research commercialisation income</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

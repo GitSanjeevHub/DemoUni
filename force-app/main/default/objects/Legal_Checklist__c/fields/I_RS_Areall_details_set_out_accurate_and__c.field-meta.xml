@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Areall_details_set_out_accurate_and__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Are all details set out accurate and acceptable to LTU and the researcher(s)</inlineHelpText>
+    <label>Are All Details Set Out Accurate</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes-all checked below</fullName>
+                <default>false</default>
+                <label>Yes-all checked below</label>
+            </value>
+            <value>
+                <fullName>No-advice required</fullName>
+                <default>false</default>
+                <label>No-advice required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

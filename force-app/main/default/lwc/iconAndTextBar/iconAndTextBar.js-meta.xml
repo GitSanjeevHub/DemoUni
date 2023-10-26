@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>47.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__RecordPage</target>
+
+        <target>lightning__UtilityBar</target>
+        <target>lightning__FlowScreen</target>
+
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+            <targetConfig targets="lightning__AppPage,lightning__HomePage,lightning__RecordPage,
+            lightning__UtilityBar,lightning__FlowScreen,
+            lightningCommunity__Default">
+
+                <property name="iconName" label="Icon SLDS Name" type="String"
+                    description="Provides icon. See www.lightningdesignsystem.com/icons"/>
+
+                <property name="iconVariant" label="Icon SLDS Variant" type="String"
+                    description="For 'utility' icons, sets icon colour; success=green, warning=yellow, error=red"/>
+
+                <property name="iconSize" label="Icon SLDS Size" type="String"
+                    description="xx-small, x-small, small, medium, or large. Blank value=medium"/>
+
+                <property name="text" label="Text" type="String" required="required"/>
+
+                <property name="sldsPaddingClass" label="SLDS Padding Class" type="String"
+                    description="Provides padding. See www.lightningdesignsystem.com/utilities/padding"/>
+
+                <property name="sldsTextClass" label="SLDS Text Class" type="String"
+                    description="Customises text font. See www.lightningdesignsystem.com/utilities/text"/>
+
+                <property name="sldsBackgroundClass" label="SLDS Background Class" type="String"
+                    description="Customises background. Recommendation is 'slds-card', or blank"/>
+
+            </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

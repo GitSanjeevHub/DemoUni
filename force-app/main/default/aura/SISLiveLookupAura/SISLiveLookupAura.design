@@ -1,0 +1,27 @@
+<design:component>
+        <design:attribute name="selected_StudentID" label="StudentID"/>
+        <design:attribute name="selected_Salutation" label="Salutation" />
+        <design:attribute name="selected_FirstName" label="First Name"  />
+        <design:attribute name="selected_LastName" label="Last Name"  />
+        <design:attribute name="selected_PreferredGivenName" label="Preferred GivenName"  />
+        <design:attribute name="selected_FormalName" label="Formal Name"  />
+        <design:attribute name="selected_Gender" label="Gender"  />
+        <design:attribute name="selected_CountryOfBirth" label="Country Of Birth" />
+        <design:attribute name="selected_UserName" label="User Name" />
+        <design:attribute name="selected_ATSI" label="ATSI (output only)" />
+        <design:attribute name="selected_CourseStatus" label="Course Status" />
+        <design:attribute name="selected_CitizenshipStatus" label="Citizenship Status" />
+        <design:attribute name="selected_CountryOfCitizenship" label="Country Of Citizenship" />
+        <design:attribute name="selected_CountryOfResidence" label="Country Of Residence" />
+        <design:attribute name="selected_email" label="Email" />
+        <design:attribute name="selected_ActiveStudent" label="Active Student" />
+        <design:attribute name="selected_FieldOfEducation" label="Field Of Eductaion" />
+        <design:attribute name="selected_OtherGivenNames" label="Other Given Names" />
+        <design:attribute name="selected_OrgUnitCode" label="Org Unit Code" />
+        <design:attribute name="selected_OrgUnitDesc" label="Org Unit Desc" />
+        <design:attribute name="selected_Deceased" label="Deceased" />
+        <design:attribute name="selected_CourseCode" label="Course Code" />
+        <design:attribute name="selected_CourseDesc" label="Course Desc" />
+        <design:attribute name="selected_CreatedTimestamp" label="Created Timestamp" />
+        <design:attribute name="selected_ModifiedTimestamp" label="Modified Timestamp" />
+</design:component>

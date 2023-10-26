@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Finance_Person_Assigned__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Finance Person Assigned</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Contact.I_RS_Related_User__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.I_RS_Related_User__r.I_RS_Is_Researcher_User__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Cost Centres</relationshipLabel>
+    <relationshipName>Cost_Centres</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

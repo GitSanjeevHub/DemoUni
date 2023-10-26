@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DisplayonAcademicProfileComercialisation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+     ISPICKVAL(I_RS_Project_Sub_type__c,&apos;Commercialisation&apos;),
+     NOT(ISPICKVAL(I_RS_Display_on_Researcher_Profile__c,&quot;Not Specified&quot;))
+   )</errorConditionFormula>
+    <errorDisplayField>I_RS_Display_on_Researcher_Profile__c</errorDisplayField>
+    <errorMessage>This value can&apos;t be selected for Project Type &apos;Commercialisation&apos;</errorMessage>
+</ValidationRule>

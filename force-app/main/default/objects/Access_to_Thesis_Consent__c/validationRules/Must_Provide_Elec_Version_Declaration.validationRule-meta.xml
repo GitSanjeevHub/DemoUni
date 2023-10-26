@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_Provide_Elec_Version_Declaration</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISNEW() &amp;&amp; TEXT(I_RS_Status__c) &lt;&gt; &apos;Draft&apos; &amp;&amp;
+
+(
+(I_RS_Full_Electronic_Version__c = TRUE &amp;&amp;  I_RS_Redacted_Electronic_Version__c = TRUE)
+
+||
+
+(I_RS_Full_Electronic_Version__c = FALSE &amp;&amp;  I_RS_Redacted_Electronic_Version__c = FALSE)
+)</errorConditionFormula>
+    <errorMessage>Please provide precisely one Electronic Version Declaration</errorMessage>
+</ValidationRule>

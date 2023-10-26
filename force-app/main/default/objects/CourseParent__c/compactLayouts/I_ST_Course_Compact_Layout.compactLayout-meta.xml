@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Course_Compact_Layout</fullName>
+    <fields>I_ST_Advertised_Title__c</fields>
+    <fields>L_AD_Course_Parent_Version_Year__c</fields>
+    <fields>L_AD_Study_Level_Name__c</fields>
+    <fields>L_AD_Course_Type_Name__c</fields>
+    <fields>L_AD_Course_Parent_Status__c</fields>
+    <fields>I_ST_Full_Time_Duration_Value__c</fields>
+    <fields>I_IL_Marketing_Discipline__c</fields>
+    <label>Course Compact Layout</label>
+</CompactLayout>

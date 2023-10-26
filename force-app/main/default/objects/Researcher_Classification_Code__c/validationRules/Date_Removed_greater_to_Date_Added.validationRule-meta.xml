@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Removed_greater_to_Date_Added</fullName>
+    <active>true</active>
+    <description>Date Removed can&apos;t be less than Date Added</description>
+    <errorConditionFormula>I_RS_Date_Removed__c &lt;  I_RS_Date_Added__c</errorConditionFormula>
+    <errorDisplayField>I_RS_Date_Removed__c</errorDisplayField>
+    <errorMessage>Date Removed can&apos;t be less than Date Added</errorMessage>
+</ValidationRule>

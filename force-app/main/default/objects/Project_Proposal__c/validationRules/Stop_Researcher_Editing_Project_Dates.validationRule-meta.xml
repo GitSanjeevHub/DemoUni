@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stop_Researcher_Editing_Project_Dates</fullName>
+    <active>true</active>
+    <description>This validation stops researcher updating the Project Start Date and End Date after project status moves from Draft Proposal</description>
+    <errorConditionFormula>AND(
+
+($User.I_RS_Is_Researcher_User__c = &apos;1&apos;),
+NOT(ISPICKVAL(I_RS_Status__c , &quot;Draft Proposal&quot;)),
+
+OR(
+ISCHANGED( I_RS_Project_Start_Date__c ),
+ISCHANGED( I_RS_Project_End_Date__c )
+), 
+OR(
+RecordType.DeveloperName=&quot;Placeholder&quot;,
+RecordType.DeveloperName=&quot;I_RS_Project&quot;
+)
+
+)</errorConditionFormula>
+    <errorMessage>Please contact the Research Office to change the Project Dates.</errorMessage>
+</ValidationRule>

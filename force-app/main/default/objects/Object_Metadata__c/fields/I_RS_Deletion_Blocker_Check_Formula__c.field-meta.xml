@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Deletion_Blocker_Check_Formula__c</fullName>
+    <description>If the formula field specific equates to false, then a deletion of the given record is invalid and should be blocked in code.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the formula field specific equates to false, then a deletion of the given record is invalid and should be blocked in code.</inlineHelpText>
+    <label>Deletion Blocker Check-Formula</label>
+    <length>43</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

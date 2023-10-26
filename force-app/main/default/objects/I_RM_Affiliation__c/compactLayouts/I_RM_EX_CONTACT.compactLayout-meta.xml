@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_EX_CONTACT</fullName>
+    <fields>I_RM_Role__c</fields>
+    <fields>I_RM_StartDate__c</fields>
+    <fields>I_RM_EndDate__c</fields>
+    <fields>I_RM_Status__c</fields>
+    <fields>I_RM_Account__c</fields>
+    <fields>I_RM_Enquirer_Type__c</fields>
+    <fields>I_RM_Aspire_Flag__c</fields>
+    <fields>I_RM_Position_Title__c</fields>
+    <label>I_RM_EX_CONTACT</label>
+</CompactLayout>

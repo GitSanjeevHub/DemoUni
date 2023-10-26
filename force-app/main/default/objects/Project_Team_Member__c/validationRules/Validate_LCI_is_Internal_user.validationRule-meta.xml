@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_LCI_is_Internal_user</fullName>
+    <active>true</active>
+    <description>This validation checks to ensure that only contacts with related users are selected as LCI</description>
+    <errorConditionFormula>AND(
+
+OR(
+ISNEW(),
+ISCHANGED(I_RS_Role__c)
+),
+ISPICKVAL(I_RS_Role__c, &apos;Lead Chief Investigator&apos;),
+
+OR(
+ ISBLANK( I_RS_Project_Team_Member__r.I_RS_Related_User__c ),
+ ISNULL(I_RS_Project_Team_Member__r.I_RS_Related_User__c) 
+)
+)</errorConditionFormula>
+    <errorMessage>The Lead Chief Investigator must have a PRIME user account</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Team_Member_User</fullName>
+    <active>true</active>
+    <description>You cannot change the assigned User of a Team Member as the custom record sharing code does not support this</description>
+    <errorConditionFormula>ISCHANGED(   I_RS_Project_Team_Member__c )</errorConditionFormula>
+    <errorDisplayField>I_RS_Project_Team_Member__c</errorDisplayField>
+    <errorMessage>You cannot change the Project Team Member. Please mark this record as inactive and create a new one.</errorMessage>
+</ValidationRule>

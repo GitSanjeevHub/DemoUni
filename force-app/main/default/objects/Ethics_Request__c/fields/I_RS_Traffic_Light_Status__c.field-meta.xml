@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Traffic_Light_Status__c</fullName>
+    <description>Represents driving logic for Milestone Task Status traffic light display field</description>
+    <externalId>false</externalId>
+    <formula>/*Suspended? Always Red*/
+IF (ISPICKVAL(I_RS_Ethics_Application_Review_Outcome__c, &apos;Suspended&apos;) || ISPICKVAL(I_RS_Ethics_Application_Review_Outcome__c, &apos;Expired&apos;),
+&apos;Red&apos;,
+
+/*Expired or Approved? Depends On Milestones*/
+IF (ISPICKVAL(I_RS_Ethics_Application_Review_Outcome__c, &apos;Approved&apos;),
+
+(
+IF(I_RS_Tasks_with_Milestone_Status_Red__c &gt; 0, &apos;Red&apos;,
+
+IF (I_RS_Tasks_with_Milestone_Status_Yellow__c &gt; 0, &apos;Yellow&apos;,
+
+IF (I_RS_Tasks_with_Milestone_Status_Green__c &gt; 0, &apos;Green&apos;,
+
+&apos;&apos;)))
+)
+,
+
+/*None of the above statuses, leave as blank*/
+&apos;&apos;
+
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Traffic Light Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

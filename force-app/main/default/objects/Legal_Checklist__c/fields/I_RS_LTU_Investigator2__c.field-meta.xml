@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_LTU_Investigator2__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Lead Chief Investigator</inlineHelpText>
+    <label>LTU Investigator</label>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Legal Checklists (Lead Chief Investigator)</relationshipLabel>
+    <relationshipName>Legal_Checklists1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

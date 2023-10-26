@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Rights_for_Researchers_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+NOT(ISNEW()),
+ISCHANGED(I_RS_Status__c),
+TEXT(I_RS_Status__c) &lt;&gt; &quot;Review By Research Office&quot;
+),
+
+AND(
+$User.I_RS_Is_Researcher_User__c = &apos;1&apos;,
+NOT(ISNEW()),
+NOT(ISPICKVAL(PRIORVALUE(I_RS_Status__c),&quot;Draft&quot;)),
+TEXT(I_RS_Status__c) = &quot;Review By Research Office&quot;
+)
+)</errorConditionFormula>
+    <errorMessage>Please contact Research Office if this record needs to be changed</errorMessage>
+</ValidationRule>

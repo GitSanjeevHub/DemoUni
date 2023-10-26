@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Closure_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Closure Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Relinquished</fullName>
+                <default>false</default>
+                <label>Relinquished</label>
+            </value>
+            <value>
+                <fullName>Transferred out</fullName>
+                <default>false</default>
+                <label>Transferred out</label>
+            </value>
+            <value>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+                <label>Terminated</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Project Closed</controllingFieldValue>
+            <valueName>Relinquished</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Closed</controllingFieldValue>
+            <valueName>Transferred out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Closed</controllingFieldValue>
+            <valueName>Terminated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Closed</controllingFieldValue>
+            <valueName>Complete</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

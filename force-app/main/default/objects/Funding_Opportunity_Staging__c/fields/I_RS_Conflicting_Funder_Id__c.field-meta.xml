@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Conflicting_Funder_Id__c</fullName>
+    <description>Is true if the Funder Id on this Staging record and the Funder Id of the related Org is consistent - this means either a data error or that the funder has changed on RP&apos;s end.</description>
+    <externalId>false</externalId>
+    <formula>!ISBLANK(I_RS_Funding_Opportunity_Record_Id__r.I_RS_Organisation__r.I_RS_Funder_Id__c) &amp;&amp;
+
+I_RS_Primary_Funder_Id__c &lt;&gt; I_RS_Funding_Opportunity_Record_Id__r.I_RS_Organisation__r.I_RS_Funder_Id__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Conflicting Funder Id</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

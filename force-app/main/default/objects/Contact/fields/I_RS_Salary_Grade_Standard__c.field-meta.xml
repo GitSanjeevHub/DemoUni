@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Salary_Grade_Standard__c</fullName>
+    <description>The Standard non-HR version of Salary Grade, e.g. HEO1-1</description>
+    <externalId>false</externalId>
+    <label>Salary Grade</label>
+    <length>30</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

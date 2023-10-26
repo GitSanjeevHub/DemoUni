@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Email_Formula__c</fullName>
+    <description>Fetches email based on the role of associated affiliation</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( SuppliedEmail )  ,   I_RM_Affiliation__r.I_RM_To_Email__c   , SuppliedEmail  )</formula>
+    <label>Email To be Used</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Batch_Delay_Upon_Failure_Multiplier__c</fullName>
+    <defaultValue>1</defaultValue>
+    <description>Optionally, you can multiplicatively increase the Batch Delay Upon Failure with every time a specific batch fails. E.g. if 2, the delay would increase from 10 minutes to 20, 40 etc. Alternatively, leave it at 1.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Optionally, you can multiplicatively increase the Batch Delay Upon Failure with every time a specific batch fails. E.g. if 2, the delay would increase from 10 minutes to 20, 40 etc. Alternatively, leave it at 1.</inlineHelpText>
+    <label>Batch Delay Upon Failure Multiplier</label>
+    <precision>11</precision>
+    <required>true</required>
+    <scale>1</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Agreement_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Agreement Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Articulation Agreement</fullName>
+                <default>false</default>
+                <label>Articulation Agreement</label>
+            </value>
+            <value>
+                <fullName>Clinical Education Agreements (health)</fullName>
+                <default>false</default>
+                <label>Clinical Education Agreements (health)</label>
+            </value>
+            <value>
+                <fullName>Clinical Trial Site Agreement</fullName>
+                <default>false</default>
+                <label>Clinical Trial Site Agreement</label>
+            </value>
+            <value>
+                <fullName>Commercialisation Agreement</fullName>
+                <default>false</default>
+                <label>Commercialisation Agreement</label>
+            </value>
+            <value>
+                <fullName>Commercialisation Licence</fullName>
+                <default>false</default>
+                <label>Commercialisation Licence</label>
+            </value>
+            <value>
+                <fullName>Confidentiality agreements</fullName>
+                <default>false</default>
+                <label>Confidentiality agreements</label>
+            </value>
+            <value>
+                <fullName>Confidentiality Deed/NDA</fullName>
+                <default>false</default>
+                <label>Confidentiality Deed/NDA</label>
+            </value>
+            <value>
+                <fullName>Consulting Services Agreement (Non-Research)</fullName>
+                <default>false</default>
+                <label>Consulting Services Agreement (Non-Research)</label>
+            </value>
+            <value>
+                <fullName>Contractors Agreement (services to LTU)</fullName>
+                <default>false</default>
+                <label>Contractors Agreement (services to LTU)</label>
+            </value>
+            <value>
+                <fullName>Courseware Licensing</fullName>
+                <default>false</default>
+                <label>Courseware Licensing</label>
+            </value>
+            <value>
+                <fullName>Data Transfer Agreement</fullName>
+                <default>false</default>
+                <label>Data Transfer Agreement</label>
+            </value>
+            <value>
+                <fullName>Grant Funding Agreement</fullName>
+                <default>false</default>
+                <label>Grant Funding Agreement</label>
+            </value>
+            <value>
+                <fullName>Honorary/Adjunct/Visitors Deed</fullName>
+                <default>false</default>
+                <label>Honorary/Adjunct/Visitors Deed</label>
+            </value>
+            <value>
+                <fullName>Hospital/Health Services Agreement</fullName>
+                <default>false</default>
+                <label>Hospital/Health Services Agreement</label>
+            </value>
+            <value>
+                <fullName>Individual Student Agreement - Placements</fullName>
+                <default>false</default>
+                <label>Individual Student Agreement - Placements</label>
+            </value>
+            <value>
+                <fullName>Industry PhD Agreement</fullName>
+                <default>false</default>
+                <label>Industry PhD Agreement</label>
+            </value>
+            <value>
+                <fullName>Intellectual Property Assignment Deed</fullName>
+                <default>false</default>
+                <label>Intellectual Property Assignment Deed</label>
+            </value>
+            <value>
+                <fullName>International Agent Agreement</fullName>
+                <default>false</default>
+                <label>International Agent Agreement</label>
+            </value>
+            <value>
+                <fullName>Lease Agreement</fullName>
+                <default>false</default>
+                <label>Lease Agreement</label>
+            </value>
+            <value>
+                <fullName>Licence Agreement (receiving)</fullName>
+                <default>false</default>
+                <label>Licence Agreement (receiving)</label>
+            </value>
+            <value>
+                <fullName>Licence Agreement (supplying)</fullName>
+                <default>false</default>
+                <label>Licence Agreement (supplying)</label>
+            </value>
+            <value>
+                <fullName>Licence to Occupy</fullName>
+                <default>false</default>
+                <label>Licence to Occupy</label>
+            </value>
+            <value>
+                <fullName>Master Services Agreement</fullName>
+                <default>false</default>
+                <label>Master Services Agreement</label>
+            </value>
+            <value>
+                <fullName>Material/Data Transfer Agreement (receiving)</fullName>
+                <default>false</default>
+                <label>Material/Data Transfer Agreement (receiving)</label>
+            </value>
+            <value>
+                <fullName>Material/Data Transfer Agreement (supplying)</fullName>
+                <default>false</default>
+                <label>Material/Data Transfer Agreement (supplying)</label>
+            </value>
+            <value>
+                <fullName>Material Transfer Agreement (receiving)</fullName>
+                <default>false</default>
+                <label>Material Transfer Agreement (receiving)</label>
+            </value>
+            <value>
+                <fullName>Material Transfer Agreement (supplying)</fullName>
+                <default>false</default>
+                <label>Material Transfer Agreement (supplying)</label>
+            </value>
+            <value>
+                <fullName>Memorandum of Understanding (MOU)</fullName>
+                <default>false</default>
+                <label>Memorandum of Understanding (MOU)</label>
+            </value>
+            <value>
+                <fullName>Mobility – Overseas Short Programs</fullName>
+                <default>false</default>
+                <label>Mobility – Overseas Short Programs</label>
+            </value>
+            <value>
+                <fullName>Mobility – Semester Exchange</fullName>
+                <default>false</default>
+                <label>Mobility – Semester Exchange</label>
+            </value>
+            <value>
+                <fullName>Mobility – Study Abroad</fullName>
+                <default>false</default>
+                <label>Mobility – Study Abroad</label>
+            </value>
+            <value>
+                <fullName>Mobility – Study Abroad and Exchange</fullName>
+                <default>false</default>
+                <label>Mobility – Study Abroad and Exchange</label>
+            </value>
+            <value>
+                <fullName>Mobility – Third Party Provider</fullName>
+                <default>false</default>
+                <label>Mobility – Third Party Provider</label>
+            </value>
+            <value>
+                <fullName>Multi-Institutional Agreement (MIA)</fullName>
+                <default>false</default>
+                <label>Multi-Institutional Agreement (MIA)</label>
+            </value>
+            <value>
+                <fullName>NDA (non-disclosure)</fullName>
+                <default>false</default>
+                <label>NDA (non-disclosure)</label>
+            </value>
+            <value>
+                <fullName>Novation Deed</fullName>
+                <default>false</default>
+                <label>Novation Deed</label>
+            </value>
+            <value>
+                <fullName>Overarching Agreement - Placements</fullName>
+                <default>false</default>
+                <label>Overarching Agreement - Placements</label>
+            </value>
+            <value>
+                <fullName>Partnership/Participation Agreement</fullName>
+                <default>false</default>
+                <label>Partnership/Participation Agreement</label>
+            </value>
+            <value>
+                <fullName>Rental Agreement</fullName>
+                <default>false</default>
+                <label>Rental Agreement</label>
+            </value>
+            <value>
+                <fullName>Research Collaboration Agreement</fullName>
+                <default>false</default>
+                <label>Research Collaboration Agreement</label>
+            </value>
+            <value>
+                <fullName>Research Consulting Services Agreement</fullName>
+                <default>false</default>
+                <label>Research Consulting Services Agreement</label>
+            </value>
+            <value>
+                <fullName>Research Consulting Subcontract</fullName>
+                <default>false</default>
+                <label>Research Consulting Subcontract</label>
+            </value>
+            <value>
+                <fullName>Research Services Master Service Agreement</fullName>
+                <default>false</default>
+                <label>Research Services Master Service Agreement</label>
+            </value>
+            <value>
+                <fullName>Scholarship Agreement</fullName>
+                <default>false</default>
+                <label>Scholarship Agreement</label>
+            </value>
+            <value>
+                <fullName>Shareholders Agreement</fullName>
+                <default>false</default>
+                <label>Shareholders Agreement</label>
+            </value>
+            <value>
+                <fullName>Start-up / Spin-out Related Agreement</fullName>
+                <default>false</default>
+                <label>Start-up / Spin-out Related Agreement</label>
+            </value>
+            <value>
+                <fullName>Strategic Relationship and Services Agreement</fullName>
+                <default>false</default>
+                <label>Strategic Relationship and Services Agreement</label>
+            </value>
+            <value>
+                <fullName>Student Mobility Agreement</fullName>
+                <default>false</default>
+                <label>Student Mobility Agreement</label>
+            </value>
+            <value>
+                <fullName>Student Placement Agreement</fullName>
+                <default>false</default>
+                <label>Student Placement Agreement</label>
+            </value>
+            <value>
+                <fullName>Student Researcher Deed</fullName>
+                <default>false</default>
+                <label>Student Researcher Deed</label>
+            </value>
+            <value>
+                <fullName>Subcontract</fullName>
+                <default>false</default>
+                <label>Subcontract</label>
+            </value>
+            <value>
+                <fullName>Subscription Agreement</fullName>
+                <default>false</default>
+                <label>Subscription Agreement</label>
+            </value>
+            <value>
+                <fullName>Third Party Teaching Agreement</fullName>
+                <default>false</default>
+                <label>Third Party Teaching Agreement</label>
+            </value>
+            <value>
+                <fullName>Variation / Termination Deed/Agreement</fullName>
+                <default>false</default>
+                <label>Variation / Termination Deed/Agreement</label>
+            </value>
+            <value>
+                <fullName>Volunteer Deed</fullName>
+                <default>false</default>
+                <label>Volunteer Deed</label>
+            </value>
+            <value>
+                <fullName>WBL Agreement</fullName>
+                <default>false</default>
+                <label>WBL Agreement</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

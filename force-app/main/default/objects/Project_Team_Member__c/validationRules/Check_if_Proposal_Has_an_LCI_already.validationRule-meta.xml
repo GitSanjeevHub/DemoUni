@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_if_Proposal_Has_an_LCI_already</fullName>
+    <active>true</active>
+    <description>This validation will ensure there is only one LCI at any given point of time.</description>
+    <errorConditionFormula>AND( 
+	(I_RS_Project_Proposal__r.I_RS_Number_of_Lead_Chief_Investigator__c &gt; 0),
+
+	I_RS_Active__c ,
+
+	OR(
+		AND(
+			ISNEW(),
+			ISPICKVAL( I_RS_Role__c , &quot;Lead Chief Investigator&quot;) 
+		),
+
+		AND(
+			OR(
+				ISCHANGED(I_RS_Role__c ) ,
+				ISCHANGED(I_RS_Active__c )
+			),
+			ISPICKVAL( I_RS_Role__c , &quot;Lead Chief Investigator&quot;) 
+		)
+	)
+)</errorConditionFormula>
+    <errorMessage>The Project Proposal already has a Lead Chief Investigator.</errorMessage>
+</ValidationRule>

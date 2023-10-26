@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_La_Trobe_Student__c</fullName>
+    <description>Contact has a student Id and are linked to a La Trobe Organisation</description>
+    <externalId>false</externalId>
+    <formula>!ISBLANK(I_RS_Student_Id__c) &amp;&amp;
+Account.I_RS_Part_of_La_Trobe__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>La Trobe Student</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

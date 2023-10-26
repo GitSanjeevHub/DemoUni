@@ -1,0 +1,214 @@
+<!--
+ - Created by burnside on 2019-05-20.
+ -->
+
+<aura:component description="ResearchOpportunitySearch_LogicCondition">
+
+    <aura:attribute name="filter" type="Object" default="{}"/>
+
+    <aura:attribute name="filterSelectionOptions" type="List"/>
+    <aura:attribute name="trueOrFalseOptions" type="List"/>
+    <aura:attribute name="HERDCCategoryOptions" type="List"/>
+    <aura:attribute name="opportunityTypeOptions" type="List"/>
+
+    <aura:attribute name="validOperators" type="List"/>
+    <aura:attribute name="displayOperator" type="string"/>
+    <aura:attribute name="operatorFieldRequired" type="boolean" default="false"/>
+
+    <aura:attribute name="displayValue" type="object" />
+    <aura:attribute name="lookupValue" type="object" />
+
+    <!--<aura:attribute name="filterType" type="string" />-->
+
+    <aura:registerEvent name="filterDelete" type="c:ResearchOpportunityList_FilterDelete"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="change" value="{!v.lookupValue}" action="{!c.handleLookupValueChange}"/>
+
+    <div class="slds-col slds-size--1-of-12">
+        <div class="slds-align--absolute-center">
+            {!v.filter.index + 1}
+        </div>
+    </div>
+
+    <aura:if isTrue="{!(!v.filter.static)}">
+
+        <div class="{!(v.operatorFieldRequired ? 'slds-col slds-size--6-of-12' : 'slds-col slds-size--10-of-12')}">
+
+            <lightning:combobox
+                placeholder="Select a Filter"
+                options="{!v.filterSelectionOptions}"
+                value="{!v.filter.filterSelection}"
+                variant="label-hidden"
+                onchange="{!c.handleFilterSelectionChange}"
+                />
+
+        <!--<lightning:select value="{!v.filter.filterType}">
+            <option value="keywords">Keywords</option>
+        </lightning:select>-->
+        </div>
+
+
+        <aura:if isTrue="{!v.validOperators.length}">
+        <div class="slds-col slds-size--4-of-12">
+
+            <lightning:combobox
+                placeholder="Select Filter"
+                label=""
+                value="{!v.displayOperator}"
+                variant="label-hidden"
+                options="{!v.validOperators}"
+                onchange="{!c.handleFilterOperatorChange}"
+            />
+
+        </div>
+    </aura:if>
+
+    <div class="slds-col slds-size--1-of-12">
+    </div>
+
+    <div class="slds-col slds-size--3-of-12">
+    </div>
+
+    <div class="slds-col slds-size--8-of-12">
+
+        <aura:if isTrue="{!v.filter.filterType == 'text'}">
+            <lightning:input
+                    label=""
+                    type="text"
+                    value="{!v.displayValue}"
+                    required="true"
+                    variant="label-hidden"
+                    onblur="{!c.handleFilterValueChange}"
+            />
+        </aura:if>
+
+        <aura:if isTrue="{!v.filter.filterType == 'relatedRecords'}">
+
+            <aura:if isTrue="{!v.filter.filterSelection == 'FORCodes'}">
+
+                <c:strike_multi_lookup
+                        object="Classification_Master__c"
+                        searchField="I_RS_Full_Classification_Name__c"
+                        secondSearchField="I_RS_Classification_Code__c"
+                        subtitleField="I_RS_Classification_Code__c"
+                        value="{!v.lookupValue}"
+                        limit="10"
+                />
+
+            </aura:if>
+
+        </aura:if>
+
+        <aura:if isTrue="{!v.filter.filterType == 'date'}">
+
+            <lightning:input
+                    type="date"
+                    value="{!v.displayValue}"
+                    required="true"
+                    variant="label-hidden"
+                    onblur="{!c.handleFilterValueChange}"
+                    onchange="{!c.handleFilterValueChange}"
+            />
+
+        </aura:if>
+
+
+        <!--<aura:if isTrue="{!v.filter.filterType == 'lookup'}">
+
+            <c:strike_lookup
+                object="Account"
+                searchField="Name"
+                showRecentRecords="false"
+                value="{!v.displayValue}"
+            />
+
+        </aura:if>-->
+
+        <aura:if isTrue="{!v.filter.filterType == 'number'}">
+
+            <lightning:input
+                    type="number"
+                    value="{!v.displayValue}"
+                    variant="label-hidden"
+                    onblur="{!c.handleFilterValueChange}"
+            />
+
+        </aura:if>
+
+
+        <aura:if isTrue="{!v.filter.filterType == 'boolean'}">
+
+            <lightning:combobox
+                    label=""
+                    value="{!v.displayValue}"
+                    variant="label-hidden"
+                    onchange="{!c.handleFilterValueChange}"
+                    options="{!v.trueOrFalseOptions}"
+            />
+        </aura:if>
+
+
+        <aura:if isTrue="{!v.filter.filterType == 'picklist'}">
+
+
+            <aura:if isTrue="{!v.filter.filterSelection == 'HERDCCategory'}">
+
+                <c:lwcpicklist
+                    variant="label-hidden"
+                    objectType="Research_Opportunity__c"
+                    selectedField="I_RS_Funding_Category__c"
+                    selectedValue="{!v.displayValue}"
+                    onchange="{!c.handlePicklistValueChange}"
+                />
+
+            </aura:if>
+
+
+            <aura:if isTrue="{!v.filter.filterSelection == 'opportunityType'}">
+
+                <c:lwcpicklist
+                    variant="label-hidden"
+                    objectType="Research_Opportunity__c"
+                    selectedField="I_RS_Type_of_Opportunity__c"
+                    selectedValue="{!v.displayValue}"
+                    onchange="{!c.handlePicklistValueChange}"
+                />
+
+            </aura:if>
+
+        </aura:if>
+    </div>
+
+        <aura:set attribute="else">
+
+            <div class="slds-col slds-size--10-of-12">
+
+                <lightning:input
+                    label=""
+                    placeholder='Keyword(s). Use double-quotes for exact phrase.'
+                    type="text"
+                    value="{!v.displayValue}"
+                    required="true"
+                    variant="label-hidden"
+                    onblur="{!c.handleFilterValueChange}"
+                />
+
+            </div>
+
+        </aura:set>
+
+    </aura:if>
+    <div class="slds-col slds-size--1-of-12">
+
+        <!--<aura:if isTrue="{!(!v.filter.static)}">-->
+            <div class="slds-align--absolute-center">
+                <div onclick="{!c.handleRemoveFilter}">
+                    X
+                </div>
+            </div>
+        <!--</aura:if>-->
+    </div>
+
+
+</aura:component>

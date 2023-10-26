@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Lead_Source_sub_category__c</fullName>
+    <description>Depicts the sub source of the Affiliation</description>
+    <externalId>false</externalId>
+    <label>Source Sub Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RM_Lead_Source_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>I_ST_Lead_Source_sub_category</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Activity Booking form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Ask a Question form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Aspire Keep in touch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Keep in touch form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Aspire Keep In Touch - Early Entry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Aspire Keep In Touch - Community</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Aspire Keep In Touch - Early Uni Study</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Aspire Keep In Touch - Achieve Plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Interest Page</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Year 11 Early Entry form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Preferences Checklist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Open Day</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Other form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>School Publication Order Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>Stay Connected Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Form</controllingFieldValue>
+            <valueName>HEMS Web form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Migrated</controllingFieldValue>
+            <valueName>Migrated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subscription Sites</controllingFieldValue>
+            <valueName>Keystone Academic Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subscription Sites</controllingFieldValue>
+            <valueName>IDP Connect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subscription Sites</controllingFieldValue>
+            <valueName>Studies in Australia (Good Education)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subscription Sites</controllingFieldValue>
+            <valueName>Topuniversities.com</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subscription Sites</controllingFieldValue>
+            <valueName>Study International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subscription Sites</controllingFieldValue>
+            <valueName>Times Higher Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subscription Sites</controllingFieldValue>
+            <valueName>Study Australia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subscription Sites</controllingFieldValue>
+            <valueName>Hotcourses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subscription Sites</controllingFieldValue>
+            <valueName>Study Melbourne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>QSES</controllingFieldValue>
+            <valueName>QSES-Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <valueName>Postgraduate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <valueName>Undergraduate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <controllingFieldValue>Loaded from list</controllingFieldValue>
+            <controllingFieldValue>Physical</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <valueName>Face-Face Consultation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <valueName>Phone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <valueName>Web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>In Person</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>NGV Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Public Lecture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Virtual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Course Webinars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>General Webinars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>University Business Partner Office Visits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>University Business Partner Marketing Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>University Business Partner Admission days</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>University RoadShows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>University Business Partner Web marketing campaigns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>University Marketing Campaigns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Partner institution events (Eg. LTCA, SunnyTAFE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Onshore School Lists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event</controllingFieldValue>
+            <valueName>Offshore School Visits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loaded from list</controllingFieldValue>
+            <valueName>Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loaded from list</controllingFieldValue>
+            <valueName>Event Registration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loaded from list</controllingFieldValue>
+            <valueName>Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>Campaign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>FlexiDirect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>SIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>OUA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>VTAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>UAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>CAMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>SIS-Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other system</controllingFieldValue>
+            <valueName>SIS-Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical</controllingFieldValue>
+            <valueName>Contact Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical</controllingFieldValue>
+            <valueName>Other Marketing Activation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <valueName>WhatsApp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <valueName>Facebook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <valueName>WeChat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <valueName>Weibo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <valueName>Instagram</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <valueName>LinkedIn</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

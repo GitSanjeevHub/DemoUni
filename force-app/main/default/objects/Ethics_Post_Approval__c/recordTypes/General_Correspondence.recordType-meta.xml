@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Correspondence</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Ethics_Post_Approval_Compact_Layout</compactLayoutAssignment>
+    <label>General Correspondence</label>
+    <picklistValues>
+        <picklist>I_RS_Annual_Final_Report_Type__c</picklist>
+        <values>
+            <fullName>Annual Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Report</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Ethics_Request_Type__c</picklist>
+        <values>
+            <fullName>Animal Ethics Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Ethics Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Governance Authorisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOP%2FPhenotype Report</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Ratified__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ratified</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>To Be Ratified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Review_Outcome__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Ready for Committee Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outcome Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subject to</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Status__c</picklist>
+        <values>
+            <fullName>Assigned for Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Outcome Communicated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review by Research Office</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

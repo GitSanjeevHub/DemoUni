@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Address_for_Notices__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+NOT(ISBLANK(I_RS_Agreement_Title__r.I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.ShippingStreet)), I_RS_Agreement_Title__r.I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.ShippingStreet &amp; BR(), &quot;&quot;) &amp;
+
+IF(
+NOT(ISBLANK(I_RS_Agreement_Title__r.I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.ShippingCity )), I_RS_Agreement_Title__r.I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.ShippingCity &amp; &quot; &quot;, &quot;&quot;) &amp;
+
+IF(
+NOT(ISBLANK(I_RS_Agreement_Title__r.I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.ShippingState)), I_RS_Agreement_Title__r.I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.ShippingState &amp; BR(), &quot;&quot;) &amp;
+
+IF(
+NOT(ISBLANK(I_RS_Agreement_Title__r.I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.ShippingPostalCode)), I_RS_Agreement_Title__r.I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.ShippingPostalCode &amp; BR(), &quot;&quot;) &amp;
+
+IF(
+NOT(ISBLANK(I_RS_Agreement_Title__r.I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.ShippingCountry)), I_RS_Agreement_Title__r.I_RS_Project_Proposal__r.I_RS_Account_Organisation__r.ShippingCountry, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Address For Notices</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

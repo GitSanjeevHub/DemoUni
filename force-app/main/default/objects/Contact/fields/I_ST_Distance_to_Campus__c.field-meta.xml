@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Distance_to_Campus__c</fullName>
+    <description>Created for Lead Scoring</description>
+    <externalId>false</externalId>
+    <label>Distance to Campus</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Postcode 0 - 15km Of Campus</fullName>
+                <default>false</default>
+                <label>Postcode 0 - 15km Of Campus</label>
+            </value>
+            <value>
+                <fullName>Postcode 15 - 30km Of Campus</fullName>
+                <default>false</default>
+                <label>Postcode 15 - 30km Of Campus</label>
+            </value>
+            <value>
+                <fullName>Postcode 30 - 50km Of Campus</fullName>
+                <default>false</default>
+                <label>Postcode 30 - 50km Of Campus</label>
+            </value>
+            <value>
+                <fullName>Postcode &gt;50km Of Campus</fullName>
+                <default>false</default>
+                <label>Postcode &gt;50km Of Campus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

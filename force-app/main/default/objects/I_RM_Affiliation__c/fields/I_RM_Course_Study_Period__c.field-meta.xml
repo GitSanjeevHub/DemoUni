@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Course_Study_Period__c</fullName>
+    <description>This field Shows the School from Course Availability</description>
+    <externalId>false</externalId>
+    <formula>TEXT(I_RM_Course_Availability__r.L_AD_Intake_Period__r.L_AD_Intake_Period_Name__c)</formula>
+    <inlineHelpText>Shows the Course Availability&apos;s Intake Period</inlineHelpText>
+    <label>Intake Period</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

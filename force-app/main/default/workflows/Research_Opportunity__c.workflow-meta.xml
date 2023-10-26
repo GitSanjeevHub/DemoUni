@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Research_Opportunity_Send_Email_to_Research_Office_Contact</fullName>
+        <description>Research Opportunity: Send Email to Research Office Contact</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Research_Office_Contact__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Research_Opportunity_Research_Office_Contact_Reassignment</template>
+    </alerts>
+    <rules>
+        <fullName>Research Opportunity%3A Research Office Contact Reassignment</fullName>
+        <actions>
+            <name>Research_Opportunity_Send_Email_to_Research_Office_Contact</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>This workflow will send an email to the new Research Office Contact on Project Proposal</description>
+        <formula>ISCHANGED(I_RS_Research_Office_Contact__c)  &amp;&amp;  NOT ( ISNULL ( I_RS_Research_Office_Contact__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

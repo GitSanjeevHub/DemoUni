@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_If_yes_overseas__c</fullName>
+    <externalId>false</externalId>
+    <label>If Yes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_Overseas_institutions__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>La Trobe International notified</fullName>
+                <default>false</default>
+                <label>La Trobe International notified</label>
+            </value>
+            <value>
+                <fullName>LTU will be notified</fullName>
+                <default>false</default>
+                <label>LTU will be notified</label>
+            </value>
+            <value>
+                <fullName>Not applicable</fullName>
+                <default>false</default>
+                <label>Not applicable</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes on this contract</controllingFieldValue>
+            <controllingFieldValue>Yes seeking advice</controllingFieldValue>
+            <valueName>La Trobe International notified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes on this contract</controllingFieldValue>
+            <controllingFieldValue>Yes seeking advice</controllingFieldValue>
+            <valueName>LTU will be notified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes on this contract</controllingFieldValue>
+            <controllingFieldValue>Yes seeking advice</controllingFieldValue>
+            <valueName>Not applicable</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

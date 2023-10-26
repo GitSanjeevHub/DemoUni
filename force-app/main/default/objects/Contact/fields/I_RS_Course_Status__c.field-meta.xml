@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Course_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Course Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Admitted</fullName>
+                <default>false</default>
+                <label>Admitted</label>
+            </value>
+            <value>
+                <fullName>Offered</fullName>
+                <default>false</default>
+                <label>Offered</label>
+            </value>
+            <value>
+                <fullName>Applied</fullName>
+                <default>false</default>
+                <label>Applied</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Leave of Absence</fullName>
+                <default>false</default>
+                <label>Leave of Absence</label>
+            </value>
+            <value>
+                <fullName>AWOL</fullName>
+                <default>false</default>
+                <label>AWOL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

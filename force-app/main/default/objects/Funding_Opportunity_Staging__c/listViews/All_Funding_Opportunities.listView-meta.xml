@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Funding_Opportunities</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Bullet__c</columns>
+    <columns>I_RS_Date_Added__c</columns>
+    <columns>I_RS_Primary_Funder_Name__c</columns>
+    <columns>I_RS_Submission_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Funding Opportunities</label>
+</ListView>

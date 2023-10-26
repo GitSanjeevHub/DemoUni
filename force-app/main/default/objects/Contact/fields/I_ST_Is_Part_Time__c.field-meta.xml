@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Is_Part_Time__c</fullName>
+    <externalId>false</externalId>
+    <formula>I_ST_Course_Availability__r.L_AD_Domestic_Study_Modes_Part_Time__c</formula>
+    <label>Available Part Time</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

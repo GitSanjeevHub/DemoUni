@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Course_Availability_Year__c</fullName>
+    <externalId>false</externalId>
+    <formula>I_ST_Course_Availability__r.L_AD_CourseInstance__r.L_AD_Course_Instance_Version_Year__c</formula>
+    <inlineHelpText>This shows the Course Availability Year</inlineHelpText>
+    <label>Course Instance Version Year</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Percentage_Amount_10</fullName>
+    <active>true</active>
+    <description>Enforce scenarios where minimum percentage is 10</description>
+    <errorConditionFormula>!I_RS_Disable_Grid_Validation__c &amp;&amp;
+(
+!ISBLANK(I_RS_Project_Proposal__c) ||
+!ISBLANK(I_RS_Researcher__c) 
+) &amp;&amp;
+I_RS_Percentage__c &lt; 0.1</errorConditionFormula>
+    <errorDisplayField>I_RS_Percentage__c</errorDisplayField>
+    <errorMessage>The minimum allowed Percentage is 10%</errorMessage>
+</ValidationRule>

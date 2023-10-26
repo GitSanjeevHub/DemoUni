@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Authority_to_Submit__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Authority to Submit</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The form has been completed or cancelled.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Form is sitting with the candidate waiting to be submitted for approval.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;Candidates: before completing this form please read the instructions below. Once you have completed the form, click on the ‘Submit for approval’  button at the top right of the screen.&lt;/p&gt;</info>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;The form has been approved by the supervisor and School Director of Graduate Research and is with the GRS for processing. Once the form has been processed, the GRS will send the thesis upload link to the candidate.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>GRS processing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The form is with the School Director of Graduate Research for approval.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>SDGR Approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Supervisors: by approving, you certify that:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;the thesis/exegesis complies with the provisions in Graduate Research Examinations Schedule B&lt;/li&gt;&lt;li&gt;for practice-based degrees the artefact/s comply with the Guidelines for examinable components of practice-based degrees by research&lt;/li&gt;&lt;li&gt;in your opinion the examinable works are worthy of a candidate for the degree&lt;/li&gt;&lt;li&gt;the candidate’s declaration of authorship is correct and complies with the requirement of Schedule B&lt;/li&gt;&lt;li&gt;where there are co-authors outside the supervisory team, you have sighted written confirmation from the co-author or coordinating author verifying the candidate’s contribution&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Supervisor Approval</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

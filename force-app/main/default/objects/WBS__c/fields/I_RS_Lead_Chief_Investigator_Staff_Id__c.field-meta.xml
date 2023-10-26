@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Lead_Chief_Investigator_Staff_Id__c</fullName>
+    <description>Staff Id of the Lead Chief Investigator</description>
+    <externalId>false</externalId>
+    <formula>I_RS_Lead_Chief_Investigator__r.I_RS_Staff_ID__c</formula>
+    <inlineHelpText>Staff Id of the Lead Chief Investigator</inlineHelpText>
+    <label>Lead Chief Investigator Staff Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

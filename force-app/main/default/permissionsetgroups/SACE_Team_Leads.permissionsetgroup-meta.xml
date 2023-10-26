@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>To be assigned to SACE Team Leads.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SACE Team Leads</label>
+    <permissionSets>I_ST_Merge_Contacts_From_Chat</permissionSets>
+    <permissionSets>I_ST_SACE_Consultant</permissionSets>
+    <permissionSets>I_ST_SACE_Permanent_Consultant</permissionSets>
+    <permissionSets>I_ST_SACE_Team_Lead</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,131 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="StagingFundingOppDupeDetectorController">
+    
+    <aura:attribute name="record" type="object"/>
+    <aura:attribute name="defaultSearchTerm" type="String"/>
+    <aura:attribute name="searchTerm" type="String"/>
+    <aura:attribute name="matchingFunders" type="List" />
+    
+    <aura:attribute name="searchInProgress" type="boolean" default="true"/>
+    
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      fields="Name,I_RS_Funding_Opportunity_Sync_Status__c,
+                              I_RS_Primary_Funder_Id__c,I_RS_Primary_Funder_Name__c"
+                      targetFields="{!v.record}"
+                      targetError="{!v.recordLoadError}"
+                      recordUpdated="{!c.handleRecordLoad}"
+                      />
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    
+    
+    <lightning:card title="Potential Existing Funders" iconName="standard:search">
+        
+        <div class="slds-p-around_medium">
+            
+            <aura:if isTrue="{!v.record.I_RS_Funding_Opportunity_Sync_Status__c == 'No Matching Funder in PRIME'}">
+                
+                <div class="slds-p-bottom_medium slds-border_bottom">
+                    
+                    <div class="slds-text-title_caps slds-p-bottom_small">Search</div>
+                    
+                    <div class="slds-grid slds-grid_wrap">
+                        
+                        <div class="slds-size_10-of-12">
+                            <lightning:input value="{!v.searchTerm}" variant="label-hidden"/>        
+                        </div>
+                        
+                        <div class="slds-size_1-of-12">
+                            <div class="slds-p-left_small">
+                                <lightning:button iconName="utility:search" variant="brand" onclick="{!c.handleSearchButtonClick}"/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <lightning:button label="Reset Search" variant="bare" onclick="{!c.handleResetSearchButtonClick}"/>
+                    
+                </div>
+                
+                <div class="slds-text-title_caps slds-p-top_small">Top Results</div>
+                
+                <aura:if isTrue="{!(!v.searchInProgress)}">
+                    
+                    <aura:if isTrue="{!v.matchingFunders.length}">
+                    
+                        
+                        <!--<div class="slds-scrollable_y" style="height:40vh">-->
+                        
+                        <aura:iteration items="{!v.matchingFunders}" var="funder">
+                            
+                            <!--<div class="slds-border_left slds-border_right slds-border_top slds-border_bottom">-->
+                            
+                            <lightning:card>
+                                
+                                <div class="slds-clearfix">
+                                    <div class="slds-float_left">
+                                        {!funder.Name}<br/>
+
+                                        <aura:if isTrue="{!funder.I_RS_ABN__c}">
+                                            ABN: {!funder.I_RS_ABN__c}<br/>
+                                        </aura:if>
+
+                                        <aura:if isTrue="{!funder.Website}">
+                                            <a href="{!funder.Website}" target="_blank">Link to website</a><br/>
+                                        </aura:if>
+
+                                        <aura:if isTrue="{!funder.Parent.Name}">
+                                            Parent: {!funder.Parent.Name}
+                                        </aura:if>
+                                        
+                                    </div>
+                                    
+                                    <div class="slds-float_right">   
+                                        <button class="slds-button" 
+                                                label="Sync" 
+                                                id="{!funder.Id}" 
+                                                onclick="{!c.handleViewRowRecordClick}">View Record</button>
+                                        
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        
+                                        <button class="slds-button" 
+                                                label="Sync" 
+                                                id="{!funder.Id}" 
+                                                onclick="{!c.handleRowRecordSyncClick}">Sync</button>
+                                    </div>
+                                </div>   
+                                
+                            </lightning:card>
+                            
+                            <!--</div>-->
+                            
+                        </aura:iteration>
+                        <!--</div>-->
+                        
+                        <aura:set attribute="else">
+                            <br/>
+                            No matching Funders found.
+                            <br/><br/>
+                        </aura:set>
+                    </aura:if>
+                    
+                    <lightning:button label="Create New Funder" variant="brand" onclick="{!c.handleNewRecordSyncClick}"/>
+                    
+                    <aura:set attribute="else">
+                        <lightning:spinner variant="brand"/>
+                    </aura:set>
+                </aura:if>
+                
+                
+                <aura:set attribute="else">
+                    
+                    This record does not need to be synced.
+                    
+                </aura:set>
+                
+            </aura:if>
+            
+        </div>
+        
+    </lightning:card>
+    
+</aura:component>

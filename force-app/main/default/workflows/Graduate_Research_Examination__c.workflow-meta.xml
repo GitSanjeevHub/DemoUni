@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Field_Of_Research_Short_Text</fullName>
+        <field>I_RS_Field_of_Research_ShortText__c</field>
+        <formula>LEFT(  I_RS_Field_of_Research_Text__c  , 255 )</formula>
+        <name>Update Field Of Research Short Text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Short_Thesis_Title</fullName>
+        <field>I_RS_Short_Thesis_Title__c</field>
+        <formula>LEFT(  I_RS_Thesis_Title__c  , 255 )</formula>
+        <name>Update Short Thesis Title</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Field Of Research Short Text</fullName>
+        <actions>
+            <name>Update_Field_Of_Research_Short_Text</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updates the first 255 character of Field Of Research Long text area field  to the  Field Of Research short text field</description>
+        <formula>( ISNEW() || ISCHANGED( I_RS_Field_of_Research_Text__c ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Thesis Short Title</fullName>
+        <actions>
+            <name>Update_Short_Thesis_Title</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updates the first 255 character of Thesis title to the short title field</description>
+        <formula>( ISNEW() || ISCHANGED( I_RS_Thesis_Title__c ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

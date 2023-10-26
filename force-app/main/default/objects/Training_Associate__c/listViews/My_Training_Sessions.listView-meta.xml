@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Training_Sessions</fullName>
+    <columns>L_TC_Training__c</columns>
+    <columns>L_TC_Training_Date__c</columns>
+    <columns>L_TC_Training_Time__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>L_TC_Owner__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Training Sessions</label>
+</ListView>

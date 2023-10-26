@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_New_Notice_of_Intention_to_Submit__c</fullName>
+    <defaultValue>&quot;A new Notice of Intention to Submit form will be created. You will be able to find it under the &apos;Notice of Intention to Submit&apos; section. Click Save to confirm.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>New Notice of Intention to Submit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

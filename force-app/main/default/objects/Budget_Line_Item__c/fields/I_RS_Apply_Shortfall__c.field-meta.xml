@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Apply_Shortfall__c</fullName>
+    <description>Represents whether shortfall needs to be provided for this item</description>
+    <externalId>false</externalId>
+    <formula>RecordType.DeveloperName = &apos;I_RS_Salary&apos; &amp;&amp; TEXT(I_RS_Category__c) &lt;&gt; &apos;Student&apos; &amp;&amp; TEXT(I_RS_Category__c) &lt;&gt; &apos;Non-La Trobe Researcher&apos; &amp;&amp; !I_RS_In_Kind__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Apply Shortfall</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

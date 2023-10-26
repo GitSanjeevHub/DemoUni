@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Research_Centre_Director__c</fullName>
+    <externalId>false</externalId>
+    <formula>I_RS_Organisation__r.I_RS_Organisation_Head__r.FirstName &amp; &apos; &apos; &amp; I_RS_Organisation__r.I_RS_Organisation_Head__r.LastName</formula>
+    <label>Research Centre Director</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

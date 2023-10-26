@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED( I_RS_Status__c )&amp;&amp; 
+ISPICKVAL(  I_RS_Status__c  , &quot;Review by Research Office&quot;)&amp;&amp; NOT(I_RS_I_Agree__c = TRUE)</errorConditionFormula>
+    <errorDisplayField>I_RS_I_Agree__c</errorDisplayField>
+    <errorMessage>Complete the Researcher Declaration by selecting “I Agree”.</errorMessage>
+</ValidationRule>

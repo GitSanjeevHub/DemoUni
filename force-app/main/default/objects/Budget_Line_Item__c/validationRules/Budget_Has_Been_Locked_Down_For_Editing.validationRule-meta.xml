@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Has_Been_Locked_Down_For_Editing</fullName>
+    <active>true</active>
+    <description>If Budget has been locked down, do not allow inserts of updates</description>
+    <errorConditionFormula>!I_RS_Budget__r.I_RS_Line_Item_Permission_Save__c</errorConditionFormula>
+    <errorMessage>Budget cannot be modified at this time. Please make a copy or Contact the Research Office for more details.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Research_Contract_Review</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Legal_Checklist_Compact_Layout</compactLayoutAssignment>
+    <label>Research Contract Review</label>
+    <picklistValues>
+        <picklist>I_RS_Are_all_of_the_following_matters__c</picklist>
+        <values>
+            <fullName>No-seeking advice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Areall_details_set_out_accurate_and__c</picklist>
+        <values>
+            <fullName>No-advice required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-all checked below</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Assets_to_be_purchased__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-LTU to own</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-other party to own</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Clinical_trial__c</picklist>
+        <values>
+            <fullName>Involved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Confidentiality__c</picklist>
+        <values>
+            <fullName>Advice or amendments required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTU info to be disclosed-protections acceptable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTU receiving info-clauses acceptable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mutual disclosure%2Fobligations-clauses acceptable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Conflict_of_interest__c</picklist>
+        <values>
+            <fullName>None to disclose</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Potential-LTU CoI Procedure %26 any CoI clause followed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potential-seeking advice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Consulted_Research_Contracts_Guide__c</picklist>
+        <values>
+            <fullName>No required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Ethics__c</picklist>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Existing_background_IP_of_LTU__c</picklist>
+        <values>
+            <fullName>None to be used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-LTU IP to be used-no commercial value-advice or changes required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-LTU IP to be used-no commercial value-licences%2Fwarranties acceptable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-LTU IP to be used-potentially valuable-refer Commercialisation below</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_If_yes_LTU_Students_Researchers__c</picklist>
+        <values>
+            <fullName>Advice required %28give details%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Researcher Deed pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Researcher Deed signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student is party to this contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_If_yes_a_potentially__c</picklist>
+        <values>
+            <fullName>Commercialisation Office recommendation-add details</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_If_yes_ltu_honorary__c</picklist>
+        <values>
+            <fullName>Advice required %28give details%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Honorary Researcher Deed pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Honorary Researcher Deed signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Honorary is ONJCRI staff</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_If_yes_overseas__c</picklist>
+        <values>
+            <fullName>LTU will be notified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La Trobe International notified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_If_yes_student_placements__c</picklist>
+        <values>
+            <fullName>Yes-APVC Academic Partnerships of College notified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-Not applicable %28explain%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_If_yes_teaching_services__c</picklist>
+        <values>
+            <fullName>Yes-Educational Parternships %26 Quality notified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-Not applicable %28explain%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_LTU_honorary_visiting_researchers__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_LTU_partners__c</picklist>
+        <values>
+            <fullName>AgriBio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAPR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hexima</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDFRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ONJCRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_LTU_student_placements__c</picklist>
+        <values>
+            <fullName>Involved%2Fpotential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_LTU_student_researchers__c</picklist>
+        <values>
+            <fullName>No-As employee only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-As employee AND part course%2FPhD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-As part of course%2FPhD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Licences_to_LTU__c</picklist>
+        <values>
+            <fullName>Licence for any purpose incl%2E commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licence for non-commercial research %26 education purposes %26 publication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No licence %28give detail%2C minimum non-commercial licence should be sought%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not acceptable %E2%80%93 seeking advice or amendments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable-LTU will own all IP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Licences_to_other_party_ies__c</picklist>
+        <values>
+            <fullName>licence for any purpose incl%2E commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>licence for non-commercial purposes only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>no licence to other party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>not applicable-other party will own all IP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Materials_equipment_transfer__c</picklist>
+        <values>
+            <fullName>None to be transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferring from LTU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferring to LTU only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Moral_rights_specified_acts__c</picklist>
+        <values>
+            <fullName>Advice or amendments required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consent required-accepted by all LTU authors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No consents required by contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Other_approvals_obtained__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Overseas_institutions__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes on this contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes seeking advice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Overseas_services_travel__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-LTU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-other party</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Personal_sensitive_information__c</picklist>
+        <values>
+            <fullName>Involved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Potentially_valuable_IP__c</picklist>
+        <values>
+            <fullName>Confirmed no potentially valuable IP to be used or created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-LTU existing IP to be used-addressed in the contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-LTU existing IP to be used-seeking advice or amendments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-another party to this contract will own-LTU will have no interest and this is acceptable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-potential new valuable IP with LTU interest-addressed in contract and this is acceptable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-potential new valuable IP with LTU interest-seeking advice or amendments</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Publicity_acknowledgment__c</picklist>
+        <values>
+            <fullName>Advice or amendments required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract requirements acceptable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No restrictions in contract-acceptable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Related_agreements__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-copy supplied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Subcontracts__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2Fpotential</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Teaching_services__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-LTU teaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-other party</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Third_party_IP__c</picklist>
+        <values>
+            <fullName>None to be used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-IP of another party to this contract to be used-ownership %26 licences acceptable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes-external party%27s IP to be used and LTU has all necessary rights%2Flicences to use and warrant this</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Vulnerable_persons__c</picklist>
+        <values>
+            <fullName>Involved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Funding_Opportunity_Record_Id__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>When syncing to Funding Opportunities in Salesforce, provide newly created Funding Opportunity here</description>
+    <externalId>false</externalId>
+    <label>Funding Opportunity Record Id</label>
+    <referenceTo>Research_Opportunity__c</referenceTo>
+    <relationshipLabel>Funding Opportunities Staging</relationshipLabel>
+    <relationshipName>Funding_Opportunities_Staging</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

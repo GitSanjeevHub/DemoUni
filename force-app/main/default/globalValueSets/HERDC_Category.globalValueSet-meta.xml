@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>1.1.3 Aust. Comp. Grants C&apos;wealth other</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>1.1.1.1 ARC Future Fellowships</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>1.1.1.2 ARC Federation Fellowships</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>1.1.1.3 ARC Discovery Indigenous Res Dev</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>1.1.1.4 ARC Super Science Fellowships</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>1.1.1.5 ARC Aust. Laureate Fellowship</label>
+    </customValue>
+    <customValue>
+        <fullName>7</fullName>
+        <default>false</default>
+        <label>1.1.1.6 ARC SpecResIniti. (exNIAA&amp;CPFG)</label>
+    </customValue>
+    <customValue>
+        <fullName>8</fullName>
+        <default>false</default>
+        <label>Not in use-C1(i)Aust Research Council</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>1.1.1.8 ARC Discovery Projects</label>
+    </customValue>
+    <customValue>
+        <fullName>10</fullName>
+        <default>false</default>
+        <label>1.1.1.9 ARC Linkage Projects</label>
+    </customValue>
+    <customValue>
+        <fullName>11</fullName>
+        <default>false</default>
+        <label>1.1.1.10 ARC Linkage Intnl Scheme</label>
+    </customValue>
+    <customValue>
+        <fullName>12</fullName>
+        <default>false</default>
+        <label>1.1.1.11 ARC Disc ECR Award</label>
+    </customValue>
+    <customValue>
+        <fullName>13</fullName>
+        <default>false</default>
+        <label>1.1.1.12 ARC Disc Indigenous Res Dev</label>
+    </customValue>
+    <customValue>
+        <fullName>14</fullName>
+        <default>false</default>
+        <label>1.1.1.13 ARC Special Res Initiatives</label>
+    </customValue>
+    <customValue>
+        <fullName>15</fullName>
+        <default>false</default>
+        <label>1.1.2.1 NHMRC Project Grants</label>
+    </customValue>
+    <customValue>
+        <fullName>16</fullName>
+        <default>false</default>
+        <label>1.1.2.2 NHMRC Fellowships</label>
+    </customValue>
+    <customValue>
+        <fullName>17</fullName>
+        <default>false</default>
+        <label>1.1.2.3 NHMRC Development Grants</label>
+    </customValue>
+    <customValue>
+        <fullName>18</fullName>
+        <default>false</default>
+        <label>1.1.2.4 NHMRC Partnership Grants</label>
+    </customValue>
+    <customValue>
+        <fullName>19</fullName>
+        <default>false</default>
+        <label>Not in use-C1(i)NHMRC Equip Grants</label>
+    </customValue>
+    <customValue>
+        <fullName>20</fullName>
+        <default>false</default>
+        <label>1.1.2.5 NHMRC Centre Res Excellence Grts</label>
+    </customValue>
+    <customValue>
+        <fullName>21</fullName>
+        <default>false</default>
+        <label>1.1.2.6 NHMRC other (ex schol &amp; equip)</label>
+    </customValue>
+    <customValue>
+        <fullName>22</fullName>
+        <default>false</default>
+        <label>1.3 Aust. Comp. Grants Non-C&apos;wealth</label>
+    </customValue>
+    <customValue>
+        <fullName>23</fullName>
+        <default>false</default>
+        <label>Not in useC2-(iii)Local Govt Comp&amp;NonCom</label>
+    </customValue>
+    <customValue>
+        <fullName>24</fullName>
+        <default>false</default>
+        <label>Not inuse-C2(ii)State Govt Comp&amp;NonComp</label>
+    </customValue>
+    <customValue>
+        <fullName>25</fullName>
+        <default>false</default>
+        <label>Not inuse-C2(i)Comm Govt Comp&amp;NonComp</label>
+    </customValue>
+    <customValue>
+        <fullName>26</fullName>
+        <default>false</default>
+        <label>Not in use-C3(i)Australian Contracts</label>
+    </customValue>
+    <customValue>
+        <fullName>27</fullName>
+        <default>false</default>
+        <label>Not in use-C3(i)Aust Donations Beq&amp;Found</label>
+    </customValue>
+    <customValue>
+        <fullName>28</fullName>
+        <default>false</default>
+        <label>Not in use-C3(i)Australian Grants</label>
+    </customValue>
+    <customValue>
+        <fullName>29</fullName>
+        <default>false</default>
+        <label>Not in use-C3(ii)Intern Grants A Comp</label>
+    </customValue>
+    <customValue>
+        <fullName>30</fullName>
+        <default>false</default>
+        <label>Not in use-C3(ii)InternGrants B Non Comp</label>
+    </customValue>
+    <customValue>
+        <fullName>31</fullName>
+        <default>false</default>
+        <label>Not in use-C3-Indust&amp;Oth Funding for Res</label>
+    </customValue>
+    <customValue>
+        <fullName>32</fullName>
+        <default>false</default>
+        <label>4 CRC research income</label>
+    </customValue>
+    <customValue>
+        <fullName>33</fullName>
+        <default>false</default>
+        <label>Non-HERDC</label>
+    </customValue>
+    <customValue>
+        <fullName>34</fullName>
+        <default>false</default>
+        <label>Non HERDC ARC LIEF</label>
+    </customValue>
+    <customValue>
+        <fullName>35</fullName>
+        <default>false</default>
+        <label>1.1.1.7 ARC Centre of Excellence</label>
+    </customValue>
+    <customValue>
+        <fullName>36</fullName>
+        <default>false</default>
+        <label>1.1.1.14 ARC other schemes (excl. LIEF)</label>
+    </customValue>
+    <customValue>
+        <fullName>37</fullName>
+        <default>false</default>
+        <label>1.2 Aust. Comp. Grants Rural R&amp;D</label>
+    </customValue>
+    <customValue>
+        <fullName>38</fullName>
+        <default>false</default>
+        <label>2.1.1 C&apos;wealth Govt (own purpose)</label>
+    </customValue>
+    <customValue>
+        <fullName>39</fullName>
+        <default>false</default>
+        <label>2.1.2.1 C&apos;wealth Govt (other)</label>
+    </customValue>
+    <customValue>
+        <fullName>40</fullName>
+        <default>false</default>
+        <label>2.1.2.2 NHMRC Postgraduate scholarships</label>
+    </customValue>
+    <customValue>
+        <fullName>41</fullName>
+        <default>false</default>
+        <label>2.2.1 State/Local Govt (own purpose)</label>
+    </customValue>
+    <customValue>
+        <fullName>42</fullName>
+        <default>false</default>
+        <label>2.2.2 State/Local Govt (other)</label>
+    </customValue>
+    <customValue>
+        <fullName>43</fullName>
+        <default>false</default>
+        <label>3.1.1.1 Aust. for-profit orgs</label>
+    </customValue>
+    <customValue>
+        <fullName>44</fullName>
+        <default>false</default>
+        <label>3.1.1.2 Aust. not-for profit orgs</label>
+    </customValue>
+    <customValue>
+        <fullName>45</fullName>
+        <default>false</default>
+        <label>3.1.2 Australian philanthropy</label>
+    </customValue>
+    <customValue>
+        <fullName>46</fullName>
+        <default>false</default>
+        <label>3.2.1.1 Intnl for-profit orgs</label>
+    </customValue>
+    <customValue>
+        <fullName>47</fullName>
+        <default>false</default>
+        <label>3.2.1.2 Intnl not-for profit orgs</label>
+    </customValue>
+    <customValue>
+        <fullName>48</fullName>
+        <default>false</default>
+        <label>3.2.2 Intnl philanthropy</label>
+    </customValue>
+    <customValue>
+        <fullName>49</fullName>
+        <default>false</default>
+        <label>3.2.3.1 Intnl government (own purpose)</label>
+    </customValue>
+    <customValue>
+        <fullName>50</fullName>
+        <default>false</default>
+        <label>3.2.3.2 Intnl government (other)</label>
+    </customValue>
+    <customValue>
+        <fullName>51</fullName>
+        <default>false</default>
+        <label>Non-HERDC Other research income</label>
+    </customValue>
+    <customValue>
+        <fullName>52</fullName>
+        <default>false</default>
+        <label>Non HERDC NHMRC Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>53</fullName>
+        <default>false</default>
+        <label>Non HERDC HEP contributions to CRCs</label>
+    </customValue>
+    <customValue>
+        <fullName>99</fullName>
+        <default>false</default>
+        <label>Not applicable</label>
+    </customValue>
+    <masterLabel>HERDC Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

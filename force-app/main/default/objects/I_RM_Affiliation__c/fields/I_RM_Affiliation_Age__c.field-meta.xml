@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Affiliation_Age__c</fullName>
+    <description>Technical Field: The age of an Affiliation (in days) based on its start date. For an active Affiliation, the age is based on today&apos;s date whereas for inactive one it&apos;s based on end date.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+(I_RM_StartDate__c - BLANKVALUE(I_RM_EndDate__c, TODAY())) &gt; 0,
+I_RM_StartDate__c - BLANKVALUE(I_RM_EndDate__c, TODAY()),
+I_RM_StartDate__c - TODAY()
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Affiliation Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

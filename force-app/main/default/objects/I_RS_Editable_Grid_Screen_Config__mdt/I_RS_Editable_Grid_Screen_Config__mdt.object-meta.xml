@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Configurations for the editable-grid single-screen functionality.</description>
+    <label>Editable Grid Screen Config</label>
+    <pluralLabel>Editable Grid Screen Configs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

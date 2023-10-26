@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_a_Dismissal_Reason</fullName>
+    <active>false</active>
+    <description>Make Dismissal Reason mandatory when a Project Proposal is Dismissed</description>
+    <errorConditionFormula>RecordType.Name  == &apos;Recommendation&apos; 
+   &amp;&amp;  
+ISPICKVAL(I_RS_Status__c , &apos;Dismissed&apos;)
+   &amp;&amp;
+ISPICKVAL(I_RS_Dismissal_Reason__c, &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>I_RS_Dismissal_Reason__c</errorDisplayField>
+    <errorMessage>Please provide a Dismissal Reason</errorMessage>
+</ValidationRule>

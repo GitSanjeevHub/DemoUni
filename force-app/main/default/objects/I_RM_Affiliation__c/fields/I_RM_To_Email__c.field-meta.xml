@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_To_Email__c</fullName>
+    <description>Determines correct email address to be used based on affiliation type. For use in quick action email functionality</description>
+    <externalId>false</externalId>
+    <formula>CASE(I_RM_Role__c, &apos;Domestic Lead&apos; , I_RM_Email__c , &apos;Alumni&apos;, I_RM_Email__c, &apos;Applicant&apos;, I_RM_Email__c, &apos;Student&apos; , I_RM_Student_Email__c, &apos;HDR Student&apos; , I_RM_Student_Email__c ,&apos;Nominated Affiliation&apos; , I_RM_Email__c, &apos;Student Lead (Int)&apos;, IF( I_IL_Nominee_Flag__c = TRUE , I_IL_Nominee_Personal_Email__c ,I_RM_Email__c), I_RM_Work_Email__c )</formula>
+    <label>To Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

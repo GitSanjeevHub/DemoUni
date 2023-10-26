@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submission_Date_Required_Based_on_Status</fullName>
+    <active>true</active>
+    <description>If Status is &apos;Submission To Funding Body&apos; or a subsequent status, then Submission Date is required</description>
+    <errorConditionFormula>(
+TEXT(I_RS_Status__c) = &apos;Submission To Funding Body&apos; ||
+TEXT(I_RS_Status__c) = &apos;Submitted&apos; ||
+TEXT(I_RS_Status__c) = &apos;Successful&apos; ||
+TEXT(I_RS_Status__c) = &apos;Unsuccessful&apos; ||
+TEXT(I_RS_Status__c) = &apos;Rejoinders&apos;
+)
+&amp;&amp;
+ISBLANK(I_RS_Proposal_Submission_Date__c)
+&amp;&amp;
+(
+TEXT( I_RS_Project_Type__c ) = &apos;Grant&apos;||
+TEXT( I_RS_Project_Type__c ) = &apos;Tender/RFQ&apos;
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Proposal_Submission_Date__c</errorDisplayField>
+    <errorMessage>Please provide Date Proposal Submitted.</errorMessage>
+</ValidationRule>

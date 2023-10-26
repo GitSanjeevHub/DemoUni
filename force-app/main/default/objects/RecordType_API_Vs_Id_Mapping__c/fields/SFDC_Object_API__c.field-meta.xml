@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFDC_Object_API__c</fullName>
+    <description>Object API Name in Salesforce</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Object API Name in Salesforce</inlineHelpText>
+    <label>SFDC Object API</label>
+    <length>100</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

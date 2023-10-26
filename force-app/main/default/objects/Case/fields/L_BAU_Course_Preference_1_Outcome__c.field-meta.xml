@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_BAU_Course_Preference_1_Outcome__c</fullName>
+    <description>Course Preference 1 -  Outcome</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Course Preference 1 -  Outcome</inlineHelpText>
+    <label>Course Preference 1 -  Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Value</fullName>
+                <default>false</default>
+                <label>No Value</label>
+            </value>
+            <value>
+                <fullName>Offer selected</fullName>
+                <default>false</default>
+                <label>Offer selected</label>
+            </value>
+            <value>
+                <fullName>No offer</fullName>
+                <default>false</default>
+                <label>No offer</label>
+            </value>
+            <value>
+                <fullName>Offer pathway course</fullName>
+                <default>false</default>
+                <label>Offer pathway course</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

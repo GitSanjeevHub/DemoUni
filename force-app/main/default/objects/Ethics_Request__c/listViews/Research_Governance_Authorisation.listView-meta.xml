@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Research_Governance_Authorisation</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Principal_Investigator_Contact__c</columns>
+    <columns>I_RS_Milestone_Task_Status__c</columns>
+    <columns>I_RS_Ethics_Application_Review_Outcome__c</columns>
+    <columns>I_RS_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Ethics_Request__c.Research_Governance_Authorisation</value>
+    </filters>
+    <label>Externally Approved Applications</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Vice_Chancellor</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

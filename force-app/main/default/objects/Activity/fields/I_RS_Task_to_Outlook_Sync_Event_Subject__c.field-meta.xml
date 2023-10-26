@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Task_to_Outlook_Sync_Event_Subject__c</fullName>
+    <description>Event subject when syncing Milestone Task to Outlook</description>
+    <externalId>false</externalId>
+    <formula>TEXT(I_RS_Milestone_Type__c) + &quot; due for &quot; + I_RS_Parent_Record_Name__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Task to Outlook Event Subject</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_is_not_Draft</fullName>
+    <active>true</active>
+    <errorConditionFormula>I_RS_Locked__c = TRUE &amp;&amp;
+CONTAINS($Profile.Name, &quot;Community&quot;)</errorConditionFormula>
+    <errorMessage>You can no longer modify this record. Contact your System Administrator to learn more.</errorMessage>
+</ValidationRule>

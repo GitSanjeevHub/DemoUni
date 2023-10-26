@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Valid_for_Deletion__c</fullName>
+    <description>If this formula is unchecked, this record should not be deleted by the current user. Use the Object Metadata custom setting to enable or disable the actual blocking of deletions.
+
+Current logic is simply, only admins can remove relationships.</description>
+    <externalId>false</externalId>
+    <formula>OR($Profile.Name = &apos;System Administrator&apos;, Account.RecordType.DeveloperName = &apos;I_ST_Lead_Account&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If this formula is unchecked, this record should not be deleted by the current user. Use the Object Metadata custom setting to enable or disable the actual blocking of deletions.
+
+Current logic is simply, only admins can remove relationships.</inlineHelpText>
+    <label>Valid for Deletion</label>
+    <type>Checkbox</type>
+</CustomField>

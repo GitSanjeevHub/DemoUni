@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>L_PR_Idea__c</field>
+        <formula>L_PR_Idea__c.Id</formula>
+    </fieldOverrides>
+    <label>Link Organisation</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>L_PR_Organisation__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>L_PR_Idea__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Organisation linked.</successMessage>
+    <targetObject>L_PR_Idea_Organisation__c</targetObject>
+    <targetParentField>L_PR_Idea__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

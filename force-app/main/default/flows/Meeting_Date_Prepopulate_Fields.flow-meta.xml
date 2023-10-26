@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Animal_Ethics_Committee_Assignment</name>
+        <label>Animal Ethics Committee Assignment</label>
+        <locationX>838</locationX>
+        <locationY>469</locationY>
+        <assignmentItems>
+            <assignToReference>GroupName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>AEC</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Committee_Membership</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>HREC_A_Committee_Assignment</name>
+        <label>HREC A Committee Assignment</label>
+        <locationX>37</locationX>
+        <locationY>643</locationY>
+        <assignmentItems>
+            <assignToReference>GroupName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>HREC A</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Committee_Membership</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>HREC_B_Committee_Assignment</name>
+        <label>HREC B Committee Assignment</label>
+        <locationX>390</locationX>
+        <locationY>624</locationY>
+        <assignmentItems>
+            <assignToReference>GroupName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>HREC B</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Committee_Membership</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>HREC_Executive_Committee_Assignment</name>
+        <label>HREC Executive Committee Assignment</label>
+        <locationX>485</locationX>
+        <locationY>492</locationY>
+        <assignmentItems>
+            <assignToReference>GroupName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>HREC</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Committee_Membership</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>IBC_Committee_Assignment</name>
+        <label>IBC Committee Assignment</label>
+        <locationX>1072</locationX>
+        <locationY>444</locationY>
+        <assignmentItems>
+            <assignToReference>GroupName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>IBC</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Committee_Membership</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Low_Risk_Committee_Assignment</name>
+        <label>Low Risk Committee Assignment</label>
+        <locationX>692</locationX>
+        <locationY>502</locationY>
+        <assignmentItems>
+            <assignToReference>GroupName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Low Risk</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Committee_Membership</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Chair_Person_on_Meeting_Date</name>
+        <label>Set Chair Person on Meeting Date</label>
+        <locationX>567</locationX>
+        <locationY>1228</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Chair_Person__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>For_Commitee_Memberships.I_RS_Contact__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>If there is no Chair Person yet assigned...</description>
+        <name>Chair_Person_Assigned</name>
+        <label>Chair Person Assigned</label>
+        <locationX>169</locationX>
+        <locationY>280</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Chair_Person_Assigned_No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Chair_Person__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Committee_Checker</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks the Meeting Date Committee field and assigns it to the correct Committee Membership</description>
+        <name>Committee_Checker</name>
+        <label>Committee Checker</label>
+        <locationX>614</locationX>
+        <locationY>340</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>HREC_A_Committee</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Committee__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>HREC A</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>HREC_A_Committee_Assignment</targetReference>
+            </connector>
+            <label>HREC A Committee</label>
+        </rules>
+        <rules>
+            <name>HREC_B_Committee</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Committee__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>HREC B</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>HREC_B_Committee_Assignment</targetReference>
+            </connector>
+            <label>HREC B Committee</label>
+        </rules>
+        <rules>
+            <name>HREC_Executive_Committee</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Committee__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>HREC Executive</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>HREC_Executive_Committee_Assignment</targetReference>
+            </connector>
+            <label>HREC Executive Committee</label>
+        </rules>
+        <rules>
+            <name>Low_Risk_Committee</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Committee__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Low Risk</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Low_Risk_Committee_Assignment</targetReference>
+            </connector>
+            <label>Low Risk Committee</label>
+        </rules>
+        <rules>
+            <name>AEC_Committee</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Committee__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>AEC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Animal_Ethics_Committee_Assignment</targetReference>
+            </connector>
+            <label>AEC Committee</label>
+        </rules>
+        <rules>
+            <name>IBC_Committee</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Committee__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>IBC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IBC_Committee_Assignment</targetReference>
+            </connector>
+            <label>IBC Committee</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Committee_has_valid_dates</name>
+        <label>Committee has valid dates</label>
+        <locationX>561</locationX>
+        <locationY>1029</locationY>
+        <defaultConnector>
+            <targetReference>For_Commitee_Memberships</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Committee_has_valid_dates_Yes</name>
+            <conditionLogic>(1 OR 2) AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>For_Commitee_Memberships.I_RS_Appointment_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>For_Commitee_Memberships.I_RS_Appointment_Date__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.I_RS_Meeting_Closing_Date__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>For_Commitee_Memberships.I_RS_Conclusion_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>For_Commitee_Memberships.I_RS_Conclusion_Date__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.I_RS_Meeting_Closing_Date__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Chair_Person_on_Meeting_Date</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Committee_Membership_Found</name>
+        <label>Committee Membership Found</label>
+        <locationX>298</locationX>
+        <locationY>819</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Committee_Membership_Found_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Committee_Membership</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>For_Commitee_Memberships</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>- Simple field pre-populations on Meeting Date object. Checks dates of Meeting Date against Committee Membership, not current date.
+- Updated the logic when fetching the chair person</description>
+    <formulas>
+        <name>IsValidDateFormula</name>
+        <dataType>Boolean</dataType>
+        <expression>/*(
+ISBLANK({!For_Commitee_Memberships.I_RS_Appointment_Date__c}) ||
+{!For_Commitee_Memberships.I_RS_Appointment_Date__c} &lt;= {!$Record.I_RS_Meeting_Date__c}
+)
+&amp;&amp;*/
+(
+ISBLANK({!For_Commitee_Memberships.I_RS_Conclusion_Date__c}) ||
+{!For_Commitee_Memberships.I_RS_Conclusion_Date__c} &gt;= {!$Record.I_RS_Meeting_Date__c}
+)</expression>
+    </formulas>
+    <interviewLabel>Meeting Date: Prepopulate Fields {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Meeting Date: Prepopulate Fields</label>
+    <loops>
+        <name>For_Commitee_Memberships</name>
+        <label>For Commitee Memberships</label>
+        <locationX>306</locationX>
+        <locationY>1023</locationY>
+        <collectionReference>Get_Committee_Membership</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Committee_has_valid_dates</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get relevant Committee Member so we can use its data</description>
+        <name>Get_Committee_Membership</name>
+        <label>Get Committee Membership</label>
+        <locationX>628</locationX>
+        <locationY>667</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Committee_Membership_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>I_RS_Ethics_Review_Committee__c</field>
+            <operator>Contains</operator>
+            <value>
+                <elementReference>GroupName</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>I_RS_Is_Chair_Person__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Committee_Membership__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>I_RS_Contact__c</queriedFields>
+        <queriedFields>I_RS_Appointment_Date__c</queriedFields>
+        <queriedFields>I_RS_Conclusion_Date__c</queriedFields>
+        <sortField>I_RS_Ethics_Review_Committee__c</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Chair_Person_Assigned</targetReference>
+        </connector>
+        <object>Meeting_Date__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>GroupName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>IsValidDate</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

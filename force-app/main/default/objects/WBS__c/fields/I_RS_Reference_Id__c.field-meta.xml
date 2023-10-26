@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Reference_Id__c</fullName>
+    <description>Reference Id - Research Master WBS Id or Salesforce Id. For new records in Salesforce it will be Salesforce Id else RM Id.</description>
+    <externalId>false</externalId>
+    <label>Reference Id</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

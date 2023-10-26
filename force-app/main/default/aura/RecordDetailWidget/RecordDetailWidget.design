@@ -1,0 +1,7 @@
+<design:component>
+	<design:attribute name="objectAPIName"/>
+    <design:attribute name="recordId"/>
+    <design:attribute name="fieldConcat"/>
+    <design:attribute name="cardTitle"/>
+    <design:attribute name="returnURL"/>	
+</design:component>

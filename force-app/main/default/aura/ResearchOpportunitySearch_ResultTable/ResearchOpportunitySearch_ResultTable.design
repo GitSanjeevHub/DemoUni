@@ -1,0 +1,12 @@
+<!--
+ - Created by burnside on 2019-05-27.
+ -->
+
+<design:component>
+    <design:attribute label="Rows Per Page" name="rowsPerPage"/>
+    <design:attribute
+            label="Show Recommended Opportunities Only"
+            name="recommendedOnly"
+            description="Only include Opportunities that are recommended via our custom match algorithm"
+    />
+</design:component>

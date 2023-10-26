@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Task_to_Outlook_Sync_Status__c</fullName>
+    <description>Tracks status of Task being synced to Outlook as an event. Populated via automated logic, and used by overnight batch to determine what records to sync and how (i.e. create new, replace existing, delete existing)</description>
+    <externalId>false</externalId>
+    <label>Task to Outlook Sync Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Insert Pending</fullName>
+                <default>false</default>
+                <label>Insert Pending</label>
+            </value>
+            <value>
+                <fullName>Insert Successful</fullName>
+                <default>false</default>
+                <label>Insert Successful</label>
+            </value>
+            <value>
+                <fullName>Insert Failed</fullName>
+                <default>false</default>
+                <label>Insert Failed</label>
+            </value>
+            <value>
+                <fullName>Update Pending</fullName>
+                <default>false</default>
+                <label>Update Pending</label>
+            </value>
+            <value>
+                <fullName>Update Successful</fullName>
+                <default>false</default>
+                <label>Update Successful</label>
+            </value>
+            <value>
+                <fullName>Update Failed</fullName>
+                <default>false</default>
+                <label>Update Failed</label>
+            </value>
+            <value>
+                <fullName>Delete Pending</fullName>
+                <default>false</default>
+                <label>Delete Pending</label>
+            </value>
+            <value>
+                <fullName>Delete Successful</fullName>
+                <default>false</default>
+                <label>Delete Successful</label>
+            </value>
+            <value>
+                <fullName>Delete Failed</fullName>
+                <default>false</default>
+                <label>Delete Failed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

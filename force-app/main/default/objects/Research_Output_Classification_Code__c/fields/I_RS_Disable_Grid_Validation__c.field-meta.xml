@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Disable_Grid_Validation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Turn off certain validation for this particular row. Useful when overriding the standard rules.
+
+Not used in editable grid yet - reserved for future use there, though.</description>
+    <externalId>false</externalId>
+    <label>Disable Grid Validation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_GRS_or_candidate_can_create</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.I_RS_Is_Researcher_User__c = &quot;1&quot; &amp;&amp;
+$User.ContactId &lt;&gt;  I_RS_Graduate_Research_Examination_ID__r.I_RS_Student__c</errorConditionFormula>
+    <errorMessage>It is expected that the Candidate would create this record. Please contact GRS.</errorMessage>
+</ValidationRule>

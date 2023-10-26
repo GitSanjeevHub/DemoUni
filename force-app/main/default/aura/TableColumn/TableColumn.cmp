@@ -1,0 +1,33 @@
+<aura:component implements="c:TableColumnBase">
+    <aura:attribute name="label" type="String" access="public" description="The label to display in the header" />
+    <aura:attribute name="sortField" type="String" access="public" description="If set, this column can be sorted by this field on the row object" />
+
+    <aura:attribute name="width" type="String" access="public" default="" description="The width style to apply to this column. Can be any css width." />
+    <aura:attribute name="class" type="String" access="public" default="slds-text-title_caps" description="The class to assign to this table header" />
+    <aura:attribute name="anchorClass" type="String" access="public" default="slds-th__action slds-text-link_reset" description="The class to assign to the anchor in a sortable column" />
+    <aura:attribute name="labelClass" type="String" access="public" default="slds-truncate" description="The class to assign to the label in a sortable column" />
+
+    <aura:attribute name="header" type="Aura.Component[]" access="public" description="Overrides the automatically created header with a custom component." />
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+
+    <th style="{!empty(v.width) ?  null : ('width: ' + v.width)}" class="{!v.class}" scope="col">
+        <aura:if isTrue="{#empty(v.header)}">
+            <aura:if isTrue="{#v.sortable}">
+                <a class="{!v.anchorClass}" onclick="{!c.toggleSort}">
+                    <span class="slds-assistive-text">Sort</span>
+                    <span class="{!v.labelClass}" title="{!v.label}">{!v.label}</span>
+                    <lightning:icon class="{!empty(v.sortOrder) ? 'slds-hidden' : ''}" size="xx-small" iconName="{!v.sortOrder == 'ASC' ? 'utility:up' : 'utility:down'}" />
+                </a>
+            <aura:set attribute="else">
+                <aura:if isTrue="{#not(empty(v.label))}">
+                    <div class="{!v.labelClass}" title="{!v.label}">{!v.label}</div>
+                </aura:if>
+            </aura:set>
+            </aura:if>
+        <aura:set attribute="else">
+            {!v.header}
+        </aura:set>
+        </aura:if>
+    </th>
+</aura:component>

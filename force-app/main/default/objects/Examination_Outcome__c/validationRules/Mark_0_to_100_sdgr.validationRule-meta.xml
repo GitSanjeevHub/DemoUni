@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mark_0_to_100_sdgr</fullName>
+    <active>true</active>
+    <errorConditionFormula>I_RS_SDGR_Mark__c &lt; 0 ||
+I_RS_SDGR_Mark__c &gt; 100</errorConditionFormula>
+    <errorDisplayField>I_RS_SDGR_Mark__c</errorDisplayField>
+    <errorMessage>Mark must be between 0-100</errorMessage>
+</ValidationRule>

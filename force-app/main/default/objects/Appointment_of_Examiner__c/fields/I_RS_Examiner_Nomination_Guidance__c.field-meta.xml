@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Examiner_Nomination_Guidance__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;Three examiners must be nominated for every examination (two examiners and a reserve). If the proposed examiner already has a contact record in PRIME, select their name in the left-hand box below. If you can’t find an existing contact record, please enter the examiner’s name and contact details in the column on the right.&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Examiner Nomination Guidance</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

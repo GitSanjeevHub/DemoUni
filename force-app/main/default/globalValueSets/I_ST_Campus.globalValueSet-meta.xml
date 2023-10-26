@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Any</fullName>
+        <default>false</default>
+        <label>Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Albury-Wodonga</fullName>
+        <default>false</default>
+        <label>Albury-Wodonga</label>
+    </customValue>
+    <customValue>
+        <fullName>Bendigo</fullName>
+        <default>false</default>
+        <label>Bendigo</label>
+    </customValue>
+    <customValue>
+        <fullName>City Campus</fullName>
+        <default>false</default>
+        <label>City Campus</label>
+    </customValue>
+    <customValue>
+        <fullName>Melbourne (Bundoora)</fullName>
+        <default>false</default>
+        <label>Melbourne (Bundoora)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mildura</fullName>
+        <default>false</default>
+        <label>Mildura</label>
+    </customValue>
+    <customValue>
+        <fullName>Online</fullName>
+        <default>false</default>
+        <label>Online</label>
+    </customValue>
+    <customValue>
+        <fullName>Shepparton</fullName>
+        <default>false</default>
+        <label>Shepparton</label>
+    </customValue>
+    <customValue>
+        <fullName>Sydney</fullName>
+        <default>false</default>
+        <label>Sydney</label>
+    </customValue>
+    <customValue>
+        <fullName>Berwick (Chisholm Institute)</fullName>
+        <default>false</default>
+        <label>Berwick (Chisholm Institute)</label>
+    </customValue>
+    <customValue>
+        <fullName>Brunswick (Bouverie)</fullName>
+        <default>false</default>
+        <label>Brunswick (Bouverie)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bundoora (La Trobe College)</fullName>
+        <default>false</default>
+        <label>Bundoora (La Trobe College)</label>
+    </customValue>
+    <customValue>
+        <fullName>Carlton (Carlton College Sport)</fullName>
+        <default>false</default>
+        <label>Carlton (Carlton College Sport)</label>
+    </customValue>
+    <customValue>
+        <fullName>Chisholm311 (Chisholm Institute)</fullName>
+        <default>false</default>
+        <label>Chisholm311 (Chisholm Institute)</label>
+    </customValue>
+    <customValue>
+        <fullName>Dandenong (Chisholm Institute)</fullName>
+        <default>false</default>
+        <label>Dandenong (Chisholm Institute)</label>
+    </customValue>
+    <customValue>
+        <fullName>Distance Education</fullName>
+        <default>false</default>
+        <label>Distance Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Epping (Melbourne Polytechnic)</fullName>
+        <default>false</default>
+        <label>Epping (Melbourne Polytechnic)</label>
+    </customValue>
+    <customValue>
+        <fullName>Frankston (Chisholm Institute)</fullName>
+        <default>false</default>
+        <label>Frankston (Chisholm Institute)</label>
+    </customValue>
+    <customValue>
+        <fullName>Myrtleford (Alpine Health)</fullName>
+        <default>false</default>
+        <label>Myrtleford (Alpine Health)</label>
+    </customValue>
+    <customValue>
+        <fullName>Online (Didasko)</fullName>
+        <default>false</default>
+        <label>Online (Didasko)</label>
+    </customValue>
+    <customValue>
+        <fullName>Online (OUA)</fullName>
+        <default>false</default>
+        <label>Online (OUA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Online (Wiley)</fullName>
+        <default>false</default>
+        <label>Online (Wiley)</label>
+    </customValue>
+    <customValue>
+        <fullName>Brunswick(Bouverie)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Brunswick(Bouverie)</label>
+    </customValue>
+    <customValue>
+        <fullName>Melbourne(Bundoora)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Melbourne(Bundoora)</label>
+    </customValue>
+    <customValue>
+        <fullName>Chisholm311(Chisholm Institute)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chisholm311(Chisholm Institute)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bundoora</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bundoora</label>
+    </customValue>
+    <customValue>
+        <fullName>Undergraduate;Bendigo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Undergraduate;Bendigo</label>
+    </customValue>
+    <customValue>
+        <fullName>Berwick(Chisholm Institute)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Berwick(Chisholm Institute)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bundoora (Latrobe College)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bundoora (Latrobe College)</label>
+    </customValue>
+    <description>Created for IST-43 to know the campus city</description>
+    <masterLabel>I_ST_Campus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

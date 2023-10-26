@@ -1,0 +1,32 @@
+<aura:component implements="forceCommunity:themeLayout">
+    <aura:attribute name="customHeader" type="Aura.Component[]" required="false" />
+    <aura:attribute name="customRegion" type="Aura.Component[]" required="false" />
+    <aura:attribute name="themeHeader" type="Aura.Component[]" required="false" />
+    <aura:attribute name="themeHero" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="content" type="Aura.Component[]" required="false"></aura:attribute>
+    
+    <aura:attribute name="footer_section" type="Aura.Component[]" required="false"></aura:attribute>
+    <div class="slds-grid slds-grid--align-center slds-wrap">
+        <div class="themeHeader slds-col slds-size_1-of-1">
+            {!v.customHeader}
+        </div>
+        <div class="themeHero slds-col slds-size_1-of-1">
+            {!v.themeHero}
+        </div>
+        <div class="custom-content slds-col slds-size_1-of-1">
+            <div class="custom-section">
+                {!v.body}
+            </div>
+        </div>
+        <!--div class="container">
+            <div class="contentPanel">
+                {!v.content}
+            </div>
+        </div-->
+        <div class="section custom-footer">
+        	<div class="row">
+                <div class="whole">{!v.footer_section}</div>
+            </div>
+        </div>
+    </div>
+</aura:component>

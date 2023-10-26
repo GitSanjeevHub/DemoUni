@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Date_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(LEN(TEXT(DAY(StartDate))) = 1, &quot;0&quot; &amp; TEXT(DAY(StartDate)), TEXT(DAY(StartDate)))
+&amp; &quot;-&quot; &amp; 
+IF(LEN(TEXT(MONTH(StartDate))) = 1, &quot;0&quot; &amp; TEXT(MONTH(StartDate)),TEXT(MONTH(StartDate)))
+
+&amp; &quot;-&quot; &amp; 
+
+TEXT(YEAR(StartDate))</formula>
+    <label>Start Date</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

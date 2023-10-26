@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_RES_RO</fullName>
+    <active>true</active>
+    <label>RES-RO</label>
+    <picklistValues>
+        <picklist>I_RS_Area_Responsible__c</picklist>
+        <values>
+            <fullName>Research Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Researcher</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MyPub Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC009</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIS Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Milestone_Status__c</picklist>
+        <values>
+            <fullName>Completed %2F agreed by Researcher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On target</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Possibly won%E2%80%99t meet the milestone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Milestone_Type__c</picklist>
+        <values>
+            <fullName>AEC Approval Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annual Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deliverable due from a sub-contractor%2Fcollaborator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethics approval required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Governance Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEC Approval Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBC Approval Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Progress report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Deliverable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project closure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Task_to_Outlook_Sync_Status__c</picklist>
+        <values>
+            <fullName>Delete Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delete Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delete Successful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insert Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insert Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insert Successful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Successful</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_PR_Stage__c</picklist>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finalisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On Schedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Superseded or Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to meet deadline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

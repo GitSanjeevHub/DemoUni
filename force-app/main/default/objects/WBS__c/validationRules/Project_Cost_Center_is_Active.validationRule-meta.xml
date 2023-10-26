@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Cost_Center_is_Active</fullName>
+    <active>true</active>
+    <description>Validation to ensure the project has an active Cost Center</description>
+    <errorConditionFormula>AND(
+NOT(ISPICKVAL( I_RS_WBS_Status__c , &apos;Draft&apos;)),
+OR(
+ISPICKVAL( I_RS_Integration_Status__c, &apos;Ready for Finance&apos;), 
+ISPICKVAL( I_RS_WBS_Status__c, &apos;Request To Finance&apos;) 
+),
+NOT(ISBLANK( I_RS_Project_Proposal__r.I_RS_Cost_Centre__c )),
+NOT(I_RS_Project_Proposal__r.I_RS_Turn_off_Validations__c),
+NOT(I_RS_Project_Proposal__r.I_RS_Cost_Centre__r.I_RS_Is_Active__c )
+)</errorConditionFormula>
+    <errorMessage>Please ensure the project has an active Cost Center</errorMessage>
+</ValidationRule>

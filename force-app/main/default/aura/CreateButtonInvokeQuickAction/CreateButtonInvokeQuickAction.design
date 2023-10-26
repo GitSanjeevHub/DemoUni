@@ -1,0 +1,8 @@
+<design:component>
+	
+    <design:attribute name="headerTitle"/>
+    <design:attribute name="iconName"/>
+    <design:attribute name="buttonTitle"/>
+    <design:attribute name="flowName"/>
+    
+</design:component>

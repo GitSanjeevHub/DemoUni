@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_ExternalId__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Concatenation of Course Parent Code, Course Parent Version Number, Course Parent Version Year, Course Instance Code, Course Instance Version Number and Course Instance Version Year</description>
+    <externalId>true</externalId>
+    <label>External Id</label>
+    <length>255</length>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

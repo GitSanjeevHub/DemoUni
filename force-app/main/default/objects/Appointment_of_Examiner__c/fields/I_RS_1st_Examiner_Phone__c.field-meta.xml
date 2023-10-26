@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_1st_Examiner_Phone__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If you can&apos;t find an existing contact record for the examiner, please enter their name and contact details.</inlineHelpText>
+    <label>1st Examiner Phone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Phone</type>
+</CustomField>

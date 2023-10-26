@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Contract__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Variation Using a New Contract</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Variation is closed as it did not proceed to execution due to cancellation or withdrawal.&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office refers the request to draft a Variation to Legal Services. Legal Services drafts the Variation and provides advice to the Research Office Contact and Researcher. &lt;/p&gt;</info>
+        <picklistValueName>Engage Legal to Draft Variation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Variation has been signed by both parties.&lt;/p&gt;</info>
+        <picklistValueName>Executed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office organises signing of the Variation by an authorised signatory, once all parties have agreed.&lt;/p&gt;</info>
+        <picklistValueName>La Trobe Countersign</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office prepares instructions for Variation including changes Agreement timelines, milestones, project budget or expenditure, any changes to Agreement terms and conditions and deliverables/outputs. The Research Office completes instructions to Legal Services. The Research Office will contact the Researcher to provide further details.&lt;/p&gt;</info>
+        <picklistValueName>Preparing Instructions</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Researcher reviews the draft Variation and Legal Services advice. When completed, the Researcher will advise Research Office if acceptable via chatter.&lt;/p&gt;</info>
+        <picklistValueName>Researcher Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office returns the signed Variation to the client or other party. The Research Office notifies the Researcher via Chatter and uploads a fully executed Variation to the Researcher Portal.  If the fully executed Variation is returned by the Researcher to the client or other party, as agreed with the Research Office Contact, the Researcher uploads the email and a copy of the fully executed Variation to the Researcher Portal (Related Tab under Files tab) and notifies the Research Office contact via Chatter.&lt;/p&gt;</info>
+        <picklistValueName>Send Signed Copy Back</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office sends the Variation to the client or other party with a copy to the Researcher. The Researcher may send the Variation to the client or other party, if agreed with the Research Office Contact. If the Variation is sent by the Researcher to the client or other party, as agreed with the Research Office Contact, the Researcher uploads the email and a copy of the Variation to the Researcher Portal (Related Tab under Files tab) and notifies the Research Office Contact via chatter. The client or other party may decide to sign the Variation at this stage, if acceptable. &lt;/p&gt;</info>
+        <picklistValueName>Send to Client</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office reviews and updates the Variation drafted by Legal Services and uploads Legal Services advice and draft Variation to the Researcher Portal (Related tab under Files tab).&lt;/p&gt;</info>
+        <picklistValueName>Update Variation</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_RS_Variation_Using_a_New_Contract</recordTypeName>
+</PathAssistant>

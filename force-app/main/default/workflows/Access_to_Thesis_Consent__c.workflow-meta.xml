@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>ATC_Approved_Candidate</fullName>
+        <description>ATC Approved - Candidate</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Candidate_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/ATC_Approved_Candidate</template>
+    </alerts>
+    <alerts>
+        <fullName>ATC_Approved_Supervisor</fullName>
+        <description>ATC Approved - Supervisor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Supervisor_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/ATC_Approved_Supervisor</template>
+    </alerts>
+    <alerts>
+        <fullName>ATC_Rejected_by_BGR_Candidate</fullName>
+        <ccEmails>exams.grs@latrobe.edu.au</ccEmails>
+        <description>ATC Rejected by BGR - Candidate</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Candidate_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/ATC_Rejected_by_BGR_Candidate</template>
+    </alerts>
+    <alerts>
+        <fullName>ATC_Rejected_by_BGR_Supervisor</fullName>
+        <description>ATC Rejected by BGR - Supervisor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Supervisor_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/ATC_Rejected_by_BGR_Supervisor</template>
+    </alerts>
+    <alerts>
+        <fullName>ATC_Rejected_by_Supervisor</fullName>
+        <ccEmails>exams.grs@latrobe.edu.au</ccEmails>
+        <description>ATC Rejected by Supervisor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Candidate_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Thesis_Submissions/ATC_Rejected_by_Supervisor_Candidate</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Set_ATC_Status_to_Chair_BGR_Approval</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>Chair BGR Approval</literalValue>
+        <name>Set ATC Status to Chair BGR Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_ATC_Status_to_Draft</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>Set ATC Status to Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_ATC_Status_to_GRS_Embargo_Processing</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>GRS Embargo Processing</literalValue>
+        <name>Set ATC Status to GRS Embargo Processing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_ATC_Status_to_GRS_Review</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>GRS Review</literalValue>
+        <name>Set ATC Status to GRS Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_ATC_Status_to_Supervisor_Approval</fullName>
+        <field>I_RS_Status__c</field>
+        <literalValue>Supervisor Approval</literalValue>
+        <name>Set ATC Status to Supervisor Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Description__c</fullName>
+    <description>Within the Apex Class and Method Name, give additional details on where/why this logging is happening. For example, two logs could happen in the same method - one is &apos;Save record&apos; and another is &apos;Schedule Batch&apos;.</description>
+    <externalId>false</externalId>
+    <label>Transaction Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

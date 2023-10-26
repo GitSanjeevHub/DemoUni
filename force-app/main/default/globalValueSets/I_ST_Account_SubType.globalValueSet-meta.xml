@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ACE (Australian Careers Education)</fullName>
+        <default>false</default>
+        <label>ACE (Australian Careers Education)</label>
+    </customValue>
+    <customValue>
+        <fullName>Aspire Partner</fullName>
+        <default>false</default>
+        <label>Aspire Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Event Non-School Organizer</fullName>
+        <default>false</default>
+        <label>Event Non-School Organizer</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital</fullName>
+        <default>false</default>
+        <label>Hospital</label>
+    </customValue>
+    <customValue>
+        <fullName>Industry</fullName>
+        <default>false</default>
+        <label>Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Internal Activities</fullName>
+        <default>false</default>
+        <label>Internal Activities</label>
+    </customValue>
+    <customValue>
+        <fullName>Library</fullName>
+        <default>false</default>
+        <label>Library</label>
+    </customValue>
+    <customValue>
+        <fullName>North Business Group</fullName>
+        <default>false</default>
+        <label>North Business Group</label>
+    </customValue>
+    <customValue>
+        <fullName>P-12</fullName>
+        <default>false</default>
+        <label>P-12</label>
+    </customValue>
+    <customValue>
+        <fullName>Primary</fullName>
+        <default>false</default>
+        <label>Primary</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Provider</fullName>
+        <default>false</default>
+        <label>Private Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Secondary Years 11-12</fullName>
+        <default>false</default>
+        <label>Secondary Years 11-12</label>
+    </customValue>
+    <customValue>
+        <fullName>Secondary Years 7-12</fullName>
+        <default>false</default>
+        <label>Secondary Years 7-12</label>
+    </customValue>
+    <customValue>
+        <fullName>Secondary Years 7-8</fullName>
+        <default>false</default>
+        <label>Secondary Years 7-8</label>
+    </customValue>
+    <customValue>
+        <fullName>Secondary Years 9-10</fullName>
+        <default>false</default>
+        <label>Secondary Years 9-10</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Or Agency</fullName>
+        <default>false</default>
+        <label>Service Or Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>TAFE</fullName>
+        <default>false</default>
+        <label>TAFE</label>
+    </customValue>
+    <customValue>
+        <fullName>Private</fullName>
+        <default>false</default>
+        <label>Private</label>
+    </customValue>
+    <customValue>
+        <fullName>Public</fullName>
+        <default>false</default>
+        <label>Public</label>
+    </customValue>
+    <customValue>
+        <fullName>University</fullName>
+        <default>false</default>
+        <label>University</label>
+    </customValue>
+    <customValue>
+        <fullName>Polytechnic</fullName>
+        <default>false</default>
+        <label>Polytechnic</label>
+    </customValue>
+    <customValue>
+        <fullName>Vocational provider</fullName>
+        <default>false</default>
+        <label>Vocational provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Early Child Care Centre</fullName>
+        <default>false</default>
+        <label>Early Child Care Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>RTO</fullName>
+        <default>false</default>
+        <label>RTO</label>
+    </customValue>
+    <customValue>
+        <fullName>L1 - Head office</fullName>
+        <default>false</default>
+        <label>L1 - Head office</label>
+    </customValue>
+    <customValue>
+        <fullName>L2 - Regional office</fullName>
+        <default>false</default>
+        <label>L2 - Regional office</label>
+    </customValue>
+    <customValue>
+        <fullName>L3 - Country head office</fullName>
+        <default>false</default>
+        <label>L3 - Country head office</label>
+    </customValue>
+    <customValue>
+        <fullName>L4 - City head office</fullName>
+        <default>false</default>
+        <label>L4 - City head office</label>
+    </customValue>
+    <customValue>
+        <fullName>L5 - Branch</fullName>
+        <default>false</default>
+        <label>L5 - Branch</label>
+    </customValue>
+    <customValue>
+        <fullName>L6 -Sub contractor</fullName>
+        <default>false</default>
+        <label>L6 -Sub contractor</label>
+    </customValue>
+    <description>Created for Account Management</description>
+    <masterLabel>I_ST_Account_SubType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_RANK__c</fullName>
+    <description>Calculated based on Total Score as &quot;Cold/Warm/Hot/Sizzling&quot;</description>
+    <externalId>false</externalId>
+    <formula>IF( I_RM_Total_Score__c&gt;75 , &apos;Sizzling&apos;, IF( I_RM_Total_Score__c&lt;=75&amp;&amp; I_RM_Total_Score__c&gt;50 , &apos;Hot&apos;,IF( I_RM_Total_Score__c&lt;=50&amp;&amp; I_RM_Total_Score__c&gt;25 , &apos;Warm&apos;,&apos;Cold&apos;)) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Rank</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

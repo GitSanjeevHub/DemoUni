@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Became_Alumni_On__c</fullName>
+    <description>I_ST_Became_Alumni_On__c populated on the stage change for contact. Added for IST-256</description>
+    <externalId>false</externalId>
+    <label>Became Alumni On</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

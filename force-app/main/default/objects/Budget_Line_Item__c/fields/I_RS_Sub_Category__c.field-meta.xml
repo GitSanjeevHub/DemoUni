@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Sub_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Level A 1</fullName>
+                <default>false</default>
+                <label>Level A 1</label>
+            </value>
+            <value>
+                <fullName>Level A 2</fullName>
+                <default>false</default>
+                <label>Level A 2</label>
+            </value>
+            <value>
+                <fullName>Level A 3</fullName>
+                <default>false</default>
+                <label>Level A 3</label>
+            </value>
+            <value>
+                <fullName>Level A 4</fullName>
+                <default>false</default>
+                <label>Level A 4</label>
+            </value>
+            <value>
+                <fullName>Level A 5</fullName>
+                <default>false</default>
+                <label>Level A 5</label>
+            </value>
+            <value>
+                <fullName>Level A 6</fullName>
+                <default>false</default>
+                <label>Level A 6</label>
+            </value>
+            <value>
+                <fullName>Level A 7</fullName>
+                <default>false</default>
+                <label>Level A 7</label>
+            </value>
+            <value>
+                <fullName>Level A 8</fullName>
+                <default>false</default>
+                <label>Level A 8</label>
+            </value>
+            <value>
+                <fullName>Level B 1</fullName>
+                <default>false</default>
+                <label>Level B 1</label>
+            </value>
+            <value>
+                <fullName>Level B 2</fullName>
+                <default>false</default>
+                <label>Level B 2</label>
+            </value>
+            <value>
+                <fullName>Level B 3</fullName>
+                <default>false</default>
+                <label>Level B 3</label>
+            </value>
+            <value>
+                <fullName>Level B 4</fullName>
+                <default>false</default>
+                <label>Level B 4</label>
+            </value>
+            <value>
+                <fullName>Level B 5</fullName>
+                <default>false</default>
+                <label>Level B 5</label>
+            </value>
+            <value>
+                <fullName>Level B 6</fullName>
+                <default>false</default>
+                <label>Level B 6</label>
+            </value>
+            <value>
+                <fullName>Level C 1</fullName>
+                <default>false</default>
+                <label>Level C 1</label>
+            </value>
+            <value>
+                <fullName>Level C 2</fullName>
+                <default>false</default>
+                <label>Level C 2</label>
+            </value>
+            <value>
+                <fullName>Level C 3</fullName>
+                <default>false</default>
+                <label>Level C 3</label>
+            </value>
+            <value>
+                <fullName>Level C 4</fullName>
+                <default>false</default>
+                <label>Level C 4</label>
+            </value>
+            <value>
+                <fullName>Level C 5</fullName>
+                <default>false</default>
+                <label>Level C 5</label>
+            </value>
+            <value>
+                <fullName>Level C 6</fullName>
+                <default>false</default>
+                <label>Level C 6</label>
+            </value>
+            <value>
+                <fullName>Level D 1</fullName>
+                <default>false</default>
+                <label>Level D 1</label>
+            </value>
+            <value>
+                <fullName>Level D 2</fullName>
+                <default>false</default>
+                <label>Level D 2</label>
+            </value>
+            <value>
+                <fullName>Level D 3</fullName>
+                <default>false</default>
+                <label>Level D 3</label>
+            </value>
+            <value>
+                <fullName>Level D 4</fullName>
+                <default>false</default>
+                <label>Level D 4</label>
+            </value>
+            <value>
+                <fullName>Level E 1</fullName>
+                <default>false</default>
+                <label>Level E 1</label>
+            </value>
+            <value>
+                <fullName>HEO1-1</fullName>
+                <default>false</default>
+                <label>HEO1-1</label>
+            </value>
+            <value>
+                <fullName>HEO1-2</fullName>
+                <default>false</default>
+                <label>HEO1-2</label>
+            </value>
+            <value>
+                <fullName>HEO1-3</fullName>
+                <default>false</default>
+                <label>HEO1-3</label>
+            </value>
+            <value>
+                <fullName>HEO1-4</fullName>
+                <default>false</default>
+                <label>HEO1-4</label>
+            </value>
+            <value>
+                <fullName>HEO2-1</fullName>
+                <default>false</default>
+                <label>HEO2-1</label>
+            </value>
+            <value>
+                <fullName>HEO2-2</fullName>
+                <default>false</default>
+                <label>HEO2-2</label>
+            </value>
+            <value>
+                <fullName>HEO2-3</fullName>
+                <default>false</default>
+                <label>HEO2-3</label>
+            </value>
+            <value>
+                <fullName>HEO3-1</fullName>
+                <default>false</default>
+                <label>HEO3-1</label>
+            </value>
+            <value>
+                <fullName>HEO3-2</fullName>
+                <default>false</default>
+                <label>HEO3-2</label>
+            </value>
+            <value>
+                <fullName>HEO3-3</fullName>
+                <default>false</default>
+                <label>HEO3-3</label>
+            </value>
+            <value>
+                <fullName>HEO3-4</fullName>
+                <default>false</default>
+                <label>HEO3-4</label>
+            </value>
+            <value>
+                <fullName>HEO3-5</fullName>
+                <default>false</default>
+                <label>HEO3-5</label>
+            </value>
+            <value>
+                <fullName>HEO3-6</fullName>
+                <default>false</default>
+                <label>HEO3-6</label>
+            </value>
+            <value>
+                <fullName>HEO3-7</fullName>
+                <default>false</default>
+                <label>HEO3-7</label>
+            </value>
+            <value>
+                <fullName>HEO4-1</fullName>
+                <default>false</default>
+                <label>HEO4-1</label>
+            </value>
+            <value>
+                <fullName>HEO4-2</fullName>
+                <default>false</default>
+                <label>HEO4-2</label>
+            </value>
+            <value>
+                <fullName>HEO4-3</fullName>
+                <default>false</default>
+                <label>HEO4-3</label>
+            </value>
+            <value>
+                <fullName>HEO4-4</fullName>
+                <default>false</default>
+                <label>HEO4-4</label>
+            </value>
+            <value>
+                <fullName>HEO5-1</fullName>
+                <default>false</default>
+                <label>HEO5-1</label>
+            </value>
+            <value>
+                <fullName>HEO5-2</fullName>
+                <default>false</default>
+                <label>HEO5-2</label>
+            </value>
+            <value>
+                <fullName>HEO5-3</fullName>
+                <default>false</default>
+                <label>HEO5-3</label>
+            </value>
+            <value>
+                <fullName>HEO5-4</fullName>
+                <default>false</default>
+                <label>HEO5-4</label>
+            </value>
+            <value>
+                <fullName>HEO5-5</fullName>
+                <default>false</default>
+                <label>HEO5-5</label>
+            </value>
+            <value>
+                <fullName>HEO5-6</fullName>
+                <default>false</default>
+                <label>HEO5-6</label>
+            </value>
+            <value>
+                <fullName>HEO5-7</fullName>
+                <default>false</default>
+                <label>HEO5-7</label>
+            </value>
+            <value>
+                <fullName>HEO6-1</fullName>
+                <default>false</default>
+                <label>HEO6-1</label>
+            </value>
+            <value>
+                <fullName>HEO6-2</fullName>
+                <default>false</default>
+                <label>HEO6-2</label>
+            </value>
+            <value>
+                <fullName>HEO6-3</fullName>
+                <default>false</default>
+                <label>HEO6-3</label>
+            </value>
+            <value>
+                <fullName>HEO6-4</fullName>
+                <default>false</default>
+                <label>HEO6-4</label>
+            </value>
+            <value>
+                <fullName>HEO6-5</fullName>
+                <default>false</default>
+                <label>HEO6-5</label>
+            </value>
+            <value>
+                <fullName>HEO7-1</fullName>
+                <default>false</default>
+                <label>HEO7-1</label>
+            </value>
+            <value>
+                <fullName>HEO7-2</fullName>
+                <default>false</default>
+                <label>HEO7-2</label>
+            </value>
+            <value>
+                <fullName>HEO7-3</fullName>
+                <default>false</default>
+                <label>HEO7-3</label>
+            </value>
+            <value>
+                <fullName>HEO7-4</fullName>
+                <default>false</default>
+                <label>HEO7-4</label>
+            </value>
+            <value>
+                <fullName>HEO7-5</fullName>
+                <default>false</default>
+                <label>HEO7-5</label>
+            </value>
+            <value>
+                <fullName>HEO7-6</fullName>
+                <default>false</default>
+                <label>HEO7-6</label>
+            </value>
+            <value>
+                <fullName>HEO8-1</fullName>
+                <default>false</default>
+                <label>HEO8-1</label>
+            </value>
+            <value>
+                <fullName>HEO8-2</fullName>
+                <default>false</default>
+                <label>HEO8-2</label>
+            </value>
+            <value>
+                <fullName>HEO8-3</fullName>
+                <default>false</default>
+                <label>HEO8-3</label>
+            </value>
+            <value>
+                <fullName>HEO8-4</fullName>
+                <default>false</default>
+                <label>HEO8-4</label>
+            </value>
+            <value>
+                <fullName>HEO8-5</fullName>
+                <default>false</default>
+                <label>HEO8-5</label>
+            </value>
+            <value>
+                <fullName>HEO8-6</fullName>
+                <default>false</default>
+                <label>HEO8-6</label>
+            </value>
+            <value>
+                <fullName>HEO8-7</fullName>
+                <default>false</default>
+                <label>HEO8-7</label>
+            </value>
+            <value>
+                <fullName>HEO8-8</fullName>
+                <default>false</default>
+                <label>HEO8-8</label>
+            </value>
+            <value>
+                <fullName>HEO9-1</fullName>
+                <default>false</default>
+                <label>HEO9-1</label>
+            </value>
+            <value>
+                <fullName>HEO9-2</fullName>
+                <default>false</default>
+                <label>HEO9-2</label>
+            </value>
+            <value>
+                <fullName>HEO9-3</fullName>
+                <default>false</default>
+                <label>HEO9-3</label>
+            </value>
+            <value>
+                <fullName>HEO9-4</fullName>
+                <default>false</default>
+                <label>HEO9-4</label>
+            </value>
+            <value>
+                <fullName>HEO10-1</fullName>
+                <default>false</default>
+                <label>HEO10-1</label>
+            </value>
+            <value>
+                <fullName>Acad other casual</fullName>
+                <default>false</default>
+                <label>Acad other casual</label>
+            </value>
+            <value>
+                <fullName>Acad other casual (PhD)</fullName>
+                <default>false</default>
+                <label>Acad other casual (PhD)</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 1</fullName>
+                <default>false</default>
+                <label>Casual HEO 1</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 2</fullName>
+                <default>false</default>
+                <label>Casual HEO 2</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 3</fullName>
+                <default>false</default>
+                <label>Casual HEO 3</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 4</fullName>
+                <default>false</default>
+                <label>Casual HEO 4</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 5</fullName>
+                <default>false</default>
+                <label>Casual HEO 5</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 6</fullName>
+                <default>false</default>
+                <label>Casual HEO 6</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 7</fullName>
+                <default>false</default>
+                <label>Casual HEO 7</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 8</fullName>
+                <default>false</default>
+                <label>Casual HEO 8</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 9</fullName>
+                <default>false</default>
+                <label>Casual HEO 9</label>
+            </value>
+            <value>
+                <fullName>Stipend</fullName>
+                <default>false</default>
+                <label>Stipend</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Casual - Other Academic</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Casual - Other Academic</label>
+            </value>
+            <value>
+                <fullName>Casual - Other Academic (PhD)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Casual - Other Academic (PhD)</label>
+            </value>
+            <value>
+                <fullName>Research Assistant HEO4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Research Assistant HEO4</label>
+            </value>
+            <value>
+                <fullName>Research Assistant HEO5</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Research Assistant HEO5</label>
+            </value>
+            <value>
+                <fullName>Research Assistant HEO6</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Research Assistant HEO6</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Current La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Non-La Trobe researcher</controllingFieldValue>
+            <valueName>Not Applicable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level A 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level A 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level A 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level A 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level A 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level A 6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level A 7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level A 8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level B 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level B 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level B 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level B 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level B 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level B 6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level C 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level C 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level C 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level C 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level C 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level C 6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level D 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level D 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level D 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level D 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Level E 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO1-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO1-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO1-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO1-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO2-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO2-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO2-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO3-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO3-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO3-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO3-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO3-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO3-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO3-7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO4-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO4-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO4-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO4-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO5-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO5-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO5-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO5-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO5-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO5-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO5-7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO6-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO6-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO6-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO6-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <controllingFieldValue>Research Assistant</controllingFieldValue>
+            <valueName>HEO6-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO7-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO7-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO7-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO7-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO7-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO7-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO8-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO8-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO8-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO8-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO8-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO8-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO8-7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO8-8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO9-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO9-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO9-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO9-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>HEO10-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Acad other casual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Acad other casual (PhD)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Casual HEO 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Casual HEO 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Casual HEO 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Casual HEO 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Casual HEO 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Casual HEO 6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Casual HEO 7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Casual HEO 8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future La Trobe staff</controllingFieldValue>
+            <valueName>Casual HEO 9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Student</controllingFieldValue>
+            <valueName>Stipend</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

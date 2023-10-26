@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <description>On clicking &apos;Delete&apos;, archive the Course Availability record.</description>
+    <interviewLabel>Archive Course Availability {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Archive Course Availability</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordUpdates>
+        <description>When &apos;Delete&apos; button is pressed, set Status = &apos;Archived&apos; for a Course Availability record.</description>
+        <name>Archive_Course_Availability_Record</name>
+        <label>Archive Course Availability Record</label>
+        <locationX>176</locationX>
+        <locationY>213</locationY>
+        <connector>
+            <targetReference>Finish_Message</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Message</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>L_AD_Course_Availability_Status__c</field>
+            <value>
+                <stringValue>Archived</stringValue>
+            </value>
+        </inputAssignments>
+        <object>CourseAvailability__c</object>
+    </recordUpdates>
+    <screens>
+        <name>Error_Message</name>
+        <label>Error Message</label>
+        <locationX>176</locationX>
+        <locationY>457</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>DISP_TXT_1</name>
+            <fieldText>&lt;p&gt;There has been an error. Please contact your system administrator.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!$Flow.CurrentRecord}&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;{!$Flow.CurrentDateTime}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;{!$Flow.FaultMessage}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Finish_Message</name>
+        <label>Finish Message</label>
+        <locationX>366</locationX>
+        <locationY>213</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>DISP_TXT_2</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Record status set to &apos;Archived&apos;. Click &apos;Finish&apos; to continue.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>53</locationY>
+        <connector>
+            <targetReference>Archive_Course_Availability_Record</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

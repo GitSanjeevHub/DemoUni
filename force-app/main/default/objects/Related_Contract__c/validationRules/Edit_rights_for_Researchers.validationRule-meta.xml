@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_rights_for_Researchers</fullName>
+    <active>true</active>
+    <errorConditionFormula>($User.I_RS_Is_Researcher_User__c = &apos;1&apos;
+&amp;&amp;
+I_RS_Contract__r.I_RS_Locked__c = TRUE
+&amp;&amp;
+( I_RS_Contract__r.I_RS_First_Approver__c != $User.Id ||
+I_RS_Contract__r.I_RS_Second_Approver__c != $User.Id ))
+||
+($User.I_RS_Is_Researcher_User__c = &apos;1&apos;
+&amp;&amp;
+I_RS_Contract__r.OwnerId != $User.Id
+&amp;&amp;
+(I_RS_Contract__r.I_RS_First_Approver__c != $User.Id
+&amp;&amp;
+I_RS_Contract__r.I_RS_Second_Approver__c != $User.Id ))</errorConditionFormula>
+    <errorMessage>Unable to edit this record, please contact Research Office</errorMessage>
+</ValidationRule>

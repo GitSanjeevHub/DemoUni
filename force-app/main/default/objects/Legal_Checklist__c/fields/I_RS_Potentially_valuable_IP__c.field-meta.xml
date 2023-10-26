@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Potentially_valuable_IP__c</fullName>
+    <externalId>false</externalId>
+    <label>Potentially Valuable IP</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Confirmed no potentially valuable IP to be used or created</fullName>
+                <default>false</default>
+                <label>Confirmed no potentially valuable IP to be used or created</label>
+            </value>
+            <value>
+                <fullName>Yes-another party to this contract will own-LTU will have no interest and this is acceptable</fullName>
+                <default>false</default>
+                <label>Yes-another party to this contract will own-LTU will have no interest and this is acceptable</label>
+            </value>
+            <value>
+                <fullName>Yes-LTU existing IP to be used-addressed in the contract</fullName>
+                <default>false</default>
+                <label>Yes-LTU existing IP to be used-addressed in the contract</label>
+            </value>
+            <value>
+                <fullName>Yes-LTU existing IP to be used-seeking advice or amendments</fullName>
+                <default>false</default>
+                <label>Yes-LTU existing IP to be used-seeking advice or amendments</label>
+            </value>
+            <value>
+                <fullName>Yes-potential new valuable IP with LTU interest-addressed in contract and this is acceptable</fullName>
+                <default>false</default>
+                <label>Yes-potential new valuable IP with LTU interest-addressed in contract and this is acceptable</label>
+            </value>
+            <value>
+                <fullName>Yes-potential new valuable IP with LTU interest-seeking advice or amendments</fullName>
+                <default>false</default>
+                <label>Yes-potential new valuable IP with LTU interest-seeking advice or amendments</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

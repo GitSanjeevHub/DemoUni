@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Head_of_School__c</fullName>
+    <description>The Head of the School the Lead Chief Investigator belongs to (if any)</description>
+    <externalId>false</externalId>
+    <formula>BLANKVALUE(I_RS_LeadChiefInvestigator__r.Contact.I_RS_Head_Of_School__c, &apos;&apos;)</formula>
+    <label>Head of School</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

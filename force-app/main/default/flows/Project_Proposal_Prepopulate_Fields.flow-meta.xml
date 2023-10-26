@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Set the default Project Proposal values</description>
+        <name>Set_fields_on_Project_Proposal</name>
+        <label>Set fields on Project Proposal</label>
+        <locationX>635</locationX>
+        <locationY>306</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Competitive__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Funding_Opportunity_Fields.I_RS_Competitive__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Has_Funding_Opportunity</name>
+        <label>Has Funding Opportunity</label>
+        <locationX>168</locationX>
+        <locationY>295</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Has_Funding_Opportunity_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.I_RS_Funding_Opportunity__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Funding_Opportunity_Fields</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Used when creating a new Project Proposal to initialise certain fields</description>
+    <interviewLabel>Project Proposal: Prepopulate Fields {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Project Proposal: Prepopulate Fields</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get fields from Funding Opportunity to prepopulate this record with.</description>
+        <name>Get_Funding_Opportunity_Fields</name>
+        <label>Get Funding Opportunity Fields</label>
+        <locationX>333</locationX>
+        <locationY>305</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_fields_on_Project_Proposal</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.I_RS_Funding_Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Research_Opportunity__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>I_RS_Competitive__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>51</locationX>
+        <locationY>49</locationY>
+        <connector>
+            <targetReference>Has_Funding_Opportunity</targetReference>
+        </connector>
+        <object>Project_Proposal__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

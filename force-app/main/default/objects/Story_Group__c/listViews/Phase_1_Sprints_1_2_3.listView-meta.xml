@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phase_1_Sprints_1_2_3</fullName>
+    <columns>NAME</columns>
+    <columns>Planned_Sprint__c</columns>
+    <columns>Contains_RM_functions__c</columns>
+    <columns>Estiamted_Size__c</columns>
+    <columns>Description__c</columns>
+    <columns>Requires_Config__c</columns>
+    <columns>Code_Required__c</columns>
+    <columns>Community_Config_Required__c</columns>
+    <columns>Community_Code_Required__c</columns>
+    <columns>Integration_Required__c</columns>
+    <columns>Data_Migration_Required__c</columns>
+    <columns>Third_Party_App_Required__c</columns>
+    <columns>Uncertainty_Involved__c</columns>
+    <columns>Uncertainty_Description__c</columns>
+    <columns>OBJECT_ID</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Planned_Sprint__c</field>
+        <operation>includes</operation>
+        <value>1</value>
+    </filters>
+    <label>Phase 1 - Sprints 1, 2, 3</label>
+</ListView>

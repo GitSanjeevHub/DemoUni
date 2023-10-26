@@ -1,0 +1,3088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Variation_Using_a_Letter</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Contract_Compact_Layout</compactLayoutAssignment>
+    <label>La Trobe Variation (Template)</label>
+    <picklistValues>
+        <picklist>I_RS_Agreement_Type__c</picklist>
+        <values>
+            <fullName>Clinical Trial Site Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confidentiality Deed%2FNDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting Services Agreement %28Non-Research%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractors Agreement %28services to LTU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grant Funding Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Honorary%2FAdjunct%2FVisitors Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital%2FHealth Services Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry PhD Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intellectual Property Assignment Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licence Agreement %28receiving%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licence Agreement %28supplying%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Master Services Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material%2FData Transfer Agreement %28receiving%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material%2FData Transfer Agreement %28supplying%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memorandum of Understanding %28MOU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Institutional Agreement %28MIA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novation Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership%2FParticipation Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Collaboration Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Consulting Services Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarship Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start-up %2F Spin-out Related Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Researcher Deed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subcontract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variation %2F Termination Deed%2FAgreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteer Deed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved with Conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open for Approval</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted for Approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Closure_Reason__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did not Proceed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Status__c</picklist>
+        <values>
+            <fullName>Client Countersign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>La Trobe Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notify Appropriate Stakeholders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notify of Variation Outcome</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Type__c</picklist>
+        <values>
+            <fullName>Agreement Variation Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Agreement Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_PR_Category__c</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_PR_Comission_Rates__c</picklist>
+        <values>
+            <fullName>10%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%2E5%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sliding Scale from 10 - 12%2E5%25 %28based on targets%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sliding Scale from 10 - 15%25 %28based on targets%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sliding Scale from 12%2E5 - 15%25 %28based on targets%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Various rates</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_PR_Discipline__c</picklist>
+        <values>
+            <fullName>Aboriginal Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acute%2FCritical Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administration%2FManagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administrative Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aged Care Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture%2C Environmental and Related Studies%2C n%2Ee%2Ec%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture%2C n%2Ee%2Ec%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Algorithms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ancient Greek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Animal %26 Vet Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Animal Husbandry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anthropology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applied Cloud Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applied Information Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aquaculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archaeology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art Therapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artificial Intelligence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asian Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atmospheric Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audio Visual Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auslan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australian Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bachelor Of Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking Finance and Related Fields</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Behavioural Health Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biochemistry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bioinformatics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biological Science n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biological Science-Neuoroscience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biomed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biomedical Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Botany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burmese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business and Commercial Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business and Management%2C n%2Ee%2Ec%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care For The Aged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care For The Disabled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Career Development Programmes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Sciences%2C n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemistry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cinema Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil Engineering n%2Ee%2Ec%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication and Media Studies%2C N%2EE%2EC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Social Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complementary Course Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complemnt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Graphics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Science n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Systems Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict Resolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conservation Biology and Ecology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constitutional Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counselling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counselling and Human Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creative Arts%2C n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Criminal Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Criminology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Critical Care Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cultural Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curriculum Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Structures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Database Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deaf Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decision Support Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dentistry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dietetics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Marketing Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability Practice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distance Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eco History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Econometrics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education - Dip Ed Subjects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical And Electronic Engineering And Technology nec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical and Electronic Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic and Communication Sci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English Language Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English as a Second Lang%2ETeach%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Studies%2C n%2Ee%2Ec%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Epidemiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ergonomics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>European Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Behavioural Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Computing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Humanities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Lang Visual and Perf Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Maths</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Public Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Social Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange-Social Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exercise Physiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exercise Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Therapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farm Management and Agribusiness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Film Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fine Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Processing Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Science and Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food and Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forensic Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gender%2C Sexuality And Diversity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Economics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Education Programs nec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genetics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geography</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geotechnical Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerontology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graphic Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greek Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health -Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Admin and Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Care Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Data Integrity and Auditing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Information Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Promotion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health System Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>History and Philosophy of Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horticulture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hum%2FEnv Bio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Biosciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Communication Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Geography</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Movement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Resource Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Welfare Stud%2E and Serv n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Welfare Studies and Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Humanities and Social Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydrogeology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydrology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indigenous Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesian%2FMalay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Technology NEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance and Actuarial Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intensive Italian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interdisciplinary Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Medicine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investment and Securities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Journalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Justice Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratory Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land%2C Parks and Wildlife Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Language And Literature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latin American Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law and Entrepreneurship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law%2C n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Learning Skills Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Practice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linguistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mathematical Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mathematics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mathematics Educ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media %26 Comms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mediterranean Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental Health Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microbiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwifery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modern Languages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mothers and Childrens Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multicultural Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Music</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naturopathy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Networks and Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neurosciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursing n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nutrition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Occupational Health And Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Occupational Therapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operating Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Science%2C n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oral Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organisation Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orthoptics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Natural and Physics Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palliative Care Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paramedical Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pathology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perioperative Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perioperative Practices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Management Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest %26 Weed Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmacology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philosophy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photography</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physiotherapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Podiatry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policy Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Politics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Postgraduate Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Writing and Speech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Programming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosthetics and Orthotics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychoanalytic Studs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychological Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Health Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Health n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchasing%2C Warehousing and Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation Leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rehabilitation Therapies nec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religious Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revolutionary Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romanca Languages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales and Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanskrit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Science - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sociology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soil Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern And European Languages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speech Pathology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport %26 Recreation n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport Coaching and Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport and Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports Coaching%2C Officiating and Instruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studies in Human Society</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studies in Human Society%2C n%2Ee%2Ec%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studies in Western Tradition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surveying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Analysis and Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taxation Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teacher Ed%2E%3A Voc%2E Ed%2Eand Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teacher Ed%3A Higher Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teacher Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teacher Education%3A Early Childhood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teacher Education%3A Primary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teacher Education%3A Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching Education n%2Ee%2Ec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunication Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Therapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tourism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tourism Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tourism and Hospitality Studs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Translating and Interpreting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown Discipline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unspec Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veterinary Assisting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visual Arts and Crafts N%2EE%2EC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visual%2FPerforming Art</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viticulture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water and Sanitary Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Welfare Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wine Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Written Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoology</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_PR_Territory__c</picklist>
+        <values>
+            <fullName>ADELIE LAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUSTRALIAN EXTERNAL TERRITORIES%2C NEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelie Land %28France%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Afghanistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aland Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Albania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Algeria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>American Samoa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andorra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anguilla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antarctica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antigua and Barbuda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Argentina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Argentinian Antarctic Territory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armenia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aruba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia %28includes External Territories%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australian Antarctic Territory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australian External Territories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Azerbaijan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BAHAMAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRITISH VIRGIN ISLANDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bahamas %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bahrain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bangladesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barbados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belarus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belize</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bermuda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bhutan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bolivia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bolivia %28Plurinational State of%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonaire%2C Sint Eustatius and Saba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bosnia and Herzegovina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Botswana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouvet Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brazil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>British Antarctic Territory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>British Indian Ocean Territory %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brunei Darussalam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bulgaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burkina Faso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burma %28Myanmar%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burundi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Byelorussian SSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHINESE ASIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COOK ISLANDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COTE D%27IVOIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CZECH REPUBLIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cabo Verde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambodia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cameroon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canton and Enderbury Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cayman Islands %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central African Republic %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>China %28excludes SARs and Taiwan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Christmas Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cocos %28Keeling%29 Islands %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colombia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comoros %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congo %28the Democratic Republic of the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congo %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congo%2C Democratic Republic Of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cook Islands %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Costa Rica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Croatia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cuba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curaçao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyprus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Czech Republic %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Czechoslovakia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Côte d%27Ivoire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEMOCRATIC PEOPLE%27S REPUBLIC OF KOREA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEMOCRATIC REPUBLIC OF CONGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOMINICAN REPUBLIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dahomey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denmark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Djibouti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dominica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dominican Republic %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dronning Maud Land</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Timor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecuador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Egypt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Salvador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>England</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equatorial Guinea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eritrea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eswatini</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethiopia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falkland Islands %28the%29 %5BMalvinas%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faroe Islands %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fiji</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France%2C Metropolitan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Afars and Issas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Guiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Polynesia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Southern Territories %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Southern and Antarctic Territories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gabon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gambia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gambia %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaza Strip and West Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German Democratic Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ghana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gibraltar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gilbert and Ellice Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greenland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grenada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guadeloupe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guatemala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guernsey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guinea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guinea-Bissau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guyana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haiti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heard Island and McDonald Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holy See %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Honduras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hungary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iceland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>India</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iran %28Islamic Republic of%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iraq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Isle of Man</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Israel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jamaica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jersey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Johnston Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jordan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOREA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOSOVO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kazakhstan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kiribati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korea %28the Democratic People%27s Republic of%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korea %28the Republic of%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korea%2C Republic of %28South%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kuwait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kyrgyz Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kyrgyzstan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lao People%27s Democratic Republic %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latvia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lebanon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lesotho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liberia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Libya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liechtenstein</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lithuania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luxembourg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MELANESIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MICRONESIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOLDOVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macedonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macedonia %28the former Yugoslav Republic of%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madagascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malawi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malaysia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maldives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marshall Islands %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Martinique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauritania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauritius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mayotte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micronesia %28Federated States of%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midway Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moldova %28the Republic of%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mongolia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montenegro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montserrat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morocco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mozambique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Myanmar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NULL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Namibia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nauru</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nepal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands Antilles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neutral Zone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Caledonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Hebrides</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Zealand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nicaragua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Niger %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nigeria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Niue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norfolk Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Macedonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northern Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northern Mariana Islands %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not entered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PALESTINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific Islands %28Trust Territory%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pakistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palestine%2C State of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panama Canal Zone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Papua New Guinea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paraguay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peru</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philippines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philippines %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pitcairn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Puerto Rico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qatar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queen Maud Land</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REUNION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROSS DEPENDENCY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ross Dependency %28New Zealand%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian Federation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian Federation %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rwanda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réunion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAMOA%2C AMERICAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOUTHERN AND EAST AFRICA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ST VINCENT AND THE GRENADINES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Barthélemy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Helena%2C Ascension and Tristan da Cunha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Kitts and Nevis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Lucia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Martin %28French part%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Pierre and Miquelon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Vincent and the Grenadines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samoa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Marino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sao Tome and Principe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saudi Arabia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scotland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senegal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serbia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serbia and Montenegro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seychelles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra Leone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sikkim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sint Maarten %28Dutch part%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovak Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovakia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovenia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solomon Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Somalia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Georgia and the South Sandwich Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Korea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Sudan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern Rodesia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish North Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sri Lanka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sudan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sudan %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suriname</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Svalbard and Jan Mayen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swaziland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switzerland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syrian Arab Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taiwan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taiwan %28Province of China%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tajikistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tanzania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tanzania%2C United Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thailand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timor-Leste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Togo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tokelau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tonga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trinidad and Tobago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tunisia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkmenistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turks and Caicos Islands %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuvalu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNKNOWN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uganda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ukraine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Arab Emirates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Arab Emirates %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom of Great Britain and Northern Ireland %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States Minor Outlying Islands %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States Miscellaneous Pacific Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States Of America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States of America %28the%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upper Volta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uruguay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uzbekistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIRGIN ISLANDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vanuatu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venezuela</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venezuela %28Bolivarian Republic of%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viet Nam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viet-Nam%2C Democratic Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vietnam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virgin Islands %28British%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virgin Islands %28U%2ES%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WALES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wake Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallis and Futuna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Western Sahara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YUGOSLAVIA%2C FEDERAL REPUBLIC OF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yemen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yemen%2C Democratic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yugoslavia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zambia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zimbabwe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Åland Islands</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L_PR_Variation_type__c</picklist>
+        <values>
+            <fullName>Incentive scheme implemented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Please specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other changes of scope%2Fnature of the partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updates to Schedule 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updates to agreement clauses</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

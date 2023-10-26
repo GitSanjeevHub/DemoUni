@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>IST Aspire Admission</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>L_BAU_VTAC_NON_VTAC__c</fieldNames>
+        <picklistValueName>Awaiting Results</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>L_BAU_VTAC_NON_VTAC__c</fieldNames>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>L_BAU_VTAC_NON_VTAC__c</fieldNames>
+        <picklistValueName>Conditional 11</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>L_BAU_VTAC_NON_VTAC__c</fieldNames>
+        <picklistValueName>Conditional 12</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>L_BAU_VTAC_NON_VTAC__c</fieldNames>
+        <picklistValueName>In Progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>L_BAU_VTAC_NON_VTAC__c</fieldNames>
+        <picklistValueName>Offer</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>L_BAU_VTAC_NON_VTAC__c</fieldNames>
+        <picklistValueName>Open</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>L_BAU_VTAC_NON_VTAC__c</fieldNames>
+        <picklistValueName>Received</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>L_BAU_VTAC_NON_VTAC__c</fieldNames>
+        <picklistValueName>Received 12</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>L_BAU_Admission</recordTypeName>
+</PathAssistant>

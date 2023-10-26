@@ -1,0 +1,18 @@
+<!--
+ - Created by burnside on 2019-05-15.
+ -->
+
+<aura:component description="FlowContainer">
+
+    <aura:attribute name="flowName" type="string" required="true"/>
+    <aura:attribute name="inputVariables" type="Object" default="[]"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <div class="slds-is-relative">
+
+        <lightning:flow aura:id="flow"/>
+
+    </div>
+
+</aura:component>

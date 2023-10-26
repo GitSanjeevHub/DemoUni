@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Nominated_Agency_staff__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Nominated Agency staff for Notices</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>I_RM_Affiliation__c.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>External Contact</value>
+        </filterItems>
+        <filterItems>
+            <field>I_RM_Affiliation__c.I_RM_Role__c</field>
+            <operation>equals</operation>
+            <value>External Contact</value>
+        </filterItems>
+        <infoMessage>You are allowed to select only External Contact.</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>I_RM_Affiliation__c</referenceTo>
+    <relationshipLabel>Agreements (Nominated Agency staff for Notices)</relationshipLabel>
+    <relationshipName>Agreements_Nominated_Agency_staff</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

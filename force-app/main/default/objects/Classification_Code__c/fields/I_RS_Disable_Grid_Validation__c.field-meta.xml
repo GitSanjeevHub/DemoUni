@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Disable_Grid_Validation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>In some cases, we want to turn off the typical validation for Classification Codes. e.g. Turn off &gt;0 rule when creating placeholder TOA records, which then gets overridden when they first save them.</description>
+    <externalId>false</externalId>
+    <label>Disable Grid Validation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

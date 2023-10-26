@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Contract__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>New Contract or Variation Request</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;This record is in draft.                                    &lt;/p&gt;&lt;p&gt;The researcher completes relevant fields. If this Agreement relates to an existing project, please select the relevant project (Project or Proposal field). Please provide instructions to the Research Office (Reasons for Agreement or Variation field).  If the Organisation doesn&amp;#39;t exist, please include the organisation name (Reasons for Agreement or Variation field). For Variations, select the existing Agreement to be varied (Parent Agreement field). Upload draft agreements or other related documents (Related Tab under Files tab) &lt;/p&gt;&lt;p&gt;Tip: Use the Chatter tab to make notes, ask questions or share updates.&lt;/p&gt;&lt;p&gt;When the draft record is complete, click Submit to the Research Office (top-right of screen)&lt;/p&gt;</info>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office reviews the request to review or draft an Agreement or Variation and relevant documentation. A Research Office Contact will be allocated and will be in touch to obtain further instructions.  &lt;/p&gt;</info>
+        <picklistValueName>Submit to Research Office</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>New_Contract_Or_Variation_Request</recordTypeName>
+</PathAssistant>

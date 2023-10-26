@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Nominated_for_peer_review__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>This indicates that an output has been nominated to be part of the sample put forward for peer review. The output will be counted towards the 30% for that document type that must be nominated for peer review in each field.</inlineHelpText>
+    <label>Nominated for peer review</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

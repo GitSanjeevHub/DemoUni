@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_Check_SAP_Customer_Number</fullName>
+    <active>true</active>
+    <description>Validates that only numbers are entered as SAP Customer Number</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(I_RS_SAP_Customer_Number__c )),
+NOT(REGEX(I_RS_SAP_Customer_Number__c, &quot;\\D*?(\\d\\D*?){10}&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_SAP_Customer_Number__c</errorDisplayField>
+    <errorMessage>Only numeric values are accepted for &quot;Finance Customer Number&quot;, ensure this number is 10 digits; include the leading zeroes.</errorMessage>
+</ValidationRule>

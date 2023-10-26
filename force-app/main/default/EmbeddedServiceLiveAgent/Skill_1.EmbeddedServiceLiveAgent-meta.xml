@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceLiveAgent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <embeddedServiceConfig>Skill_1</embeddedServiceConfig>
+    <embeddedServiceQuickActions>
+        <embeddedServiceLiveAgent>Skill_1</embeddedServiceLiveAgent>
+        <order>1</order>
+        <quickActionDefinition>Snapins_Case_OfflineCaseQuickAction_08h4a000000002C_1618193402860</quickActionDefinition>
+        <quickActionType>OfflineCase</quickActionType>
+    </embeddedServiceQuickActions>
+    <embeddedServiceQuickActions>
+        <embeddedServiceLiveAgent>Skill_1</embeddedServiceLiveAgent>
+        <order>1</order>
+        <quickActionDefinition>Snapins_Contact_PrechatQuickAction_08h4a000000002C_1656670031473</quickActionDefinition>
+        <quickActionType>Prechat</quickActionType>
+    </embeddedServiceQuickActions>
+    <embeddedServiceQuickActions>
+        <embeddedServiceLiveAgent>Skill_1</embeddedServiceLiveAgent>
+        <order>2</order>
+        <quickActionDefinition>Snapins_Case_PrechatQuickAction_08h4a000000002C_1656670031546</quickActionDefinition>
+        <quickActionType>Prechat</quickActionType>
+    </embeddedServiceQuickActions>
+    <enabled>true</enabled>
+    <fontSize>Medium</fontSize>
+    <isOfflineCaseEnabled>true</isOfflineCaseEnabled>
+    <isQueuePositionEnabled>false</isQueuePositionEnabled>
+    <liveChatButton>Skill_1</liveChatButton>
+    <liveChatDeployment>live_agent_setup_flow</liveChatDeployment>
+    <masterLabel>Skill 1</masterLabel>
+    <prechatEnabled>true</prechatEnabled>
+    <scenario>Service</scenario>
+</EmbeddedServiceLiveAgent>

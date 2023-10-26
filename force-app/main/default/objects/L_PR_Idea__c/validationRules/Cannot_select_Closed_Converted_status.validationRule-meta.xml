@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_select_Closed_Converted_status</fullName>
+    <active>true</active>
+    <description>User can not select Closed Converted status</description>
+    <errorConditionFormula>ISNULL( L_PR_Converted_Date__c ) &amp;&amp; ISPICKVAL( L_PR_Lead_Status__c , &apos;Closed – Converted&apos;) &amp;&amp; NOT(ISPICKVAL(PRIORVALUE( L_PR_Lead_Status__c ),&apos;Closed&apos;))</errorConditionFormula>
+    <errorDisplayField>L_PR_Lead_Status__c</errorDisplayField>
+    <errorMessage>Click Convert to Opportunity button.</errorMessage>
+</ValidationRule>

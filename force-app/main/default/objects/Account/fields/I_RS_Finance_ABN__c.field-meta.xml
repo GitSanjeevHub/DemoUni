@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Finance_ABN__c</fullName>
+    <description>Not visible for users. This is for System Admin to check if the ABN received from Finance is different from ABN in PRIME.
+Finance Integration will update this Field. If the value is different from &quot;I_RS_ABN__c&quot; admin may need to take action.</description>
+    <externalId>true</externalId>
+    <label>Finance ABN</label>
+    <length>11</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

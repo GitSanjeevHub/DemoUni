@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Staff_Group_Desc__c</fullName>
+    <description>This is the description that matches the staff group code. For example &quot;Continuing Full Time&quot;</description>
+    <externalId>false</externalId>
+    <label>Staff Group Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

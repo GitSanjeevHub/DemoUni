@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Update_Funding_Opp_When_Modified__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When a Funding Opportunity Staging is updated and this particular field is changed, push update to associated Funding Opportunity</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Update Funding Opp When Modified</label>
+    <type>Checkbox</type>
+</CustomField>

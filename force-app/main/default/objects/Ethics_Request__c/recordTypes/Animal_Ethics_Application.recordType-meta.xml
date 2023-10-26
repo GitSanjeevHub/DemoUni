@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Animal_Ethics_Application</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Animal_Ethics_Compact_Layout</compactLayoutAssignment>
+    <label>Animal Ethics Application</label>
+    <picklistValues>
+        <picklist>I_RS_AEC_Ethics_Application_Type__c</picklist>
+        <values>
+            <fullName>Improvement of animal management or production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance and improvement of human or animal health and welfare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obtain %26 establish significant information relevant to the understanding%2C maintenance or improvement of the natural environment%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The achievement of educational objectives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The understanding of human or animal biology</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Clinical_Trials__c</picklist>
+        <values>
+            <fullName>CTN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-drug Clinical Trial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_and_Privacy__c</picklist>
+        <values>
+            <fullName>EU Data Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensitive Data</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Ethics_Application_Review_Outcome__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed-off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Ready for Committee Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outcome Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subject to</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Ethics_Review_Committee__c</picklist>
+        <values>
+            <fullName>Animal Ethics Committee</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_IBC_Application_Clearance_Level__c</picklist>
+        <values>
+            <fullName>DIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DNIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exempt dealing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NLRD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_IBC_Application_Type__c</picklist>
+        <values>
+            <fullName>DIR Licence Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DNIR Licence Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_IBC_Review_Committee__c</picklist>
+        <values>
+            <fullName>La Trobe IBC</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Ratified__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ratified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Ratified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Request_Status__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Sponsor_Type__c</picklist>
+        <values>
+            <fullName>Commercial%2FIndustry Sponsored projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projects Sponsored by La Trobe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projects Sponsored by another organisation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Status__c</picklist>
+        <values>
+            <fullName>Assigned for Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Outcome Communicated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review by Research Office</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Type__c</picklist>
+        <values>
+            <fullName>Phenotype Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research SOP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

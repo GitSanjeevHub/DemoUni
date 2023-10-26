@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Application_Status__c</fullName>
+    <description>for IST-164</description>
+    <externalId>false</externalId>
+    <label>Application Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alternate offer considered</fullName>
+                <default>false</default>
+                <label>Alternate offer considered</label>
+            </value>
+            <value>
+                <fullName>Alternate Offer Declined</fullName>
+                <default>false</default>
+                <label>Alternate Offer Declined</label>
+            </value>
+            <value>
+                <fullName>Alternate offer made</fullName>
+                <default>false</default>
+                <label>Alternate offer made</label>
+            </value>
+            <value>
+                <fullName>Application in error</fullName>
+                <default>false</default>
+                <label>Application in error</label>
+            </value>
+            <value>
+                <fullName>Application Withdrawn</fullName>
+                <default>false</default>
+                <label>Application Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Await academic advice</fullName>
+                <default>false</default>
+                <label>Await academic advice</label>
+            </value>
+            <value>
+                <fullName>Await applicant comms</fullName>
+                <default>false</default>
+                <label>Await applicant comms</label>
+            </value>
+            <value>
+                <fullName>Await further doco</fullName>
+                <default>false</default>
+                <label>Await further doco</label>
+            </value>
+            <value>
+                <fullName>Awaiting interview</fullName>
+                <default>false</default>
+                <label>Awaiting interview</label>
+            </value>
+            <value>
+                <fullName>Await required doco</fullName>
+                <default>false</default>
+                <label>Await required doco</label>
+            </value>
+            <value>
+                <fullName>Conditional offer</fullName>
+                <default>false</default>
+                <label>Conditional offer</label>
+            </value>
+            <value>
+                <fullName>Escalated</fullName>
+                <default>false</default>
+                <label>Escalated</label>
+            </value>
+            <value>
+                <fullName>Make a conditional offer</fullName>
+                <default>false</default>
+                <label>Make a conditional offer</label>
+            </value>
+            <value>
+                <fullName>Make alternate offer</fullName>
+                <default>false</default>
+                <label>Make alternate offer</label>
+            </value>
+            <value>
+                <fullName>Make an offer</fullName>
+                <default>false</default>
+                <label>Make an offer</label>
+            </value>
+            <value>
+                <fullName>Not processed</fullName>
+                <default>false</default>
+                <label>Not processed</label>
+            </value>
+            <value>
+                <fullName>Offered</fullName>
+                <default>false</default>
+                <label>Offered</label>
+            </value>
+            <value>
+                <fullName>Offer Rescinded</fullName>
+                <default>false</default>
+                <label>Offer Rescinded</label>
+            </value>
+            <value>
+                <fullName>Other Preference offered</fullName>
+                <default>false</default>
+                <label>Other Preference offered</label>
+            </value>
+            <value>
+                <fullName>Pending results</fullName>
+                <default>false</default>
+                <label>Pending results</label>
+            </value>
+            <value>
+                <fullName>Rejected &amp; Referred</fullName>
+                <default>false</default>
+                <label>Rejected &amp; Referred</label>
+            </value>
+            <value>
+                <fullName>Unsuccessful</fullName>
+                <default>false</default>
+                <label>Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>Unsuccessful, not notified</fullName>
+                <default>false</default>
+                <label>Unsuccessful, not notified</label>
+            </value>
+            <value>
+                <fullName>Withdrawn preference</fullName>
+                <default>false</default>
+                <label>Withdrawn preference</label>
+            </value>
+            <value>
+                <fullName>Admitted And Not Enrolled</fullName>
+                <default>false</default>
+                <label>Admitted And Not Enrolled</label>
+            </value>
+            <value>
+                <fullName>Admitted And Enrolled</fullName>
+                <default>false</default>
+                <label>Admitted And Enrolled</label>
+            </value>
+            <value>
+                <fullName>Offer Admitted</fullName>
+                <default>false</default>
+                <label>Offer Admitted</label>
+            </value>
+            <value>
+                <fullName>Offer Accepted</fullName>
+                <default>false</default>
+                <label>Offer Accepted</label>
+            </value>
+            <value>
+                <fullName>Offer</fullName>
+                <default>false</default>
+                <label>Offer</label>
+            </value>
+            <value>
+                <fullName>Offer Deferred</fullName>
+                <default>false</default>
+                <label>Offer Deferred</label>
+            </value>
+            <value>
+                <fullName>Offer Lapsed</fullName>
+                <default>false</default>
+                <label>Offer Lapsed</label>
+            </value>
+            <value>
+                <fullName>Offer Declined</fullName>
+                <default>false</default>
+                <label>Offer Declined</label>
+            </value>
+            <value>
+                <fullName>Unoffered</fullName>
+                <default>false</default>
+                <label>Unoffered</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ranking_must_be_0_or_greater</fullName>
+    <active>true</active>
+    <description>Ranking field must be 0 or greater</description>
+    <errorConditionFormula>!ISBLANK(I_RS_Ranking__c) &amp;&amp; I_RS_Ranking__c &lt; 0</errorConditionFormula>
+    <errorDisplayField>I_RS_Ranking__c</errorDisplayField>
+    <errorMessage>Ranking cannot be negative</errorMessage>
+</ValidationRule>

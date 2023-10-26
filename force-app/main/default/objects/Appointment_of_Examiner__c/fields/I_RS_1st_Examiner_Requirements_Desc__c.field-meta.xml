@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_1st_Examiner_Requirements_Desc__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this to notify us of any special requirements the examiner has, such as if they require a hard copy of the thesis</inlineHelpText>
+    <label>List any special requirements</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Organisation_Alert_IMG__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(I_RM_Account__r.L_PR_Alert__c, IMAGE(&quot;/resource/1660132033000/OrganisationAlert&quot;,&quot;Yellow&quot;,30,30),&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Indicates if an active alert exists on the related Organisation</inlineHelpText>
+    <label>Organisation Alert</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

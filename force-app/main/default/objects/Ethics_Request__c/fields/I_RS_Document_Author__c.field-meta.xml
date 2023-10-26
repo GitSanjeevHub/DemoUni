@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Document_Author__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>The person responsible for writing the document and can be the same person as the Content Owner. This is populated by the Research Office.</inlineHelpText>
+    <label>Document Author</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Ethics Requests (Document Author)</relationshipLabel>
+    <relationshipName>Document_Author</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

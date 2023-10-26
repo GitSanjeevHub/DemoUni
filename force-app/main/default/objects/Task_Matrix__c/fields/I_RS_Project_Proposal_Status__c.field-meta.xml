@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Project_Proposal_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Project Proposal Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_Record_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Project_Proposal_Status</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Contract_La_Trobe_template</controllingFieldValue>
+            <valueName>Contract Instructions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Contract_La_Trobe_template</controllingFieldValue>
+            <valueName>Draft contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Contract_La_Trobe_template</controllingFieldValue>
+            <controllingFieldValue>I_RS_Contract_client_template</controllingFieldValue>
+            <controllingFieldValue>I_RS_Grant_with_limited_applications</controllingFieldValue>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <controllingFieldValue>I_RS_Other_grants</controllingFieldValue>
+            <controllingFieldValue>I_RS_Proposal</controllingFieldValue>
+            <valueName>Approvals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Contract_La_Trobe_template</controllingFieldValue>
+            <controllingFieldValue>I_RS_Contract_client_template</controllingFieldValue>
+            <valueName>Formalise Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Contract_client_template</controllingFieldValue>
+            <valueName>Provide Project Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Contract_client_template</controllingFieldValue>
+            <valueName>Review Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Grant_with_limited_applications</controllingFieldValue>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <valueName>Drafting NOI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Grant_with_limited_applications</controllingFieldValue>
+            <valueName>Panel Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Grant_with_limited_applications</controllingFieldValue>
+            <controllingFieldValue>I_RS_Other_grants</controllingFieldValue>
+            <valueName>Proposal Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Grant_with_limited_applications</controllingFieldValue>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <controllingFieldValue>I_RS_Other_grants</controllingFieldValue>
+            <valueName>Final draft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Grant_with_limited_applications</controllingFieldValue>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <controllingFieldValue>I_RS_Other_grants</controllingFieldValue>
+            <controllingFieldValue>I_RS_Proposal</controllingFieldValue>
+            <valueName>Review by Research Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Grant_with_limited_applications</controllingFieldValue>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <controllingFieldValue>I_RS_Other_grants</controllingFieldValue>
+            <valueName>Submission to Funding Body</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Grant_with_limited_applications</controllingFieldValue>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <controllingFieldValue>I_RS_Other_grants</controllingFieldValue>
+            <valueName>Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Grant_with_limited_applications</controllingFieldValue>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <controllingFieldValue>I_RS_Other_grants</controllingFieldValue>
+            <controllingFieldValue>I_RS_Proposal</controllingFieldValue>
+            <valueName>Successful</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <valueName>HoS NOI Validation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <valueName>Pitch Session</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <valueName>Peer review draft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <valueName>Peer review draft complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Notice_of_intention</controllingFieldValue>
+            <valueName>Rejoinders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Other_grants</controllingFieldValue>
+            <valueName>Create Proposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Proposal</controllingFieldValue>
+            <valueName>Draft Proposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Proposal</controllingFieldValue>
+            <valueName>Submission to Client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Proposal</controllingFieldValue>
+            <valueName>Negotiating</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Proposal</controllingFieldValue>
+            <valueName>Unsuccessful</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Recommendation</controllingFieldValue>
+            <valueName>Recommended</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Recommendation</controllingFieldValue>
+            <valueName>Dismissed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Recommendation</controllingFieldValue>
+            <valueName>Accepted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Non_Public_Proposal</controllingFieldValue>
+            <valueName>Initial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Non_Public_Proposal</controllingFieldValue>
+            <valueName>Submit to Research Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Placeholder</controllingFieldValue>
+            <valueName>PlaceHolder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Project</controllingFieldValue>
+            <valueName>Establish Contracts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Project</controllingFieldValue>
+            <valueName>Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Project</controllingFieldValue>
+            <valueName>Project Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>I_RS_Project</controllingFieldValue>
+            <valueName>Project Closed</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

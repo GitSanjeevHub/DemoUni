@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>I_RS_Note__c</field>
+        <formula>&quot;&lt;h4&gt;&lt;b&gt;&quot;  &amp; 
+&quot;Agreements for new projects should be requested using the&quot; &amp; &quot; &quot; &amp;
+&quot;&lt;a href=&quot; &amp; $Setup.URL_Variable__c.I_RS_Researcher_Portal_Base_URL__c &amp; &quot;/createrecord/New_Project_Proposal&quot; &amp; &quot;&gt;&apos;new project proposal&apos;&lt;/a&gt;&quot; &amp; &quot; &quot; &amp; 
+&quot;menu item. For all other agreements and variations use this form.&quot; &amp; &quot; &quot;   &amp;
+&quot;&lt;b&gt;&lt;h4&gt;&quot;</formula>
+    </fieldOverrides>
+    <label>New Agreement or Variation Request</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Note__c</field>
+                <uiBehavior>Readonly</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Type__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Reasons_for_Contract_or_Variation__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Organisation__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Project_Proposal__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>I_RS_Contract__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Contract__c</targetObject>
+    <targetRecordType>Contract__c.New_Contract_Or_Variation_Request</targetRecordType>
+    <type>Create</type>
+</QuickAction>

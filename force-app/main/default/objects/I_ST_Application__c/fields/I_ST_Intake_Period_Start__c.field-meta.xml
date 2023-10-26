@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Intake_Period_Start__c</fullName>
+    <externalId>false</externalId>
+    <formula>I_ST_Course_Availability__r.L_AD_Intake_Period__r.L_AD_Start_Date__c</formula>
+    <label>Intake Period Start Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

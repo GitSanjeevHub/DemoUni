@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Supervisory_College__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>College for the school of principle supervisor</description>
+    <externalId>false</externalId>
+    <label>Supervisory College</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>HDR Enrolments (College)</relationshipLabel>
+    <relationshipName>HDR_Enrolments1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

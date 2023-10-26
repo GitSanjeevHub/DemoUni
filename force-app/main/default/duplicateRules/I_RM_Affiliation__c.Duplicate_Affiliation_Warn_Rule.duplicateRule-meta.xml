@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOnInsert>Allow</actionOnInsert>
+    <actionOnUpdate>Allow</actionOnUpdate>
+    <alertText>A potential duplicate affiliation exists. Please review the matching records</alertText>
+    <description xsi:nil="true"/>
+    <duplicateRuleFilter>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+        <duplicateRuleFilterItems>
+            <field>Profile</field>
+            <operation>equals</operation>
+            <value>LTU PRIME</value>
+            <sortOrder>1</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Username</field>
+            <operation>equals</operation>
+            <value>m.ansari@latrobe.edu.au</value>
+            <sortOrder>2</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Profile</field>
+            <operation>equals</operation>
+            <value>LTU Industry Engagement</value>
+            <sortOrder>3</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Profile</field>
+            <operation>equals</operation>
+            <value>LTU Ethics</value>
+            <sortOrder>4</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Profile</field>
+            <operation>equals</operation>
+            <value>SACE User</value>
+            <sortOrder>5</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+    </duplicateRuleFilter>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>I_RM_Affiliation__c</matchRuleSObjectType>
+        <matchingRule>I_RM_EXACT_AFFILIATION_MATCH</matchingRule>
+        <objectMapping xsi:nil="true"/>
+    </duplicateRuleMatchRules>
+    <isActive>true</isActive>
+    <masterLabel>Duplicate Affiliation Warning</masterLabel>
+    <operationsOnInsert>Alert</operationsOnInsert>
+    <operationsOnUpdate>Alert</operationsOnUpdate>
+    <securityOption>BypassSharingRules</securityOption>
+    <sortOrder>1</sortOrder>
+</DuplicateRule>

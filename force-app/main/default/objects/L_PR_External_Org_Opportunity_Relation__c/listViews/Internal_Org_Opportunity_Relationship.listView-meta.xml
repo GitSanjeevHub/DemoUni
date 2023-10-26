@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Org_Opportunity_Relationship</fullName>
+    <columns>L_PR_Organisation_Name__c</columns>
+    <columns>L_PR_IsPrimary__c</columns>
+    <columns>L_PR_Organisation_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>L_PR_Organisation_Type__c</field>
+        <operation>equals</operation>
+        <value>La Trobe Organisation Unit</value>
+    </filters>
+    <label>Internal Org Opportunity Relationship</label>
+</ListView>

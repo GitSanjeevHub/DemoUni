@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_SACE_Record_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>RecordType.DeveloperName = &apos;I_ST_SACE_Task&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SACE Record Type?</label>
+    <type>Checkbox</type>
+</CustomField>

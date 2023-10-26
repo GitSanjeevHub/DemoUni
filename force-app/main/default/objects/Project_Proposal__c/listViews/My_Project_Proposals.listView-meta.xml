@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Project_Proposals</fullName>
+    <columns>NAME</columns>
+    <columns>Project_Number__c</columns>
+    <columns>I_RS_LeadChiefInvestigator__c</columns>
+    <columns>I_RS_Status__c</columns>
+    <columns>I_RS_Account_Organisation__c</columns>
+    <columns>I_RS_Project_Type__c</columns>
+    <columns>I_RS_Project_Sub_type__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>My_Project_Proposals__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Project Proposals</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Vice_Chancellor</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

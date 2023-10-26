@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Under_18_Flag__c</fullName>
+    <description>Formula field to determine if a Lead is under 18yrs of age based on DOB</description>
+    <externalId>false</externalId>
+    <formula>IF( NOT( ISBLANK(  I_RM_Contact__r.Birthdate  ) ) ,
+IF( DATE( YEAR(TODAY () ) , MONTH( I_RM_Contact__r.Birthdate ) , DAY( I_RM_Contact__r.Birthdate ) ) &lt; TODAY(),
+YEAR (Today()) - YEAR ( I_RM_Contact__r.Birthdate ),
+YEAR (Today()) - YEAR ( I_RM_Contact__r.Birthdate ) -1 ),
+null) &lt; 18</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Automatically checked if candidate is below 18. If nominated contact details are available, La Trobe to communicate with nominated contact on their behalf.</inlineHelpText>
+    <label>Under 18 - Flag</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

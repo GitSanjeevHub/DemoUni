@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Count_of_Collaborating_Organisation__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a count of the number of linked Collaborating Organisations on the ‘other’ tab. This field is automatically calculated.</inlineHelpText>
+    <label>Count of Collaborating Organisation/s</label>
+    <summaryForeignKey>Collaborating_Organisation__c.I_RS_Ethics_Request__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

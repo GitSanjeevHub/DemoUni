@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Part_Of_La_Trobe__c</fullName>
+    <description>Used to determine &apos;internal&apos; (i.e. La Trobe) Team members from &apos;external&apos;, such as when creating Line Items within a Project&apos;s Budget</description>
+    <externalId>false</externalId>
+    <formula>I_RS_Project_Team_Member__r.Account.I_RS_Part_of_La_Trobe__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Part Of La Trobe</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

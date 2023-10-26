@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Not_Other_But_Has_Other_Description</fullName>
+    <active>false</active>
+    <description>If the Milestone Type is not Other but there is an Other Description, this is invalid</description>
+    <errorConditionFormula>TEXT(I_RS_Milestone_Type__c) &lt;&gt; &apos;Other&apos; &amp;&amp;
+!ISBLANK(I_RS_Other_Description__c)</errorConditionFormula>
+    <errorDisplayField>I_RS_Other_Description__c</errorDisplayField>
+    <errorMessage>You have not specified &apos;Other&apos; as the Milestone Type, so this field must be left empty</errorMessage>
+</ValidationRule>

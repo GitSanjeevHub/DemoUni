@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposals_Submitted_to_Research_Office</fullName>
+    <columns>NAME</columns>
+    <columns>Project_Number__c</columns>
+    <columns>I_RS_Lead_Chief_Investigator__c</columns>
+    <columns>I_RS_Research_Office_Contact__c</columns>
+    <columns>I_RS_Account_Organisation__c</columns>
+    <columns>I_RS_Project_Start_Date__c</columns>
+    <columns>I_RS_Project_End_Date__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>I_RS_Status__c</field>
+        <operation>equals</operation>
+        <value>Review by Research Office</value>
+    </filters>
+    <label>Proposals Submitted to Research Office</label>
+    <sharedTo>
+        <role>Contracts</role>
+        <role>Grants</role>
+    </sharedTo>
+</ListView>

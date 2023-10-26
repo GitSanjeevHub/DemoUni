@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_La_Trobe_External_Cash_Contribution__c</fullName>
+    <externalId>false</externalId>
+    <label>La Trobe External Cash Contribution</label>
+    <summarizedField>Budget_Line_Item__c.I_RS_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Budget_Line_Item__c.I_RS_Category__c</field>
+        <operation>equals</operation>
+        <value>Cash External</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Budget_Line_Item__c.I_RS_In_Kind__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Budget_Line_Item__c.I_RS_Budget__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

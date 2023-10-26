@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_Type_Mandatory</fullName>
+    <active>false</active>
+    <description>Make Milestone Type mandatory if Milestone checkbox is ticked</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;I_RS_Milestone&apos; 
+      &amp;&amp;
+ISPICKVAL( I_RS_Milestone_Type__c, &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>I_RS_Milestone_Type__c</errorDisplayField>
+    <errorMessage>Please select a value</errorMessage>
+</ValidationRule>

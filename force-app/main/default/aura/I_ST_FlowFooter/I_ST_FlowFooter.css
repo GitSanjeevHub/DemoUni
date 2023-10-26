@@ -1,0 +1,34 @@
+.THIS .slds-button.slds-button_brand {
+    padding-left: var(--sds-c-button-brand-spacing-inline-start, var(--lwc-spacingMedium,1rem));
+    padding-right: var(--sds-c-button-brand-spacing-inline-end, var(--lwc-spacingMedium,1rem));
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    transition: border .15s linear;
+    background-color: var(--sds-c-button-brand-color-background, var(--lwc-brandAccessible,rgb(248, 0, 0)));
+    border-color: var(--sds-c-button-brand-color-border, var(--lwc-brandAccessible,rgb(248, 0, 0)));
+    color: var(--sds-c-button-brand-text-color, var(--lwc-colorTextBrandPrimary,rgb(255, 255, 255)));
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-top: var(--sds-c-button-spacing-block-start, 0);
+    padding-bottom: var(--sds-c-button-spacing-block-end, 0);
+    background-clip: border-box;
+    border-style: solid;
+    border-width: var(--sds-c-button-sizing-border, var(--lwc-borderWidthThin,1px));
+    border-radius: var(--sds-c-button-radius-border, var(--lwc-buttonBorderRadius,.25rem));
+    box-shadow: var(--sds-c-button-shadow);
+    line-height: var(--sds-c-button-line-height, var(--lwc-lineHeightButton,1.875rem));
+    text-decoration: none;
+    white-space: normal;
+    user-select: none;
+    font-family: inherit;
+    font-size: var(--lwc-fontSize3,0.8125rem);
+    margin: 0;
+}
+.THIS .slds-button.slds-button_brand.slds-button_brand:hover {
+    background-color: var(--sds-c-button-brand-color-background-hover, var(--lwc-brandAccessibleActive,#c50000));
+    border-color: var(--sds-c-button-brand-color-border-hover, var(--lwc-brandAccessibleActive,#c50000));
+    color: var(--sds-c-button-brand-text-color-hover, var(--lwc-colorTextBrandPrimary,rgb(255, 255, 255)));
+    border-radius: var(--sds-c-button-radius-border, var(--lwc-buttonBorderRadius,.25rem));
+}

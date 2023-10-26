@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_GRE</fullName>
+    <fields>I_RM_Role__c</fields>
+    <fields>I_RM_StartDate__c</fields>
+    <fields>I_RM_EndDate__c</fields>
+    <fields>I_RM_Status__c</fields>
+    <fields>I_RM_Staff_Id__c</fields>
+    <fields>I_RM_Student_Id__c</fields>
+    <fields>I_RM_Account__c</fields>
+    <label>I_RM_GRE</label>
+</CompactLayout>

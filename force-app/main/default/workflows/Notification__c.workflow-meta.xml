@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_URL</fullName>
+        <field>I_RS_Action_Link__c</field>
+        <formula>$Setup.URL_Variable__c.I_RS_Researcher_Portal_Base_URL__c + &apos;/detail/&apos;
+ + I_RS_Target_Record_ID__c</formula>
+        <name>Update URL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Action Here URL</fullName>
+        <actions>
+            <name>Update_URL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Notification__c.I_RS_Target_Record_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

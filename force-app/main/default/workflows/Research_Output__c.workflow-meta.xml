@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Short_Parent_Title</fullName>
+        <description>Updates the &quot;Parent Title&quot; (Text-255 version) field with first 255 chars of Parent Title (longtext version)</description>
+        <field>I_RS_Short_Parent_Title__c</field>
+        <formula>LEFT(( I_RS_Parent_Title__c ), 255)</formula>
+        <name>Update Short Parent Title</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Short_Title</fullName>
+        <field>I_RS_Title_Short__c</field>
+        <formula>LEFT((I_RS_Title__c), 255)</formula>
+        <name>Update Short Title</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Research Output%3A Parent Title</fullName>
+        <actions>
+            <name>Update_Short_Parent_Title</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISNEW() || ISCHANGED( I_RS_Parent_Title__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Research Output%3A Title</fullName>
+        <actions>
+            <name>Update_Short_Title</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISNEW() || ISCHANGED(I_RS_Title__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_LatestSelectedCourseRunDate__c</fullName>
+    <externalId>false</externalId>
+    <label>Latest Selected Course Run Date</label>
+    <summarizedField>I_ST_Student_Course__c.I_ST_Selected_Course_Run_Date__c</summarizedField>
+    <summaryForeignKey>I_ST_Student_Course__c.I_ST_Student__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

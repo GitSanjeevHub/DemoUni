@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_BAU_VTAC_NON_VTAC__c</fullName>
+    <description>Applicant VTAC/NON-VTAC</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Applicant VTAC/NON-VTAC</inlineHelpText>
+    <label>VTAC/NON-VTAC</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VTAC</fullName>
+                <default>false</default>
+                <label>VTAC</label>
+            </value>
+            <value>
+                <fullName>NON-VTAC</fullName>
+                <default>false</default>
+                <label>NON-VTAC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

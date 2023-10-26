@@ -1,0 +1,40 @@
+<aura:component
+  implements="flexipage:availableForRecordHome,force:hasRecordId"
+  access="global"
+>
+  <lightning:card title="Budget Summary">
+    <div class="slds-p-around_medium">
+      <div class="slds-grid slds-wrap">
+        <div class="slds-size_4-of-12">
+          <b>In-Kind LTU Salary </b>3,000 <br /><br />
+
+          <b>In-Kind LTU Non-Salary </b>0 <br /><br />
+
+          <b>Cash contributions by La Trobe: </b>1,000,000 <br /><br />
+        </div>
+
+          <!--<div class="slds-size_4-of-12">
+              <b>Total contributions by Researcher</b><br/><br/>
+              <table>
+                  <tr> <th> Name </th> <th> Amount </th> </tr>
+                  <tr> <td> Ashley Franks </td> <td> 1,000,000 </td> </tr>
+                  <tr> <td> Stipend </td> <td> 1,000,000 </td> </tr>
+          </table>
+          </div>-->
+          
+        <div class="slds-size_4-of-12">
+            <b>Total contributions by Organisation</b><br/><br/>
+          <table>
+            <tr> <th> </th> <th> In Kind </th> <th> In Cash </th> </tr>
+            <tr> <td> ARC </td> <td> 1,000,000 </td> <td> 1,000,000 </td> </tr>
+            <tr>
+              <td> La Trobe </td> <td> 1,000,000 </td> <td> 1,000,000 </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </lightning:card>
+    
+  <lightning:card title="Budget Details"></lightning:card>
+</aura:component>

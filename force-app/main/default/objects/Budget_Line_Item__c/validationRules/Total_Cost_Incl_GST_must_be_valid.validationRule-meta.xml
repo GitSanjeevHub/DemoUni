@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Cost_Incl_GST_must_be_valid</fullName>
+    <active>true</active>
+    <description>The Total Cost Incl. GST must either match the Total Cost, or be an increase of it by the GST %</description>
+    <errorConditionFormula>(I_RS_Cash_Amount_Inc_GST_Currency__c &lt;&gt; I_RS_Amount__c) &amp;&amp;
+
+(
+ROUND(
+I_RS_Cash_Amount_Inc_GST_Currency__c,
+2
+)
+
+&lt;&gt;
+ 
+ROUND(
+(I_RS_Amount__c * (1 + $Setup.GST__c.I_RS_Current_Rate__c )),
+2)
+
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Cash_Amount_Inc_GST_Currency__c</errorDisplayField>
+    <errorMessage>If applying GST, please ensure the amount you add is 10%.</errorMessage>
+</ValidationRule>

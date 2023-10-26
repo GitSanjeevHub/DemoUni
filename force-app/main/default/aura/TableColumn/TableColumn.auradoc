@@ -1,0 +1,4 @@
+<aura:documentation>
+    <aura:description><code>c:TableColumn</code> component is used in conjunction with the <code>c:Table</code> component to create columns for a table.</aura:description>
+    <aura:example name="TableColumnExample" ref="c:ExampleTableColumns" label="Using the Table and TableColumn components" />
+</aura:documentation>

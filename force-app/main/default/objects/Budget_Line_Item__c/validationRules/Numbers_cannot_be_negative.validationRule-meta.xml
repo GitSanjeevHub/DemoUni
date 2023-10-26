@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Numbers_cannot_be_negative</fullName>
+    <active>true</active>
+    <errorConditionFormula>(Year_1_Quantity__c &lt; 0 || Year_1_Cost__c &lt; 0 ||
+Year_2_Quantity__c &lt; 0 || Year_2_Cost__c &lt; 0 ||
+Year_3_Quantity__c &lt; 0 || Year_3_Cost__c &lt; 0 ||
+Year_4_Quantity__c &lt; 0 || Year_4_Cost__c &lt; 0 ||
+Year_5_Quantity__c &lt; 0 || Year_5_Cost__c &lt; 0)
+
+&amp;&amp;
+
+!ISPICKVAL(I_RS_Category__c, &apos;Adjustment&apos;)</errorConditionFormula>
+    <errorMessage>Numbers cannot be negative</errorMessage>
+</ValidationRule>

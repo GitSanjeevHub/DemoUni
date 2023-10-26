@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Assign_Ethics_Request_Type</name>
+        <label>Assign Ethics Request Type</label>
+        <locationX>62</locationX>
+        <locationY>426</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Ethics_Request_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Animal Ethics Application</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_Ethics_Request_Type_0</name>
+        <label>Assign Ethics Request Type</label>
+        <locationX>266</locationX>
+        <locationY>441</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Ethics_Request_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Human Ethics Application</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_Ethics_Request_Type_0_0</name>
+        <label>Assign Ethics Request Type</label>
+        <locationX>402</locationX>
+        <locationY>460</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Ethics_Request_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Research Governance Authorisation</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_Ethics_Request_Type_0_0_0</name>
+        <label>Assign Ethics Request Type</label>
+        <locationX>600</locationX>
+        <locationY>453</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Ethics_Request_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Institutional Biosafety Committee</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_Ethics_Request_Type_0_0_0_0</name>
+        <label>Assign Ethics Request Type</label>
+        <locationX>829</locationX>
+        <locationY>439</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Ethics_Request_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>SOP/Phenotype Report</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Record_Type_Name_Decision</name>
+        <label>Record Type Name Decision</label>
+        <locationX>403</locationX>
+        <locationY>265</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Animal_Ethics</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Animal Ethics Application</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Ethics_Request_Type</targetReference>
+            </connector>
+            <label>Animal Ethics</label>
+        </rules>
+        <rules>
+            <name>Human_Ethics</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Human Ethics Application</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Ethics_Request_Type_0</targetReference>
+            </connector>
+            <label>Human Ethics</label>
+        </rules>
+        <rules>
+            <name>Externally_Approved_Application</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Externally Approved Application</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Ethics_Request_Type_0_0</targetReference>
+            </connector>
+            <label>Externally Approved Application</label>
+        </rules>
+        <rules>
+            <name>Institutional_Biosafety_Committee</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Institutional Biosafety Committee</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Ethics_Request_Type_0_0_0</targetReference>
+            </connector>
+            <label>Institutional Biosafety Committee</label>
+        </rules>
+        <rules>
+            <name>SOP_Phenotype_Report</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SOP/Phenotype Report</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Ethics_Request_Type_0_0_0_0</targetReference>
+            </connector>
+            <label>SOP/Phenotype Report</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Ethics Post Approval: Update Ethics Request Type {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Ethics Post Approval: Update Ethics Request Type</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Ethics_Record_Type</name>
+        <label>Get Ethics Record Type</label>
+        <locationX>176</locationX>
+        <locationY>49</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Record_Type_Name</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.I_RS_Ethics_Request__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Ethics_Request__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>RecordTypeId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Record_Type_Name</name>
+        <label>Get Record Type Name</label>
+        <locationX>407</locationX>
+        <locationY>52</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Record_Type_Name_Decision</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Ethics_Record_Type.RecordTypeId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Ethics_Record_Type</targetReference>
+        </connector>
+        <object>Ethics_Post_Approval__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

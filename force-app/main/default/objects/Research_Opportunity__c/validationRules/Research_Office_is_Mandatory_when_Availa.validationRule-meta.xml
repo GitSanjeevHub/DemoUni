@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Research_Office_is_Mandatory_when_Availa</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+TEXT(I_RS_Source__c) &lt;&gt; &quot;Research Professional&quot;, 
+TEXT(I_RS_Status__c) = &quot;Available&quot;, 
+ISBLANK(I_RS_Research_Office_Contact__c) 
+)</errorConditionFormula>
+    <errorDisplayField>I_RS_Research_Office_Contact__c</errorDisplayField>
+    <errorMessage>Please provide details for Research Office Contact before making this funding opportunity available.</errorMessage>
+</ValidationRule>

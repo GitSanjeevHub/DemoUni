@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_enter_more_than_1645_for_hours</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(I_RS_Unit_of_Time__c) = &apos;Hours&apos; &amp;&amp;
+(Year_1_Quantity__c &gt; 1645 || 
+Year_2_Quantity__c &gt; 1645 ||
+Year_3_Quantity__c &gt; 1645 ||
+Year_4_Quantity__c &gt; 1645 ||
+Year_5_Quantity__c &gt; 1645)</errorConditionFormula>
+    <errorDisplayField>I_RS_Unit_of_Time__c</errorDisplayField>
+    <errorMessage>Cannot enter more than 1645 hours per Units column</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Active__c</fullName>
+    <description>Active is TRUE if current date is greater or equal to &quot;Today&quot; and less than or equal to &quot;Today&quot;</description>
+    <externalId>false</externalId>
+    <formula>AND (
+
+( I_RS_Start_Date__c &lt;=  TODAY() ),
+
+OR(
+( I_RS_End_Date__c &gt;=   TODAY()) ,
+( ISBLANK(I_RS_End_Date__c )) 
+)
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Active</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

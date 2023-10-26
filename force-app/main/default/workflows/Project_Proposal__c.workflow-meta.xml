@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CLI_StatusChangeProjectProposal</fullName>
+        <description>CLI:StatusChangeProjectProposal</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_LeadChiefInvestigator__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/CLI_ProjectProposalStatusChange</template>
+    </alerts>
+    <alerts>
+        <fullName>Project_Proposal_is_Due_for_Submission_Research_Office</fullName>
+        <ccEmails>kquimson@au1.ibm.com</ccEmails>
+        <description>Project Proposal is Due for Submission - Research Office</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Research_Office_Contact__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Project_Proposal_is_Due_for_Submission_Research_Office</template>
+    </alerts>
+    <alerts>
+        <fullName>Project_Proposal_is_Due_for_Submission_Researcher</fullName>
+        <description>Project Proposal is Due for Submission - Researcher</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_LeadChiefInvestigator__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Project_Proposal_is_Due_for_Submission_Researcher</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_Research_Office_Contact</fullName>
+        <description>Send Email to Research Office Contact</description>
+        <protected>false</protected>
+        <recipients>
+            <field>I_RS_Research_Office_Contact__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/ProjectProposal_Research_Office_Contact_Reassignment</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_Researcher</fullName>
+        <description>Send Email to Researcher</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Research_Opportunity_Recommended_HTML</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>FieldUpdate_PP_Update_With_Long_Title</fullName>
+        <field>I_RS_Long_Or_Short_Title__c</field>
+        <formula>IF( LEN(TRIM( I_RS_Long_Project_Title__c )) &lt;= 0, Name, I_RS_Long_Project_Title__c )</formula>
+        <name>FieldUpdate_PP_Update_With_Long_Title</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_to_Seek_Approval</fullName>
+        <description>This &quot;Field Update&quot; updates the Status field value to &quot;Approvals&quot; .</description>
+        <field>I_RS_Status__c</field>
+        <literalValue>Approvals</literalValue>
+        <name>Field Update to Seek Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Approval_Flag_False</fullName>
+        <field>I_RS_Approval_Flag__c</field>
+        <literalValue>0</literalValue>
+        <name>Set Approval Flag False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Approval_Flag_True</fullName>
+        <field>I_RS_Approval_Flag__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Approval Flag True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Update_Recall_OR_Rejected</fullName>
+        <description>This is change the Status field value to the one above &quot;Approvals&quot; depending on record type</description>
+        <field>I_RS_Status__c</field>
+        <name>Status Update Recall OR Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>PreviousValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_for_Approval</fullName>
+        <description>Based on the record type the Status field value should move to the one next to &quot;Approvals&quot;</description>
+        <field>I_RS_Status__c</field>
+        <name>Status update for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>NextValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Toggle_field_One</fullName>
+        <field>I_RS_System_Field_Approval_Toggle__c</field>
+        <literalValue>One</literalValue>
+        <name>Update Approval Toggle field One</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Toggle_field_two</fullName>
+        <field>I_RS_System_Field_Approval_Toggle__c</field>
+        <literalValue>Two</literalValue>
+        <name>Update Approval Toggle field two</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approver_s_Comments_CB_to_TRUE</fullName>
+        <field>I_RS_Update_Approver_Comments__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Approver&apos;s Comments CB to TRUE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Chatter_Post_to_TRUE</fullName>
+        <field>I_RS_Make_a_Chatter_Post__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Chatter Post to TRUE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Closure_Reason</fullName>
+        <description>Update closure Reason of Contract Projects</description>
+        <field>I_RS_Closure_Reason__c</field>
+        <literalValue>Complete</literalValue>
+        <name>Update Closure Reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Doc_Provided_date</fullName>
+        <description>This will update the Project proposal&apos;s &quot;Date Doc Provided for Peer Review&quot; [I_RS_Doc_Provided_for_Peer_Review_Date__c] with today&apos;s date</description>
+        <field>I_RS_Date_Doc_Provided_for_Peer_Review__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Doc Provided date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Feedback_Date</fullName>
+        <description>This update &quot;Peer Feedback date&quot; of Project proposal with current date.</description>
+        <field>I_RS_Peer_Feedback_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Feedback Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Proposal_SubmissionDate</fullName>
+        <description>When the Project Proposal status changes to &quot;Submitted&quot; update the field &quot;Proposal Submission Date&quot; to current date.</description>
+        <field>I_RS_Proposal_Submission_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Proposal Submission Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_of_Contract_Project</fullName>
+        <description>Auto-close Contract project</description>
+        <field>I_RS_Status__c</field>
+        <literalValue>Project Closed</literalValue>
+        <name>Update Status of Contract Project</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Project_Details_Updated_in_PRIME</fullName>
+        <apiVersion>47.0</apiVersion>
+        <description>This is an outbound request for project details updated which should be sent to Finance</description>
+        <endpointUrl>http://sappodev.latrobe.edu.au:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=LTU_BC_B2B_SalesForce&amp;receiverParty=&amp;receiverService=&amp;interface=LTU_SI_B2B_SFDC_MaintainWBS_OUT&amp;interfaceNamespace=http://schemas.latrobe.edu.au/mw/b2b/salesforce</endpointUrl>
+        <fields>I_RS_LeadChiefInvestigator__c</fields>
+        <fields>I_RS_Lead_Chief_Investigator_Staff_Id__c</fields>
+        <fields>I_RS_Project_End_Date__c</fields>
+        <fields>I_RS_Project_Start_Date__c</fields>
+        <fields>I_RS_Status__c</fields>
+        <fields>Id</fields>
+        <fields>LastModifiedDate</fields>
+        <fields>Name</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>ltuist@latrobe.com</integrationUser>
+        <name>Project Details Updated in PRIME</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Auto-Closure of Contract Projects</fullName>
+        <actions>
+            <name>Update_Closure_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Status_of_Contract_Project</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <field>Project_Proposal__c.I_RS_Project_Sub_type__c</field>
+            <operation>equals</operation>
+            <value>Research Collaboration,Research Consultancy,Non-Research Consultancy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Project_Proposal__c.I_RS_Number_of_Overdue_Milestone_Tasks__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Project_Proposal__c.I_RS_Number_of_Complete_Milestones__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Project_Proposal__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Project</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Project_Proposal__c.I_RS_Count_Non_Overdue_Open_Milestones__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>All the Contract based projects will be closed automatically when all the related milestones will be completed</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Default Lead Organisation</fullName>
+        <active>false</active>
+        <description>If Project Proposal doesn&apos;t have a lead organisation, make LA Trobe its default value.</description>
+        <formula>ISBLANK(I_RS_Administring_Organisation__c) == TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Document sent for peer review</fullName>
+        <actions>
+            <name>Update_Doc_Provided_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Project_Proposal__c.I_RS_Peer_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Material provided</value>
+        </criteriaItems>
+        <description>This work flow will update &quot;Doc Provided for Peer Review Date &quot;	[I_RS_Doc_Provided_for_Peer_Review_Date__c] field with current date when &quot;Peer Review Status&quot; changes to &quot;Material Provided&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Feedback Provided</fullName>
+        <actions>
+            <name>Update_Feedback_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Project_Proposal__c.I_RS_Peer_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Feedback provided to applicant</value>
+        </criteriaItems>
+        <description>This workflow will update Project Proposal&apos;s &quot;Peer Feedback Date&quot; [I_RS_Peer_Feedback_Date__c] with Current Date when the &quot;Peer Review Status&quot; changes to &quot;Feedback Provided&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Project_Proposal_Update_With_Long_Title</fullName>
+        <actions>
+            <name>FieldUpdate_PP_Update_With_Long_Title</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This workflow will update &quot;I_RS_Long_Short__c&quot; field with value from &quot;I_RS_Long_Project_Title__c&quot; if not empty</description>
+        <formula>OR( (LEN(TRIM(I_RS_Long_Project_Title__c)) &gt; 0), NOT(ISBLANK(Name)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Research Office Contact Reassignment</fullName>
+        <actions>
+            <name>Send_Email_to_Research_Office_Contact</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>This workflow will send an email to the new Research Office Contact on Project Proposal</description>
+        <formula>ISCHANGED(I_RS_Research_Office_Contact__c)         &amp;&amp; NOT ( ISNULL ( I_RS_Research_Office_Contact__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Submitted Project Proposal to Funding Body</fullName>
+        <actions>
+            <name>Update_Proposal_SubmissionDate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Project_Proposal__c.I_RS_Status__c</field>
+            <operation>equals</operation>
+            <value>Submitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Project_Proposal__c.I_RS_Project_Type__c</field>
+            <operation>equals</operation>
+            <value>Grant,Tender/RFQ</value>
+        </criteriaItems>
+        <description>This work flow fires when the Project Proposal&apos;s Status changes to &quot;Submitted&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

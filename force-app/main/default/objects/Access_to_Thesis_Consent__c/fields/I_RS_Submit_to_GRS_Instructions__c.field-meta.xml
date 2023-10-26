@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Submit_to_GRS_Instructions__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;You are about to submit to GRS. We will review the information you&apos;ve provided. We will be in touch to provide you with instructions for the final submission of your thesis or if anything further is required.&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Submit to GRS - Instructions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

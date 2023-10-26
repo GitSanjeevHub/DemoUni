@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_DNIR_DIR_Licence_Number__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If the research project has an OGTR Licence Number, it will be entered here. The Research Office will populate this field.</inlineHelpText>
+    <label>DNIR/DIR Licence Number</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

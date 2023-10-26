@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Ethics_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Principal_Investigator_Contact__c</columns>
+    <columns>I_RS_Milestone_Task_Status__c</columns>
+    <columns>I_RS_Ethics_Application_Review_Outcome__c</columns>
+    <columns>I_RS_Status__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Ethics Requests</label>
+</ListView>

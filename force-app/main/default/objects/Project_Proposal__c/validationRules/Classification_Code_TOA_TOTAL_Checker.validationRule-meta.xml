@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification_Code_TOA_TOTAL_Checker</fullName>
+    <active>true</active>
+    <description>The total of TOA Code Classification Code must be equal to 100</description>
+    <errorConditionFormula>AND(
+ISCHANGED(I_RS_Status__c),
+NOT(OR(ISPICKVAL(I_RS_Project_Sub_type__c, &quot;Non-Research Consultancy&quot;),ISPICKVAL(I_RS_Project_Sub_type__c, &quot;Commercialisation&quot;))),
+RecordType.DeveloperName &lt;&gt; &quot;I_RS_Internal_Pipeline&quot;,
+RecordType.DeveloperName &lt;&gt; &quot;I_RS_Grant_with_limited_applications&quot;,
+OR(
+    TEXT(I_RS_Status__c) = &quot;Review by Research Office&quot;,
+    TEXT(I_RS_Status__c) = &quot;Review Contract&quot;,
+    TEXT(I_RS_Status__c) = &quot;Draft contract&quot;
+),
+OR(
+   ISBLANK(I_RS_CC_TOA_Percent_Total__c),
+   I_RS_CC_TOA_Percent_Total__c &lt;&gt; 100
+ )
+)</errorConditionFormula>
+    <errorMessage>Please make sure that the total of your Type of Activity (TOA) Codes is 100% before proceeding.</errorMessage>
+</ValidationRule>

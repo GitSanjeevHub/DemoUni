@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Certificate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caSigned>true</caSigned>
+    <encryptedWithPlatformEncryption>false</encryptedWithPlatformEncryption>
+    <expirationDate>2024-11-28T00:00:00.000Z</expirationDate>
+    <keySize>4096</keySize>
+    <masterLabel>prime.latrobe.edu.au</masterLabel>
+    <privateKeyExportable>true</privateKeyExportable>
+</Certificate>

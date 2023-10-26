@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the status corresponds with the ethics request status at the top of the page. If this status is ‘draft’ this means the researcher has an action to complete. Populated by the Research Office.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_Review_Outcome__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Review by Research Office</fullName>
+                <default>false</default>
+                <label>Review by Research Office</label>
+            </value>
+            <value>
+                <fullName>Assigned for Review</fullName>
+                <default>false</default>
+                <label>Assigned for Review</label>
+            </value>
+            <value>
+                <fullName>Outcome Communicated</fullName>
+                <default>false</default>
+                <label>Outcome Communicated</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Suspended</controllingFieldValue>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <controllingFieldValue>Noted</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <controllingFieldValue>Expired</controllingFieldValue>
+            <valueName>Outcome Communicated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Applicable</controllingFieldValue>
+            <controllingFieldValue>Not Ready for Committee Review</controllingFieldValue>
+            <controllingFieldValue>Subject to</controllingFieldValue>
+            <controllingFieldValue>Deferred</controllingFieldValue>
+            <valueName>Draft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Applicable</controllingFieldValue>
+            <valueName>Review by Research Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outcome Pending</controllingFieldValue>
+            <valueName>Assigned for Review</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

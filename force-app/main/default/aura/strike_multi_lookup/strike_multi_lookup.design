@@ -1,0 +1,17 @@
+<!--
+ - Created by burnside on 2019-05-23.
+ -->
+
+<design:component>
+    <design:attribute name="label" label="Field Label"/>
+    <design:attribute name="object" label="Object API Name" />
+    <design:attribute name="placeholder" label="Placeholder"/>
+    <design:attribute name="searchField" label="Search Field"
+                      description="Field on parent we're searching against. Typically 'Name'"/>
+    <design:attribute name="helpText" label="Help Text"
+                      description="String value when hovering over the help box"/>
+    <design:attribute name="iconName" label="Icon" description="Customise appearance with SLDS Icon (optional)"/>
+    <design:attribute name="value" label="Value" description="Variable to pass lookups value in an out"/>
+    <design:attribute name="required" label="Required" description="Show red asterisk"/>
+    <design:attribute name="allowNewRecords" label="Allow Record Creation" description="Create records from here"/>
+</design:component>

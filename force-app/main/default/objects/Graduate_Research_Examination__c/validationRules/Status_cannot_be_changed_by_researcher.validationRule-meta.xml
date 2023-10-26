@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_cannot_be_changed_by_researcher</fullName>
+    <active>true</active>
+    <description>Only back-office or admins can edit the Status field.</description>
+    <errorConditionFormula>$User.I_RS_Is_Researcher_User__c = &quot;1&quot; &amp;&amp;
+
+ISCHANGED(I_RS_Status__c)</errorConditionFormula>
+    <errorDisplayField>I_RS_Status__c</errorDisplayField>
+    <errorMessage>You do not have permission to change to this status. Please contact GRS.</errorMessage>
+</ValidationRule>

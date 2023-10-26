@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Industry_Classifications__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry Classification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agriculture, Forestry And Fishing</fullName>
+                <default>false</default>
+                <label>Agriculture, Forestry And Fishing</label>
+            </value>
+            <value>
+                <fullName>Mining</fullName>
+                <default>false</default>
+                <label>Mining</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Electricity, Gas, Water And Waste Services</fullName>
+                <default>false</default>
+                <label>Electricity, Gas, Water And Waste Services</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Wholesale Trade</fullName>
+                <default>false</default>
+                <label>Wholesale Trade</label>
+            </value>
+            <value>
+                <fullName>Retail Trade</fullName>
+                <default>false</default>
+                <label>Retail Trade</label>
+            </value>
+            <value>
+                <fullName>Accommodation And Food Services</fullName>
+                <default>false</default>
+                <label>Accommodation And Food Services</label>
+            </value>
+            <value>
+                <fullName>Transport Postal And Warehousing</fullName>
+                <default>false</default>
+                <label>Transport Postal And Warehousing</label>
+            </value>
+            <value>
+                <fullName>Information Media And Telecommunications</fullName>
+                <default>false</default>
+                <label>Information Media And Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Financial And Insurance Services</fullName>
+                <default>false</default>
+                <label>Financial And Insurance Services</label>
+            </value>
+            <value>
+                <fullName>Rental, Hiring And Real Estate Services</fullName>
+                <default>false</default>
+                <label>Rental, Hiring And Real Estate Services</label>
+            </value>
+            <value>
+                <fullName>Professional, Scientific And Technical Services</fullName>
+                <default>false</default>
+                <label>Professional, Scientific And Technical Services</label>
+            </value>
+            <value>
+                <fullName>Administrative And Support Services</fullName>
+                <default>false</default>
+                <label>Administrative And Support Services</label>
+            </value>
+            <value>
+                <fullName>Public Administration And Safety</fullName>
+                <default>false</default>
+                <label>Public Administration And Safety</label>
+            </value>
+            <value>
+                <fullName>Education And Training</fullName>
+                <default>false</default>
+                <label>Education And Training</label>
+            </value>
+            <value>
+                <fullName>Health Care And Social Assistance</fullName>
+                <default>false</default>
+                <label>Health Care And Social Assistance</label>
+            </value>
+            <value>
+                <fullName>Arts And Recreation Services</fullName>
+                <default>false</default>
+                <label>Arts And Recreation Services</label>
+            </value>
+            <value>
+                <fullName>Other Services</fullName>
+                <default>false</default>
+                <label>Other Services</label>
+            </value>
+            <value>
+                <fullName>Agriculture &amp; Horticulture</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Agriculture &amp; Horticulture</label>
+            </value>
+            <value>
+                <fullName>Allied Health</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Allied Health</label>
+            </value>
+            <value>
+                <fullName>Aquaculture</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aquaculture</label>
+            </value>
+            <value>
+                <fullName>Arts / Creative Industries</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Arts / Creative Industries</label>
+            </value>
+            <value>
+                <fullName>Biomedical devices</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Biomedical devices</label>
+            </value>
+            <value>
+                <fullName>Biotechnology (health)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Biotechnology (health)</label>
+            </value>
+            <value>
+                <fullName>Community services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Community services</label>
+            </value>
+            <value>
+                <fullName>Defence</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Defence</label>
+            </value>
+            <value>
+                <fullName>Diagnostics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Diagnostics</label>
+            </value>
+            <value>
+                <fullName>Disability</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Disability</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Energy &amp; Utilities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Energy &amp; Utilities</label>
+            </value>
+            <value>
+                <fullName>Environmental Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Environmental Services</label>
+            </value>
+            <value>
+                <fullName>Food &amp; Beverages</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Food &amp; Beverages</label>
+            </value>
+            <value>
+                <fullName>Health Care</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Health Care</label>
+            </value>
+            <value>
+                <fullName>Healthy Ageing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Healthy Ageing</label>
+            </value>
+            <value>
+                <fullName>Mining equipment &amp; Technology Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mining equipment &amp; Technology Services</label>
+            </value>
+            <value>
+                <fullName>Pharmaceuticals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pharmaceuticals</label>
+            </value>
+            <value>
+                <fullName>Professional Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Professional Services</label>
+            </value>
+            <value>
+                <fullName>Public sector / Public Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public sector / Public Services</label>
+            </value>
+            <value>
+                <fullName>Retail &amp; Travel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Retail &amp; Travel</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TBD</label>
+            </value>
+            <value>
+                <fullName>Technology / IT &amp; Telecommunications</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Technology / IT &amp; Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Veterinary</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Veterinary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

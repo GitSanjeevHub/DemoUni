@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>High Interest</fullName>
+        <default>false</default>
+        <label>High Interest</label>
+    </customValue>
+    <customValue>
+        <fullName>Medium Interest</fullName>
+        <default>false</default>
+        <label>Medium Interest</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Interest</fullName>
+        <default>false</default>
+        <label>Low Interest</label>
+    </customValue>
+    <customValue>
+        <fullName>High Interest, Moderate Numbers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High Interest, Moderate Numbers</label>
+    </customValue>
+    <customValue>
+        <fullName>High Interest, Poor Numbers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High Interest, Poor Numbers</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialized Interest</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Specialized Interest</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Interest, Low Numbers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Low Interest, Low Numbers</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Interest, Moderate Numbers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Low Interest, Moderate Numbers</label>
+    </customValue>
+    <customValue>
+        <fullName>Poorly Organized Event Affecting value</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Poorly Organized Event Affecting value</label>
+    </customValue>
+    <customValue>
+        <fullName>Mainly International Prospects</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mainly International Prospects</label>
+    </customValue>
+    <customValue>
+        <fullName>High Interest, Excellent Numbers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High Interest, Excellent Numbers</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Interest, High Numbers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Low Interest, High Numbers</label>
+    </customValue>
+    <masterLabel>I_ST_Activity_Evaluation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

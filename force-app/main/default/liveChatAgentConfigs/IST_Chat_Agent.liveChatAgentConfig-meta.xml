@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>lt@uni.com</user>
+        </users>
+    </assignments>
+    <autoGreeting>Hi {!LiveAgent_VisitorName}</autoGreeting>
+    <criticalWaitTime>60</criticalWaitTime>
+    <disableTransferConferenceGreeting>false</disableTransferConferenceGreeting>
+    <enableAgentFileTransfer>true</enableAgentFileTransfer>
+    <enableAgentSneakPeek>false</enableAgentSneakPeek>
+    <enableAssistanceFlag>true</enableAssistanceFlag>
+    <enableAutoAwayOnDecline>false</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>false</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>false</enableChatConferencing>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>true</enableChatTransferToButton>
+    <enableChatTransferToSkill>true</enableChatTransferToSkill>
+    <enableLogoutSound>true</enableLogoutSound>
+    <enableNotifications>false</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>false</enableVisitorBlocking>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>IST Chat Agent</label>
+</LiveChatAgentConfig>

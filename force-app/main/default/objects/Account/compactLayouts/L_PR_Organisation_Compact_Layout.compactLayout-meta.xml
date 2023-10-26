@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Organisation_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>I_RS_Type_of_Organisation__c</fields>
+    <fields>I_RS_Partnership_Level__c</fields>
+    <fields>L_PR_Domestic_International__c</fields>
+    <fields>I_RS_Status__c</fields>
+    <fields>Website</fields>
+    <fields>I_RS_Trading_Name__c</fields>
+    <label>PRM Organisation - Compact Layout</label>
+</CompactLayout>

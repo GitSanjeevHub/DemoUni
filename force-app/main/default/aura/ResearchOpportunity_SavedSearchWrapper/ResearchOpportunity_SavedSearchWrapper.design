@@ -1,0 +1,19 @@
+<!--
+ - Created by burnside on 2019-05-29.
+ -->
+
+<design:component>
+
+    <design:attribute name="rowsPerPage" description="Rows per page"/>
+
+    <design:attribute name="label_cardTitle" description="Header"/>
+    <design:attribute name="label_setupPrompt" description="Setup Prompt"/>
+    <design:attribute name="label_buttonSetSavedSearch" description="Setup Button Label"/>
+    <design:attribute name="label_buttonExpandSavedSearch" description="Expand Button Label"/>
+    <design:attribute name="label_baselineFilterCopy" description="Baseline Filter Description"/>
+
+    <design:attribute name="showGoToFullSearchPageButton"/>
+
+    <design:attribute name="showPagination"/>
+
+</design:component>

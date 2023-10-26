@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Meeting_Date_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The lookup reference to the Meeting Date record that was used to populate this record&apos;s fields.</description>
+    <externalId>false</externalId>
+    <label>Meeting Date Record</label>
+    <referenceTo>Meeting_Date__c</referenceTo>
+    <relationshipLabel>Review Meetings</relationshipLabel>
+    <relationshipName>Review_Times</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

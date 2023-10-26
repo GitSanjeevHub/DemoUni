@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Higher Education course</fullName>
+        <default>false</default>
+        <label>Higher Education course</label>
+    </customValue>
+    <customValue>
+        <fullName>Enabling bridging course</fullName>
+        <default>false</default>
+        <label>Enabling bridging course</label>
+    </customValue>
+    <customValue>
+        <fullName>TAFE Award course</fullName>
+        <default>false</default>
+        <label>TAFE Award course</label>
+    </customValue>
+    <customValue>
+        <fullName>Work and life experience</fullName>
+        <default>false</default>
+        <label>Work and life experience</label>
+    </customValue>
+    <customValue>
+        <fullName>Recent secondary (ATAR only)</fullName>
+        <default>false</default>
+        <label>Recent secondary (ATAR only)</label>
+    </customValue>
+    <customValue>
+        <fullName>Recent secondary (ATAR plus other)</fullName>
+        <default>false</default>
+        <label>Recent secondary (ATAR plus other)</label>
+    </customValue>
+    <customValue>
+        <fullName>Recent secondary (Other criteria only)</fullName>
+        <default>false</default>
+        <label>Recent secondary (Other criteria only)</label>
+    </customValue>
+    <customValue>
+        <fullName>Aspire Program</fullName>
+        <default>false</default>
+        <label>Aspire Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Previously studied Victorian year 12 (VCE or its predecessor) prior to 1992.</fullName>
+        <default>false</default>
+        <label>Previously studied Victorian year 12 (VCE or its predecessor) prior to 1992.</label>
+    </customValue>
+    <customValue>
+        <fullName>Previously studied the International Baccalaureate (IB)</fullName>
+        <default>false</default>
+        <label>Previously studied the International Baccalaureate (IB)</label>
+    </customValue>
+    <customValue>
+        <fullName>Previously studied VCE since 1992 (excluding most recent northern hemisphere)</fullName>
+        <default>false</default>
+        <label>Previously studied VCE since 1992 (excluding most recent northern hemisphere)</label>
+    </customValue>
+    <customValue>
+        <fullName>Previously studied a non-standard or accredited Australian year 12 course</fullName>
+        <default>false</default>
+        <label>Previously studied a non-standard or accredited Australian year 12 course</label>
+    </customValue>
+    <customValue>
+        <fullName>Previously studied standard interstate year 12</fullName>
+        <default>false</default>
+        <label>Previously studied standard interstate year 12</label>
+    </customValue>
+    <customValue>
+        <fullName>Previously studied overseas year 12</fullName>
+        <default>false</default>
+        <label>Previously studied overseas year 12</label>
+    </customValue>
+    <customValue>
+        <fullName>Previously studied GCE Advanced Level</fullName>
+        <default>false</default>
+        <label>Previously studied GCE Advanced Level</label>
+    </customValue>
+    <customValue>
+        <fullName>No secondary claim but has TAFE claim(s) below a Certificate IV level</fullName>
+        <default>false</default>
+        <label>No secondary claim but has TAFE claim(s) below a Certificate IV level</label>
+    </customValue>
+    <customValue>
+        <fullName>Previously studied the New Zealand NCEA level 3 or Bursary examination</fullName>
+        <default>false</default>
+        <label>Previously studied the New Zealand NCEA level 3 or Bursary examination</label>
+    </customValue>
+    <customValue>
+        <fullName>Incomplete higher education award, e.g. degree</fullName>
+        <default>false</default>
+        <label>Incomplete higher education award, e.g. degree</label>
+    </customValue>
+    <customValue>
+        <fullName>Incomplete TAFE award at certificate IV level or above</fullName>
+        <default>false</default>
+        <label>Incomplete TAFE award at certificate IV level or above</label>
+    </customValue>
+    <customValue>
+        <fullName>Complete higher education award, e.g. degree</fullName>
+        <default>false</default>
+        <label>Complete higher education award, e.g. degree</label>
+    </customValue>
+    <customValue>
+        <fullName>Complete TAFE award at certificate IV level or above</fullName>
+        <default>false</default>
+        <label>Complete TAFE award at certificate IV level or above</label>
+    </customValue>
+    <customValue>
+        <fullName>Higher category cannot be assigned based on educational claims</fullName>
+        <default>false</default>
+        <label>Higher category cannot be assigned based on educational claims</label>
+    </customValue>
+    <customValue>
+        <fullName>Uni Bridges Pathway</fullName>
+        <default>false</default>
+        <label>Uni Bridges Pathway</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently studying International Baccalaureate (IB)</fullName>
+        <default>false</default>
+        <label>Currently studying International Baccalaureate (IB)</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently studying the VCE (includes students from most recent northern hemisphere)</fullName>
+        <default>false</default>
+        <label>Currently studying the VCE (includes students from most recent northern hemisphere)</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently studying a non-standard or accredited Australian Year 12 course</fullName>
+        <default>false</default>
+        <label>Currently studying a non-standard or accredited Australian Year 12 course</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently studying standard interstate year 12</fullName>
+        <default>false</default>
+        <label>Currently studying standard interstate year 12</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently studying overseas year 12 (domestic applicant)</fullName>
+        <default>false</default>
+        <label>Currently studying overseas year 12 (domestic applicant)</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently studying GCE Advanced Level (incl Northern hemisphere June graduates)</fullName>
+        <default>false</default>
+        <label>Currently studying GCE Advanced Level (incl Northern hemisphere June graduates)</label>
+    </customValue>
+    <customValue>
+        <fullName>Studying the NZ Nat Cert of Edu Achiev (NCEA) level 3 exam in the current year</fullName>
+        <default>false</default>
+        <label>Studying the NZ Nat Cert of Edu Achiev (NCEA) level 3 exam in the current year</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently studying standard Australian year 12 has incomplete higher ed award</fullName>
+        <default>false</default>
+        <label>Currently studying standard Australian year 12 has incomplete higher ed award</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently studying standard Aust yr 12 has incomplete TAFE Cert IV award</fullName>
+        <default>false</default>
+        <label>Currently studying standard Aust yr 12 has incomplete TAFE Cert IV award</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently studying a standard Aust yr12 has a complete higher ed award</fullName>
+        <default>false</default>
+        <label>Currently studying a standard Aust yr12 has a complete higher ed award</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently studying stand Aust yr 12 has complete TAFE award Cert IV lvl or above</fullName>
+        <default>false</default>
+        <label>Currently studying stand Aust yr 12 has complete TAFE award Cert IV lvl or above</label>
+    </customValue>
+    <customValue>
+        <fullName>VCE Plus</fullName>
+        <default>false</default>
+        <label>VCE Plus</label>
+    </customValue>
+    <masterLabel>I_ST_VTAC_Category_Description</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Pathway__c</fullName>
+    <description>Depicts study pathway a candidate intend to undertake</description>
+    <externalId>false</externalId>
+    <label>Pathway</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_IL_Pathway_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AFL Sports Ready</fullName>
+                <default>false</default>
+                <label>AFL Sports Ready</label>
+            </value>
+            <value>
+                <fullName>American Education Centre Ltd (ANC Education)</fullName>
+                <default>false</default>
+                <label>American Education Centre Ltd (ANC Education)</label>
+            </value>
+            <value>
+                <fullName>Anhui International Studies University</fullName>
+                <default>false</default>
+                <label>Anhui International Studies University</label>
+            </value>
+            <value>
+                <fullName>ASHE</fullName>
+                <default>false</default>
+                <label>ASHE</label>
+            </value>
+            <value>
+                <fullName>Australian College of Business and Technology</fullName>
+                <default>false</default>
+                <label>Australian College of Business and Technology</label>
+            </value>
+            <value>
+                <fullName>Australian College of Business and Technology (ACBT)</fullName>
+                <default>false</default>
+                <label>Australian College of Business and Technology (ACBT)</label>
+            </value>
+            <value>
+                <fullName>Australian Institute of Superannuation Trustees (AIST)</fullName>
+                <default>false</default>
+                <label>Australian Institute of Superannuation Trustees (AIST)</label>
+            </value>
+            <value>
+                <fullName>Beijing Foreign Studies University</fullName>
+                <default>false</default>
+                <label>Beijing Foreign Studies University</label>
+            </value>
+            <value>
+                <fullName>Bendigo Kangan Institute</fullName>
+                <default>false</default>
+                <label>Bendigo Kangan Institute</label>
+            </value>
+            <value>
+                <fullName>Bendigo Kangan Institute of TAFE</fullName>
+                <default>false</default>
+                <label>Bendigo Kangan Institute of TAFE</label>
+            </value>
+            <value>
+                <fullName>Box Hill Institute</fullName>
+                <default>false</default>
+                <label>Box Hill Institute</label>
+            </value>
+            <value>
+                <fullName>Chandigarh University</fullName>
+                <default>false</default>
+                <label>Chandigarh University</label>
+            </value>
+            <value>
+                <fullName>Chengdu University of Information Technology</fullName>
+                <default>false</default>
+                <label>Chengdu University of Information Technology</label>
+            </value>
+            <value>
+                <fullName>Chengdu University of Information Technology (CUIT)</fullName>
+                <default>false</default>
+                <label>Chengdu University of Information Technology (CUIT)</label>
+            </value>
+            <value>
+                <fullName>Chisholm Institute</fullName>
+                <default>false</default>
+                <label>Chisholm Institute</label>
+            </value>
+            <value>
+                <fullName>Chisholm Institute of TAFE</fullName>
+                <default>false</default>
+                <label>Chisholm Institute of TAFE</label>
+            </value>
+            <value>
+                <fullName>Chongqing University</fullName>
+                <default>false</default>
+                <label>Chongqing University</label>
+            </value>
+            <value>
+                <fullName>Chongqing University (CQU)</fullName>
+                <default>false</default>
+                <label>Chongqing University (CQU)</label>
+            </value>
+            <value>
+                <fullName>Dalian Jiaotong University</fullName>
+                <default>false</default>
+                <label>Dalian Jiaotong University</label>
+            </value>
+            <value>
+                <fullName>Davis College</fullName>
+                <default>false</default>
+                <label>Davis College</label>
+            </value>
+            <value>
+                <fullName>East China Normal University (ECNU)</fullName>
+                <default>false</default>
+                <label>East China Normal University (ECNU)</label>
+            </value>
+            <value>
+                <fullName>East China University of Science and Technology (ECUST)</fullName>
+                <default>false</default>
+                <label>East China University of Science and Technology (ECUST)</label>
+            </value>
+            <value>
+                <fullName>Goulburn Ovens Institute of TAFE</fullName>
+                <default>false</default>
+                <label>Goulburn Ovens Institute of TAFE</label>
+            </value>
+            <value>
+                <fullName>Goulburn Ovens TAFE (GO TAFE)</fullName>
+                <default>false</default>
+                <label>Goulburn Ovens TAFE (GO TAFE)</label>
+            </value>
+            <value>
+                <fullName>Guangdong University of Finance</fullName>
+                <default>false</default>
+                <label>Guangdong University of Finance</label>
+            </value>
+            <value>
+                <fullName>Guangzhou College of South China University of Technology</fullName>
+                <default>false</default>
+                <label>Guangzhou College of South China University of Technology</label>
+            </value>
+            <value>
+                <fullName>Hanoi University of Science and Technology</fullName>
+                <default>false</default>
+                <label>Hanoi University of Science and Technology</label>
+            </value>
+            <value>
+                <fullName>Hanoi University of Science and Technology (HUST)</fullName>
+                <default>false</default>
+                <label>Hanoi University of Science and Technology (HUST)</label>
+            </value>
+            <value>
+                <fullName>Health Information Management Association of Australia</fullName>
+                <default>false</default>
+                <label>Health Information Management Association of Australia</label>
+            </value>
+            <value>
+                <fullName>Institute of Chartered Accountants of Sri Lanka, The</fullName>
+                <default>false</default>
+                <label>Institute of Chartered Accountants of Sri Lanka, The</label>
+            </value>
+            <value>
+                <fullName>Institute of Health and Nursing Australia (IHNA)</fullName>
+                <default>false</default>
+                <label>Institute of Health and Nursing Australia (IHNA)</label>
+            </value>
+            <value>
+                <fullName>Instituto Superior San Ignacia de Loyola</fullName>
+                <default>false</default>
+                <label>Instituto Superior San Ignacia de Loyola</label>
+            </value>
+            <value>
+                <fullName>International School of Management and Technology (ISMT)</fullName>
+                <default>false</default>
+                <label>International School of Management and Technology (ISMT)</label>
+            </value>
+            <value>
+                <fullName>Jiangsu University of Science and Technology</fullName>
+                <default>false</default>
+                <label>Jiangsu University of Science and Technology</label>
+            </value>
+            <value>
+                <fullName>Jiangsu University of Science and Technology (JUST)</fullName>
+                <default>false</default>
+                <label>Jiangsu University of Science and Technology (JUST)</label>
+            </value>
+            <value>
+                <fullName>Jiangxi University of Finance and Economics</fullName>
+                <default>false</default>
+                <label>Jiangxi University of Finance and Economics</label>
+            </value>
+            <value>
+                <fullName>Jiangxi University of Finance and Economics (JUFE)</fullName>
+                <default>false</default>
+                <label>Jiangxi University of Finance and Economics (JUFE)</label>
+            </value>
+            <value>
+                <fullName>Kiang Wu Nursing College of Macau</fullName>
+                <default>false</default>
+                <label>Kiang Wu Nursing College of Macau</label>
+            </value>
+            <value>
+                <fullName>Kiang Wu Nursing College of Macau (KWNC)</fullName>
+                <default>false</default>
+                <label>Kiang Wu Nursing College of Macau (KWNC)</label>
+            </value>
+            <value>
+                <fullName>La Trobe College Australia</fullName>
+                <default>false</default>
+                <label>La Trobe College Australia</label>
+            </value>
+            <value>
+                <fullName>La Trobe College Australia (LTCA) - Navitas</fullName>
+                <default>false</default>
+                <label>La Trobe College Australia (LTCA) - Navitas</label>
+            </value>
+            <value>
+                <fullName>Lovely Professional University</fullName>
+                <default>false</default>
+                <label>Lovely Professional University</label>
+            </value>
+            <value>
+                <fullName>Melbourne Polytechnic</fullName>
+                <default>false</default>
+                <label>Melbourne Polytechnic</label>
+            </value>
+            <value>
+                <fullName>Nanjing University of Information Science and Technology</fullName>
+                <default>false</default>
+                <label>Nanjing University of Information Science and Technology</label>
+            </value>
+            <value>
+                <fullName>Nanjing University of Information Science and Technology (NUIST)</fullName>
+                <default>false</default>
+                <label>Nanjing University of Information Science and Technology (NUIST)</label>
+            </value>
+            <value>
+                <fullName>Nawaloka College of Higher Studies (NCHS)</fullName>
+                <default>false</default>
+                <label>Nawaloka College of Higher Studies (NCHS)</label>
+            </value>
+            <value>
+                <fullName>Nguyen Tat Tanh University (NTTU)</fullName>
+                <default>false</default>
+                <label>Nguyen Tat Tanh University (NTTU)</label>
+            </value>
+            <value>
+                <fullName>Northwestern Polytechnical University</fullName>
+                <default>false</default>
+                <label>Northwestern Polytechnical University</label>
+            </value>
+            <value>
+                <fullName>Northwestern Polytechnic University</fullName>
+                <default>false</default>
+                <label>Northwestern Polytechnic University</label>
+            </value>
+            <value>
+                <fullName>Parade College</fullName>
+                <default>false</default>
+                <label>Parade College</label>
+            </value>
+            <value>
+                <fullName>Polytechnics Mauritius Ltd</fullName>
+                <default>false</default>
+                <label>Polytechnics Mauritius Ltd</label>
+            </value>
+            <value>
+                <fullName>Polytechnics Mauritius Ltd (PML)</fullName>
+                <default>false</default>
+                <label>Polytechnics Mauritius Ltd (PML)</label>
+            </value>
+            <value>
+                <fullName>Posts and Telecommunications Institute of Technology</fullName>
+                <default>false</default>
+                <label>Posts and Telecommunications Institute of Technology</label>
+            </value>
+            <value>
+                <fullName>Posts and Telecommunications Institute of Technology (PTIT), Vietnam</fullName>
+                <default>false</default>
+                <label>Posts and Telecommunications Institute of Technology (PTIT), Vietnam</label>
+            </value>
+            <value>
+                <fullName>SEDA</fullName>
+                <default>false</default>
+                <label>SEDA</label>
+            </value>
+            <value>
+                <fullName>SEDA GROUP Pty Ltd</fullName>
+                <default>false</default>
+                <label>SEDA GROUP Pty Ltd</label>
+            </value>
+            <value>
+                <fullName>Shandong University of Finance and Economics (SDUFE)</fullName>
+                <default>false</default>
+                <label>Shandong University of Finance and Economics (SDUFE)</label>
+            </value>
+            <value>
+                <fullName>Shanghai Institute of Technology</fullName>
+                <default>false</default>
+                <label>Shanghai Institute of Technology</label>
+            </value>
+            <value>
+                <fullName>Shanghai International Studies University (SISU)</fullName>
+                <default>false</default>
+                <label>Shanghai International Studies University (SISU)</label>
+            </value>
+            <value>
+                <fullName>Sri Lanka Institute of Information Technology</fullName>
+                <default>false</default>
+                <label>Sri Lanka Institute of Information Technology</label>
+            </value>
+            <value>
+                <fullName>Sri Lanka Institute of IT (SLIIT)</fullName>
+                <default>false</default>
+                <label>Sri Lanka Institute of IT (SLIIT)</label>
+            </value>
+            <value>
+                <fullName>SRM Institute of Science and Technology</fullName>
+                <default>false</default>
+                <label>SRM Institute of Science and Technology</label>
+            </value>
+            <value>
+                <fullName>SRM Institute of Science and Technology (formerly SRM University)</fullName>
+                <default>false</default>
+                <label>SRM Institute of Science and Technology (formerly SRM University)</label>
+            </value>
+            <value>
+                <fullName>SuniTAFE</fullName>
+                <default>false</default>
+                <label>SuniTAFE</label>
+            </value>
+            <value>
+                <fullName>TAFE Training Packages - LBS Bachelor of Business (All Instances)</fullName>
+                <default>false</default>
+                <label>TAFE Training Packages - LBS Bachelor of Business (All Instances)</label>
+            </value>
+            <value>
+                <fullName>The Asia Pacific Institute of Information Technology</fullName>
+                <default>false</default>
+                <label>The Asia Pacific Institute of Information Technology</label>
+            </value>
+            <value>
+                <fullName>Ton Duc Thang University</fullName>
+                <default>false</default>
+                <label>Ton Duc Thang University</label>
+            </value>
+            <value>
+                <fullName>Ton Duc Thang University (TDTU)</fullName>
+                <default>false</default>
+                <label>Ton Duc Thang University (TDTU)</label>
+            </value>
+            <value>
+                <fullName>Training packages - Block credit - LBS</fullName>
+                <default>false</default>
+                <label>Training packages - Block credit - LBS</label>
+            </value>
+            <value>
+                <fullName>Universitas Pelita Harapan (UPH)</fullName>
+                <default>false</default>
+                <label>Universitas Pelita Harapan (UPH)</label>
+            </value>
+            <value>
+                <fullName>University of Electronic Science and Technology (UESTC), China</fullName>
+                <default>false</default>
+                <label>University of Electronic Science and Technology (UESTC), China</label>
+            </value>
+            <value>
+                <fullName>University of Lincoln</fullName>
+                <default>false</default>
+                <label>University of Lincoln</label>
+            </value>
+            <value>
+                <fullName>University of Lincoln - Lincoln Business School</fullName>
+                <default>false</default>
+                <label>University of Lincoln - Lincoln Business School</label>
+            </value>
+            <value>
+                <fullName>University of Pelita Harapan</fullName>
+                <default>false</default>
+                <label>University of Pelita Harapan</label>
+            </value>
+            <value>
+                <fullName>University of San Carlos</fullName>
+                <default>false</default>
+                <label>University of San Carlos</label>
+            </value>
+            <value>
+                <fullName>UNSW Global</fullName>
+                <default>false</default>
+                <label>UNSW Global</label>
+            </value>
+            <value>
+                <fullName>Vel Tech, Rangarajan Dr.Sagunthala, R&amp;D Institute of Science and Tech</fullName>
+                <default>false</default>
+                <label>Vel Tech, Rangarajan Dr.Sagunthala, R&amp;D Institute of Science and Tech</label>
+            </value>
+            <value>
+                <fullName>Vel Tech, Rangarajan Dr.Sagunthala, R&amp;D Institute of Science and Tech, India</fullName>
+                <default>false</default>
+                <label>Vel Tech, Rangarajan Dr.Sagunthala, R&amp;D Institute of Science and Tech, India</label>
+            </value>
+            <value>
+                <fullName>Wodonga Institute of TAFE</fullName>
+                <default>false</default>
+                <label>Wodonga Institute of TAFE</label>
+            </value>
+            <value>
+                <fullName>Wodonga Institute of TAFE (WIOT)</fullName>
+                <default>false</default>
+                <label>Wodonga Institute of TAFE (WIOT)</label>
+            </value>
+            <value>
+                <fullName>Wuhan Donghu University</fullName>
+                <default>false</default>
+                <label>Wuhan Donghu University</label>
+            </value>
+            <value>
+                <fullName>Wuhan Donghu University (WDU)</fullName>
+                <default>false</default>
+                <label>Wuhan Donghu University (WDU)</label>
+            </value>
+            <value>
+                <fullName>Yanshan College of Shandong University of Finance and Economics (SDUFE)</fullName>
+                <default>false</default>
+                <label>Yanshan College of Shandong University of Finance and Economics (SDUFE)</label>
+            </value>
+            <value>
+                <fullName>Zhejiang University</fullName>
+                <default>false</default>
+                <label>Zhejiang University</label>
+            </value>
+            <value>
+                <fullName>Zhejiang University - College of Computer Science &amp; Technology, China</fullName>
+                <default>false</default>
+                <label>Zhejiang University - College of Computer Science &amp; Technology, China</label>
+            </value>
+            <value>
+                <fullName>AFL Sports Ready Limited</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AFL Sports Ready Limited</label>
+            </value>
+            <value>
+                <fullName>Goulburn Ovens TAFE (GO TAFE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Goulburn Ovens TAFE (GO TAFE</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>AFL Sports Ready</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>ASHE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Australian Institute of Superannuation Trustees (AIST)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Bendigo Kangan Institute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Bendigo Kangan Institute of TAFE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Box Hill Institute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Chisholm Institute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Chisholm Institute of TAFE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Goulburn Ovens Institute of TAFE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Goulburn Ovens TAFE (GO TAFE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Health Information Management Association of Australia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Institute of Health and Nursing Australia (IHNA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>La Trobe College Australia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>La Trobe College Australia (LTCA) - Navitas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Melbourne Polytechnic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Parade College</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>SEDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>SEDA GROUP Pty Ltd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>SuniTAFE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>TAFE Training Packages - LBS Bachelor of Business (All Instances)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Training packages - Block credit - LBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>UNSW Global</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Wodonga Institute of TAFE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onshore Pathway</controllingFieldValue>
+            <valueName>Wodonga Institute of TAFE (WIOT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>American Education Centre Ltd (ANC Education)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Anhui International Studies University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Australian College of Business and Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Australian College of Business and Technology (ACBT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Beijing Foreign Studies University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Chandigarh University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Chengdu University of Information Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Chengdu University of Information Technology (CUIT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Chongqing University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Chongqing University (CQU)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Dalian Jiaotong University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Davis College</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>East China Normal University (ECNU)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>East China University of Science and Technology (ECUST)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Guangdong University of Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Guangzhou College of South China University of Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Hanoi University of Science and Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Hanoi University of Science and Technology (HUST)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Institute of Chartered Accountants of Sri Lanka, The</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Instituto Superior San Ignacia de Loyola</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>International School of Management and Technology (ISMT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Jiangsu University of Science and Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Jiangsu University of Science and Technology (JUST)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Jiangxi University of Finance and Economics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Jiangxi University of Finance and Economics (JUFE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Kiang Wu Nursing College of Macau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Kiang Wu Nursing College of Macau (KWNC)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Lovely Professional University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Nanjing University of Information Science and Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Nanjing University of Information Science and Technology (NUIST)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Nawaloka College of Higher Studies (NCHS)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Nguyen Tat Tanh University (NTTU)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Northwestern Polytechnical University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Northwestern Polytechnic University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Polytechnics Mauritius Ltd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Polytechnics Mauritius Ltd (PML)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Posts and Telecommunications Institute of Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Posts and Telecommunications Institute of Technology (PTIT), Vietnam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Shandong University of Finance and Economics (SDUFE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Shanghai Institute of Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Shanghai International Studies University (SISU)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Sri Lanka Institute of Information Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Sri Lanka Institute of IT (SLIIT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>SRM Institute of Science and Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>SRM Institute of Science and Technology (formerly SRM University)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>The Asia Pacific Institute of Information Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Ton Duc Thang University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Ton Duc Thang University (TDTU)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Universitas Pelita Harapan (UPH)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>University of Electronic Science and Technology (UESTC), China</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>University of Lincoln</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>University of Lincoln - Lincoln Business School</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>University of Pelita Harapan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>University of San Carlos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Vel Tech, Rangarajan Dr.Sagunthala, R&amp;D Institute of Science and Tech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Vel Tech, Rangarajan Dr.Sagunthala, R&amp;D Institute of Science and Tech, India</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Wuhan Donghu University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Wuhan Donghu University (WDU)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Yanshan College of Shandong University of Finance and Economics (SDUFE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Zhejiang University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Offshore Pathway</controllingFieldValue>
+            <valueName>Zhejiang University - College of Computer Science &amp; Technology, China</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

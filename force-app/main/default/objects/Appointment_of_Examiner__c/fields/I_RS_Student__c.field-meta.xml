@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Student__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Kept in sync with the student lookup on the GRE. Used for email alerts that fire from this object.</description>
+    <externalId>false</externalId>
+    <label>Student</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Appointment of Examiners (Student)</relationshipLabel>
+    <relationshipName>Appointment_of_Examiners</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Nominee_Personal_Email__c</fullName>
+    <description>Retrieves Nominee&apos;s email address for use in send email quick action</description>
+    <externalId>false</externalId>
+    <formula>I_IL_Nominee__r.I_RM_Email__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Nominee Personal Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

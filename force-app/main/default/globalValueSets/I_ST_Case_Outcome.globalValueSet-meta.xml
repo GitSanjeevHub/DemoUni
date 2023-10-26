@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advanced Standing</fullName>
+        <default>false</default>
+        <label>Advanced Standing</label>
+    </customValue>
+    <customValue>
+        <fullName>Already Applied</fullName>
+        <default>false</default>
+        <label>Already Applied</label>
+    </customValue>
+    <customValue>
+        <fullName>Applying With Different LTU Course</fullName>
+        <default>false</default>
+        <label>Applying With Different LTU Course</label>
+    </customValue>
+    <customValue>
+        <fullName>Assisted With Application</fullName>
+        <default>false</default>
+        <label>Assisted With Application</label>
+    </customValue>
+    <customValue>
+        <fullName>Assisted With Enrolment</fullName>
+        <default>false</default>
+        <label>Assisted With Enrolment</label>
+    </customValue>
+    <customValue>
+        <fullName>Attending Event</fullName>
+        <default>false</default>
+        <label>Attending Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Cannot Provide Documentation</fullName>
+        <default>false</default>
+        <label>Cannot Provide Documentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Changed Mind, Future Prospect</fullName>
+        <default>false</default>
+        <label>Changed Mind, Future Prospect</label>
+    </customValue>
+    <customValue>
+        <fullName>Changed Mind, Not Interested</fullName>
+        <default>false</default>
+        <label>Changed Mind, Not Interested</label>
+    </customValue>
+    <customValue>
+        <fullName>Course availability</fullName>
+        <default>false</default>
+        <label>Course availability</label>
+    </customValue>
+    <customValue>
+        <fullName>Course closed for applications</fullName>
+        <default>false</default>
+        <label>Course closed for applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Course not available</fullName>
+        <default>false</default>
+        <label>Course not available</label>
+    </customValue>
+    <customValue>
+        <fullName>Course Related</fullName>
+        <default>false</default>
+        <label>Course Related</label>
+    </customValue>
+    <customValue>
+        <fullName>Current Student</fullName>
+        <default>false</default>
+        <label>Current Student</label>
+    </customValue>
+    <customValue>
+        <fullName>Declining Offer</fullName>
+        <default>false</default>
+        <label>Declining Offer</label>
+    </customValue>
+    <customValue>
+        <fullName>Deferring</fullName>
+        <default>false</default>
+        <label>Deferring</label>
+    </customValue>
+    <customValue>
+        <fullName>Desired Course Not Available</fullName>
+        <default>false</default>
+        <label>Desired Course Not Available</label>
+    </customValue>
+    <customValue>
+        <fullName>Duplicate</fullName>
+        <default>false</default>
+        <label>Duplicate</label>
+    </customValue>
+    <customValue>
+        <fullName>Enrolled</fullName>
+        <default>false</default>
+        <label>Enrolled</label>
+    </customValue>
+    <customValue>
+        <fullName>Enrolled/Going to Another Institution</fullName>
+        <default>false</default>
+        <label>Enrolled/Going to Another Institution</label>
+    </customValue>
+    <customValue>
+        <fullName>Fees</fullName>
+        <default>false</default>
+        <label>Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Reasons</fullName>
+        <default>false</default>
+        <label>Financial Reasons</label>
+    </customValue>
+    <customValue>
+        <fullName>Going To Another University</fullName>
+        <default>false</default>
+        <label>Going To Another University</label>
+    </customValue>
+    <customValue>
+        <fullName>In Person</fullName>
+        <default>false</default>
+        <label>In Person</label>
+    </customValue>
+    <customValue>
+        <fullName>Location of Campus</fullName>
+        <default>false</default>
+        <label>Location of Campus</label>
+    </customValue>
+    <customValue>
+        <fullName>Needs More Flexible Study</fullName>
+        <default>false</default>
+        <label>Needs More Flexible Study</label>
+    </customValue>
+    <customValue>
+        <fullName>No Longer interested</fullName>
+        <default>false</default>
+        <label>No Longer interested</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Attending Event</fullName>
+        <default>false</default>
+        <label>Not Attending Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Eligible</fullName>
+        <default>false</default>
+        <label>Not Eligible</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Sold On Study Yet</fullName>
+        <default>false</default>
+        <label>Not Sold On Study Yet</label>
+    </customValue>
+    <customValue>
+        <fullName>Password reset</fullName>
+        <default>false</default>
+        <label>Password reset</label>
+    </customValue>
+    <customValue>
+        <fullName>Personal Circumstances</fullName>
+        <default>false</default>
+        <label>Personal Circumstances</label>
+    </customValue>
+    <customValue>
+        <fullName>Prefer Not to Say</fullName>
+        <default>false</default>
+        <label>Prefer Not to Say</label>
+    </customValue>
+    <customValue>
+        <fullName>Provided Course advice</fullName>
+        <default>false</default>
+        <label>Provided Course advice</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred - Single Unit / Cross Inst</fullName>
+        <default>false</default>
+        <label>Referred - Single Unit / Cross Inst</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred to Accomodation</fullName>
+        <default>false</default>
+        <label>Referred to Accomodation</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred to International</fullName>
+        <default>false</default>
+        <label>Referred to International</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred to Research</fullName>
+        <default>false</default>
+        <label>Referred to Research</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred to TAFE</fullName>
+        <default>false</default>
+        <label>Referred to TAFE</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred to UniLearn</fullName>
+        <default>false</default>
+        <label>Referred to UniLearn</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred to Wiley</fullName>
+        <default>false</default>
+        <label>Referred to Wiley</label>
+    </customValue>
+    <customValue>
+        <fullName>Remove From Mailing List</fullName>
+        <default>false</default>
+        <label>Remove from Mailing List</label>
+    </customValue>
+    <customValue>
+        <fullName>Requested Further Information</fullName>
+        <default>false</default>
+        <label>Requested Further Information</label>
+    </customValue>
+    <customValue>
+        <fullName>Requires No Further Assistance</fullName>
+        <default>false</default>
+        <label>Requires No Further Assistance</label>
+    </customValue>
+    <customValue>
+        <fullName>Short Course</fullName>
+        <default>false</default>
+        <label>Short Course</label>
+    </customValue>
+    <customValue>
+        <fullName>Similar Course</fullName>
+        <default>false</default>
+        <label>Similar Course</label>
+    </customValue>
+    <customValue>
+        <fullName>Still Deciding</fullName>
+        <default>false</default>
+        <label>Still Deciding</label>
+    </customValue>
+    <customValue>
+        <fullName>System Issues</fullName>
+        <default>false</default>
+        <label>System Issues</label>
+    </customValue>
+    <customValue>
+        <fullName>Systems/Processes</fullName>
+        <default>false</default>
+        <label>Systems/Processes</label>
+    </customValue>
+    <customValue>
+        <fullName>Trf To Ask LT</fullName>
+        <default>false</default>
+        <label>Trf To Ask LT</label>
+    </customValue>
+    <customValue>
+        <fullName>Unable To Contact</fullName>
+        <default>false</default>
+        <label>Unable To Contact</label>
+    </customValue>
+    <customValue>
+        <fullName>Undecided</fullName>
+        <default>false</default>
+        <label>Undecided</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsuccessful</fullName>
+        <default>false</default>
+        <label>Unsuccessful</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual</fullName>
+        <default>false</default>
+        <label>Virtual</label>
+    </customValue>
+    <customValue>
+        <fullName>Waiting On Outcome Other University</fullName>
+        <default>false</default>
+        <label>Waiting On Outcome Other University</label>
+    </customValue>
+    <customValue>
+        <fullName>Waiting outcome LTU</fullName>
+        <default>false</default>
+        <label>Waiting outcome LTU</label>
+    </customValue>
+    <customValue>
+        <fullName>Will accept offer</fullName>
+        <default>false</default>
+        <label>Will accept offer</label>
+    </customValue>
+    <customValue>
+        <fullName>Will Apply</fullName>
+        <default>false</default>
+        <label>Will Apply</label>
+    </customValue>
+    <customValue>
+        <fullName>Will attend Open day</fullName>
+        <default>false</default>
+        <label>Will attend Open day</label>
+    </customValue>
+    <customValue>
+        <fullName>Will Book Consultation</fullName>
+        <default>false</default>
+        <label>Will Book Consultation</label>
+    </customValue>
+    <customValue>
+        <fullName>Will Enroll</fullName>
+        <default>false</default>
+        <label>Will Enroll</label>
+    </customValue>
+    <customValue>
+        <fullName>Will provide documentation</fullName>
+        <default>false</default>
+        <label>Will provide documentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Will sit Casper</fullName>
+        <default>false</default>
+        <label>Will sit Casper</label>
+    </customValue>
+    <customValue>
+        <fullName>Will sit English test</fullName>
+        <default>false</default>
+        <label>Will sit English test</label>
+    </customValue>
+    <customValue>
+        <fullName>Will Submit</fullName>
+        <default>false</default>
+        <label>Will Submit</label>
+    </customValue>
+    <customValue>
+        <fullName>Withdrawing</fullName>
+        <default>false</default>
+        <label>Withdrawing</label>
+    </customValue>
+    <customValue>
+        <fullName>Withdrawing application</fullName>
+        <default>false</default>
+        <label>Withdrawing application</label>
+    </customValue>
+    <customValue>
+        <fullName>Wrong Application System</fullName>
+        <default>false</default>
+        <label>Wrong Application System</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Attended Consultation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Attended Consultation</label>
+    </customValue>
+    <customValue>
+        <fullName>Wants Another La Trobe Course</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Wants Another La Trobe Course</label>
+    </customValue>
+    <customValue>
+        <fullName>Accepted</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Accepted</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancelled Consultation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cancelled Consultation</label>
+    </customValue>
+    <customValue>
+        <fullName>Did Not Attend Consultation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Did Not Attend Consultation</label>
+    </customValue>
+    <description>Created for IST 188 for case object</description>
+    <masterLabel>I_ST_Case_Outcome</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

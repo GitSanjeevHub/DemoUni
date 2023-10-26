@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_RCI_Class__c</fullName>
+    <description>IF($CustomMetadata.RCI_Classes_Metric__mdt.Class_0.I_RS_RCI_Range_Max__c &gt;= I_RS_RCI__c &amp;&amp; $CustomMetadata.RCI_Classes_Metric__mdt.Class_0.I_RS_RCI_Range_Min__c &lt;= I_RS_RCI__c, $CustomMetadata.RCI_Classes_Metric__mdt.Class_0.MasterLabel,
+
+IF($CustomMetadata.RCI_Classes_Metric__mdt.Class_I.I_RS_RCI_Range_Max__c &gt;= I_RS_RCI__c &amp;&amp; $CustomMetadata.RCI_Classes_Metric__mdt.Class_I.I_RS_RCI_Range_Min__c &lt;= I_RS_RCI__c, $CustomMetadata.RCI_Classes_Metric__mdt.Class_I.MasterLabel,
+
+
+IF($CustomMetadata.RCI_Classes_Metric__mdt.Class_II.I_RS_RCI_Range_Max__c &gt;= I_RS_RCI__c &amp;&amp; $CustomMetadata.RCI_Classes_Metric__mdt.Class_II.I_RS_RCI_Range_Min__c &lt;= I_RS_RCI__c, $CustomMetadata.RCI_Classes_Metric__mdt.Class_II.MasterLabel,
+
+
+IF($CustomMetadata.RCI_Classes_Metric__mdt.Class_III.I_RS_RCI_Range_Max__c &gt;= I_RS_RCI__c &amp;&amp; $CustomMetadata.RCI_Classes_Metric__mdt.Class_III.I_RS_RCI_Range_Min__c &lt;= I_RS_RCI__c, $CustomMetadata.RCI_Classes_Metric__mdt.Class_III.MasterLabel,</description>
+    <externalId>false</externalId>
+    <formula>IF(I_RS_Count_of_Citation_Records__c &gt; 0 &amp;&amp; RecordType.DeveloperName = &apos;I_RS_Journal_Article_5&apos;,
+
+&quot;$CustomMetadata.RCI_Classes_Metric__mdt.Class_0.MasterLabel)))))))&quot;,
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>IF($CustomMetadata.RCI_Classes_Metric__mdt.Class_IV.I_RS_RCI_Range_Max__c &gt;= I_RS_RCI__c &amp;&amp; $CustomMetadata.RCI_Classes_Metric__mdt.Class_IV.I_RS_RCI_Range_Min__c &lt;= I_RS_RCI__c, $CustomMetadata.RCI_Classes_Metric__mdt.Class_IV.MasterLabel,
+
+IF($CustomMetadata.RCI_Classes_Metric__mdt.Class_V.I_RS_RCI_Range_Max__c &gt;= I_RS_RCI__c &amp;&amp; $CustomMetadata.RCI_Classes_Metric__mdt.Class_V.I_RS_RCI_Range_Min__c &lt;= I_RS_RCI__c, $CustomMetadata.RCI_Classes_Metric__mdt.Class_V.MasterLabel,</inlineHelpText>
+    <label>RCI Class</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

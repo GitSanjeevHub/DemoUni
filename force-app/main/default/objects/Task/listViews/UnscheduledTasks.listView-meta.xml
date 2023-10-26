@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnscheduledTasks</fullName>
+    <columns>SUBJECT</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>I_RS_Milestone_Type__c</columns>
+    <columns>STATUS</columns>
+    <columns>DUE_DATE</columns>
+    <columns>I_RS_Pre_Conditions_and_Instructions__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>WHAT_NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>STATUS</field>
+        <operation>equals</operation>
+        <value>Not Started,In Progress</value>
+    </filters>
+    <filters>
+        <field>DUE_DATE</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Task.Ethics,Task.I_RS_RES_Finance,Task.I_RS_RES_RO,Task.I_RS_RES_RO_Finance,Task.I_RS_Task,Task.I_RS_Time_Finance</value>
+    </filters>
+    <label>Unscheduled Tasks/Milestones</label>
+</ListView>

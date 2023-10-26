@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Catholic</fullName>
+        <default>false</default>
+        <label>Catholic</label>
+    </customValue>
+    <customValue>
+        <fullName>Government</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </customValue>
+    <customValue>
+        <fullName>Home</fullName>
+        <default>false</default>
+        <label>Home</label>
+    </customValue>
+    <customValue>
+        <fullName>Independent</fullName>
+        <default>false</default>
+        <label>Independent</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Provider</fullName>
+        <default>false</default>
+        <label>Private Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>School</fullName>
+        <default>false</default>
+        <label>School</label>
+    </customValue>
+    <description>Created for Account Management</description>
+    <masterLabel>I_ST_School_Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Project_Proposal__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Proposal</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office seeks approvals from authorised approver/s. Once approved, the Research Office updates the status in the Researcher Portal and moves the proposal to the next stage. &lt;/p&gt;</info>
+        <picklistValueName>Approvals</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Researcher completes the Project Proposal record including Details, adds Team Members, creates Budget, attaches relevant proposal documents and draft agreements under Documents and Agreements tab, adds Research Codes (FOR, SEO and TOA) and Research Centre details. When the draft is complete, click Submit to Research Office (top-right).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tip: Use the Chatter to ask questions or share updates with the Research Office Contact.                                                  &lt;/p&gt;</info>
+        <picklistValueName>Draft Proposal</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The funder is reviewing the submitted proposal.&lt;/p&gt;</info>
+        <picklistValueName>Negotiating</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office reviews the draft proposal. If additional information is required, the Research Office will contact the researcher. If the draft proposal is ready for approvals, the Research Office will submit for approval.&lt;/p&gt;</info>
+        <picklistValueName>Review by Research Office</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office or the Researcher submits the proposal to the Client, as agreed with the Research Office Contact. If the Researcher submits the proposal to the Client, the Researcher uploads the email and a copy of the proposal document to the Researcher Portal (Related Tab under Files tab) and notifies the Research Office contact via Chatter.&lt;/p&gt;</info>
+        <picklistValueName>Submission to Client</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The proposal is successful and is now a project. &lt;/p&gt;</info>
+        <picklistValueName>Successful</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_RS_Proposal</recordTypeName>
+</PathAssistant>

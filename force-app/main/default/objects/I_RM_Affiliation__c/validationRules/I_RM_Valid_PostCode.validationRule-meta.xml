@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RM_Valid_PostCode</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND((ISPICKVAL(I_RM_Role__c,&apos;Domestic Lead&apos;)),  I_RM_Prospective_International_Student__c != TRUE,
+IF(AND(OR(NOT(ISBLANK(TEXT(I_RM_Mailing_Country__c))),NOT(ISBLANK(I_RM_Mailing_Street__c)),NOT(ISBLANK(I_RM_Mailing_State__c)),NOT(ISBLANK(
+  I_RM_Mailing_Suburb__c))), ISBLANK( I_RM_Mailing_Postcode__c )),TRUE,
+  IF(AND(OR(NOT(ISBLANK( I_RM_Suburb__c)),NOT(ISBLANK(TEXT(I_RM_Country__c))),NOT(ISBLANK(I_RM_State__c)),NOT(ISBLANK(
+  I_RM_Street__c))), ISBLANK( I_RM_Postcode__c )), TRUE, FALSE)),NOT (CONTAINS(
+  $Label.I_RM_Profile_To_Exclude , $Profile.Name)))</errorConditionFormula>
+    <errorMessage>Please add postal code to save the address</errorMessage>
+</ValidationRule>

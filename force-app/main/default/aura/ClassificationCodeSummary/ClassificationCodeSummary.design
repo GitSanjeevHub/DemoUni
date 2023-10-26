@@ -1,0 +1,8 @@
+<design:component>
+	
+	<design:attribute label="configName" name="parentObject" 
+	description="The 'Editable Grid Screen Config' custom metadata setting that this is based on."/>
+
+	<design:attribute label="Title" name="cardTitle" />
+
+</design:component>

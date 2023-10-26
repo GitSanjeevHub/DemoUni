@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Meeting_Date_if_Valid_for_Record</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+CONTAINS(RecordType.Name, &quot;Animal&quot;)&amp;&amp;
+NOT(ISBLANK(I_RS_Meeting_Date__c)) &amp;&amp;
+TEXT(I_RS_Meeting_Date__r.Type__c) &lt;&gt; &quot;Animal Ethics Application&quot;,
+TRUE,
+
+IF(
+CONTAINS(RecordType.Name, &quot;Human&quot;) &amp;&amp; 
+NOT(ISBLANK(I_RS_Meeting_Date__c)) &amp;&amp;
+TEXT(I_RS_Meeting_Date__r.Type__c) &lt;&gt; &quot;Human Ethics Application&quot;,
+TRUE,
+
+IF(
+CONTAINS(RecordType.Name, &quot;Biosafety&quot;) &amp;&amp;
+NOT(ISBLANK(I_RS_Meeting_Date__c)) &amp;&amp;
+TEXT(I_RS_Meeting_Date__r.Type__c) &lt;&gt; &quot;Biosafety Ethics Application&quot;,
+TRUE,
+
+FALSE
+)))</errorConditionFormula>
+    <errorDisplayField>I_RS_Meeting_Date__c</errorDisplayField>
+    <errorMessage>Please select a valid Meeting Date. (e.g Animal Ethics must have Animal Ethics Application Meeting Date, Human Ethics must have Human Ethics Application Meeting Date, Biosafety Ethics must have Biosafety Ethics Application Meeting Date)</errorMessage>
+</ValidationRule>

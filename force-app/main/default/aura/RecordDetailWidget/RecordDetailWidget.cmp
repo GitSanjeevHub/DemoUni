@@ -1,0 +1,28 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:attribute name="objectAPIName" type="string" default=""/>
+    <aura:attribute name="recordId" type="string"/>
+    <aura:attribute name="fieldConcat" type="string"/>
+    <aura:attribute name="fields" type="List"/>
+    <aura:attribute name="cardTitle" type="string" default=""/>
+    <aura:attribute name="returnURL" type="string" default=""/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:card title="{!v.cardTitle}">
+    
+        <div class="slds-p-around_small">
+            
+            <lightning:formattedUrl value="{!v.returnURL}" label="View record" target="_blank" />
+            
+        	<lightning:recordForm 
+                              recordId="{!v.recordId}"
+                              objectApiName="{!v.objectAPIName}" 
+                              mode="readonly" 
+                              fields="{!v.fields}"/>
+            
+        </div>
+    
+    </lightning:card>
+    
+</aura:component>

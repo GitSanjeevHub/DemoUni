@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATAR_fields_are_required</fullName>
+    <active>false</active>
+    <description>If any ATAR field is populated, other related ATAR fields must not left blank.</description>
+    <errorConditionFormula>AND(
+    OR(
+        NOT(ISBLANK( L_AD_ATAR_Intake_Period_Name__c )),        
+        NOT(ISBLANK( L_AD_ATAR_Intake_Period_Year__c )),
+        NOT(ISBLANK( L_AD_Highest_Offered_ATAR__c )),
+        NOT(ISBLANK( L_AD_Lowest_Offered_Selection_Rank__c ))
+    ),
+    OR(
+        ISBLANK( L_AD_ATAR_Intake_Period_Name__c ),        
+        ISBLANK( L_AD_ATAR_Intake_Period_Year__c ),
+        ISBLANK( L_AD_Highest_Offered_ATAR__c ),
+        ISBLANK( L_AD_Lowest_Offered_Selection_Rank__c )
+    )
+)</errorConditionFormula>
+    <errorMessage>ATAR fields must either all be populated, or all be blank.</errorMessage>
+</ValidationRule>

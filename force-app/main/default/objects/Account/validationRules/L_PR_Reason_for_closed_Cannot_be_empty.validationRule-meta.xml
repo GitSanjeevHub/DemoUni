@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Reason_for_closed_Cannot_be_empty</fullName>
+    <active>true</active>
+    <description>Reason for Closed  field should be updated when the Organization status is changed to closed.</description>
+    <errorConditionFormula>AND($Profile.Name = &apos;PRM User&apos;,
+    ISPICKVAL(I_RS_Status__c, &apos;Closed&apos;),
+    ISBLANK(L_PR_Closed_Reason__c)
+)</errorConditionFormula>
+    <errorDisplayField>L_PR_Closed_Reason__c</errorDisplayField>
+    <errorMessage>Please update the Closed Reason field</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+/**
+ * Created by burnside on 2019-05-22.
+ */
+.THIS {
+    padding: 0rem;
+ }
+
+.THIS.slds-form-element {
+    padding: 0rem;
+}

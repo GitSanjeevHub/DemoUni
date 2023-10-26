@@ -1,0 +1,16 @@
+.THIS .custom-header {
+    width: 100%;
+}
+.THIS .custom-footer {
+    width: 100%;
+}
+.THIS .custom-section {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: var(--lwc-layoutVerticalPadding,0.75rem);
+    padding-bottom: var(--lwc-layoutVerticalPadding,0.75rem);
+}
+.THIS .themeHeader .slds-is-relative, .THIS .themeHeader .slds-is-relative > div{
+    display: contents;
+}

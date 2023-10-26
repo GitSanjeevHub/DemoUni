@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Contract__c</entityName>
+    <fieldName>I_RS_Status__c</fieldName>
+    <masterLabel>Variation Using a Letter</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office sends the Variation to the other party with a copy to the Researcher. The Researcher may send the Agreement to the other party, if agreed with the Research Office Contact. If the Variation is sent by the Researcher to the other party, as agreed with the Research Office Contact, the Researcher uploads the email and a copy of the Variation to the Researcher Portal (Related Tab under Files Tab) and notifies the Research Office Contact via chatter. The other party may decide to sign the Variation at this stage, if acceptable. &lt;/p&gt;</info>
+        <picklistValueName>Client Countersign</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Variation is closed as it did not proceed to execution due to cancellation or withdrawal.&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research office drafts the Variation for approval. The Research Office contact will contact the Researcher if there are further questions.&lt;/p&gt;</info>
+        <picklistValueName>Create Letter</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Variation has been signed by both parties.&lt;/p&gt;</info>
+        <picklistValueName>Executed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office prepares instructions for Variation including changes Agreement timelines, milestones, project budget or expenditure, any changes to Agreement terms and conditions and deliverables/outputs. The Research Office will contact the Researcher to clarify or to provide further details, if required.&lt;/p&gt;</info>
+        <picklistValueName>Instructions</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office organises signing of the Variation by an authorised signatory. &lt;/p&gt;</info>
+        <picklistValueName>La Trobe Signature</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office contacts relevant stakeholders (eg Funder for Grants), if required&lt;/p&gt;</info>
+        <picklistValueName>Notify Appropriate Stakeholders</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Research Office notifies the Researcher of the outcome (for Grant matters only).&lt;/p&gt;</info>
+        <picklistValueName>Notify of Variation Outcome</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>I_RS_Variation_Using_a_Letter</recordTypeName>
+</PathAssistant>

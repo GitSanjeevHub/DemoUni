@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Moral_rights_specified_acts__c</fullName>
+    <externalId>false</externalId>
+    <label>Moral Rights/Specified Acts</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consent required-accepted by all LTU authors</fullName>
+                <default>false</default>
+                <label>Consent required-accepted by all LTU authors</label>
+            </value>
+            <value>
+                <fullName>No consents required by contract</fullName>
+                <default>false</default>
+                <label>No consents required by contract</label>
+            </value>
+            <value>
+                <fullName>Advice or amendments required</fullName>
+                <default>false</default>
+                <label>Advice or amendments required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Task_to_Outlook_Sync_Error_Message__c</fullName>
+    <description>Error message when Task fails to sync to Outlook, whether error occurred on Salesforce or Outlook</description>
+    <externalId>false</externalId>
+    <label>Task to Outlook Sync Error Message</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

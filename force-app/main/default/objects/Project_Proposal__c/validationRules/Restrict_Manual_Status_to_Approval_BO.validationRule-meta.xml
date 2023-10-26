@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Manual_Status_to_Approval_BO</fullName>
+    <active>true</active>
+    <description>This validates and restricts Status change to Approval manually</description>
+    <errorConditionFormula>AND (
+ $User.I_RS_Is_Researcher_User__c = &apos;0&apos;,
+ NOT(I_RS_Approval_Flag__c ),
+ ISCHANGED(I_RS_Status__c ), 
+ ISPICKVAL( I_RS_Status__c , &apos;Approvals&apos;), 
+ ISCHANGED(I_RS_Status__c)
+)</errorConditionFormula>
+    <errorMessage>To change the status to &apos;Approvals&apos;, please click on &apos;Submit for Approvals&apos; button. Please ensure the &apos;First Approver&apos; field has a value.</errorMessage>
+</ValidationRule>

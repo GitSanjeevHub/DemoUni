@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Principal_Supervisor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Principal Supervisor</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Graduate Research Examinations (Principal Supervisor)</relationshipLabel>
+    <relationshipName>Principal_Supervisor_Thesis</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Ethics_Request_Member_Update_Ethics_Num</fullName>
+        <field>I_RS_Ethics_Application_Number__c</field>
+        <formula>IF( 
+CONTAINS(RecordType.DeveloperName, &quot;Animal&quot;), 
+&quot;AEC&quot; &amp; I_RS_Auto_Number__c, 
+
+IF( 
+CONTAINS(RecordType.DeveloperName, &quot;Human&quot;), 
+&quot;HEC&quot; &amp; I_RS_Auto_Number__c, 
+
+
+IF( 
+CONTAINS(RecordType.DeveloperName, &quot;Biosafety&quot;), 
+&quot;IBC&quot; &amp; I_RS_Auto_Number__c, 
+
+
+&quot;&quot; 
+
+)))</formula>
+        <name>Ethics Request Member: Update Ethics Num</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ethics_Request_Update_Approval_Date</fullName>
+        <field>I_RS_Ethics_Application_Approval_Date__c</field>
+        <formula>IF (RecordType.DeveloperName &lt;&gt;  &apos;Research_Governance_Authorisation&apos;,
+TODAY(),
+NULL
+)</formula>
+        <name>Ethics Request: Update Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ethics_Request_Update_Expiry_Date</fullName>
+        <field>I_RS_Ethics_Application_Expiry_Date__c</field>
+        <formula>IF(
+
+CONTAINS(RecordType.DeveloperName, &quot;Animal&quot;) ||
+CONTAINS(RecordType.DeveloperName, &quot;Phenotype&quot;),
+
+
+IF(
+
+    AND(
+    MONTH(TODAY()) = 2, 
+    DAY(TODAY()) = 29
+    ),
+
+
+    DATE(YEAR(TODAY())+3,3,1),
+
+    DATE(
+    YEAR(TODAY())+3,
+    MONTH(TODAY()),
+    DAY(TODAY())
+    )
+
+),
+
+
+IF(
+CONTAINS(RecordType.DeveloperName, &quot;Human&quot;)|| CONTAINS(RecordType.DeveloperName, &quot;Biosafety&quot;)
+,
+
+IF(
+
+    AND(
+    MONTH(TODAY()) = 2, 
+    DAY(TODAY()) = 29
+    ),
+
+
+    DATE(YEAR(TODAY())+5,3,1),
+
+    DATE(
+    YEAR(TODAY())+5,
+    MONTH(TODAY()),
+    DAY(TODAY())
+    )
+
+),
+
+I_RS_Ethics_Application_Expiry_Date__c 
+))</formula>
+        <name>Ethics Request: Update Expiry Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ethics_Request_Update_Governance_Approv</fullName>
+        <field>I_RS_Governance_Approval_Date__c</field>
+        <formula>IF (RecordType.DeveloperName = &quot;Research_Governance_Authorisation&quot;,
+TODAY(),
+NULL)</formula>
+        <name>Ethics Request: Update Governance Approv</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ethics_Request_Update_With_Customer_Dat</fullName>
+        <field>I_RS_With_Researcher_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Ethics Request: Update With Customer Dat</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ethics_Request_With_Ethics_Team</fullName>
+        <field>I_RS_With_Ethics_Team_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Ethics Request: With Ethics Team</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ethics_Request_Workflow_Complete</fullName>
+        <field>I_RS_Closed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Ethics Request: Workflow Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Ethics_Record_Name</fullName>
+        <field>Name</field>
+        <formula>I_RS_Ethics_Application_Number__c</formula>
+        <name>Update Ethics Record Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Ethics Request%3A Approval Date</fullName>
+        <actions>
+            <name>Ethics_Request_Update_Approval_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Ethics_Request_Update_Expiry_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Ethics_Request_Update_Governance_Approv</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>/*Changed to Approved*/ TEXT(I_RS_Ethics_Application_Review_Outcome__c) = &apos;Approved&apos; &amp;&amp; TEXT(PRIORVALUE(I_RS_Ethics_Application_Review_Outcome__c)) &lt;&gt; &quot;Approved&quot;  &amp;&amp;  /*Was not previously any of these review outcomes*/ TEXT(PRIORVALUE(I_RS_Ethics_Application_Review_Outcome__c)) &lt;&gt; &quot;Expired&quot; &amp;&amp; TEXT(PRIORVALUE(I_RS_Ethics_Application_Review_Outcome__c)) &lt;&gt; &quot;Suspended&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Ethics Request%3A Closed</fullName>
+        <actions>
+            <name>Ethics_Request_Workflow_Complete</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Ethics_Request__c.I_RS_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Ethics Request%3A Update Ethics Approval Number</fullName>
+        <actions>
+            <name>Ethics_Request_Member_Update_Ethics_Num</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>NOT(ISBLANK(I_RS_Auto_Number__c))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Ethics Request%3A With Customer</fullName>
+        <actions>
+            <name>Ethics_Request_Update_With_Customer_Dat</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Ethics_Request__c.I_RS_Status__c</field>
+            <operation>equals</operation>
+            <value>Decided</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Ethics Request%3A With Ethics Team</fullName>
+        <actions>
+            <name>Ethics_Request_With_Ethics_Team</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TEXT(I_RS_Status__c) &lt;&gt; &quot;With Customer&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Record Name</fullName>
+        <actions>
+            <name>Update_Ethics_Record_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Ethics_Request__c.I_RS_Ethics_Application_Number__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Update the standard Record Name of the Ethics Request with the Ethics Application Number</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

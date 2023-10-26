@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Salary</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Budget_Line_Item</compactLayoutAssignment>
+    <label>Salary</label>
+    <picklistValues>
+        <picklist>I_RS_Category__c</picklist>
+        <values>
+            <fullName>Current La Trobe staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Future La Trobe staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-La Trobe researcher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_SAP_Category__c</picklist>
+        <values>
+            <fullName>Advertising%2F Promotional Activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Books %26 Publications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licenses%2F Registration%2F Subscriptions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials %2F Consumables %2F Sundry expenses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plant %26 Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional%2FConsulting%2FContractual Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repairs%2FMaintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salary Costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stationery %26 Office Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer to Other Universities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Status__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Sub_Category__c</picklist>
+        <values>
+            <fullName>Acad other casual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acad other casual %28PhD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casual HEO 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casual HEO 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casual HEO 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casual HEO 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casual HEO 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casual HEO 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casual HEO 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casual HEO 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casual HEO 9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO1-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO1-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO1-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO1-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO10-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO2-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO2-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO2-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO3-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO3-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO3-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO3-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO3-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO3-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO3-7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO4-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO4-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO4-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO4-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO5-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO5-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO5-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO5-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO5-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO5-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO5-7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO6-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO6-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO6-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO6-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO6-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO7-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO7-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO7-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO7-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO7-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO7-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO8-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO8-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO8-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO8-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO8-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO8-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO8-7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO8-8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO9-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO9-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO9-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEO9-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level B 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level B 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level B 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level B 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level B 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level B 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level C 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level C 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level C 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level C 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level C 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level C 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level D 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level D 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level D 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level D 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level E 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stipend</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I_RS_Unit_of_Time__c</picklist>
+        <values>
+            <fullName>Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

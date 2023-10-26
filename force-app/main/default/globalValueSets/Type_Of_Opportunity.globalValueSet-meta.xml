@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Grant</fullName>
+        <default>false</default>
+        <label>Grant</label>
+    </customValue>
+    <customValue>
+        <fullName>Quote/Proposal</fullName>
+        <default>false</default>
+        <label>Quote/Proposal</label>
+    </customValue>
+    <customValue>
+        <fullName>Tender/RFQ</fullName>
+        <default>false</default>
+        <label>Tender/RFQ</label>
+    </customValue>
+    <customValue>
+        <fullName>Research Collaboration</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Research Collaboration</label>
+    </customValue>
+    <customValue>
+        <fullName>Request for Proposal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Request for Proposal</label>
+    </customValue>
+    <customValue>
+        <fullName>Scholarship</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Scholarship</label>
+    </customValue>
+    <customValue>
+        <fullName>Expression of interest</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Expression of interest</label>
+    </customValue>
+    <customValue>
+        <fullName>Request for quote</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Request for quote</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-research Consultancy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Non-research Consultancy</label>
+    </customValue>
+    <customValue>
+        <fullName>Postgraduate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Postgraduate</label>
+    </customValue>
+    <customValue>
+        <fullName>Tender/Expression of Interest</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tender/Expression of Interest</label>
+    </customValue>
+    <customValue>
+        <fullName>Research Consultancy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Research Consultancy</label>
+    </customValue>
+    <customValue>
+        <fullName>Fellowship</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fellowship</label>
+    </customValue>
+    <customValue>
+        <fullName>Consultancy Contract</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Consultancy Contract</label>
+    </customValue>
+    <customValue>
+        <fullName>Research Contract/collaboration</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Research Contract/collaboration</label>
+    </customValue>
+    <masterLabel>Type Of Opportunity</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

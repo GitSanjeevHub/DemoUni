@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_AD_Published_on_UAC__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if the Course is published on UAC</description>
+    <externalId>false</externalId>
+    <label>Published on UAC</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

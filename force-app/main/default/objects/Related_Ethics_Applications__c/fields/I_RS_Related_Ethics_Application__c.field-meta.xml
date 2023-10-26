@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Related_Ethics_Application__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>•	IBC Parent Ethics Applications Number
+•	HEC Parent Ethics Applications Number
+•	Externally Approved Parent Ethics Application Number</inlineHelpText>
+    <label>Related Ethics Application</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Ethics_Request__c.Id</field>
+            <operation>notEqual</operation>
+            <valueField>$Source.I_RS_Parent_Ethics_Request__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Ethics_Request__c</referenceTo>
+    <relationshipLabel>Linked Ethics Requests</relationshipLabel>
+    <relationshipName>Related_Ethics_Applications1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Profile_Qualification_Compact_Layout</fullName>
+    <fields>I_RS_Contact__c</fields>
+    <fields>I_RS_Qualification__c</fields>
+    <fields>I_RS_Organisation__c</fields>
+    <fields>I_RS_Country__c</fields>
+    <fields>I_RS_Start_Date__c</fields>
+    <fields>I_RS_End_Date__c</fields>
+    <label>Profile Qualification Compact Layout</label>
+</CompactLayout>

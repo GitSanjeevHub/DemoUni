@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Part_of_La_Trobe_is_False</name>
+        <label>Part of La Trobe is False</label>
+        <locationX>992</locationX>
+        <locationY>574</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Part_of_La_Trobe__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Part_of_La_Trobe_is_True</name>
+        <label>Part of La Trobe is True</label>
+        <locationX>534</locationX>
+        <locationY>582</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.I_RS_Part_of_La_Trobe__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Has the previous data operation changed the record type Id?</description>
+        <name>Record_Type_Is_Set</name>
+        <label>Record Type Is Set</label>
+        <locationX>746</locationX>
+        <locationY>354</locationY>
+        <defaultConnector>
+            <targetReference>Part_of_La_Trobe_is_False</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Set Part of La Trobe To False</defaultConnectorLabel>
+        <rules>
+            <name>Record_Type_Equals_La_Trobe_Organisation_Unit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>I_RS_La_Trobe_Organisation_Unit</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Part_of_La_Trobe_is_True</targetReference>
+            </connector>
+            <label>Record Type Equals La Trobe Organisation Unit</label>
+        </rules>
+    </decisions>
+    <description>Pre-save logic to run on Organisation records
+01-March - changed SV</description>
+    <interviewLabel>Organisation Pre-Save Logic {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Organisation Pre-Save Logic</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>628</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Record_Type_Is_Set</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

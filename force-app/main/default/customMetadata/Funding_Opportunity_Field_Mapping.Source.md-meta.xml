@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Source</label>
+    <protected>false</protected>
+    <values>
+        <field>Actual_API_Name__c</field>
+        <value xsi:type="xsd:string">I_RS_Source__c</value>
+    </values>
+    <values>
+        <field>I_RS_Concatenation_Order__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>I_RS_Field_Type__c</field>
+        <value xsi:type="xsd:string">Text</value>
+    </values>
+    <values>
+        <field>I_RS_Hard_Coded_Text_Value__c</field>
+        <value xsi:type="xsd:string">Research Professional</value>
+    </values>
+    <values>
+        <field>I_RS_Inactive__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>I_RS_Object__c</field>
+        <value xsi:type="xsd:string">Funding Opportunity</value>
+    </values>
+    <values>
+        <field>I_RS_Organisation_Query_Order__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>I_RS_Query_Organisations_with_this_field__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>I_RS_Update_Funding_Opp_When_Modified__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Staging_API_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

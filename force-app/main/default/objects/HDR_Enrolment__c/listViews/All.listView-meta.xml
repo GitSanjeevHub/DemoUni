@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Student__c</columns>
+    <columns>I_RS_Actual_Submission_Date__c</columns>
+    <columns>I_RS_Course_Admission_Stage_Code__c</columns>
+    <columns>I_RS_Course_Admission_Stage_Desc__c</columns>
+    <columns>I_RS_Course_Admission_Status_Code__c</columns>
+    <columns>I_RS_Course_Admission_Status_Desc__c</columns>
+    <columns>I_RS_Field_of_Research__c</columns>
+    <columns>I_RS_Field_of_Research_Description__c</columns>
+    <columns>I_RS_Student_Course__c</columns>
+    <columns>I_RS_Thesis_Title__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

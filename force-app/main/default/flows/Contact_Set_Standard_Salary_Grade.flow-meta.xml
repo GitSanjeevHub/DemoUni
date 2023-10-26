@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Remove_Contact_Salary_Grade_Standard</name>
+        <label>Remove Contact Salary Grade Standard</label>
+        <locationX>657</locationX>
+        <locationY>189</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Contact.I_RS_Salary_Grade_Standard__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Contact</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Contact_Salary_Grade_Standard</name>
+        <label>Set Contact Salary Grade Standard</label>
+        <locationX>648</locationX>
+        <locationY>45</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Contact.I_RS_Salary_Grade_Standard__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Salary_Table.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Contact</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Salary_Table_Found</name>
+        <label>Salary Table Found</label>
+        <locationX>415</locationX>
+        <locationY>51</locationY>
+        <defaultConnector>
+            <targetReference>Remove_Contact_Salary_Grade_Standard</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Salary_Table_Found_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Salary_Table</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Contact_Salary_Grade_Standard</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Takes the Salary Grade provided from HR and populates its standard equivalent grade. This field is used in various Budget reports.</description>
+    <interviewLabel>Contact - Set Standard Salary Grade {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contact - Set Standard Salary Grade</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Contact</name>
+        <label>Get Contact</label>
+        <locationX>159</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Salary_Table</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get matching Salary Table by HR identifider</description>
+        <name>Get_Salary_Table</name>
+        <label>Get Salary Table</label>
+        <locationX>267</locationX>
+        <locationY>51</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Salary_Table_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>I_RS_HR_System_Group_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Contact.I_RS_Salary_Grade__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Salary_Table__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Set Salary Grade (Standard) on Contact</description>
+        <name>Update_Contact</name>
+        <label>Update Contact</label>
+        <locationX>851</locationX>
+        <locationY>42</locationY>
+        <inputReference>Get_Contact</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Contact</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>Contact Id passed in for processing</description>
+        <name>ContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

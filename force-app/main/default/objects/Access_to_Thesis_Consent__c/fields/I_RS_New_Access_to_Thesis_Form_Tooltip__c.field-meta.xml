@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_New_Access_to_Thesis_Form_Tooltip__c</fullName>
+    <defaultValue>&quot;A new Access to Thesis Consent form will be created. You will be able to find it under the &apos;Access to Thesis Consent Forms&apos; section. Click Save to confirm.&quot;</defaultValue>
+    <description>Appears on &apos;New Access to Thesis Form&apos; quick action on Graduate Research Examination object</description>
+    <externalId>false</externalId>
+    <label>New Access to Thesis Form</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

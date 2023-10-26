@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Application Assistance</fullName>
+        <default>false</default>
+        <label>Application Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Accommodation</fullName>
+        <default>false</default>
+        <label>Accommodation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Application Status</fullName>
+        <default>false</default>
+        <label>Application Status</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Career Advice</fullName>
+        <default>false</default>
+        <label>Career Advice</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Career Outcome</fullName>
+        <default>false</default>
+        <label>Career Outcome</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change Of Preference</fullName>
+        <default>false</default>
+        <label>Change Of Preference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Course Availability</fullName>
+        <default>false</default>
+        <label>Course Availability</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Course Content</fullName>
+        <default>false</default>
+        <label>Course Content</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Current Student</fullName>
+        <default>false</default>
+        <label>Current Student</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Entry Requirements</fullName>
+        <default>false</default>
+        <label>Entry Requirements</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Events</fullName>
+        <default>false</default>
+        <label>Events</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fee-HELP</fullName>
+        <default>false</default>
+        <label>Fee-HELP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HECS-Help</fullName>
+        <default>false</default>
+        <label>HECS-Help</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pathways</fullName>
+        <default>false</default>
+        <label>Pathways</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound</fullName>
+        <default>false</default>
+        <label>Outbound</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Problem</fullName>
+        <default>false</default>
+        <label>Problem</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Feedback</fullName>
+        <default>false</default>
+        <label>Feedback</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request</fullName>
+        <default>false</default>
+        <label>Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Generated</fullName>
+        <default>false</default>
+        <label>System Generated</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Courses and entry requirements</fullName>
+        <default>false</default>
+        <label>Courses and entry requirements</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit transfer/ RPL</fullName>
+        <default>false</default>
+        <label>Credit transfer/ RPL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fees and scholarships</fullName>
+        <default>false</default>
+        <label>Fees and scholarships</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sponsorship/ financial guarantee</fullName>
+        <default>false</default>
+        <label>Sponsorship/ financial guarantee</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinars</fullName>
+        <default>false</default>
+        <label>Webinars</label>
+    </standardValue>
+    <standardValue>
+        <fullName>How to apply (coursework)</fullName>
+        <default>false</default>
+        <label>How to apply (coursework)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>How to apply (research)</fullName>
+        <default>false</default>
+        <label>How to apply (research)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>How to apply (study abroad)</fullName>
+        <default>false</default>
+        <label>How to apply (study abroad)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>How to apply (single unit &amp; cross institutional study)</fullName>
+        <default>false</default>
+        <label>How to apply (single unit &amp; cross institutional study)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow-ups</fullName>
+        <default>false</default>
+        <label>Follow-ups</label>
+    </standardValue>
+    <standardValue>
+        <fullName>How to accept offer</fullName>
+        <default>false</default>
+        <label>How to accept offer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Orientation and enrolment</fullName>
+        <default>false</default>
+        <label>Orientation and enrolment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Airport pick-up</fullName>
+        <default>false</default>
+        <label>Airport pick-up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Agent enquiry</fullName>
+        <default>false</default>
+        <label>Agent enquiry</label>
+    </standardValue>
+</StandardValueSet>

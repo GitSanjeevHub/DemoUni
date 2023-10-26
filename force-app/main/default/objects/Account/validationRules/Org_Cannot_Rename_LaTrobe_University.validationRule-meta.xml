@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Org_Cannot_Rename_LaTrobe_University</fullName>
+    <active>true</active>
+    <description>User should not be allowed to rename LaTrobe university org</description>
+    <errorConditionFormula>AND (
+ISCHANGED(Name),
+(Name &lt;&gt; $Label.Top_Org_Name_LaTrobe),
+(PRIORVALUE(Name) = $Label.Top_Org_Name_LaTrobe)
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>&quot;La Trobe University&quot; cannot be renamed</errorMessage>
+</ValidationRule>

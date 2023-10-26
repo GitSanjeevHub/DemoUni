@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Set VTAC &amp; Availabilities in Draft to Approved</description>
+    <flowDefinition>Approve_Course_Instance_Child_Records_with_Status_Draft</flowDefinition>
+    <label>Set all Draft to Approved</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

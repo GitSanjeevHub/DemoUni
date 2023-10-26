@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllowCreationOfPostApprovalRecords</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK( I_RS_Ethics_Request__c)),
+NOT(ISPICKVAL(I_RS_Ethics_Request__r.I_RS_Ethics_Application_Review_Outcome__c , &quot;Approved&quot;) || ISPICKVAL(I_RS_Ethics_Request__r.I_RS_Ethics_Application_Review_Outcome__c , &quot;Suspended&quot;) || ISPICKVAL(I_RS_Ethics_Request__r.I_RS_Ethics_Application_Review_Outcome__c , &quot;Expired&quot; ))
+)</errorConditionFormula>
+    <errorMessage>You cannot create a post-approval request because your ethics application hasn’t been approved, or has been closed-off, or has been withdrawn.</errorMessage>
+</ValidationRule>

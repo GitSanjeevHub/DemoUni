@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Valid_Phone_International_Lead</fullName>
+    <active>true</active>
+    <description>This rule checks if the entered number is in international phone number format</description>
+    <errorConditionFormula>AND (
+    OR (
+        AND (!ISBLANK(I_RM_Mobile_Phone__c), 
+             OR (!REGEX(I_RM_Mobile_Phone__c,&quot;(^\\+[1-9]\\d{10,14}$)&quot;), 
+                RecordType.DeveloperName = &quot;I_RM_Lead&quot;),
+             OR (!REGEX(I_RM_Mobile_Phone__c, &quot;^(\\+61|0)4[0-9]{8}$&quot;), 
+                RecordType.DeveloperName = &quot;I_IL_Student_Lead_Int&quot; ) ),
+        AND (!ISBLANK(I_RM_Phone__c), 
+             !REGEX(I_RM_Phone__c,&quot;(^\\+[1-9]\\d{10,14}$)&quot;),
+             OR (!REGEX(I_RM_Phone__c, &quot;^(\\+61|0)[0-9]{9}$&quot;), 
+                RecordType.DeveloperName = &quot;I_IL_Student_Lead_Int&quot; ) ),
+        AND (!ISBLANK(I_RM_Other_Phone__c), 
+             !REGEX(I_RM_Other_Phone__c,&quot;(^\\+[1-9]\\d{10,14}$)&quot;),
+             OR (!REGEX(I_RM_Other_Phone__c, &quot;^(\\+61|0)[0-9]{9}$&quot;), 
+                RecordType.DeveloperName = &quot;I_IL_Student_Lead_Int&quot; ) ) ),
+    !(CONTAINS( $Label.I_RM_Profile_To_Exclude , $Profile.Name)))</errorConditionFormula>
+    <errorMessage>One of the phone numbers entered is not in a valid format. Please enter phone number with country code starting with + or a Domestic number starting with 0.</errorMessage>
+</ValidationRule>

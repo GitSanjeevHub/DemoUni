@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Record_URL__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*Base URL*/ 
+$Setup.URL_Variable__c.I_RS_Researcher_Portal_Base_URL__c + &apos;/detail/&apos; 
++ 
+/*Record Id*/ 
+Id</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Portal Record URL</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

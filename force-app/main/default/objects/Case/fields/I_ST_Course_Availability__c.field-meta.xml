@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Course_Availability__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Course Availability of the Selected Course Parent</inlineHelpText>
+    <label>Course Availability</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>CourseAvailability__c.L_AD_CourseInstance__r.L_AD_CourseParent__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.I_ST_Course_Name__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>CourseAvailability__c</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

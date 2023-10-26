@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Researcher_Portal_if_applicable__c</fullName>
+    <description>As there multiple portals available to non-back-office users, we may need to pre-decide which one to navigate to if clicking on any clickable links</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>As there multiple portals available to non-back-office users, we may need to pre-decide which one to navigate to if clicking on any clickable links</inlineHelpText>
+    <label>Researcher Portal (if applicable)</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PRIME Researcher</fullName>
+                <default>true</default>
+                <label>PRIME Researcher</label>
+            </value>
+            <value>
+                <fullName>PRIME ERA</fullName>
+                <default>false</default>
+                <label>PRIME ERA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

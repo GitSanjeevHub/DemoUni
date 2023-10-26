@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_VTAC_Application_Category__c</fullName>
+    <description>VTAC Application Category Description as per IST-302</description>
+    <externalId>false</externalId>
+    <label>VTAC Application Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>I_ST_VTAC_Category</valueSetName>
+    </valueSet>
+</CustomField>

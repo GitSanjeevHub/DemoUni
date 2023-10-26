@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>I_RS_Contact__c</columns>
+    <columns>I_RS_ERA_Collection__c</columns>
+    <columns>I_RS_Manual_Override__c</columns>
+    <columns>I_RS_Manual_Override_Notes__c</columns>
+    <columns>I_RS_ERA_Level__c</columns>
+    <columns>I_RS_HR_Employment_Level__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Candidate_Declaration_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(I_RS_Status__c) &lt;&gt; &apos;Draft&apos; 
+
+&amp;&amp;
+
+I_RS_Candidate_Declaration__c = FALSE</errorConditionFormula>
+    <errorDisplayField>I_RS_Candidate_Declaration__c</errorDisplayField>
+    <errorMessage>Please provide a Candidate Declaration</errorMessage>
+</ValidationRule>

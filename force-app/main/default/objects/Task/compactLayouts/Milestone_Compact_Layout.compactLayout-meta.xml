@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_Compact_Layout</fullName>
+    <fields>Subject</fields>
+    <fields>I_RS_Milestone_Type__c</fields>
+    <fields>Status</fields>
+    <fields>I_RS_Milestone_Task_Overdue_Status__c</fields>
+    <fields>ActivityDate</fields>
+    <fields>OwnerId</fields>
+    <fields>WhatId</fields>
+    <label>Milestone Compact Layout</label>
+</CompactLayout>

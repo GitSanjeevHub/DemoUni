@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Field_of_research__c</fullName>
+    <externalId>false</externalId>
+    <formula>I_RS_Graduate_Research_Examination__r.I_RS_Field_of_Research_ShortText__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Government classification code describing the candidate&apos;s research field. Recorded in SIS and will appear on the transcript. If you wish to change your Field of Research, please contact GRS@latrobe.edu.au.</inlineHelpText>
+    <label>Field of research</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Date_cannot_be_after_end_date</fullName>
+    <active>true</active>
+    <description>The Start Date must be before the End Date</description>
+    <errorConditionFormula>I_RS_Date_Added__c &gt; I_RS_Date_Removed__c</errorConditionFormula>
+    <errorDisplayField>I_RS_Date_Added__c</errorDisplayField>
+    <errorMessage>Start Date cannot be after End Date</errorMessage>
+</ValidationRule>

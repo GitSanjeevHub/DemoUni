@@ -1,0 +1,239 @@
+<aura:component controller="BudgetRateHelper" 
+                implements="force:hasRecordId,force:lightningQuickActionWithoutHeader,lightning:availableForFlowScreens" >
+	
+    <aura:attribute name="recordId" type="String" />
+    
+    <aura:attribute name="showLoadingScreen" type="Boolean" default="true"/>
+    <aura:attribute name="recordLoadComplete" type="Boolean" default="false"/>
+    <aura:attribute name="recordLoadSuccessful" type="Boolean" />
+    <aura:attribute name="lineItemGridLoadsComplete" type="Boolean" default="false"/>
+
+    <aura:attribute name="currentLoadingMessage" type="String" />
+    <aura:attribute name="loadingMessage_RecalcLineItems" type="String" 
+                    default="Recalculating Budget Line Items. This may take a few moments..."/>
+    <aura:attribute name="loadingMessage_SavingRecord" type="String" 
+                    default="Saving Budget..."/>
+    
+    <aura:attribute name="errorMessage_NonDraftBudget" type="String"
+                    default="Please make a copy of this Budget to change rates."/>
+
+    <aura:attribute name="budgetRecord" type="Object"/>
+    <aura:attribute name="errorMessage" type="String"/>
+
+    <aura:attribute name="outputField_LeadChiefInvestigator" type="String"/>
+
+    <aura:attribute name="outputField_projectRate" type="String"/>
+    <aura:attribute name="outputField_salaryProfit" type="Decimal"/>
+    <aura:attribute name="outputField_salaryOverhead" type="Decimal"/>
+    <aura:attribute name="outputField_nonSalaryOverhead" type="Decimal"/>
+    
+    <aura:attribute name="outputField_baseSalary" type="Decimal"/>
+    <aura:attribute name="outputField_dailyBaseSalary" type="Decimal"/>
+    <aura:attribute name="outputField_dailySalaryOnCosts" type="Decimal"/>
+    <aura:attribute name="outputField_dailySalaryOverhead" type="Decimal"/>
+    <aura:attribute name="outputField_dailySalaryProfit" type="Decimal"/>
+
+    <aura:attribute name="showHeader" type="boolean" default="true"/>
+    <aura:attribute name="showSaveButton" type="boolean" default="true"/>
+
+    <aura:attribute name="recalculateLineItems" type="boolean" default="true"/>
+    <aura:attribute name="salaryItemsRecalculated" type="boolean" default="false"/>
+    <aura:attribute name="nonSalaryItemsRecalculated"  type="boolean" default="false"/>
+    
+    <aura:handler name="change" value="{!v.budgetRecord}" action="{!c.handleAnyRecordFieldChange}"/>
+    <aura:handler name="successfulSave" event="c:EditableGridSuccessfulSave" action="{!c.handleChildGridSuccessfulSave}"/>
+    
+    <aura:registerEvent name="appEvent" type="c:BudgetChargeOutRateScreenComplete"/>
+
+	<lightning:notificationsLibrary aura:id="notifLib"/>
+    
+    <force:recordData aura:id="recordLoader"
+        recordId="{!v.recordId}"
+        fields="Id,Name,
+                I_RS_Project_Proposal__r.I_RS_Lead_Chief_Investigator__c,
+                I_RS_Lead_Chief_Investigator__c,
+                I_RS_Actual_Rate_Type__c,
+                I_RS_Year_1_Starts__c,
+                I_RS_Base_Salary__c,
+                I_RS_Maximum_Allowed_On_Cost__c,
+                I_RS_Actual_Overhead__c,
+                I_RS_Actual_Non_Salary_Overhead__c,
+                I_RS_Non_Salary_Overhead_Multiplier__c,
+                I_RS_Actual_Profit__c,
+                I_RS_Daily_On_Costs__c,
+                I_RS_Daily_Overheads__c,
+                I_RS_Daily_Profits__c, 
+                I_RS_Daily_Salary__c,
+                I_RS_Status__c"
+        targetFields="{!v.budgetRecord}"
+		mode="EDIT"
+        targetError="{!v.recordLoadError}"
+        recordUpdated="{!c.handleRecordLoad}"
+    />
+    
+
+
+    <div class="slds-is-relative">
+
+
+        <aura:if isTrue="{!v.showHeader}">
+            <h1>
+                <span class="slds-page-header__title slds-truncate">Set Charge Out Rate</span>
+            </h1>
+        </aura:if>
+ 
+
+        <!--If a failure occurred when attempting to load or save the record-->
+        <aura:if isTrue="{!v.errorMessage}">
+            <br/>
+        
+            <div class="slds-align_absolute-center">
+                
+                <c:iconAndTextBar
+                    iconName="utility:warning"
+                    iconSize="small"
+                    iconVariant="error"
+                    text="{!v.errorMessage}"
+                />
+                
+            </div>
+        </aura:if>
+
+
+        <aura:if isTrue="{!v.showLoadingScreen}">
+            
+            <br/><br/><br/><br/>
+            <div class="slds-is-relative slds-align_absolute-center">
+            
+                <lightning:spinner variant="brand"></lightning:spinner>
+                
+            </div>
+            <br/><br/>
+
+            {!v.currentLoadingMessage}
+            
+        </aura:if>
+
+
+        <div style="{!(v.showLoadingScreen ? 'display:none' : 'display:inline')}">
+
+            <aura:if isTrue="{!v.recordLoadComplete}">
+            
+                
+                <aura:if isTrue="{!v.recordLoadSuccessful}">
+                
+                    <c:lwcpicklist 
+                                    label="Actual Project Rate" 
+                                    objectType="Budget__c"
+                                    selectedField="I_RS_Actual_Rate_Type__c" 
+                                    selectedValue="{!v.budgetRecord.I_RS_Actual_Rate_Type__c}"
+                                    onchange="{!c.handleProjectRatePicklistChange}"/>
+                    
+                    <lightning:input 
+                                    label="Actual Salary Overhead (%)" 
+                                    type="number" 
+                                    formatter="percentage"
+                                    step="0.01"
+                                    value="{!v.budgetRecord.I_RS_Actual_Overhead__c}"
+                                    onblur="{!c.handleBudgetRateFieldBlur}"
+                                    onchange="{!c.handleBudgetRateFieldChange}"/>
+
+                    <lightning:input 
+                                    label="Actual Salary Margin (%)" 
+                                    type="number" 
+                                    formatter="percentage"
+                                    step="0.01"
+                                    value="{!v.budgetRecord.I_RS_Actual_Profit__c}"
+                                    onblur="{!c.handleBudgetRateFieldBlur}"
+                                    onchange="{!c.handleBudgetRateFieldChange}"/>
+                    
+                    <lightning:input 
+                                    label="Actual Non-Salary Overhead (%)" 
+                                    type="number" 
+                                    formatter="percentage"
+                                    step="0.01"
+                                    value="{!v.budgetRecord.I_RS_Actual_Non_Salary_Overhead__c}"
+                                    onblur="{!c.handleBudgetRateFieldBlur}"
+                                    onchange="{!c.handleBudgetRateFieldChange}"/>
+                    
+            
+                    <br/>        
+                    <div class="slds-text-heading_small">Lead Chief Investigator</div>
+                    
+                    <lightning:input 
+                                    type="number" 
+                                    formatter="currency"
+                                    label="{!(v.budgetRecord.I_RS_Year_1_Starts__c + ' Base Daily Salary')}" 
+                                    value="{!v.budgetRecord.I_RS_Daily_Salary__c}"
+                                    disabled="true"
+                                    />
+                    
+                    <lightning:input 
+                                    type="number" 
+                                    formatter="currency"
+                                    label="Daily Charge-Out Rate" 
+                                    value="{!(v.budgetRecord.I_RS_Daily_On_Costs__c + v.budgetRecord.I_RS_Daily_Overheads__c + 
+                    v.budgetRecord.I_RS_Daily_Profits__c + v.budgetRecord.I_RS_Daily_Salary__c)}"
+                                    disabled="true"
+                                    />
+                    
+
+
+                    <!--Save button - not used in visual workfow, but is used in action-->
+                    <aura:if isTrue="{!v.showSaveButton}">
+                        <br/>     
+                        <div class="slds-clearfix">
+                            <div class="slds-float_right">
+                                <lightning:button 
+                                    aura:id="saveButton" 
+                                    variant="brand" 
+                                    label="Save" 
+                                    onclick="{!c.saveRecord}"/>
+                            </div>
+                        </div>
+                    </aura:if>
+                    
+
+
+                </aura:if>
+                
+
+                <!--Hidden calculator grids for recalculating line items-->
+                <aura:if isTrue="{!v.recalculateLineItems}">
+
+                    <div style="display:none">
+
+                        <div class="slds-is-relative slds-align_absolute-center">
+                    
+                            <c:EditableGridWrapperAura aura:id="salaryItems"
+                                            recordId="{!v.recordId}" 
+                                            configFile="gridUIConfig_BudgetCalculator_Salary"
+                                            hideUI="true"
+                                            recalculateRecordListWhenHostRecordChanges="true"
+                                            acceptRefreshRecordAppEvents="false"/> 
+                            <c:EditableGridWrapperAura 
+                                            aura:id="nonSalaryItems"
+                                            recordId="{!v.recordId}" 
+                                            configFile="gridUIConfig_BudgetCalculator_NonSalary"
+                                            hideUI="true"
+                                            recalculateRecordListWhenHostRecordChanges="true"
+                                            acceptRefreshRecordAppEvents="false"/>
+                    
+                        </div>
+                    </div>
+                
+                </aura:if>
+
+
+                
+            </aura:if>
+
+            
+        </div>
+
+        
+        
+
+
+    </div>
+</aura:component>

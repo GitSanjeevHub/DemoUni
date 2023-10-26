@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Nurture__c</fullName>
+    <description>Added for IST-327</description>
+    <externalId>false</externalId>
+    <label>Nurture</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Booked one 1:1 Consultation</fullName>
+                <default>false</default>
+                <label>Booked one 1:1 Consultation</label>
+            </value>
+            <value>
+                <fullName>Yes – Call after Easter</fullName>
+                <default>false</default>
+                <label>Yes – Call after Easter</label>
+            </value>
+            <value>
+                <fullName>Yes – Call in October</fullName>
+                <default>false</default>
+                <label>Yes – Call in October</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

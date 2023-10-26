@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_To_related_user_not_blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(I_RS_Assigned_To__r.I_RS_Related_User__c)</errorConditionFormula>
+    <errorDisplayField>I_RS_Assigned_To__c</errorDisplayField>
+    <errorMessage>The Contact you are using doesn&apos;t have a Related User, please make sure the &apos;Related User&apos; field is filled on the Contact record.</errorMessage>
+</ValidationRule>

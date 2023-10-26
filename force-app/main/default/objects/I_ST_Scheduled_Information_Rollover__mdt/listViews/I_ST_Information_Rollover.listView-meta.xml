@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_ST_Information_Rollover</fullName>
+    <columns>DeveloperName</columns>
+    <columns>I_ST_Object__c</columns>
+    <columns>I_ST_Field_API_Name__c</columns>
+    <columns>I_ST_From__c</columns>
+    <columns>I_ST_To__c</columns>
+    <columns>I_ST_Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Information Rollover</label>
+    <language>en_US</language>
+</ListView>

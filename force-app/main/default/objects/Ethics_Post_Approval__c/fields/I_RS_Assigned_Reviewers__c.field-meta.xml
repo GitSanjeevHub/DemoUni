@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Assigned_Reviewers__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF($User.I_RS_Is_Researcher_User__c = &quot;1&quot; &amp;&amp; CONTAINS(I_RS_Reviewers__c, $User.FirstName &amp; &quot; &quot; &amp; $User.LastName), I_RS_Reviewers__c, 
+
+IF($User.I_RS_Is_Researcher_User__c = &quot;0&quot;, I_RS_Reviewers__c,
+
+&quot;This field has intentionally been left blank&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Assigned Reviewers</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

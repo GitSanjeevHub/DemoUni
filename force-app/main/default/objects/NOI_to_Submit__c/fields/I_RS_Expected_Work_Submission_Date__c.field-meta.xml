@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Expected_Work_Submission_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>I_RS_Graduate_Research_Examination__r.I_RS_Expected_Work_Submission_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Date candidate is expected to submit their thesis by, as per the Graduate Research Candidature Policy.</inlineHelpText>
+    <label>Expected Work Submission Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

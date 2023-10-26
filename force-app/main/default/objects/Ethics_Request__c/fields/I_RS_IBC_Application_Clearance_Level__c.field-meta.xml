@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_IBC_Application_Clearance_Level__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please choose the type of dealing/s. If left blank the Research Office will populate this field.</inlineHelpText>
+    <label>IBC Application Clearance Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Exempt dealing</fullName>
+                <default>false</default>
+                <label>Exempt dealing</label>
+            </value>
+            <value>
+                <fullName>NLRD</fullName>
+                <default>false</default>
+                <label>NLRD</label>
+            </value>
+            <value>
+                <fullName>DNIR</fullName>
+                <default>false</default>
+                <label>DNIR</label>
+            </value>
+            <value>
+                <fullName>DIR</fullName>
+                <default>false</default>
+                <label>DIR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

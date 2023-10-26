@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Record_Type__c</fullName>
+    <description>Name of the Record Type related to the Salesforce Object for which the Task has to be created.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of the Record Type related to the Salesforce Object for which the Task has to be created.</inlineHelpText>
+    <label>Record Type</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>I_RS_Object_Name__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I_RS_Contract_La_Trobe_template</fullName>
+                <default>false</default>
+                <label>Contract (La Trobe Template)</label>
+            </value>
+            <value>
+                <fullName>I_RS_Contract_client_template</fullName>
+                <default>false</default>
+                <label>Contract (Client Template)</label>
+            </value>
+            <value>
+                <fullName>I_RS_Grant_with_limited_applications</fullName>
+                <default>false</default>
+                <label>Grant with limited applications</label>
+            </value>
+            <value>
+                <fullName>I_RS_Notice_of_intention</fullName>
+                <default>false</default>
+                <label>Notice of intention</label>
+            </value>
+            <value>
+                <fullName>I_RS_Other_grants</fullName>
+                <default>false</default>
+                <label>Other grants</label>
+            </value>
+            <value>
+                <fullName>I_RS_Proposal</fullName>
+                <default>false</default>
+                <label>Proposal</label>
+            </value>
+            <value>
+                <fullName>I_RS_Recommendation</fullName>
+                <default>false</default>
+                <label>Recommendation</label>
+            </value>
+            <value>
+                <fullName>I_RS_Non_Public_Proposal</fullName>
+                <default>false</default>
+                <label>Non Public Proposal</label>
+            </value>
+            <value>
+                <fullName>Placeholder</fullName>
+                <default>false</default>
+                <label>Placeholder</label>
+            </value>
+            <value>
+                <fullName>I_RS_Project</fullName>
+                <default>false</default>
+                <label>Project</label>
+            </value>
+            <value>
+                <fullName>PRM Opportunity</fullName>
+                <default>true</default>
+                <label>PRM Opportunity</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Project_Proposal__c</controllingFieldValue>
+            <valueName>I_RS_Contract_La_Trobe_template</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project_Proposal__c</controllingFieldValue>
+            <valueName>I_RS_Contract_client_template</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project_Proposal__c</controllingFieldValue>
+            <valueName>I_RS_Grant_with_limited_applications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project_Proposal__c</controllingFieldValue>
+            <valueName>I_RS_Notice_of_intention</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project_Proposal__c</controllingFieldValue>
+            <valueName>I_RS_Other_grants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project_Proposal__c</controllingFieldValue>
+            <valueName>I_RS_Proposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project_Proposal__c</controllingFieldValue>
+            <valueName>I_RS_Recommendation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project_Proposal__c</controllingFieldValue>
+            <valueName>I_RS_Non_Public_Proposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project_Proposal__c</controllingFieldValue>
+            <valueName>Placeholder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project_Proposal__c</controllingFieldValue>
+            <valueName>I_RS_Project</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Opportunity</controllingFieldValue>
+            <valueName>PRM Opportunity</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

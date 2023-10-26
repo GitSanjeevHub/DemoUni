@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_PR_Agreement_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the LTU staff member that owns this agreement.</inlineHelpText>
+    <label>LTU Agreement Owner</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>I_RM_Affiliation__c.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>La Trobe Staff</value>
+        </filterItems>
+        <infoMessage>You are allowed to select only La Trobe Staff.</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>I_RM_Affiliation__c</referenceTo>
+    <relationshipLabel>Agreements (LTU Agreement Owner)</relationshipLabel>
+    <relationshipName>Agreements_Agreement_Owner</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

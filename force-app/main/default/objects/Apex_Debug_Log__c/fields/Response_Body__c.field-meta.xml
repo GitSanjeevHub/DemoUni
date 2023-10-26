@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Response_Body__c</fullName>
+    <description>The data outputted by the transaction. For an Apex REST/Soap Service, this could be the payload returned to the sender. For a callout, this could be the response body. For a batch, this could be the output of the batch logic.</description>
+    <externalId>false</externalId>
+    <label>Response Body</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>15</visibleLines>
+</CustomField>

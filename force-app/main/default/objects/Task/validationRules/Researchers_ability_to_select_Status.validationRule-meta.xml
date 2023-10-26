@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Researchers_ability_to_select_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.I_RS_Is_Researcher_User__c = &apos;1&apos; &amp;&amp;
+
+ISPICKVAL(Status , &apos;Superseded or Cancelled&apos;)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Only back-office can set a Milestone to &apos;Superseded/Cancelled&apos;</errorMessage>
+</ValidationRule>

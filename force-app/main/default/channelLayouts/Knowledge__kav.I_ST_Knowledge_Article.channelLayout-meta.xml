@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ChannelLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesExcludeFieldLabels>true</doesExcludeFieldLabels>
+    <doesExcludeFiles>false</doesExcludeFiles>
+    <enabledChannels>Email</enabledChannels>
+    <enabledChannels>Chat</enabledChannels>
+    <label>Knowledge Article</label>
+    <layoutItems>
+        <field>Summary</field>
+    </layoutItems>
+    <layoutItems>
+        <field>I_ST_Description__c</field>
+    </layoutItems>
+    <layoutItems>
+        <field>I_ST_Chat_Answer__c</field>
+    </layoutItems>
+    <recordType>Knowledge Article</recordType>
+</ChannelLayout>

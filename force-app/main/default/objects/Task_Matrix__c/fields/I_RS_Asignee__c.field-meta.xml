@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Asignee__c</fullName>
+    <description>Who the task should be assigned to.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Who the task should be assigned to.</inlineHelpText>
+    <label>Asignee</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Researcher</fullName>
+                <default>false</default>
+                <label>Researcher</label>
+            </value>
+            <value>
+                <fullName>Research Office</fullName>
+                <default>false</default>
+                <label>Research Office</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

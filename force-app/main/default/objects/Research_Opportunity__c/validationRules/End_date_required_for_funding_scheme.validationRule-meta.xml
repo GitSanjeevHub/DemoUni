@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_date_required_for_funding_scheme</fullName>
+    <active>true</active>
+    <description>The end date only needs to be mandatory when the record type is a funding scheme and the status is &apos;closed&apos;.</description>
+    <errorConditionFormula>RecordType.Name == &apos;Funding Scheme&apos;  &amp;&amp;  ISPICKVAL(I_RS_Status__c,&apos;Closed&apos;) &amp;&amp; ISBLANK ( I_RS_End_Date__c )</errorConditionFormula>
+    <errorDisplayField>I_RS_End_Date__c</errorDisplayField>
+    <errorMessage>Please fill in the End Date</errorMessage>
+</ValidationRule>

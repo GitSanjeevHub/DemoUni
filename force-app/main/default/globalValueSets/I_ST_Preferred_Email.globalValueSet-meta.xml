@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Personal Email</fullName>
+        <default>false</default>
+        <label>Personal Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Student Email</fullName>
+        <default>false</default>
+        <label>Student Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Work Email</fullName>
+        <default>false</default>
+        <label>Work Email</label>
+    </customValue>
+    <description>Created for Preferred_Email Contact field</description>
+    <masterLabel>I_ST_Preferred_Email</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

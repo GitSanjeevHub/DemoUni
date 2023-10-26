@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_IL_Nominee_Type__c</fullName>
+    <description>LTU360-2095: Relationship of Candidate’s nominated contact/affiliation</description>
+    <externalId>false</externalId>
+    <label>Nominee Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Parent/Guardian</fullName>
+                <default>false</default>
+                <label>Parent/Guardian</label>
+            </value>
+            <value>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
+                <label>Sponsor</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Thesis_Title__c</fullName>
+    <externalId>false</externalId>
+    <formula>I_RS_Graduate_Research_Examination__r.I_RS_Short_Thesis_Title__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Only showing first 255 characters</inlineHelpText>
+    <label>Thesis Title</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
