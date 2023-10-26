@@ -23,8 +23,8 @@
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
     <serverIsDown>SNA_PRIME_ERA1_sf_default_cdn_B1d7I</serverIsDown>
-    <siteAdmin>lt@uni.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>lt@uni.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>demo@uni.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>demo@uni.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <urlPathPrefix>ERA</urlPathPrefix>
 </CustomSite>

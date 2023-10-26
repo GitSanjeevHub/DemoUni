@@ -22,8 +22,8 @@
     <redirectToCustomDomain>false</redirectToCustomDomain>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>lt@uni.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>lt@uni.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>demo@uni.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>demo@uni.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <urlPathPrefix>tracr</urlPathPrefix>
 </CustomSite>

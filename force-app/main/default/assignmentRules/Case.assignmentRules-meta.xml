@@ -45,7 +45,7 @@
         <fullName>Standard</fullName>
         <active>false</active>
         <ruleEntry>
-            <assignedTo>lt@uni.com</assignedTo>
+            <assignedTo>demo@uni.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -64,7 +64,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>lt@uni.com</assignedTo>
+            <assignedTo>demo@uni.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -83,7 +83,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>lt@uni.com</assignedTo>
+            <assignedTo>demo@uni.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -102,7 +102,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>lt@uni.com</assignedTo>
+            <assignedTo>demo@uni.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -121,7 +121,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>lt@uni.com</assignedTo>
+            <assignedTo>demo@uni.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.Type</field>

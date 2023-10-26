@@ -2,7 +2,7 @@
 <PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
     <assignments>
         <users>
-            <user>lt@uni.com</user>
+            <user>demo@uni.com</user>
         </users>
     </assignments>
     <capacity>3</capacity>
